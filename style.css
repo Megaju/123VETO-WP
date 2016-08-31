@@ -58,6 +58,7 @@ h2 {
 .header-corp {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 15px 30px;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -85,6 +86,7 @@ h2 {
 .logo-img {
     width: 150px;
     height: 150px;
+    margin: 0 27px 0 0;
     background-image: url(img/logo-veto.svg);
     background-size: 220%;
     background-position: center center;
