@@ -21,13 +21,14 @@
         <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
         <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-        <?php wp_head(); ?>
+        
             <?php wp_get_archives('type=monthly&format=link'); ?>
-                <?php //comments_popup_script(); <?php wp_head(); ?>
+                
 
                     <!-- typos -->
                     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
                     <link rel="stylesheet" href="css/font-awesome.css" />
+                    <?php wp_head(); ?>
     </head>
 
     <body>
