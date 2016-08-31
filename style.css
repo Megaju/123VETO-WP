@@ -6,13 +6,77 @@ Author: Solène, Lise et Julien
 */
 
 /*============================*/
+/*========== GENERAL =========*/
+/*============================*/
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    margin: 0 0 0px 0;
+    padding: 0 0 25px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/*============================*/
+/*======== NAVIGATION ========*/
+/*============================*/
+
+.menu {
+    height: 50px;
+    border-bottom: 1px solid #143143;
+}
+
+.menu ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #143143;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu ul li:first-child a, .menu ul li:hover a {
+    background-color: #143143;
+    color: #fff;
+    transition: .2s;
+}
+
+/*============================*/
 /*========== SIDEBAR =========*/
 /*============================*/
 
 .sidebar {
     background-image: url(img/aside-fond.png);
     width: 25%;
-    font-family: 'Open Sans', sans-serif;
     color: #456;
     text-transform: capitalize;
     font-size: 0.8em;
