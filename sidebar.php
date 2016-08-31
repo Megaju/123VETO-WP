@@ -3,7 +3,7 @@
 ?>
 <div class="sidebar"> 
     <ul>
-        <!-- calendar -->
+    <!-- calendar -->
         <li id="calendar">
             <h2>Prise de rendez-vous</h2>
         <?php get_calendar(); ?></li>
