@@ -18,6 +18,44 @@ Author: Solène, Lise et Julien
     font-size: 0.8em;
 }
 
+.sidebar ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.aside-separator {
+    width: 80%;
+    height: 1px;
+    background-color: #abc;
+    margin: 30px auto;
+}
+
+.sidebar button {
+    margin-top: 15px;
+    background-color: blue;
+    border-radius: 5px;
+    border: 0px solid white;
+    width: 70%;
+    height: 35px;
+    background-color: #143143;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    color: white;
+}
+
+.sidebar button:hover {
+    background-color: #F58900;
+}
+
+#content a {
+    color: #143143;
+    font-size: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /*============================*/
 /*========== FOOTER ==========*/
 /*============================*/
