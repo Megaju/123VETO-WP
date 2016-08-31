@@ -102,6 +102,7 @@ h2 {
 
 .sidebar button {
     margin-top: 15px;
+    margin-bottom: 15px;
     background-color: blue;
     border-radius: 5px;
     border: 0px solid white;
@@ -139,6 +140,12 @@ em {
     color: #F58900;
     font-weight: 600;
 }
+
+#wp-calendar {
+    width: 70%;
+    height: 200px;
+    margin: auto;
+} 
 
 /*============================*/
 /*========== FOOTER ==========*/

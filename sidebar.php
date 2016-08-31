@@ -33,8 +33,9 @@
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
+                <button type="submit">Page des News Letters</button>
             </div>
-            <button type="submit">Page des News Letters</button>
+        
             <div class="aside-separator"></div>
             
         </li>
