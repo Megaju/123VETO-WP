@@ -24,6 +24,10 @@
     <?php wp_head(); ?>
         <?php wp_get_archives('type=monthly&format=link'); ?>
             <?php //comments_popup_script(); <?php wp_head(); ?>
+            
+    <!-- typos -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/font-awesome.css" />
 </head>
 
 <body>
