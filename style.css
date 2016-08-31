@@ -10,7 +10,11 @@ Author: Solène, Lise et Julien
 /*============================*/
 html, body {
     font-family: 'Open Sans', sans-serif;
-    margin-top: -32px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -32,6 +36,19 @@ h1 {
 
 h2 {
     font-size: 2em;
+}
+
+/*============================*/
+/*========== SIDEBAR =========*/
+/*============================*/
+
+#header {
+    height: 250px;
+    /* background */
+    background-image: url(img/facade.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 /*============================*/

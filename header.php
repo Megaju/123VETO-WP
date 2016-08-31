@@ -28,15 +28,17 @@
                     <!-- typos -->
                     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
                     <link rel="stylesheet" href="css/font-awesome.css" />
-                    <?php wp_head(); ?>
+                    
     </head>
 
     <body>
 
 
-        <div id="header">
-            <!-- menu de navigation -->
+       <!-- menu de navigation -->
             <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
+       
+        <div id="header">
+            
 
                 <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
                 <h2><?php bloginfo('description'); ?></h2>
