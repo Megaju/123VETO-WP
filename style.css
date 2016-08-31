@@ -99,6 +99,11 @@ h2 {
     font-size: 0.8em;
 }
 
+.sidebar h2 {
+    font-size: 1.7em;
+    padding-bottom: 25px;
+}
+
 .sidebar ul {
     text-decoration: none;
     list-style: none;
@@ -130,11 +135,27 @@ h2 {
     background-color: #F58900;
 }
 
+#content {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #abc;
+    padding: 10px;
+}
+
+#content h2 {
+    padding: 15px;
+    font-size: 1.5em;
+}
+
 #content a {
     color: #143143;
     font-size: 0.7em;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+em {
+    color: #F58900;
+    font-weight: 600;
 }
 
 /*============================*/
