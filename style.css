@@ -17,7 +17,7 @@ Author: Solène, Lise et Julien
     width: 100%;
 }
 
-#footer p, a {
+#footer p, #footer a {
     color: white;
     text-align: center;
     text-decoration: none;
