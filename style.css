@@ -5,6 +5,18 @@ Version: 0.1
 Author: Solène, Lise et Julien
 */
 
+/*============================*/
+/*========== SIDEBAR =========*/
+/*============================*/
+
+.sidebar {
+    background-image: url(img/aside-fond.png);
+    width: 25%;
+    font-family: 'Open Sans', sans-serif;
+    color: #456;
+    text-transform: capitalize;
+    font-size: 0.8em;
+}
 
 /*============================*/
 /*========== FOOTER ==========*/
@@ -19,9 +31,14 @@ Author: Solène, Lise et Julien
 
 #footer p, #footer a {
     color: white;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     text-decoration: none;
     padding-top: 8px;
     padding-bottom: 8px;
     
+}
+
+#footer a:hover {
+    color: #F58900;
 }
