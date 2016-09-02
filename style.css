@@ -76,7 +76,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(10, 10, 10, 0.7);
 }
 
 #header h1 a {
@@ -162,7 +162,9 @@ h2 {
 
 .sidebar h2 {
     font-size: 1.8em;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .sidebar ul {
@@ -212,7 +214,7 @@ h2 {
 }
 
 #content h2 {
-    padding: 15px;
+    padding-top: 10px;
     font-size: 1.5em;
 }
 
@@ -263,24 +265,39 @@ em {
     display: inline-flex;
 }
 
-.docteur1 {
+/* --------- THE TEAM --------- */
+
+.docteur {
+    position: relative;
     width: 50%;
     height: 100%;
-    border: 1px solid #F58900;
-    background-image: url(img/dr-aurelie.jpg);
+    margin: 5px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 5px;
 }
 
-.docteur2 {
-    width: 50%;
-    height: 100%;
-    border: 1px solid #F58900;
+#docteur1 {
+    background-image: url(img/dr-aurelie.jpg);
+}
+
+#docteur2 {
     background-image: url(img/dr-eric.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
+}
+
+.docteur-present p {
+    
+}
+
+.docteur .docteur-present {
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.docteur:hover .docteur-present {
+    background-color: #3A83FF;
+    opacity: .9;
+    transition: .3s;
 }
 
 /*============================*/
