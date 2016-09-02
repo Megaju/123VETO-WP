@@ -19,11 +19,11 @@
 
                 <div class="equipe">
                   
-                    <div class="docteur">
+                    <div class="docteur1">
                         <p>Houhou, ici img docteur + nom et faut faire un beau hover, t'es content Ju' =D</p>
                     </div>
 
-                    <div class="docteur">
+                    <div class="docteur2">
                         <p>Houhou, ici img docteur + nom et faut faire un beau hover, t'es content Ju' =D</p>
                     </div>
                 </div>
@@ -58,20 +58,17 @@
                 </div>
             </section>
             
-            <section id="equipe">
+            <section id="formeindex">
                 <h2>Notre savoir-faire</h2>
                 <div class="index-separator"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur dolorum ullam quisquam ut qui velit molestias inventore esse asperiores modi possimus.</p>
 
-                <div class="equipe">
+                <div>
                   
-                    <div class="docteur">
-                        <p>Houhou, ici img docteur + nom et faut faire un beau hover, t'es content Ju' =D</p>
+                    <div class="caroussel">
+                        <p>Amuse toi bien pour le caroussel sans bootstrap :D :D </p>
                     </div>
-
-                    <div class="docteur">
-                        <p>Houhou, ici img docteur + nom et faut faire un beau hover, t'es content Ju' =D</p>
-                    </div>
+                    
                 </div>
             </section>
         </div>

@@ -234,7 +234,7 @@ em {
 /*============================*/
 
 #formeindex, h2 {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 25px;
     color: #3A83FF;
     text-align: center;
@@ -248,9 +248,12 @@ em {
 #formeindex p {
     font-size: 0.7em;
     text-align: center;
+    background-color: white;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 20px;
+    padding: 20px;
+    margin-top: 0px;
+    opacity: 0.8;
 }
 
 .equipe {
@@ -260,20 +263,24 @@ em {
     display: inline-flex;
 }
 
-.docteur {
+.docteur1 {
     width: 50%;
     height: 100%;
     border: 1px solid #F58900;
-    background-color: #3A83FF;
-    opacity: 0.5;
+    background-image: url(img/dr-aurelie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 5px;
 }
 
-.docteur p {
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    padding: 20%;
+.docteur2 {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #F58900;
+    background-image: url(img/dr-eric.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
 }
 
 /*============================*/
@@ -289,7 +296,7 @@ em {
 
 .categorie {
     width: 50%;
-    height: 200px;
+    height: 300px;
     margin: 5px;
     border: 1px solid #F58900;
 }
@@ -301,8 +308,23 @@ em {
     display: block;
     margin: 15px auto;
     background-color: #F58900;
+    margin-top: 70px;
 }
 
+
+/*============================*/
+/*========= CLINIQUE =========*/
+/*============================*/
+
+.caroussel {
+    display: block;
+    margin: 50px auto;
+    width: 85%;
+    height: 400px;
+    background-image: url(img/caroussel/Espace_Vente.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*============================*/
 /*========== FOOTER ==========*/
