@@ -1,30 +1,29 @@
 <?php get_header(); ?>
 
     <div id="page">
-
-        <!-- contenue du site -->
-        <div id="content">
-
-
-
-        </div>
         <section id="attente-bootstrap">
         <!-- aside -->
         <?php get_sidebar(); ?>
         <div>
             <section id="formeindex">
                 <h2>Notre équipe à votre service</h2>
+                
                 <div class="index-separator"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur dolorum ullam quisquam ut qui velit molestias inventore esse asperiores modi possimus.</p>
+                
+                 <div class="equipe">                  
+                    <div class="docteur" id="docteur1">
+                      
+                       <div class="docteur-present">
+                           <p>Dr Aurélie Mayoussier Diplômée de l’école vétérinaire de MaisonsAlfort en 2008, elle se passionne pour la médecine de l’élevage et de la reproduction et la médecine des NAC.
 
-                <div class="equipe">
-                  
-                    <div class="docteur1">
-                        <p>Houhou, ici img docteur + nom et faut faire un beau hover, t'es content Ju' =D</p>
+                            Le Dr Mayoussier possède deux chats Pratchett et Bubule ainsi que Bambou, chien loup de Saarloos.</p>
+                       </div>
+                        
                     </div>
-
-                    <div class="docteur2">
-                        <p>Houhou, ici img docteur + nom et faut faire un beau hover, t'es content Ju' =D</p>
+                    <div class="docteur" id="docteur2">
+                       <div class="docteur-present">
+                        <p>Dr Eric Wintz Diplômé de l’école vétérinaire de Nantes en 1990, il se passionne pour la dermatologie et la cardiologie. Le Dr Wintz possède quatre chats Leelas (européenne), Gribouille (européen), Hannah (Mane Coon), et Joey (Ragdoll), des Platis, deux lapins nains Neige et Teddy ainsi que Lexie, chihuahua.</p>
+                        </div>
                     </div>
                 </div>
             </section>
