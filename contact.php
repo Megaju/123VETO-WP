@@ -1,5 +1,9 @@
-<?php //fix bug header ?>
+<?php /*
+	Template Name: contact
 
+ */ ?>
+
+<?php get_header(); ?>
 
 <!--Formulaire de contact-->
 	<h2 class="TitreForm">NOUS CONTACTER PAR MAIL</h2>
