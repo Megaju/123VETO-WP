@@ -1,6 +1,6 @@
-<?php
- //prise de rdv 
-?>
+<?php /*
+    Template Name: RDV
+*/ ?>
 
 <section id="rdv" class="row col-lg-12">
    <div class="col-lg-6 col-xs-12">      <form action="mon-formulaire" method="post">
