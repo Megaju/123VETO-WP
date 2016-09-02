@@ -14,8 +14,17 @@ Author: Solène, Lise et Julien
     justify-content: space-around;
 }
 
+
 /* Le bleu : #3A83FF 
    Le orange : #F58900 */
+
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Le bleu : ##3A83FF */
+
 
 
 html, body {
@@ -289,6 +298,18 @@ em {
     margin: 0 20px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.docteur h3 {
+    font-size: 250%;
+    color: #fff;
+}
+
+.docteur h4 {
+    width: 75%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
 }
 
 .docteur:first-child {
