@@ -1,9 +1,11 @@
 <?php //fix bug header ?>
+
 <?php
 /*
 Template Name: pagetype
 */
 ?>
+
 
 <!-- insertion du header -->
 <?php get_header(); ?>
@@ -21,3 +23,4 @@ Template Name: pagetype
 
 <!-- insertion du footer -->
 <?php get_footer(); ?>
+

@@ -162,7 +162,9 @@ h2 {
 
 .sidebar h2 {
     font-size: 1.8em;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .sidebar ul {
@@ -212,7 +214,7 @@ h2 {
 }
 
 #content h2 {
-    padding: 15px;
+    padding-top: 10px;
     font-size: 1.5em;
 }
 
