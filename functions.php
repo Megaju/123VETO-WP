@@ -1,8 +1,6 @@
 <?php add_theme_support( 'post-thumbnails' ); ?>
 
 
-<<<<<<< HEAD
-=======
 <?php
 /**
  * Fonction pour ajouter les Font Awesome à WordPress
@@ -18,4 +16,3 @@ add_action( 'wp_enqueue_scripts', 'add_font_awesome' );
 
  ?>
 
->>>>>>> f6177a12c57d2ae232ad253f41aa7f1b2c5288d3
