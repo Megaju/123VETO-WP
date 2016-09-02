@@ -1,13 +1,6 @@
 <?php get_header(); ?>
 
     <div id="page">
-
-        <!-- contenue du site -->
-        <div id="content">
-
-
-
-        </div>
         <section id="attente-bootstrap">
         <!-- aside -->
         <?php get_sidebar(); ?>
