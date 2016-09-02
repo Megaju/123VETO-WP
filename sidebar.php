@@ -1,11 +1,11 @@
 <?php 
     //ça en ligne 1 sinon ça plante.
 ?>
+<button id="priseRDV" type="submit">Prise de RDV</button>
 <div class="sidebar"> 
     <ul>
     <!-- calendar -->
         <li>
-            <button id="priseRDV" type="submit">Prise de RDV</button>
             <div class="aside-separator"></div>
         </li>
         

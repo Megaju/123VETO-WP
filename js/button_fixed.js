@@ -1,17 +1,19 @@
 $(document).ready(function () {
-	var button = $('#priseRDV');
-	var origOffsetY = button.offset().top;
+	var origOffsetY = $('#priseRDV').offset().top;
+
+
 
 	function scroll() {
 		if ($(window).scrollTop() >= origOffsetY) {
 			$('#priseRDV').css("position", "fixed");
 			$('#priseRDV').css("top", "0px");
-			$('#priseRDV').css("left", "15px");
-			$('#priseRDV').css("width", "20.1%");
+			$('#priseRDV').css("margin-top", "0");
 		}
 		else {
-			$('#priseRDV').css("position", "static");
-			$('#priseRDV').css("width", "100%");
+			$('#priseRDV').css("position", "absolute");
+			$('#priseRDV').css("top", "auto");
+			$('#priseRDV').css("margin-top", "15px");
+
 		}
 	}
 	document.onscroll = scroll;

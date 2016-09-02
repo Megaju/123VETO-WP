@@ -195,12 +195,20 @@ h2 {
 }
 
 #priseRDV {
-    width: 100%;
+    width: 17.5%;
     height: 60px;
     border-radius: 0%;
-    font-size: 2em;
+    font-size: 20px;
+    left: 15px;
     text-transform: uppercase;
     margin-top: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #3A83FF;
+    border: 0px solid white;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    position: absolute;
 }
 
 .sidebar button:hover {
