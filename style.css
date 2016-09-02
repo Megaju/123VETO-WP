@@ -9,8 +9,9 @@ Author: Solène, Lise et Julien
 /*========== GENERAL =========*/
 /*============================*/
 
-#attente-bootstrap {
-    display: inline-flex;
+.flexbox{
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Le bleu : ##3A83FF */
@@ -258,22 +259,17 @@ em {
     opacity: 0.8;
 }
 
-.equipe {
-    height: 500px;
-    width: 85%;
-    margin-top: 50px;
-    display: inline-flex;
-}
-
 /* --------- THE TEAM --------- */
 
 .docteur {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    margin: 5px;
+    height: 500px;
+    margin: 0 20px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.docteur:first-child {
+    margin-right: 0;
 }
 
 #docteur1 {
@@ -285,10 +281,16 @@ em {
 }
 
 .docteur-present p {
-    
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    cursor: default;
 }
 
 .docteur .docteur-present {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     opacity: 0;
     transition: .3s;
