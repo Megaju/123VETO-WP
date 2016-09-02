@@ -265,24 +265,39 @@ em {
     display: inline-flex;
 }
 
-.docteur1 {
+/* --------- THE TEAM --------- */
+
+.docteur {
+    position: relative;
     width: 50%;
     height: 100%;
-    border: 1px solid #F58900;
-    background-image: url(img/dr-aurelie.jpg);
+    margin: 5px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 5px;
 }
 
-.docteur2 {
-    width: 50%;
-    height: 100%;
-    border: 1px solid #F58900;
+#docteur1 {
+    background-image: url(img/dr-aurelie.jpg);
+}
+
+#docteur2 {
     background-image: url(img/dr-eric.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
+}
+
+.docteur-present p {
+    
+}
+
+.docteur .docteur-present {
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.docteur:hover .docteur-present {
+    background-color: #3A83FF;
+    opacity: .9;
+    transition: .3s;
 }
 
 /*============================*/
