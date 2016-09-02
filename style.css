@@ -9,8 +9,9 @@ Author: Solène, Lise et Julien
 /*========== GENERAL =========*/
 /*============================*/
 
-#attente-bootstrap {
-    display: inline-flex;
+.flexbox{
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Le bleu : ##3A83FF */
@@ -76,7 +77,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(10, 10, 10, 0.7);
 }
 
 #header h1 a {
@@ -162,7 +163,9 @@ h2 {
 
 .sidebar h2 {
     font-size: 1.8em;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .sidebar ul {
@@ -212,7 +215,7 @@ h2 {
 }
 
 #content h2 {
-    padding: 15px;
+    padding-top: 10px;
     font-size: 1.5em;
 }
 
@@ -256,31 +259,47 @@ em {
     opacity: 0.8;
 }
 
-.equipe {
+/* --------- THE TEAM --------- */
+
+.docteur {
     height: 500px;
-    width: 85%;
-    margin-top: 50px;
-    display: inline-flex;
+    margin: 0 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.docteur1 {
-    width: 50%;
-    height: 100%;
-    border: 1px solid #F58900;
+.docteur:first-child {
+    margin-right: 0;
+}
+
+#docteur1 {
     background-image: url(img/dr-aurelie.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
 }
 
-.docteur2 {
-    width: 50%;
-    height: 100%;
-    border: 1px solid #F58900;
+#docteur2 {
     background-image: url(img/dr-eric.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
+}
+
+.docteur-present p {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    cursor: default;
+}
+
+.docteur .docteur-present {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.docteur:hover .docteur-present {
+    background-color: #3A83FF;
+    opacity: .9;
+    transition: .3s;
 }
 
 /*============================*/
