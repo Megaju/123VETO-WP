@@ -10,6 +10,8 @@ Template Name: pagetype
 <!-- pour insérer la sidebar -->
 <?php get_sidebar(); ?>
 
+<i class="fa fa-camera-retro fa-5x" style="color:blue"></i>
+
 
 
 

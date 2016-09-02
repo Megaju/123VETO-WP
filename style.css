@@ -13,7 +13,8 @@ Author: Solène, Lise et Julien
     display: inline-flex;
 }
 
-/* Le bleu : ##3A83FF */
+/* Le bleu : #3A83FF 
+   Le orange : #F58900 */
 
 
 html, body {
@@ -54,6 +55,10 @@ h2 {
     background-color: #3A83FF;
 }
 
+i {
+    color: #F58900;
+}
+
 /*============================*/
 /*========== HEADER ==========*/
 /*============================*/
@@ -65,7 +70,7 @@ h2 {
     height: 300px;
     margin: 0;
     padding: 0;
-    background-color: #143143;
+    background-color: #3A83FF;
     background-image: url(img/facade.JPG);
     background-size: cover;
     background-position: center center;
