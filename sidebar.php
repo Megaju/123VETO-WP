@@ -5,7 +5,7 @@
     <ul>
     <!-- calendar -->
         <li>
-            <button id="priseRDV" type="submit">Prise de RDV</button>
+       <button id="priseRDV" type="submit">Prise de RDV</button>
             <div class="aside-separator"></div>
         </li>
         
