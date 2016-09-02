@@ -53,11 +53,5 @@ Template Name: pagetype
 </section>
 </div>
 
-</div>
-
-
-
-
-
 <!-- pour insérer le footer -->
 <?php get_footer(); ?>
