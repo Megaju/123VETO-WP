@@ -4,14 +4,9 @@
 <div class="sidebar"> 
     <ul>
     <!-- calendar -->
-        <li id="calendar">
-            <h2>Prise de rendez-vous</h2>
-            
-            <?php get_calendar(); ?>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo, eaque. Veritatis quisquam, officia. </p>
-            <button type="submit">Prendre RDV</button>
+        <li>
+            <button id="priseRDV" type="submit">Prise de RDV</button>
             <div class="aside-separator"></div>
-            
         </li>
         
         <li id="actu">
@@ -27,7 +22,7 @@
                     <div class= "post_content">
                         <?php the_post_thumbnail(array(250,250));?>
                         <p class="postmetadata">
-                            <?php the_time('j F Y') ?> par <?php the_author() ?> || <?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires'); ?>
+                            <?php the_time('j F Y') ?> par <?php the_author() ?>
                         </p>
                     </div> 
                 </div>

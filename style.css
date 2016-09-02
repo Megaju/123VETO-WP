@@ -57,7 +57,7 @@ h2 {
 
 .menu {
     height: 50px;
-    border-bottom: 1px solid #143143;
+    border-bottom: 1px solid #3A83FF;
 }
 
 .menu ul {
@@ -76,13 +76,13 @@ h2 {
     height: 50px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #143143;
+    color: #3A83FF;
     text-decoration: none;
     transition: .2s;
 }
 
 .menu ul li:first-child a, .menu ul li:hover a {
-    background-color: #143143;
+    background-color: #3A83FF;
     color: #fff;
     transition: .2s;
 }
@@ -94,13 +94,13 @@ h2 {
 .sidebar {
     background-image: url(img/aside-fond.png);
     width: 25%;
-    color: #456;
+    color: #3A83FF;
     text-transform: capitalize;
     font-size: 0.8em;
 }
 
 .sidebar h2 {
-    font-size: 1.7em;
+    font-size: 1.8em;
     padding-bottom: 25px;
 }
 
@@ -122,14 +122,22 @@ h2 {
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: blue;
-    border-radius: 5px;
     border: 0px solid white;
     width: 70%;
     height: 35px;
-    background-color: #143143;
+    background-color: #3A83FF;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
+}
+
+#priseRDV {
+    width: 100%;
+    height: 60px;
+    border-radius: 0%;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: 0px;
 }
 
 .sidebar button:hover {
@@ -137,8 +145,8 @@ h2 {
 }
 
 #content {
-    background-color: rgba(0, 0, 0, 0.1);
     border: 1px solid #abc;
+    background-color: rgba(100, 200, 155, 0.1);
     padding: 10px;
 }
 
@@ -148,8 +156,8 @@ h2 {
 }
 
 #content a {
-    color: #143143;
-    font-size: 0.7em;
+    color: #3A83FF;
+    font-size: 0.8em;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -159,11 +167,23 @@ em {
     font-weight: 600;
 }
 
-#wp-calendar {
-    width: 70%;
-    height: 200px;
-    margin: auto;
-} 
+
+/*============================*/
+/*========== EQUIPE ==========*/
+/*============================*/
+
+#equipe h2 {
+    width: 75%;
+    color: white;
+    background-color: #143143;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
 
 /*============================*/
 /*========== FOOTER ==========*/
@@ -171,7 +191,7 @@ em {
 
 #footer {
     font-size: 0.8em;
-    background: #143143;
+    background: #3A83FF;
     color: white;
     width: 100%;
 }
