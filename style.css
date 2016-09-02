@@ -43,12 +43,57 @@ h2 {
 /*============================*/
 
 #header {
-    height: 250px;
-    /* background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    background-color: #143143;
     background-image: url(img/facade.JPG);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.header-corp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#header h2 {
+    border-bottom: 2px solid #fff;
+    color: #eee;
+    margin: 0 0 20px 0;
+    padding: 0 0 15px 0px;
+    font-size: 18px;
+}
+
+#header p.description {
+    width: 700px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.logo-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 27px 0 0;
+    background-image: url(img/logo-veto.svg);
+    background-size: 220%;
+    background-position: center center;
+}
+
+.info {
+    
 }
 
 /*============================*/

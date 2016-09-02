@@ -34,13 +34,18 @@
     <body>
 
 
-       <!-- menu de navigation -->
-            <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
+        <!-- menu de navigation -->
+        <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
        
         <div id="header">
-            
-
-                <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-                <h2><?php bloginfo('description'); ?></h2>
-
+            <div class="header-corp">
+                <!-- logo -->
+                <div class="logo-img img-responsive"></div>
+                <!-- infos -->
+                <div class="info">
+                    <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+                    <h2>Dr Eric Wintz - Dr Aurélie Mayoussier</h2>
+                    <p class="description"><?php bloginfo('description'); ?></p>
+                </div>
+            </div>
         </div>
