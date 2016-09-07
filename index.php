@@ -78,6 +78,12 @@
                             <h2>Titre associé</h2>
                             <p>Écrire ici une courte description, une phrase d'accroche.</p>
                         </div>
+                        
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
 
                 </div>
