@@ -223,7 +223,7 @@ i {
 }
 
 #priseRDV {
-    width: 22.3%;
+    width: 20%;
     height: 60px;
     border-radius: 0%;
     font-size: 20px;
@@ -534,8 +534,12 @@ em {
     justify-content: space-around;
     height: 90vh;
 }
-#type1 {
+.type1 {
     margin-left: 2vh;
+    height: 40px;
+    padding: 5px 10px;
+    border: 01px solid #777;
+    background-color: #eee;
 }
 #form1 {
     border-right: 1px solid lightgray;
@@ -551,6 +555,27 @@ em {
     width: 33%;
 }
 
+input, textarea {
+    height: 40px;
+    padding: 5px 10px;
+    border: 01px solid #777;
+    background-color: #eee;
+}
+
+textarea {
+    height: 22vh;
+    width: 52vh;
+}
+.EnvoieForm {
+    width: 40%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    color: #F58900;
+    cursor: pointer;
+}
+
 /*============================*/
 /*========== FOOTER ==========*/
 /*============================*/
@@ -560,6 +585,7 @@ em {
     background: #3A83FF;
     color: white;
     width: 100%;
+    margin-bottom: -2vh;
 }
 
 #footer p, #footer a {

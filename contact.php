@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 
 <!--Formulaire de contact-->
-	<h2 class="TitreForm">NOUS CONTACTER PAR MAIL</h2>
+	<h2 class="TitreForm">NOUS CONTACTER PAR MAIL</h2></br>
 
 	<div class="contact">
 		
@@ -24,21 +24,21 @@
 					</br></br>
 
 					<label id="typan">Vétérinaires :</label>
-					<select name="Type" class="type" id="type1">
+					<select name="Type" class="type1">
 						<option value="veto1">Dr Aurélie Mayoussier</option>
 						<option value="veto2">Dr Eric Wintz</option>
 					</select>
 					</br></br>
 
 					<label id="typan">Type d'animal :</label>
-					<select name="Type" class="type">
+					<select name="Type" class="type1">
 						<option value="Chien">Chien</option>
 						<option value="Chat">Chat</option>
 						<option value="Autre">Autre</option>
 					</select>
 					</br></br>
 					
-					<select name="Probleme" class="probleme">
+					<select name="Probleme" class="type1">
 						<option value="Consultation">Consultation</option> 
 						<option value="Vaccination">Vaccination</option>
 						<option value="Sterilisation">Sterilisation</option>    
@@ -48,7 +48,7 @@
 					</select>
 					</br></br>
 
-					<textarea name="AVIS" rows="10" cols="50"></textarea>
+					<textarea name="AVIS"></textarea>
 					</br></br>
 					<button type="button" class="btn btn-default EnvoieForm">ENVOYER</button>
 			</form>
