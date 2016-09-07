@@ -1,12 +1,8 @@
 <?php /*
-<<<<<<< HEAD
+
     Template Name: RDV
 */ ?>
 
-=======
-Template name: RDV
-*/ ?>
->>>>>>> 6a38b06f8be65e5ca45fe9a73c787d8c73748efc
 <?php get_header(); ?>
 
 
@@ -55,9 +51,5 @@ Template name: RDV
           frameborder="0" scrolling="no"></iframe>
       </div>
   </section>
-<<<<<<< HEAD
-  </div>
-=======
-  
 
->>>>>>> 6a38b06f8be65e5ca45fe9a73c787d8c73748efc
+  <?php get_footer(); ?>
