@@ -7,6 +7,6 @@
         <p> Copyright &#169;
             <?php print(date(Y)); ?>
                 <?php bloginfo('name'); ?>
-                    <br /> Site propulsé par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par <a href="#">Julien, Lise, Solène</a>
+                    <br /> Site défenestré par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par <a href="#">La Team 123 V-to</a>
         </p>
     </div>

@@ -1,11 +1,17 @@
 <?php /*
+<<<<<<< HEAD
     Template Name: RDV
 */ ?>
 
+=======
+Template name: RDV
+*/ ?>
+>>>>>>> 6a38b06f8be65e5ca45fe9a73c787d8c73748efc
 <?php get_header(); ?>
 
-<section id="rdv" class="row col-lg-12">
-    <div class="col-lg-6 col-xs-12">
+
+<section id="rdv">
+    <div class="formulaire">
 
       <form action="mon-formulaire" method="post">
         <fieldset>
@@ -33,6 +39,7 @@
 		          </textarea>
             </div>
         </fieldset><br />
+        
         <div id="bouton">
           <input type="submit" value="Envoyer">
           <input type="reset" value="Effacer">
@@ -40,7 +47,7 @@
       </form>
       </div>
 
-      <div class="col-lg-6 col-xs-12">
+      <div class="agenda">
 
         <legend>
           <h1>Agenda</h1></legend>
@@ -48,4 +55,9 @@
           frameborder="0" scrolling="no"></iframe>
       </div>
   </section>
+<<<<<<< HEAD
   </div>
+=======
+  
+
+>>>>>>> 6a38b06f8be65e5ca45fe9a73c787d8c73748efc
