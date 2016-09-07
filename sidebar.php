@@ -1,7 +1,7 @@
 <?php 
     //ça en ligne 1 sinon ça plante.
 ?>
-<button id="priseRDV" type="submit">Prise de RDV</button>
+<a href="http://localhost/wordpress/index.php/prise-de-rdv/"><button id="priseRDV">Prise de RDV</button></a>
 <div class="sidebar"> 
     <ul>
     <!-- calendar -->
@@ -28,7 +28,9 @@
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
+
                 <button type="submit">News Letters</button>
+
             </div>
         
             <div class="aside-separator"></div>
