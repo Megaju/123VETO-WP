@@ -14,17 +14,16 @@ Author: Solène, Lise et Julien
     justify-content: space-around;
 }
 
-<<<<<<< HEAD
 .flexwrap {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Le bleu : ##3A83FF */
-=======
+
+
 /* Le bleu : #3A83FF 
    Le orange : #F58900 */
->>>>>>> f6177a12c57d2ae232ad253f41aa7f1b2c5288d3
+
 
 
 html, body {
@@ -332,17 +331,25 @@ em {
 /*========= SAVOIR-FAIRE =====*/
 /*============================*/
 
+#bloc-savoirfaire {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .savoirfaire {
     height: 250px;
     width: 85%;
-    margin-top: 50px;
-    display: inline-flex;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .categorie {
     width: 50%;
     height: 300px;
-    margin: 5px;
+    margin: 0 10px;
+    padding: 10px;
     border: 1px solid #F58900;
 }
 

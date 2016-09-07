@@ -13,6 +13,8 @@ wp_enqueue_style( 'font-awesome', get_template_directory_uri().'youropotionalfol
 }
 add_action( 'wp_enqueue_scripts', 'add_font_awesome' );
 
-
+register_nav_menus( array(
+        'Top' => 'Navigation principale',
+    ) );
  ?>
 
