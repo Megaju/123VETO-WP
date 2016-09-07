@@ -1,7 +1,10 @@
-<?php //prise de rdv ?>
+<?php /*
+Template name: RDV
+*/ ?>
+<?php get_header(); ?>
 
-<section id="rdv" class="row col-lg-12">
-    <div class="col-lg-6 col-xs-12">
+<section id="rdv">
+    <div class="formulaire">
 
       <form action="mon-formulaire" method="post">
         <fieldset>
@@ -29,6 +32,7 @@
 		          </textarea>
             </div>
         </fieldset><br />
+        
         <div id="bouton">
           <input type="submit" value="Envoyer">
           <input type="reset" value="Effacer">
@@ -36,7 +40,7 @@
       </form>
       </div>
 
-      <div class="col-lg-6 col-xs-12">
+      <div class="agenda">
 
         <legend>
           <h1>Agenda</h1></legend>
@@ -44,4 +48,3 @@
           frameborder="0" scrolling="no"></iframe>
       </div>
   </section>
-  </div>

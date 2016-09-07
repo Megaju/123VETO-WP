@@ -2,7 +2,7 @@
 
     <?php
 /*
-Template Name: pagetype
+Template Name: prestations
 */
 ?>
 
