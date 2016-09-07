@@ -2,6 +2,8 @@
     Template Name: RDV
 */ ?>
 
+<?php get_header(); ?>
+
 <section id="rdv" class="row col-lg-12">
     <div class="col-lg-6 col-xs-12">
 
