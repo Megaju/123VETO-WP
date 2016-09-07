@@ -6,7 +6,7 @@
             <?php get_sidebar(); ?>
                 <div>
                     <div id="bloc-team">
-                        <h2>Notre équipe à votre service</h2>
+                        <h2>L'équipe à votre service</h2>
 
                         <div class="index-separator"></div>
 
@@ -70,7 +70,7 @@
                     </div>
 
                     <div id="bloc-carousel">
-                        <h2>Notre savoir-faire</h2>
+                        <h2>Découverte de la clinique</h2>
                         <div class="index-separator"></div>
 
                         <div class="carousel">

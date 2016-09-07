@@ -448,10 +448,9 @@ em {
 }
 
 .carousel:hover .carousel-img {
-    width: 105%;
+    width: 102%;
     cursor: pointer;
 }
-
 
 .carousel h2 {
     position: absolute;
