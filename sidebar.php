@@ -1,11 +1,11 @@
 <?php 
     //ça en ligne 1 sinon ça plante.
 ?>
+<a href="http://localhost/wordpress/index.php/prise-de-rdv/"><button id="priseRDV">Prise de RDV</button></a>
 <div class="sidebar"> 
     <ul>
     <!-- calendar -->
         <li>
-            <button id="priseRDV" type="submit">Prise de RDV</button>
             <div class="aside-separator"></div>
         </li>
         
@@ -28,7 +28,9 @@
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
-                <button type="submit">Page des News Letters</button>
+
+                <button type="submit">News Letters</button>
+
             </div>
         
             <div class="aside-separator"></div>
@@ -39,7 +41,7 @@
         
                <p><strong>123 Véto clinique vétérinaire</strong> vous accueille du lundi au vendredi de <i class="text-info">9h à 12h</i> et de <i class="text-info">14h à 19h</i> et le samedi de <i class="text-info">9h à 12h</i>. <a href="contact.html"><i class="fa fa-1x fa-map"></i></a></p>
                 <p><strong>Les urgences</strong> sont assurées <i class="text-info">24h/24</i> sur simple appel téléphonique.</p>
-                <p>tél : <em>02 99 55 55 55 - 06 55 55 55 55</em></p>
+                <p>tél : <em>02 99 55 55 55 - 06 55 55 55 55 </em></p>
                 </p>
 
                 <p>

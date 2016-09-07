@@ -4,7 +4,6 @@ Template name: RDV
 
 <?php get_header(); ?>
 
-
 <section id="rdv">
     <div class="formulaire">
 
@@ -49,6 +48,7 @@ Template name: RDV
         <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=500&amp;wkst=2&amp;hl=fr&amp;bgcolor=%23FFFFFF&amp;src=ngnn1lug1h2vh1inja9180alqk%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FParis"
           frameborder="0" scrolling="no"></iframe>
       </div>
+
   </section>
   
 
