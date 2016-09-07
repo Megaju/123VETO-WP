@@ -349,18 +349,10 @@ em {
 /*========= CONTACT =========*/
 /*============================*/
 
-.localisation {
+.contact {
     display: flex;
-    flex-flow: row;
-    float: right;
-}
-.adress_cont {
-    display: flex;
-    align-content: flex-start;
-}
-iframe {
-   display: flex;
-   align-content: flex-end;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 /*============================*/
