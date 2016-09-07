@@ -34,30 +34,27 @@
             <div id="bloc-savoirfaire">
                 <h2>Notre savoir-faire</h2>
                 <div class="index-separator"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur dolorum ullam quisquam ut qui velit molestias inventore esse asperiores modi possimus.</p>
+                    <div class="savoirfaire">
+                        <div class="categorie">
+                            <div class="simulation-icone"></div>
+                            <p>Eclate toi avec les fonts icones =D</p>
+                        </div>
 
-                <div class="savoirfaire">
-                  
-                    <div class="categorie">
-                        <div class="simulation-icone"></div>
-                        <p>Eclate toi avec les fonts icones =D</p>
-                    </div>
+                        <div class="categorie">
+                           <div class="simulation-icone"></div>
+                            <p>Ho oui je m'éclate avec les fonts icones. X)</p>
+                        </div>
 
-                    <div class="categorie">
-                       <div class="simulation-icone"></div>
-                        <p>Eclate toi avec les fonts icones =D</p>
+                        <div class="categorie">
+                           <div class="simulation-icone"></div>
+                            <p>Eclate toi avec les fonts icones =D</p>
+                        </div>
+
+                        <div class="categorie">
+                           <div class="simulation-icone"></div>
+                            <p>Ho oui je m'éclate avec les fonts icones. X)</p>
+                        </div>
                     </div>
-                    
-                    <div class="categorie">
-                       <div class="simulation-icone"></div>
-                        <p>Eclate toi avec les fonts icones =D</p>
-                    </div>
-                    
-                    <div class="categorie">
-                       <div class="simulation-icone"></div>
-                        <p>Eclate toi avec les fonts icones =D</p>
-                    </div>
-                </div>
             </div>
             
             <div id="bloc-carousel">

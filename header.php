@@ -29,6 +29,8 @@
                     <!-- typos -->
                     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
                     <link rel="stylesheet" href="css/font-awesome.css" />
+                    <link rel="stylesheet" href="youropotionalfolder/font-awesome/css/font-awesome.min.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                     
     </head>
 
