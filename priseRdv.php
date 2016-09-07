@@ -1,6 +1,7 @@
 <?php /*
 Template name: RDV
 */ ?>
+
 <?php get_header(); ?>
 
 
@@ -51,3 +52,4 @@ Template name: RDV
   </section>
   
 
+  <?php get_footer(); ?>
