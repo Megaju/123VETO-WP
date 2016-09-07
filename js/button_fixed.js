@@ -7,11 +7,12 @@ $(document).ready(function () {
 		if ($(window).scrollTop() >= origOffsetY) {
 			$('#priseRDV').css("position", "fixed");
 			$('#priseRDV').css("top", "0px");
-			$('#priseRDV').css("width", "22.3%");
+			$('#priseRDV').css("margin-top", "0");
 		}
 		else {
-			$('#priseRDV').css("position", "static");
-			$('#priseRDV').css("width", "100%");
+			$('#priseRDV').css("position", "absolute");
+			$('#priseRDV').css("top", "auto");
+			$('#priseRDV').css("margin-top", "0px");
 		}
 	}
 	document.onscroll = scroll;
