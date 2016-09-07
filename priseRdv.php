@@ -1,7 +1,7 @@
 <?php /*
 
     Template Name: RDV
-    
+
 */ ?>
 
 <?php get_header(); ?>
@@ -12,29 +12,31 @@
 
       <form action="mon-formulaire" method="post">
         <fieldset>
-          <legend>
-            <h1>Rendez-vous</h1></legend>
+          <legend><h1>Rendez-vous</h1></legend>
           <div>
-            <label for="Nom"> Nom : </label><input type="text" id="Nom" /><br />
-            <label for="Prénom"> Prénom :</label><input type="text" id="Prénom" /><br />
-            <label for="Tél"> Tél : </label><input type="Tél" id="Tél" /><br />
+              <label for="Nom"> Nom : </label>
+              <input type="text" id="Nom" /><br />
+              <label for="Prénom"> Prénom :</label>
+              <input type="text" id="Prenom" /><br />
+              <label for="Tél"> Tél : </label>
+              <input type="Tél" id="Tel" /><br />
             <div>
-              <label for="Motif"> Motif : </label>
-              <select>
-        <option>Medecine</option>
-        <option>Chirurgie</option>
-        <option>Vaccin</option>
-        <option>Autres</option>
-      </select>
+                <label for="Motif"> Motif : </label>
+                  <select>
+                      <option>Medecine</option>
+                      <option>Chirurgie</option>
+                      <option>Vaccin</option>
+                      <option>Autres</option>
+                  </select>
             </div>
-            <div>
-              <label for="Nomanimal"> Nom de l'animal : </label><input type="text" id="Nomanimal" />
-            </div><br /><br />
-            <div id="commentaire">
-              <label for="sujet"> Commentaires :</label><br />
-              <textarea id="sujet" rows="10" cols="40">
-		          </textarea>
-            </div>
+                <div>
+                  <label for="Nomanimal"> Nom de l'animal : </label><input type="text" id="Nomanimal" />
+                </div>
+                    <div id="commentaire">
+                      <label for="sujet"> Commentaires :</label>
+                      <textarea id="sujet" rows="10" cols="60">
+        		          </textarea>
+                    </div>
         </fieldset><br />
         
         <div id="bouton">
