@@ -346,6 +346,34 @@ em {
 }
 
 /*============================*/
+/*========= CONTACT =========*/
+/*============================*/
+
+.contact {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+}
+#type1 {
+    margin-left: 2vh;
+}
+#form1 {
+    border-right: 1px solid lightgray;
+}
+.formulaire {
+    width: 45%;
+}
+#typan {
+    font-size: 15px;
+    margin-right: 4vh;
+}
+.localisation {
+    width: 33%;
+}
+
+/*============================*/
 /*========== FOOTER ==========*/
 /*============================*/
 
