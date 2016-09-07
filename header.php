@@ -38,7 +38,7 @@
 
 
         <!-- menu de navigation -->
-        <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
+        <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
        
         <div id="header">
             <div class="header-corp">

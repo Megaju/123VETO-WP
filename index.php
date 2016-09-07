@@ -6,7 +6,7 @@
             <?php get_sidebar(); ?>
                 <div>
                     <div id="bloc-team">
-                        <h2>Notre équipe à votre service</h2>
+                        <h2>L'équipe à votre service</h2>
 
                         <div class="index-separator"></div>
 
@@ -40,7 +40,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                             </div>
-                            
+
                             <div class="bloc-small-savoirfaire">
                                 <div class="fa-sf">
                                     <i class="fa fa-paw fa-4x"></i>
@@ -48,7 +48,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                             </div>
-                            
+
                             <div class="bloc-small-savoirfaire">
                                 <div class="fa-sf">
                                     <i class="fa fa-paw fa-4x"></i>
@@ -56,7 +56,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                             </div>
-                            
+
                             <div class="bloc-small-savoirfaire">
                                 <div class="fa-sf">
                                     <i class="fa fa-paw fa-4x"></i>
@@ -70,17 +70,20 @@
                     </div>
 
                     <div id="bloc-carousel">
-                        <h2>Notre savoir-faire</h2>
+                        <h2>Découverte de la clinique</h2>
                         <div class="index-separator"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur dolorum ullam quisquam ut qui velit molestias inventore esse asperiores modi possimus.</p>
 
-                        <div>
-
-                            <div class="caroussel">
-                                <p>Amuse toi bien pour le caroussel sans bootstrap :D :D </p>
-                            </div>
-
+                        <div class="carousel">
+                            <div class="carousel-img"></div>
+                            <h2>Titre associé</h2>
+                            <p>Écrire ici une courte description, une phrase d'accroche.</p>
                         </div>
+                        
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
 
                 </div>
