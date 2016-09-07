@@ -7,7 +7,7 @@ $(document).ready(function () {
 		if ($(window).scrollTop() >= origOffsetY) {
 			$('#priseRDV').css("position", "fixed");
 			$('#priseRDV').css("top", "0px");
-			$('#priseRDV').css("width", "22.2%");
+			$('#priseRDV').css("width", "22.3%");
 		}
 		else {
 			$('#priseRDV').css("position", "static");
