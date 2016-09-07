@@ -51,8 +51,36 @@ Template Name: prestations
                                 </div>
                             </div>
                         </section>
+                        
+                        <section>
+                            <div class="uniform-article">
+                           <?php query_posts('category_name=consultation'); ?>
+                            <?php if(have_posts()) : ?>
+                            <?php while(have_posts()) : the_post();?>
+
+                            <!-- affichage des articles -->
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>	
+                            <div class="index-separator"></div>
+                            <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                <div class= "post_content alignement_article">
+                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                    </div>
+                                   
+                                   <div class="contenu_article"><?php the_content(); ?></div>
+                                </div> 
+                            </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                   </div>
+                   <div class="uniform-article"></div>
+                   <div class="uniform-article"></div>
+                   <div class="uniform-article"></div>
+                   <div class="uniform-article"></div>
+                   <div class="uniform-article"></div>
+                        </section>
                     </div>
             </div>
+            
 
             <!-- pour insérer le footer -->
             <?php get_footer(); ?>
