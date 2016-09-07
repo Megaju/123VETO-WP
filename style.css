@@ -225,8 +225,10 @@ i {
     position: absolute;
 }
 
-.sidebar button:hover {
+.sidebar button:hover,
+#priseRDV:hover {
     background-color: #F58900;
+		transition: .2s;
 }
 
 #content {
