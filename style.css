@@ -310,14 +310,16 @@ em {
 /* --------- THE TEAM --------- */
 
 .docteur {
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin: 0 20px;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: default;
 }
 
 .docteur h3 {
-    font-size: 250%;
+    font-size: 2em;
     color: #fff;
 }
 
