@@ -144,22 +144,22 @@ i {
 /*======== NAVIGATION ========*/
 /*============================*/
 
-.menu {
+.menu-top-container {
     height: 50px;
     border-bottom: 1px solid #3A83FF;
 }
 
-.menu ul {
+.menu-top-container ul {
     text-align: center;
     list-style: none;
     margin: 0;
 }
 
-.menu ul li {
+.menu-top-container ul li {
     display: inline;
 }
 
-.menu ul li a {
+.menu-top-container ul li a {
     display: inline-block;
     padding: 0 25px;
     height: 50px;
@@ -170,9 +170,9 @@ i {
     transition: .2s;
 }
 
-.menu ul li:first-child a, .menu ul li:hover a {
+.menu-top-container ul li:hover a, .current_page_item a {
     background-color: #3A83FF;
-    color: #fff;
+    color: #fff!important;
     transition: .2s;
 }
 
@@ -209,6 +209,11 @@ i {
     margin: 20px auto;
 }
 
+.sidebar .post_content img {
+    width: 100%;
+    height: auto;
+}
+
 .sidebar button {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -230,7 +235,7 @@ i {
     left: 0px;
     text-transform: uppercase;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     background-color: #3A83FF;
     border: 0px solid white;
     font-family: "Open Sans", sans-serif;
@@ -453,13 +458,18 @@ em {
 }
 
 .carousel h2 {
+    width: 25%;
     position: absolute;
     top: 0;
-    left: 25%;
-    right: 25%;
-    margin: 0;
+    left: 0;
+    margin: 30px  0 0 0;
+    padding: 10px 50px 10px 10px;
+    color: #fff;
     font-size: 2em;
     font-weight: 700;
+    background-color: #3A83FF;
+    box-shadow: 0 0 15px #111;
+    
 }
 
 .carousel p {
@@ -594,8 +604,8 @@ textarea {
     text-align: center;
     text-decoration: none;
     padding-top: 8px;
-    padding-bottom: 8px;
-    
+		padding-bottom: 8px;
+		margin-bottom: 0;
 }
 
 #footer a:hover {
