@@ -22,7 +22,7 @@ Template Name: prestations
                             <div class="icone-generique">
                                 <div class="center-generique">
                                     <i class="fa fa-stethoscope fa-3x"></i>
-                                    <button class="bouton-generique" onclick="affiche_presta()">Consul.</button>
+                                    <button class="bouton-generique" onclick="affiche_presta('consultation')">Consul.</button>
                                 </div>
 
                                 <div class="center-generique">
