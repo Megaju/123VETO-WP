@@ -453,13 +453,18 @@ em {
 }
 
 .carousel h2 {
+    width: 25%;
     position: absolute;
     top: 0;
-    left: 25%;
-    right: 25%;
-    margin: 0;
+    left: 0;
+    margin: 30px  0 0 0;
+    padding: 10px 50px 10px 10px;
+    color: #fff;
     font-size: 2em;
     font-weight: 700;
+    background-color: #3A83FF;
+    box-shadow: 0 0 15px #111;
+    
 }
 
 .carousel p {
