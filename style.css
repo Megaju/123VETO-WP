@@ -388,6 +388,10 @@ em {
     font-size: .8em;
 }
 
+.bloc-small-savoirfaire a:hover, .bloc-small-savoirfaire a:hover i {
+    color: #F58900;
+}
+
 .fa-sf {
     display: flex;
     align-items: center;
@@ -413,7 +417,7 @@ em {
 
 .fa-sf:hover i {
     color: #fff;
-    cursor: default;
+    cursor: pointer;
     transition: .4s;
 }
 
@@ -423,14 +427,53 @@ em {
 /*========= CLINIQUE =========*/
 /*============================*/
 
-.caroussel {
+.carousel {
     display: block;
+    position: relative;
     margin: 50px auto;
-    width: 85%;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
     height: 400px;
     background-image: url(img/caroussel/Espace_Vente.JPG);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    transition: .4s;
+}
+
+.carousel:hover .carousel-img {
+    width: 102%;
+    cursor: pointer;
+}
+
+.carousel h2 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.carousel p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    margin: 0 0 50px 40px;
+    padding: 0 20px 0 60px;
+    color: #eee;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 
