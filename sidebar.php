@@ -13,6 +13,7 @@
            
             <h2>news letters</h2>
             <div id="content">
+               <?php query_posts('category_name=news'); ?>
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : the_post();?>
 
