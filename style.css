@@ -14,8 +14,13 @@ Author: Solène, Lise et Julien
     justify-content: space-around;
 }
 
-/* Le bleu : ##3A83FF */
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+/* Le bleu : #3A83FF 
+   Le orange : #F58900 */
 
 html, body {
     font-family: 'Open Sans', sans-serif;
@@ -55,6 +60,28 @@ h2 {
     background-color: #3A83FF;
 }
 
+i {
+    color: #F58900;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.bouton-generique {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    color: #F58900;
+    cursor: pointer;
+}
+
+#section-generique {
+    display: inline-flex;
+    margin: 0 auto;
+}
+
 /*============================*/
 /*========== HEADER ==========*/
 /*============================*/
@@ -66,7 +93,7 @@ h2 {
     height: 300px;
     margin: 0;
     padding: 0;
-    background-color: #143143;
+    background-color: #3A83FF;
     background-image: url(img/facade.JPG);
     background-size: cover;
     background-position: center center;
@@ -164,7 +191,7 @@ h2 {
 .sidebar h2 {
     font-size: 1.8em;
     padding-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -179,7 +206,7 @@ h2 {
     width: 80%;
     height: 1px;
     background-color: #abc;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .sidebar button {
@@ -196,16 +223,25 @@ h2 {
 }
 
 #priseRDV {
-    width: 100%;
+    width: 22.3%;
     height: 60px;
     border-radius: 0%;
-    font-size: 2em;
+    font-size: 20px;
+    left: 0px;
     text-transform: uppercase;
     margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #3A83FF;
+    border: 0px solid white;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    position: absolute;
 }
 
-.sidebar button:hover {
+.sidebar button:hover,
+#priseRDV:hover {
     background-color: #F58900;
+		transition: .2s;
 }
 
 #content {
@@ -231,6 +267,13 @@ em {
     font-weight: 600;
 }
 
+.sidebar .fa-map {
+	padding: 3px;
+}
+.sidebar .fa-map:hover {
+	color: #4685F1;
+	transition: .2s;
+}
 
 /*============================*/
 /*========== EQUIPE ==========*/
@@ -238,7 +281,7 @@ em {
 
 #formeindex, h2 {
     margin-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     color: #3A83FF;
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -266,6 +309,18 @@ em {
     margin: 0 20px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.docteur h3 {
+    font-size: 250%;
+    color: #fff;
+}
+
+.docteur h4 {
+    width: 75%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
 }
 
 .docteur:first-child {
@@ -306,43 +361,166 @@ em {
 /*========= SAVOIR-FAIRE =====*/
 /*============================*/
 
-.savoirfaire {
-    height: 250px;
-    width: 85%;
-    margin-top: 50px;
-    display: inline-flex;
+#bloc-medium-savoirfaire {
+    margin-top: 100px;
+    display: flex;
+    height: 240px;
 }
 
-.categorie {
-    width: 50%;
-    height: 300px;
-    margin: 5px;
-    border: 1px solid #F58900;
+.bloc-small-savoirfaire {
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    background-color: whitesmoke;
 }
 
-.simulation-icone {
-    height: 75px;
-    width: 75px;
-    border-radius: 100%;
-    display: block;
-    margin: 15px auto;
-    background-color: #F58900;
-    margin-top: 70px;
+.bloc-small-savoirfaire p {
+    margin: 40px 0 0 0;
+    font-size: .8em;
+    overflow-y: auto;
+    color: #222;
 }
+
+.bloc-small-savoirfaire a, .bloc-small-savoirfaire a i {
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3A83FF;
+    font-size: .8em;
+}
+
+.bloc-small-savoirfaire a:hover, .bloc-small-savoirfaire a:hover i {
+    color: #F58900;
+}
+
+.fa-sf {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 0 auto;
+    text-align: center;
+    border-radius: 200px;
+    border: 2px solid #3A83FF;
+    background-color: #fff;
+    transition: .4s;
+}
+
+.fa-sf i {
+    color: #3A83FF;
+    transition: .4s;
+}
+
+.fa-sf:hover {
+    background-color: #3A83FF;
+    transition: .4s;
+}
+
+.fa-sf:hover i {
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+
 
 
 /*============================*/
 /*========= CLINIQUE =========*/
 /*============================*/
 
-.caroussel {
+.carousel {
     display: block;
+    position: relative;
     margin: 50px auto;
-    width: 85%;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
     height: 400px;
     background-image: url(img/caroussel/Espace_Vente.JPG);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    transition: .4s;
+}
+
+.carousel:hover .carousel-img {
+    width: 102%;
+    cursor: pointer;
+}
+
+.carousel h2 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.carousel p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    margin: 0 0 50px 40px;
+    padding: 0 20px 0 60px;
+    color: #eee;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#bloc-carousel ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+#bloc-carousel ul li {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border: 0;
+    border-radius: 60px;
+    background-color: #333;
+}
+
+#bloc-carousel ul li:hover {
+    background-color: #111;
+    cursor: pointer;
+}
+/*============================*/
+/*========= PAGE =============*/
+/*============================*/
+
+.center-generique {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+.icone-generique {
+    width: 85%;
+    text-align: center;
+    /*display: block;
+    margin: 0 auto;*/
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.placement {
+    display: flex;
 }
 
 /*============================*/
@@ -397,6 +575,4 @@ em {
 #footer a:hover {
     color: #F58900;
 }
-
-
 
