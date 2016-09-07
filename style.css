@@ -170,9 +170,9 @@ i {
     transition: .2s;
 }
 
-.menu-top-container ul li:first-child a, .menu-top-container ul li:hover a {
+.menu-top-container ul li:hover a, .current_page_item a {
     background-color: #3A83FF;
-    color: #fff;
+    color: #fff!important;
     transition: .2s;
 }
 
