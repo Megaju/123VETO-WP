@@ -1,6 +1,8 @@
 <?php 
     //ça en ligne 1 sinon ça plante.
 ?>
+
+
 <button id="priseRDV" type="submit">Prise de RDV</button>
 <div class="sidebar"> 
     <ul>
