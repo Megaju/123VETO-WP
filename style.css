@@ -209,6 +209,11 @@ i {
     margin: 20px auto;
 }
 
+.sidebar .post_content img {
+    width: 100%;
+    height: auto;
+}
+
 .sidebar button {
     margin-top: 15px;
     margin-bottom: 15px;
