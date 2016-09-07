@@ -476,7 +476,25 @@ em {
     background-color: rgba(0, 0, 0, .5);
 }
 
+#bloc-carousel ul {
+    list-style: none;
+    display: inline-flex;
+}
 
+#bloc-carousel ul li {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border: 0;
+    border-radius: 60px;
+    background-color: #333;
+}
+
+#bloc-carousel ul li:hover {
+    background-color: #111;
+    cursor: pointer;
+}
 /*============================*/
 /*========= PAGE =============*/
 /*============================*/
