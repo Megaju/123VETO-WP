@@ -354,23 +354,23 @@ em {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
+    height: 90vh;
 }
-
+#type1 {
+    margin-left: 2vh;
+}
+#form1 {
+    border-right: 1px solid lightgray;
+}
 .formulaire {
-    flex: 1;
-    padding: 10vh;
-    margin: 3vh 10vh;
+    width: 45%;
 }
 #typan {
     font-size: 15px;
     margin-right: 4vh;
 }
 .localisation {
-    flex: 2;
-    margin: 2vh 0vh 5vh -5vh;
-}
-#locapara {
-    padding-right: 12vh; 
+    width: 33%;
 }
 
 /*============================*/
