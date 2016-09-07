@@ -7,8 +7,9 @@
 <?php get_header(); ?>
 
 <!--Formulaire de contact-->
+	<h2 class="TitreForm">NOUS CONTACTER PAR MAIL</h2>
+
 	<div class="contact">
-		<h2 class="TitreForm">NOUS CONTACTER PAR MAIL</h2>
 		
 		<div class="formulaire">
 			<form action="formulaire de contact" method="post">
@@ -22,7 +23,7 @@
 					<input type="text" name="Animal" placeholder="Nom de l'animal"></input>
 					</br></br>
 
-
+					<p>Type d'animal :</p>
 					<select name="Type" class="type">
 						<option value="Chien">Chien</option>
 						<option value="Chat">Chat</option>
@@ -40,15 +41,13 @@
 					</select>
 					</br></br>
 
-
 					<textarea name="AVIS" rows="5" cols="50"></textarea>
 					<button type="button" class="btn btn-default EnvoieForm">ENVOYER</button>
 			</form>
 		</div>
 
 		<div class="localisation">
-			<h1>Localisation</h1>
-			<p class="adress_cont">
+			<p id="locapara">
 			32 rue du vélodrome à Pontchâteau (Loire-Atlantique)
 			Du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.
 			02 40 01 61 69

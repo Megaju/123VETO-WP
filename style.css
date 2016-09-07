@@ -352,7 +352,21 @@ em {
 .contact {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-around;
+}
+
+.formulaire {
+    flex: 1;
+    padding: 10vh;
+    margin: 3vh 10vh;
+}
+.localisation {
+    flex: 2;
+    margin: 2vh 0vh 5vh -5vh;
+}
+#locapara {
+    padding-right: 1vh; 
 }
 
 /*============================*/
