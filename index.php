@@ -75,14 +75,14 @@
 
                         <div class="carousel">
                             <div class="carousel-img"></div>
-                            <h2>Titre associé</h2>
-                            <p>Écrire ici une courte description, une phrase d'accroche.</p>
+                            <h2 id="carousel-titre">Titre associé</h2>
+                            <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
                         </div>
                         
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li id="carousel1"></li>
+                            <li id="carousel2"></li>
+                            <li id="carousel3"></li>
                         </ul>
                     </div>
 
