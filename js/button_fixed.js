@@ -12,7 +12,7 @@ $(document).ready(function () {
 		else {
 			$('#priseRDV').css("position", "absolute");
 			$('#priseRDV').css("top", "auto");
-
+			$('#priseRDV').css("margin-top", "0px");
 		}
 	}
 	document.onscroll = scroll;
