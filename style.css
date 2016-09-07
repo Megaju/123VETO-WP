@@ -547,12 +547,20 @@ em {
 
 .formulaire {
     width: 500px;
+    float: left;
 }
 
 .agenda {
-    width: 500px;
+    width: 500px !important;
+    float: left;
 }
 
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+}
 
 /*============================*/
 /*========== FOOTER ==========*/

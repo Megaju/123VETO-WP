@@ -10,7 +10,8 @@ Template name: RDV
       <form action="mon-formulaire" method="post">
         <fieldset>
           <legend>
-            <h1>Rendez-vous</h1></legend>
+            <h1>Rendez-vous</h1>
+          </legend>
           <div>
             <label for="Nom"> Nom : </label><input type="text" id="Nom" /><br />
             <label for="Prénom"> Prénom :</label><input type="text" id="Prénom" /><br />
@@ -28,7 +29,7 @@ Template name: RDV
               <label for="Nomanimal"> Nom de l'animal : </label><input type="text" id="Nomanimal" />
             </div><br /><br />
             <div id="commentaire">
-              <label for="sujet"> Commentaires :</label><br />
+              <label for="sujet"> Commentaires</label><br />
               <textarea id="sujet" rows="10" cols="40">
 		          </textarea>
             </div>
@@ -45,7 +46,7 @@ Template name: RDV
 
         <legend>
           <h1>Agenda</h1></legend>
-        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=500&amp;wkst=2&amp;hl=fr&amp;bgcolor=%23FFFFFF&amp;src=ngnn1lug1h2vh1inja9180alqk%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FParis"
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;width=600 height=200&amp;wkst=2&amp;hl=fr&amp;bgcolor=%23FFFFFF&amp;src=ngnn1lug1h2vh1inja9180alqk%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FParis"
           frameborder="0" scrolling="no"></iframe>
       </div>
 
