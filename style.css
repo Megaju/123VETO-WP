@@ -144,22 +144,22 @@ i {
 /*======== NAVIGATION ========*/
 /*============================*/
 
-.menu {
+.menu-top-container {
     height: 50px;
     border-bottom: 1px solid #3A83FF;
 }
 
-.menu ul {
+.menu-top-container ul {
     text-align: center;
     list-style: none;
     margin: 0;
 }
 
-.menu ul li {
+.menu-top-container ul li {
     display: inline;
 }
 
-.menu ul li a {
+.menu-top-container ul li a {
     display: inline-block;
     padding: 0 25px;
     height: 50px;
@@ -170,7 +170,7 @@ i {
     transition: .2s;
 }
 
-.menu ul li:first-child a, .menu ul li:hover a {
+.menu-top-container ul li:first-child a, .menu-top-container ul li:hover a {
     background-color: #3A83FF;
     color: #fff;
     transition: .2s;
