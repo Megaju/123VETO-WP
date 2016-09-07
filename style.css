@@ -144,22 +144,22 @@ i {
 /*======== NAVIGATION ========*/
 /*============================*/
 
-.menu {
+.menu-top-container {
     height: 50px;
     border-bottom: 1px solid #3A83FF;
 }
 
-.menu ul {
+.menu-top-container ul {
     text-align: center;
     list-style: none;
     margin: 0;
 }
 
-.menu ul li {
+.menu-top-container ul li {
     display: inline;
 }
 
-.menu ul li a {
+.menu-top-container ul li a {
     display: inline-block;
     padding: 0 25px;
     height: 50px;
@@ -170,9 +170,9 @@ i {
     transition: .2s;
 }
 
-.menu ul li:first-child a, .menu ul li:hover a {
+.menu-top-container ul li:hover a, .current_page_item a {
     background-color: #3A83FF;
-    color: #fff;
+    color: #fff!important;
     transition: .2s;
 }
 
@@ -209,6 +209,11 @@ i {
     margin: 20px auto;
 }
 
+.sidebar .post_content img {
+    width: 100%;
+    height: auto;
+}
+
 .sidebar button {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -223,14 +228,14 @@ i {
 }
 
 #priseRDV {
-    width: 22.3%;
+    width: 20%;
     height: 60px;
     border-radius: 0%;
     font-size: 20px;
     left: 0px;
     text-transform: uppercase;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     background-color: #3A83FF;
     border: 0px solid white;
     font-family: "Open Sans", sans-serif;
@@ -282,7 +287,7 @@ em {
 /*============================*/
 
 #formeindex, h2 {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 0px;
     color: #3A83FF;
     text-align: center;
@@ -307,14 +312,16 @@ em {
 /* --------- THE TEAM --------- */
 
 .docteur {
-    height: 500px;
-    margin: 0 20px;
+    width: 400px;
+    height: 400px;
+    margin: 20px 20px 0 20px;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: default;
 }
 
 .docteur h3 {
-    font-size: 250%;
+    font-size: 2em;
     color: #fff;
 }
 
@@ -455,13 +462,18 @@ em {
 }
 
 .carousel h2 {
+    width: 25%;
     position: absolute;
     top: 0;
-    left: 25%;
-    right: 25%;
-    margin: 0;
+    left: 0;
+    margin: 30px  0 0 0;
+    padding: 10px 50px 10px 10px;
+    color: #fff;
     font-size: 2em;
     font-weight: 700;
+    background-color: #3A83FF;
+    box-shadow: 0 0 15px #111;
+    
 }
 
 .carousel p {
@@ -480,24 +492,31 @@ em {
 }
 
 #bloc-carousel ul {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    margin: 0px auto 10px auto;
     list-style: none;
-    display: inline-flex;
+    text-align: center;
 }
 
 #bloc-carousel ul li {
+    display: inline-block;
     font-size: 0;
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
     border: 0;
     border-radius: 60px;
-    background-color: #333;
+    background-color: #3A83FF;
 }
 
 #bloc-carousel ul li:hover {
-    background-color: #111;
+    background-color: #F58900;
     cursor: pointer;
 }
+
 /*============================*/
 /*========= PAGE =============*/
 /*============================*/
@@ -525,6 +544,42 @@ em {
     display: flex;
 }
 
+.uniform-article {
+    width: 85%;
+    margin: auto;
+}
+
+.uniforme-article h2 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #3A83FF;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.alignement_article {
+    display: inline-flex;
+    margin-top: 20px;
+    
+}
+
+.imgPage img {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+
+.contenu_article p {
+    padding-left: 30px;
+    font-size: .9em;
+    color: #222;
+}
+
 /*============================*/
 /*========= CONTACT =========*/
 /*============================*/
@@ -532,7 +587,50 @@ em {
 .contact {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-around;
+    height: 90vh;
+}
+.type1 {
+    margin-left: 2vh;
+    height: 40px;
+    padding: 5px 10px;
+    border: 01px solid #777;
+    background-color: #eee;
+}
+#form1 {
+    border-right: 1px solid lightgray;
+}
+.formulaire {
+    width: 45%;
+}
+#typan {
+    font-size: 15px;
+    margin-right: 4vh;
+}
+.localisation {
+    width: 33%;
+}
+
+input, textarea {
+    height: 40px;
+    padding: 5px 10px;
+    border: 01px solid #777;
+    background-color: #eee;
+}
+
+textarea {
+    height: 22vh;
+    width: 52vh;
+}
+.EnvoieForm {
+    width: 40%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    color: #F58900;
+    cursor: pointer;
 }
 
 /*============================*/
@@ -571,6 +669,7 @@ label {
     background: #3A83FF;
     color: white;
     width: 100%;
+    margin-bottom: -2vh;
 }
 
 #footer p, #footer a {
@@ -579,8 +678,8 @@ label {
     text-align: center;
     text-decoration: none;
     padding-top: 8px;
-    padding-bottom: 8px;
-    
+		padding-bottom: 8px;
+		margin-bottom: 0;
 }
 
 #footer a:hover {
