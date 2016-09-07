@@ -562,11 +562,28 @@ em {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /*text-align: left;*/
 }
 
 input {
-    float: right;
+    display: flex;
+    flex-direction: row;
 }
+
+select {
+    margin: 2px;
+}
+
+#bouton {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+}
+
 /*============================*/
 /*========== FOOTER ==========*/
 /*============================*/
