@@ -222,19 +222,20 @@ i {
     color: white;
 }
 
-.sidebar #priseRDV {
-    width: 100%;
+#priseRDV {
+    width: 20%;
     height: 60px;
     border-radius: 0%;
     font-size: 20px;
     left: 0px;
     text-transform: uppercase;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     background-color: #3A83FF;
     border: 0px solid white;
     font-family: "Open Sans", sans-serif;
     color: white;
+    position: absolute;
 }
 
 .sidebar button:hover,
