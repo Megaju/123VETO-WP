@@ -446,8 +446,8 @@ em {
     text-align: center;
     text-decoration: none;
     padding-top: 8px;
-    padding-bottom: 8px;
-    
+		padding-bottom: 8px;
+		margin-bottom: 0;
 }
 
 #footer a:hover {
