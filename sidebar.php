@@ -28,7 +28,7 @@
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
-                <button type="submit">Page des News Letters</button>
+                <a href="#"><button>Page des News Letters</button></a>
             </div>
         
             <div class="aside-separator"></div>
