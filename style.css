@@ -254,6 +254,13 @@ em {
     font-weight: 600;
 }
 
+.sidebar .fa-map {
+	padding: 3px;
+}
+.sidebar .fa-map:hover {
+	color: #4685F1;
+	transition: .2s;
+}
 
 /*============================*/
 /*========== EQUIPE ==========*/
