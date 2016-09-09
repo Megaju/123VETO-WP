@@ -91,6 +91,72 @@
                         
                     </div>
 
+                     <!-- section prestation -->
+                    <section>
+
+                        <div class="section-header">
+                            <h2 class="text-center text-capitalize">Nos prestations</h2>
+                        </div>
+
+                        <div class="lesblocs">
+                            <!-- bloc 1/6 -->
+                            <div class="bloc">
+                                <div>
+                                    <i class="fa fa-stethoscope fa-5x"></i>
+                                </div>
+                                <div>
+                                    <button class="btnPre"><a href="#">Consultation</a></button>
+                                </div>
+                            </div>
+                            <!-- bloc 1/6 -->
+                            <div class="bloc">
+                                <div>
+                                    <i class="fa fa-camera fa-5x"></i>
+                                </div>
+                                <div>
+                                    <button class="btnPre"><a href="#">Imagerie</a></button>
+                                </div>
+                            </div>                            
+                            <!-- bloc 1/6 -->
+                            <div class="bloc">
+                                <div>
+                                    <i class="flaticon-microscope"></i>
+                                </div>
+                                <div>
+                                    <button class="btnPre"><a href="#">Analyse sanguine</a></button>
+                                </div>
+                            </div>
+                            <!-- bloc 1/6 -->
+                            <div class="bloc">
+                                <div>
+                                    <i class="flaticon-drawing-scalpel"></i>
+                                </div>
+                                <div>
+                                    <button class="btnPre"><a href="#">Chirurgie</a></button>
+                                </div>
+                            </div>
+                            <!-- bloc 1/6 -->
+                            <div class="bloc">
+                                <div>
+                                    <i class="fa fa-hospital-o fa-5x"></i>
+                                </div>
+                                <div>
+                                    <button class="btnPre"><a href="#">Hospitalisation</a></button>
+                                </div>
+                            </div>
+                            <!-- bloc 1/6 -->
+                            <div class="bloc">
+                                <div>
+                                    <i class="flaticon-easter-rabbit"></i>
+                                </div>
+                                <div>
+                                    <button class="btnPre"><a href="#">NAC</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
                 </div>
         </section>
 

@@ -563,6 +563,34 @@ em {
 }
 
 /*============================*/
+/*========= PRESTATION =======*/
+/*============================*/
+
+.lesblocs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bloc {
+    float: left;
+}
+.flaticon-drawing-scalpel {
+    display: inline;
+}
+.btnPre {
+    height: 40px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer; 
+}
+.btnPre a {
+    color: #F58900;
+    text-decoration: none;
+}
+
+/*============================*/
 /*========= PAGE =============*/
 /*============================*/
 
