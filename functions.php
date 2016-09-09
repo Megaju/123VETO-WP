@@ -14,6 +14,14 @@ register_nav_menus( array(
         'Top' => 'Navigation principale',
     ) );
  ?>
-
+ 
 <?php add_theme_support( 'post-thumbnails' ); ?>
+
+<?php
+/**
+ * Fonction pour ajouter les extraits des articles
+ */
+
+the_excerpt() ?>
+
 

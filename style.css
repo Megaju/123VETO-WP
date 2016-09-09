@@ -398,16 +398,19 @@ em {
 
 .docteurs {
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .docteur {
     vertical-align: top;
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 185px;
+    height: 185px;
     border-radius: 400px;
     background-size: cover;
     background-position: center center;
+    box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.39);
 }
 
 #docteur1 {
@@ -426,19 +429,26 @@ em {
 }
 
 .docteur-present h3 {
+    margin-top: 5px;
     font-size: 1em;
     text-align: left;
+    padding-left: 15px;
+    width: 240px;
 }
 
 .docteur-present h4 {
     font-size: .8em;
     text-align: left;
+    padding-left: 15px;
+    width: 240px;
 }
 
 .docteur-present p {
     font-size: .6em;
     text-align: justify;
     cursor: default;
+    padding-left: 15px;
+    width: 240px;
 }
 
 /* ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;)
