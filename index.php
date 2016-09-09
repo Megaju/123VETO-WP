@@ -38,7 +38,7 @@
                         <div id="bloc-medium-savoirfaire">
                             <div class="bloc-small-savoirfaire">
                                 <div class="fa-sf">
-                                    <i class="fa fa-paw fa-4x"></i>
+                                    <i class="fa fa-4x">1</i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
@@ -46,7 +46,7 @@
 
                             <div class="bloc-small-savoirfaire">
                                 <div class="fa-sf">
-                                    <i class="fa fa-paw fa-4x"></i>
+                                    <i class="fa fa-4x">2</i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
@@ -54,7 +54,7 @@
 
                             <div class="bloc-small-savoirfaire">
                                 <div class="fa-sf">
-                                    <i class="fa fa-paw fa-4x"></i>
+                                    <i class="fa fa-4x">3</i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
@@ -62,7 +62,7 @@
 
                             <div class="bloc-small-savoirfaire">
                                 <div class="fa-sf">
-                                    <i class="fa fa-paw fa-4x"></i>
+                                    <i class="fa fa-4x">V</i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
