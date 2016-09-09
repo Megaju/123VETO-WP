@@ -9,6 +9,7 @@ Author: Solène, Lise et Julien
 /*========== GENERAL =========*/
 /*============================*/
 
+
 .flexbox{
     display: flex;
     justify-content: space-around;
@@ -286,7 +287,7 @@ em {
 /*========== EQUIPE ==========*/
 /*============================*/
 
-#formeindex, h2 {
+.formeindex, h2 {
     margin-top: 20px;
     margin-bottom: 0px;
     color: #3A83FF;
@@ -295,10 +296,10 @@ em {
     text-transform: uppercase;
     padding: 15px;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 20px;
 }
 
-#formeindex p {
+.formeindex p {
     font-size: 0.7em;
     text-align: center;
     background-color: white;
@@ -571,6 +572,7 @@ em {
 }
 
 .imgPage img {
+    margin-top: 10px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -578,7 +580,7 @@ em {
 
 .contenu_article p {
     padding-left: 30px;
-    font-size: .9em;
+    font-size: 15px;
     color: #222;
 }
 
@@ -602,6 +604,51 @@ em {
 #education,
 #alimentation,
 #index {
+    display: none;
+}
+
+
+
+/*============================*/
+/*========== VENTE ===========*/
+/*============================*/
+
+.vente {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.vente section {
+    display: block;
+}
+
+.vente div {
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+}
+
+.vente i {
+    padding: 20px;
+}
+
+.vente h3 {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.vente p {
+   color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    text-align: left;
+}
+
+#article {
     display: none;
 }
 

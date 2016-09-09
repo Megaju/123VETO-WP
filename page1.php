@@ -15,7 +15,7 @@ Template Name: conseils
                 <?php get_sidebar(); ?>
 
                 <div>
-                    <section id="formeindex">
+                    <section class="formeindex">
                         <h2>Nos Conseils</h2>
                         <div class="index-separator"></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur dolorum ullam quisquam ut qui velit molestias inventore esse asperiores modi possimus.</p>
