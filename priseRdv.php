@@ -7,34 +7,47 @@ Template name: RDV
 <section id="rdv">
     <div class="formulaire">
 
-      <form action="mon-formulaire" method="post">
-        <fieldset>
-          <legend>
-            <h1>Rendez-vous</h1>
-          </legend>
-          <div>
-            <label for="Nom"> Nom : </label><input type="text" id="Nom" /><br />
-            <label for="Prénom"> Prénom :</label><input type="text" id="Prénom" /><br />
-            <label for="Tél"> Tél : </label><input type="Tél" id="Tél" /><br />
-            <div>
-              <label for="Motif"> Motif : </label>
-              <select>
-        <option>Medecine</option>
-        <option>Chirurgie</option>
-        <option>Vaccin</option>
-        <option>Autres</option>
-      </select>
-            </div>
-            <div>
-              <label for="Nomanimal"> Nom de l'animal : </label><input type="text" id="Nomanimal" />
-            </div><br /><br />
-            <div id="commentaire">
-              <label for="sujet"> Commentaires</label><br />
-              <textarea id="sujet" rows="10" cols="40">
-		          </textarea>
-            </div>
-        </fieldset><br />
-        
+      
+      <form action="formulaire de contact" method="post" id="form1">
+          
+          <input type="text" name="nom" placeholder="NOM" class="identite"></input> 
+          </br></br>
+          
+          <input type="text" name="Prenom" placeholder="Prenom"></input>
+          </br></br>
+          
+          <input type="text" name="Animal" placeholder="Nom de l'animal"></input>
+          </br></br>
+
+          <label id="typan">Vétérinaires :</label>
+          <select name="Type" class="type1">
+            <option value="veto1">Dr Aurélie Mayoussier</option>
+            <option value="veto2">Dr Eric Wintz</option>
+          </select>
+          </br></br>
+
+          <label id="typan">Type d'animal :</label>
+          <select name="Type" class="type1">
+            <option value="Chien">Chien</option>
+            <option value="Chat">Chat</option>
+            <option value="Autre">Autre</option>
+          </select>
+          </br></br>
+          
+          <select name="Probleme" class="type1">
+            <option value="Consultation">Consultation</option> 
+            <option value="Vaccination">Vaccination</option>
+            <option value="Sterilisation">Sterilisation</option>    
+            <option value="Chirurgie">Chirurgie</option>
+            <option value="Hospitalisation">Hospitalisation</option>
+            <option value="Autre">Autre</option>
+          </select>
+          </br></br>
+
+          <textarea name="AVIS"></textarea>
+          </br></br>
+          
+
         <div id="bouton">
           <input type="submit" value="Envoyer">
           <input type="reset" value="Effacer">
