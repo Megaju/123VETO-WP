@@ -805,15 +805,18 @@ textarea {
 }
 
 /*============================*/
-/*========== RDV =============*/
+/*============ RDV ===========*/
 /*============================*/
 
 #rdv {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    font-size: 15px;
+
 }
 
+<<<<<<< HEAD
 .formulaire {
     width: 500px;
     float: left;
@@ -829,6 +832,64 @@ label {
     display: inline-block;
     width: 90px;
     text-align: left;
+=======
+#rdv h1 {
+    padding: 20px;
+    color: #263461;
+}
+
+.section {
+    width: 350px;  
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 5px;    
+}
+
+.section input {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+
+}
+
+label {
+    margin: 5px;
+    display: inline-block;
+    font-size: 15px;
+    color: #263461;
+}
+
+select {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+}
+
+textarea {
+     width: auto;
+     border-radius: 5px;
+     border: 01px solid #fff;     
+     font-family: 'Open Sans', sans-serif;
+     font-size: 15px;
+     cursor: pointer;
+}
+
+#bouton {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    float: left; 
+>>>>>>> e69c30c52beba56903566bfa279ba0fa57a62b77
 }
 
 /*============================*/
