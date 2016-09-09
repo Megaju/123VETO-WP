@@ -93,7 +93,7 @@
                     </div>
 
                      <!-- section prestation -->
-                    <section>
+                    <section class="secpage">
 
                         <div class="section-header">
                             <h2 class="text-center text-capitalize">Nos prestations</h2>
