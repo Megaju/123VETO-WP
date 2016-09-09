@@ -9,6 +9,7 @@ Author: Solène, Lise et Julien
 /*========== GENERAL =========*/
 /*============================*/
 
+
 .flexbox{
     display: flex;
     justify-content: space-around;
@@ -19,8 +20,13 @@ Author: Solène, Lise et Julien
     flex-wrap: wrap;
 }
 
-/* Le bleu : ##3A83FF */
+@font-face {
+    font-family: Gabriela;
+    src: url(fonts/Gabriela-Regular.ttf);
+}
 
+/* Le bleu : #263461 SVG DE L'ANCIEN BLEU 3A83FF 
+   Le orange : #F58900 */
 
 html, body {
     font-family: 'Open Sans', sans-serif;
@@ -52,12 +58,48 @@ h2 {
     font-size: 2em;
 }
 
+h2.bandeau {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #263461;
+}
+
+h2.bandeau-mt0 {
+    margin-top: 0;
+}
+
 .index-separator {
     display: block;
     margin: 20px auto;
     width: 30%;
     height: 1px;
-    background-color: #3A83FF;
+    background-color: #263461;
+}
+
+i {
+    color: #F58900;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.bouton-generique {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    color: #F58900;
+    cursor: pointer;
+}
+
+#section-generique {
+    display: inline-flex;
+    margin: 0 auto;
 }
 
 /*============================*/
@@ -68,10 +110,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
     margin: 0;
     padding: 0;
-    background-color: #143143;
+    background-color: #263461;
     background-image: url(img/facade.JPG);
     background-size: cover;
     background-position: center center;
@@ -81,11 +123,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 30px;
-    background-color: rgba(10, 10, 10, 0.7);
+    padding: 20px 30px;
+    background-color: rgba(4, 52, 89,0.6);
 }
 
 #header h1 a {
+    font-size: 2em;
     color: #fff;
     text-decoration: none;
 }
@@ -95,13 +138,22 @@ h2 {
     color: #eee;
     margin: 0 0 20px 0;
     padding: 0 0 15px 0px;
-    font-size: 18px;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: right;
 }
 
-#header p.description {
+h2#description {
+    border: 0;
+    font-size: 2em;
+    text-align: left;
+}
+
+#header p.horaires {
     width: 700px;
     color: #fff;
-    font-weight: 300;
+    font-size: .9em;
+    font-weight: 700;
     line-height: 30px;
 }
 
@@ -122,38 +174,91 @@ h2 {
 /*======== NAVIGATION ========*/
 /*============================*/
 
-.menu {
+.menu-top-container {
     height: 50px;
-    border-bottom: 1px solid #3A83FF;
+    border-bottom: 1px solid #263461;
 }
 
-.menu ul {
+.menuNav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #3A83FF;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.menu-top-container {
+    height: 100%;
+}
+
+.menu-top-container ul {
     text-align: center;
     list-style: none;
     margin: 0;
 }
 
-.menu ul li {
+.menu-top-container ul li {
     display: inline;
 }
 
-.menu ul li a {
+.menu-top-container ul li a {
     display: inline-block;
     padding: 0 25px;
     height: 50px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #3A83FF;
+    color: #263461;
     text-decoration: none;
     transition: .2s;
 }
 
-.menu ul li:first-child a, .menu ul li:hover a {
-    background-color: #3A83FF;
-    color: #fff;
+.menu-top-container ul li:hover a, .current_page_item a {
+    background-color: #263461;
+    color: #fff!important;
     transition: .2s;
 }
 
+.site-logo {
+    background: url(img/logo-nav.png) no-repeat;
+    background-position: left;
+    background-size: 44%;
+    margin-top: -16px;
+    top: 0;
+    left: 4vw;
+    height: 8vh;
+    width: 14vw;
+    color: #263461;
+    text-transform: uppercase;
+    /*border-bottom: 1px solid #3A83FF;*/
+}
+
+
+.raisonSociale {
+    font-family: Gabriela;
+    padding-left: 27%;
+    padding-top: 15px;
+}
+
+.linkAccueil:hover {
+    background-color: #263461;
+    color: white;
+}
+
+.linkAccueil {
+    text-decoration: none;
+    color: #3A83FF;
+    text-align: center;
+}
+
+.menuNav .fa {
+   color: #3A83FF;
+   margin-top: 17px;
+   margin-left: 25px;
+}
+
+.menuNav .fa:hover {
+    color: lightblue;
+}
 /*============================*/
 /*========== SIDEBAR =========*/
 /*============================*/
@@ -161,7 +266,7 @@ h2 {
 .sidebar {
     background-image: url(img/aside-fond.png);
     width: 25%;
-    color: #3A83FF;
+    color: #263461;
     text-transform: capitalize;
     font-size: 0.8em;
 }
@@ -169,7 +274,7 @@ h2 {
 .sidebar h2 {
     font-size: 1.8em;
     padding-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -184,7 +289,12 @@ h2 {
     width: 80%;
     height: 1px;
     background-color: #abc;
-    margin: 30px auto;
+    margin: 20px auto;
+}
+
+.sidebar .post_content img {
+    width: 100%;
+    height: auto;
 }
 
 .sidebar button {
@@ -194,23 +304,34 @@ h2 {
     border: 0px solid white;
     width: 70%;
     height: 35px;
-    background-color: #3A83FF;
+    background-color: #263461;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
 }
 
 #priseRDV {
-    width: 100%;
+    width: 20%;
     height: 60px;
     border-radius: 0%;
-    font-size: 2em;
+    font-size: 20px;
+    left: 0px;
     text-transform: uppercase;
-    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #F58900;
+    border: 0px solid white;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    position: absolute;
+    cursor: pointer;
 }
 
-.sidebar button:hover {
-    background-color: #F58900;
+#priseRDV p {
+    font-size: 0.7em;
+    text-transform: lowercase;
+    margin-top: 0px;
+    padding-bottom: 5px;
 }
 
 #content {
@@ -225,7 +346,7 @@ h2 {
 }
 
 #content a {
-    color: #3A83FF;
+    color: #263461;
     font-size: 0.8em;
     text-decoration: none;
     text-transform: uppercase;
@@ -236,24 +357,33 @@ em {
     font-weight: 600;
 }
 
+.sidebar .fa-map {
+	padding: 3px;
+}
+.sidebar .fa-map:hover {
+	color: #4685F1;
+	transition: .2s;
+}
+
+
 
 /*============================*/
 /*========== EQUIPE ==========*/
 /*============================*/
 
-#formeindex, h2 {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    color: #3A83FF;
+.formeindex, h2 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #263461;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     padding: 15px;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 20px;
 }
 
-#formeindex p {
+.formeindex p {
     font-size: 0.7em;
     text-align: center;
     background-color: white;
@@ -266,15 +396,63 @@ em {
 
 /* --------- THE TEAM --------- */
 
+.docteurs {
+    text-align: center;
+}
+
 .docteur {
-    height: 500px;
-    margin: 0 20px;
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#docteur1 {
+    background-image: url(img/dr-aurelie.jpg);
+}
+
+#docteur2 {
+    background-image: url(img/dr-eric.jpg);
+}
+
+.docteur-present {
+    display: inline-block;
+    margin-right: 10px;
+    width: 25%;
+    color: #333;
+}
+
+.docteur-present h3 {
+    font-size: 1em;
+    text-align: left;
+}
+
+.docteur-present h4 {
+    font-size: .8em;
+    text-align: left;
+}
+
+.docteur-present p {
+    font-size: .6em;
+    text-align: justify;
+    cursor: default;
+}
+
+/* ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;)
+.docteur {
+    width: 400px;
+    height: 400px;
+    margin: 20px 20px 0 20px;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: default;
 }
 
 .docteur h3 {
-    font-size: 250%;
+    font-size: 2em;
     color: #fff;
 }
 
@@ -314,53 +492,488 @@ em {
 }
 
 .docteur:hover .docteur-present {
-    background-color: #3A83FF;
+    background-color: #263461;
     opacity: .9;
     transition: .3s;
-}
+} [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */ 
 
 /*============================*/
 /*========= SAVOIR-FAIRE =====*/
 /*============================*/
 
-.savoirfaire {
-    height: 250px;
-    width: 85%;
-    margin-top: 50px;
-    display: inline-flex;
+#bloc-medium-savoirfaire {
+    margin: 100px 50px 0 50px;
+    display: flex;
+    height: 240px;
 }
 
-.categorie {
-    width: 50%;
-    height: 300px;
-    margin: 5px;
-    border: 1px solid #F58900;
+.bloc-small-savoirfaire {
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    background-color: whitesmoke;
 }
 
-.simulation-icone {
-    height: 75px;
-    width: 75px;
-    border-radius: 100%;
-    display: block;
-    margin: 15px auto;
-    background-color: #F58900;
-    margin-top: 70px;
+.bloc-small-savoirfaire p {
+    margin: 40px 0 0 0;
+    font-size: .8em;
+    overflow-y: auto;
+    color: #222;
 }
+
+.bloc-small-savoirfaire a, .bloc-small-savoirfaire a i {
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #263461;
+    font-size: .8em;
+}
+
+.bloc-small-savoirfaire a:hover, .bloc-small-savoirfaire a:hover i {
+    color: #F58900;
+}
+
+.fa-sf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 0 auto;
+    font-size: 6em;
+    text-align: center;
+    border-radius: 200px;
+    border: 2px solid #263461;
+    background-color: #fff;
+    transition: .4s;
+    color: #263461;
+}
+
+.fa-sf:hover {
+    color: #fff;
+    background-color: #263461;
+    transition: .4s;
+    cursor: pointer;
+}
+
 
 
 /*============================*/
 /*========= CLINIQUE =========*/
 /*============================*/
 
-.caroussel {
+.carousel {
     display: block;
-    margin: 50px auto;
-    width: 85%;
-    height: 400px;
+    position: relative;
+    margin: -60px auto 50px auto;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 450px;
     background-image: url(img/caroussel/Espace_Vente.JPG);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    transition: .4s;
+    cursor: pointer;
 }
+
+.carousel h2 {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px  0 0 0;
+    padding: 10px 50px 10px 10px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: #263461;
+    box-shadow: 0 0 15px #111;
+    z-index: 2;
+    
+}
+
+.carousel p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    margin: 0 0 50px 40px;
+    padding: 0 20px 0 60px;
+    color: #eee;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+#bloc-carousel ul {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    margin: 0px auto 10px auto;
+    list-style: none;
+    text-align: center;
+}
+
+#bloc-carousel ul li {
+    display: inline-block;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    border: 0;
+    border-radius: 60px;
+    background-color: #263461;
+    box-shadow: 0 0 5px #444;
+}
+
+#bloc-carousel ul li:hover {
+    background-color: #F58900;
+    cursor: pointer;
+}
+
+#bloc-carousel button {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1;
+}
+
+#bloc-carousel button:hover {
+    transition: .5s;
+}
+
+#left-button-carou {
+    left: 0;
+    padding-right: 50px;
+    opacity: .85;
+    background: -moz-linear-gradient(left,  rgba(237,237,237,1) 0%, rgba(237,237,237,1) 21%, rgba(237,237,237,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(237,237,237,1) 0%,rgba(237,237,237,1) 21%,rgba(237,237,237,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(237,237,237,1) 0%,rgba(237,237,237,1) 21%,rgba(237,237,237,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#00ededed',GradientType=1 ); /* IE6-9 */
+}
+
+#left-button-carou:hover {
+    opacity: 1;
+}
+
+#right-button-carou {
+    right: 0;
+    padding-left: 50px;
+    opacity: .85;
+    background: -moz-linear-gradient(left, rgba(237,237,237,0) 0%, rgba(237,237,237,1) 79%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 79%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 79%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ededed', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+}
+
+#right-button-carou:hover {
+    opacity: 1;
+}
+
+/*============================*/
+/*========= PAGE =============*/
+/*============================*/
+
+.center-generique {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+.icone-generique {
+    width: 85%;
+    text-align: center;
+    /*display: block;
+    margin: 0 auto;*/
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.placement {
+    display: flex;
+}
+
+.uniform-article {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.uniforme-article h2 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #263461;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.alignement_article {
+    display: inline-flex;
+    margin-top: 20px;
+    
+}
+
+.imgPage img {
+    margin-top: 10px;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+
+.contenu_article p {
+    padding-left: 30px;
+    font-size: 15px;
+    color: #222;
+}
+
+#consultation,
+#dents,
+#medicament {
+    display: block;
+}
+
+#imagerie,
+#analyse,
+#chirurgie,
+#hospitalisation,
+#nac,
+#yeux,
+#pelage,
+#parasites,
+#vaccinChien,
+#vaccinChat,
+#identification,
+#education,
+#alimentation,
+#index {
+    display: none;
+}
+
+
+
+/*============================*/
+/*========== VENTE ===========*/
+/*============================*/
+
+.vente {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.vente section {
+    display: block;
+}
+
+.vente div {
+
+    margin: 0 auto;
+}
+
+.vente i {
+    padding: 20px;
+    cursor: pointer;
+    padding-left: 25%;
+}
+
+.vente h3 {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.vente p {
+   color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    text-align: left;
+}
+
+#article-croquettes, #article-vermifuges, #article-shampoings, #article-brosses, #article-colliers {
+    display: none;
+}
+
+
+/*============================*/
+/*========= CONTACT =========*/
+/*============================*/
+
+.TitreForm1 {
+
+    float: left;
+    margin-left: 54px;
+}
+
+.TitreForm2 {
+
+    margin-right: -176px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 90vh;
+}
+.type1 {
+    margin-left: 2vh;
+    height: 40px;
+    padding: 5px 7px;
+    border: 01px solid #777;
+    background-color: #eee;
+}
+
+#form1 {
+    width: 0 auto;
+    border-right: 1px solid lightgray;
+    margin-top: 18px; }
+
+
+.formulaire {
+    width: 45%;
+}
+
+.localisation {
+    width: 38%;
+
+}
+
+#locapara {
+ font-size: 12.5px;
+ margin-right: 5vh;
+ line-height: 1.8em;
+ margin-top: -21px;
+ margin-bottom: 50px;
+
+}
+input, textarea {
+    height: 40px;
+    padding: 5px 10px;
+    border: 01px solid #777;
+    background-color: #eee;
+}
+
+
+textarea {
+    height: 22vh;
+    width: 45vh;
+}
+
+.EnvoieForm {
+    width: 22%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    color: #F58900;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*============================*/
+/*============ RDV ===========*/
+/*============================*/
+
+#rdv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+
+#rdv h1 {
+    padding: 20px;
+    color: #263461;
+}
+
+.section {
+    width: 450px;  
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 15px;    
+}
+
+.section input {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+
+}
+
+label {
+    margin: 5px;
+    display: inline-block;
+    font-size: 15px;
+    color: #263461;
+}
+
+select {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+}
+
+textarea {
+     width: auto;
+     border-radius: 5px;
+     border: 01px solid #fff;     
+     font-family: 'Open Sans', sans-serif;
+     font-size: 15px;
+     cursor: pointer;
+}
+
+#bouton {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    float: left; 
+}
+
+.agenda p {
+    
+}
+
+.agenda iframe {
+    height: 500px;
+    width: 550px;
+}
+
 
 /*============================*/
 /*========== FOOTER ==========*/
@@ -368,9 +981,10 @@ em {
 
 #footer {
     font-size: 0.8em;
-    background: #3A83FF;
+    background: #263461;
     color: white;
     width: 100%;
+    margin-bottom: -2vh;
 }
 
 #footer p, #footer a {
@@ -379,10 +993,11 @@ em {
     text-align: center;
     text-decoration: none;
     padding-top: 8px;
-    padding-bottom: 8px;
-    
+		padding-bottom: 8px;
+		margin-bottom: 0;
 }
 
 #footer a:hover {
     color: #F58900;
 }
+
