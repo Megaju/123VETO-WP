@@ -40,8 +40,16 @@
 
 
         <!-- menu de navigation -->
-        <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
-        <a href="#accueil" class="linkAccueil"><div class="site-logo"><p class="raisonSociale">123veto</p></div></a>
+        <div class="menuNav">
+            <a href="#" class="linkAccueil">
+                <div class="site-logo"><p class="raisonSociale">123veto</p></div>
+            </a>
+            <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
+            <div class="icones">
+                <a href="#" class="linkAccueil fa fa-facebook" aria-hidden="true"></a>
+                <a href="#" class="linkAcceuil fa fa-google-plus" aria-hidden="true" style="padding-right: 25px"></a>
+            </div>    
+        </div>
         <div id="header">
             <div class="header-corp">
                 <!-- logo -->
