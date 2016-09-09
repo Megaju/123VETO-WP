@@ -546,6 +546,7 @@ em {
 .uniform-article {
     width: 85%;
     margin: auto;
+    margin-bottom: 70px;
 }
 
 .uniforme-article h2 {
@@ -577,6 +578,30 @@ em {
     padding-left: 30px;
     font-size: .9em;
     color: #222;
+}
+
+#consultation,
+#dent,
+#medicament {
+    display: block;
+}
+
+#imagerie,
+#analyse,
+#chirurgie,
+#hospitalisation,
+#nac,
+#yeux-oreilles,
+#yeux-oreilles,
+#pelage,
+#parasite,
+#vaccin-chien,
+#vaccin-chat,
+#id,
+#education,
+#alimentation,
+#index {
+    display: none;
 }
 
 /*============================*/
