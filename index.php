@@ -16,7 +16,7 @@
                             </div>
                             <div class="docteur-present">
                                     <h3>Dr Aurélie Mayoussier</h3>
-                                    <h4>Diplômée de l’école vétérinaire de MaisonsAlfort en 2008</h4>
+                                    <h4>Diplômée de l’école vétérinaire de Maisons Alfort en 2008</h4>
                                     <p>Dr Aurélie Mayoussier Diplômée de l’école vétérinaire de MaisonsAlfort en 2008, elle se passionne pour la médecine de l’élevage et de la reproduction et la médecine des NAC. Le Dr Mayoussier possède deux chats Pratchett et Bubule ainsi que Bambou, chien loup de Saarloos.</p>
                                 </div>
                                 
