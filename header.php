@@ -33,7 +33,8 @@
                     <link rel="stylesheet" href="css/font-awesome.css" />
                     <link rel="stylesheet" href="youropotionalfolder/font-awesome/css/font-awesome.min.css">
                     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-                    
+                    <!-- flaticons -->
+                    <link rel="stylesheet" type="text/css" href="fonts/flaticons/flaticon.css">
     </head>
 
     <body>

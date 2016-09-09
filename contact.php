@@ -25,8 +25,9 @@
 
 					<label id="typan">Vétérinaires :</label>
 					<select name="Type" class="type1">
-						<option value="veto1">Dr Aurélie Mayoussier</option>
-						<option value="veto2">Dr Eric Wintz</option>
+						<option value="veto1">indifférent</option>
+						<option value="veto2">Dr Aurélie Mayoussier</option>
+						<option value="veto3">Dr Eric Wintz</option>
 					</select>
 					</br></br>
 
