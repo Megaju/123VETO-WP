@@ -43,8 +43,8 @@
                 </div>    
               <textarea id="mess" placeholder="Votre message (facultatif)"></textarea>
                 <div id="bouton">
-                      <input type="submit" value="Envoyer" style="color: #263461">
-                      <input type="reset" value="Effacer" style="color: #263461">
+                      <input type="submit" value="Envoyer" style="color: #f58900">
+                      <input type="reset" value="Effacer" style="color: #f58900">
                       <p>* : Champs obligatoires</p>
                 </div>
             </div>
