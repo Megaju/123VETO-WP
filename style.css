@@ -940,16 +940,10 @@ textarea {
     padding: 5px;
 }
 
-
-
 .agenda {
     display: flex;
     flex-direction: column;
     float: left; 
-}
-
-.agenda p {
-    
 }
 
 .agenda iframe {
