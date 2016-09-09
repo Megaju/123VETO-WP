@@ -6,8 +6,7 @@ Template Name: prestations
 */
 ?>
 
-
-        <!-- pour insérer le header -->
+       <!-- pour insérer le header -->
         <?php get_header(); ?>
 
             <div id="attente-bootstrap" class="placement">
@@ -180,3 +179,4 @@ Template Name: prestations
 
             <!-- pour insérer le footer -->
             <?php get_footer(); ?>
+>>>>>>> ed30eb70a9d22918b957bcbfb2aee73ce2b1e68c
