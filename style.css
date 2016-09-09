@@ -946,12 +946,18 @@ textarea {
     display: flex;
     flex-direction: column;
     float: left; 
->>>>>>> e69c30c52beba56903566bfa279ba0fa57a62b77
 }
 
 .agenda p {
     
 }
+
+.agenda iframe {
+    height: 500px;
+    width: 550px;
+}
+
+
 /*============================*/
 /*========== FOOTER ==========*/
 /*============================*/
