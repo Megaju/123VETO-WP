@@ -689,7 +689,7 @@ em {
 /*============================*/
 
 .secpage {
-    height: 50vh;
+    height: 40vh;
 }
 .lesblocs {
     display: flex;
@@ -710,7 +710,6 @@ em {
     border: 1px solid darkgrey;
     font-family: "Open Sans", sans-serif;
     cursor: pointer;
-    border-radius: 1vh; 
 }
 .btnPre a {
     color: #F58900;
