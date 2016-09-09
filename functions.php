@@ -18,3 +18,11 @@ register_nav_menus( array(
     ) );
  ?>
 
+
+<?php
+/**
+ * Fonction pour ajouter les extraits des articles
+ */
+
+the_excerpt() ?>
+
