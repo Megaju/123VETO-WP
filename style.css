@@ -660,25 +660,6 @@ textarea {
 }
 
 /*============================*/
-/*========== RDV =============*/
-/*============================*/
-
-#rdv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.formulaire {
-    width: 500px;
-}
-
-.agenda {
-    width: 500px;
-}
-
-
-/*============================*/
 /*============ RDV ===========*/
 /*============================*/
 
@@ -686,26 +667,56 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*text-align: left;*/
+    font-size: 15px; 
 }
 
-input {
+#rdv h1 {
+    padding: 20px;
+    color: #263461;
+}
+
+.section {   
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    float: left;
+    margin-right: 5px;    
 }
 
-select {
-    margin: 2px;
-}
+.section input {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
 
-#bouton {
-    display: flex;
-    flex-direction: row;
 }
 
 label {
+    margin: 5px;
     display: inline-block;
-    text-align: left;
+    font-size: 15px;
+    color: #263461;
+}
+
+select {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+}
+
+textarea {
+     width: auto;
+     border-radius: 5px;
+     border: 01px solid #fff;     
+     font-family: 'Open Sans', sans-serif;
+     font-size: 15px;
+     cursor: pointer;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    float: left;  
 }
 
 /*============================*/
