@@ -86,9 +86,12 @@
                             <li id="carousel2"></li>
                             <li id="carousel3"></li>
                         </ul>
+                        
+                        <button id="left-button-carou" class="fa fa-chevron-left"></button>
+                        
+                        <button id="right-button-carou" class="fa fa-chevron-right"></button>
+                        
                         </div>
-                        
-                        
                     </div>
 
                 </div>
