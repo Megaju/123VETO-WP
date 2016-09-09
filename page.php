@@ -1,6 +1,4 @@
-<?php //fix bug header ?>
-
-    <?php
+<?php
 /*
 Template Name: prestations
 */
@@ -210,7 +208,6 @@ Template Name: prestations
                         </section>
                     </div>
             </div>
-
 
             <!-- pour insérer le footer -->
             <?php get_footer(); ?>

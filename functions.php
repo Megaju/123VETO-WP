@@ -1,6 +1,3 @@
-<?php add_theme_support( 'post-thumbnails' ); ?>
-
-
 <?php
 /**
  * Fonction pour ajouter les Font Awesome à WordPress
@@ -17,4 +14,6 @@ register_nav_menus( array(
         'Top' => 'Navigation principale',
     ) );
  ?>
+
+<?php add_theme_support( 'post-thumbnails' ); ?>
 
