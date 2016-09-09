@@ -669,6 +669,7 @@ em {
 }
 .bloc {
     float: left;
+    text-align: center;
 }
 .flaticon-drawing-scalpel {
     display: inline;
