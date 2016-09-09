@@ -666,8 +666,9 @@ textarea {
 #rdv {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    font-size: 15px; 
+    justify-content: space-around;
+    font-size: 15px;
+
 }
 
 #rdv h1 {
@@ -675,7 +676,8 @@ textarea {
     color: #263461;
 }
 
-.section {   
+.section {
+    width: 350px;  
     display: flex;
     flex-direction: column;
     float: left;
@@ -713,10 +715,18 @@ textarea {
      cursor: pointer;
 }
 
+#bouton {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+
+
 .agenda {
     display: flex;
     flex-direction: column;
-    float: left;  
+    float: left; 
 }
 
 /*============================*/
