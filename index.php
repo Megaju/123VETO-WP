@@ -68,8 +68,6 @@
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
-
-
                     </div>
 
                     <div id="bloc-carousel">

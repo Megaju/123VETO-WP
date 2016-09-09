@@ -24,7 +24,7 @@ Author: Solène, Lise et Julien
     src: url(fonts/Gabriela-Regular.ttf);
 }
 
-/* Le bleu : #3A83FF 
+/* Le bleu : #263461 SVG DE L'ANCIEN BLEU 3A83FF 
    Le orange : #F58900 */
 
 html, body {
@@ -76,7 +76,7 @@ h2.bandeau-mt0 {
     margin: 20px auto;
     width: 30%;
     height: 1px;
-    background-color: #3A83FF;
+    background-color: #263461;
 }
 
 i {
@@ -112,7 +112,7 @@ i {
     height: 400px;
     margin: 0;
     padding: 0;
-    background-color: #3A83FF;
+    background-color: #263461;
     background-image: url(img/facade.JPG);
     background-size: cover;
     background-position: center center;
@@ -175,7 +175,7 @@ h2#description {
 
 .menu-top-container {
     height: 50px;
-    border-bottom: 1px solid #3A83FF;
+    border-bottom: 1px solid #263461;
 }
 
 .menu-top-container ul {
@@ -194,13 +194,13 @@ h2#description {
     height: 50px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #3A83FF;
+    color: #263461;
     text-decoration: none;
     transition: .2s;
 }
 
 .menu-top-container ul li:hover a, .current_page_item a {
-    background-color: #3A83FF;
+    background-color: #263461;
     color: #fff!important;
     transition: .2s;
 }
@@ -214,7 +214,7 @@ h2#description {
     left: 4vw;
     height: 8vh;
     width: 14vw;
-    color: #3A83FF;
+    color: #263461;
     text-transform: uppercase;
 }
 
@@ -225,7 +225,7 @@ h2#description {
 }
 
 .linkAccueil:hover {
-    background-color: #3A83FF;
+    background-color: #263461;
     color: white;
 }
 /*============================*/
@@ -235,7 +235,7 @@ h2#description {
 .sidebar {
     background-image: url(img/aside-fond.png);
     width: 25%;
-    color: #3A83FF;
+    color: #263461;
     text-transform: capitalize;
     font-size: 0.8em;
 }
@@ -273,7 +273,7 @@ h2#description {
     border: 0px solid white;
     width: 70%;
     height: 35px;
-    background-color: #3A83FF;
+    background-color: #263461;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
@@ -315,7 +315,7 @@ h2#description {
 }
 
 #content a {
-    color: #3A83FF;
+    color: #263461;
     font-size: 0.8em;
     text-decoration: none;
     text-transform: uppercase;
@@ -341,7 +341,7 @@ em {
 #formeindex, h2 {
     margin-top: 20px;
     margin-bottom: 0px;
-    color: #3A83FF;
+    color: #263461;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
@@ -459,7 +459,7 @@ em {
 }
 
 .docteur:hover .docteur-present {
-    background-color: #3A83FF;
+    background-color: #263461;
     opacity: .9;
     transition: .3s;
 } [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */ 
@@ -469,7 +469,7 @@ em {
 /*============================*/
 
 #bloc-medium-savoirfaire {
-    margin-top: 100px;
+    margin: 100px 50px 0 50px;
     display: flex;
     height: 240px;
 }
@@ -492,7 +492,7 @@ em {
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #3A83FF;
+    color: #263461;
     font-size: .8em;
 }
 
@@ -508,18 +508,18 @@ em {
     margin: -50px auto 0 auto;
     text-align: center;
     border-radius: 200px;
-    border: 2px solid #3A83FF;
+    border: 2px solid #263461;
     background-color: #fff;
     transition: .4s;
 }
 
 .fa-sf i {
-    color: #3A83FF;
+    color: #263461;
     transition: .4s;
 }
 
 .fa-sf:hover {
-    background-color: #3A83FF;
+    background-color: #263461;
     transition: .4s;
 }
 
@@ -565,7 +565,7 @@ em {
     color: #fff;
     font-size: 2em;
     font-weight: 700;
-    background-color: #3A83FF;
+    background-color: #263461;
     box-shadow: 0 0 15px #111;
     z-index: 2;
     
@@ -605,7 +605,7 @@ em {
     margin: 0 2px;
     border: 0;
     border-radius: 60px;
-    background-color: #3A83FF;
+    background-color: #263461;
     box-shadow: 0 0 5px #444;
 }
 
@@ -693,7 +693,7 @@ em {
 .uniforme-article h2 {
     margin-top: 20px;
     margin-bottom: 0px;
-    color: #3A83FF;
+    color: #263461;
     text-align: center;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
@@ -811,7 +811,7 @@ textarea {
 
 #footer {
     font-size: 0.8em;
-    background: #3A83FF;
+    background: #263461;
     color: white;
     width: 100%;
     margin-bottom: -2vh;
