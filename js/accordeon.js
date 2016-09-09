@@ -27,6 +27,7 @@ $( document ).ready(function() {
     $("#croquettes").click(function() {
         if ($("#article-croquettes").css("display") == "none") {
             $("#article-croquettes").css("display", "block");
+            $("#article-croquettes").css("display", "block");
         } else {
             $("#article-croquettes").css("display", "none");
         }
