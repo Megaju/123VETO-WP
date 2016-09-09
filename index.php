@@ -29,7 +29,28 @@
                                     <p>Dr Eric Wintz Diplômé de l’école vétérinaire de Nantes en 1990, il se passionne pour la dermatologie et la cardiologie. Le Dr Wintz possède quatre chats Leelas (européenne), Gribouille (européen), Hannah (Mane Coon), et Joey (Ragdoll), des Platis, deux lapins nains Neige et Teddy ainsi que Lexie, chihuahua.</p>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div id="bloc-carousel">
+                        <h2 class="bandeau">Découverte de la clinique</h2>
+                        <div class="index-separator-0"></div>
 
+                        <div class="carousel">
+                            <div class="carousel-img"></div>
+                            <h2 id="carousel-titre">Titre associé</h2>
+                            <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
+                            
+                            <ul>
+                            <li id="carousel1"></li>
+                            <li id="carousel2"></li>
+                            <li id="carousel3"></li>
+                        </ul>
+                        
+                        <button id="left-button-carou" class="fa fa-chevron-left"></button>
+                        
+                        <button id="right-button-carou" class="fa fa-chevron-right"></button>
+                        
+                        </div>
                     </div>
 
                     <div id="bloc-large-savoirfaire">
@@ -67,28 +88,6 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
                                 <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                             </div>
-                        </div>
-                    </div>
-
-                    <div id="bloc-carousel">
-                        <h2 class="bandeau">Découverte de la clinique</h2>
-                        <div class="index-separator-0"></div>
-
-                        <div class="carousel">
-                            <div class="carousel-img"></div>
-                            <h2 id="carousel-titre">Titre associé</h2>
-                            <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
-                            
-                            <ul>
-                            <li id="carousel1"></li>
-                            <li id="carousel2"></li>
-                            <li id="carousel3"></li>
-                        </ul>
-                        
-                        <button id="left-button-carou" class="fa fa-chevron-left"></button>
-                        
-                        <button id="right-button-carou" class="fa fa-chevron-right"></button>
-                        
                         </div>
                     </div>
 
