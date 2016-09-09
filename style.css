@@ -9,6 +9,7 @@ Author: Solène, Lise et Julien
 /*========== GENERAL =========*/
 /*============================*/
 
+
 .flexbox{
     display: flex;
     justify-content: space-around;
@@ -24,7 +25,7 @@ Author: Solène, Lise et Julien
     src: url(fonts/Gabriela-Regular.ttf);
 }
 
-/* Le bleu : #3A83FF 
+/* Le bleu : #263461 SVG DE L'ANCIEN BLEU 3A83FF 
    Le orange : #F58900 */
 
 html, body {
@@ -76,7 +77,7 @@ h2.bandeau-mt0 {
     margin: 20px auto;
     width: 30%;
     height: 1px;
-    background-color: #3A83FF;
+    background-color: #263461;
 }
 
 i {
@@ -112,7 +113,7 @@ i {
     height: 400px;
     margin: 0;
     padding: 0;
-    background-color: #3A83FF;
+    background-color: #263461;
     background-image: url(img/facade.JPG);
     background-size: cover;
     background-position: center center;
@@ -175,7 +176,19 @@ h2#description {
 
 .menu-top-container {
     height: 50px;
+    border-bottom: 1px solid #263461;
+}
+
+.menuNav {
+    display: flex;
+    flex-direction: row;
     border-bottom: 1px solid #3A83FF;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.menu-top-container {
+    height: 100%;
 }
 
 .menu-top-container ul {
@@ -194,39 +207,57 @@ h2#description {
     height: 50px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #3A83FF;
+    color: #263461;
     text-decoration: none;
     transition: .2s;
 }
 
 .menu-top-container ul li:hover a, .current_page_item a {
-    background-color: #3A83FF;
+    background-color: #263461;
     color: #fff!important;
     transition: .2s;
 }
 
 .site-logo {
-    position: absolute;
     background: url(img/logo-nav.png) no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 44%;
+    margin-top: -16px;
     top: 0;
     left: 4vw;
     height: 8vh;
     width: 14vw;
-    color: #3A83FF;
+    color: #263461;
     text-transform: uppercase;
+    /*border-bottom: 1px solid #3A83FF;*/
 }
 
+
 .raisonSociale {
-    right: 0;
-    padding-left: 37%;
     font-family: Gabriela;
+    padding-left: 27%;
+    padding-top: 15px;
 }
 
 .linkAccueil:hover {
-    background-color: #3A83FF;
+    background-color: #263461;
     color: white;
+}
+
+.linkAccueil {
+    text-decoration: none;
+    color: #3A83FF;
+    text-align: center;
+}
+
+.menuNav .fa {
+   color: #3A83FF;
+   margin-top: 17px;
+   margin-left: 25px;
+}
+
+.menuNav .fa:hover {
+    color: lightblue;
 }
 /*============================*/
 /*========== SIDEBAR =========*/
@@ -235,7 +266,7 @@ h2#description {
 .sidebar {
     background-image: url(img/aside-fond.png);
     width: 25%;
-    color: #3A83FF;
+    color: #263461;
     text-transform: capitalize;
     font-size: 0.8em;
 }
@@ -273,7 +304,7 @@ h2#description {
     border: 0px solid white;
     width: 70%;
     height: 35px;
-    background-color: #3A83FF;
+    background-color: #263461;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
@@ -315,7 +346,7 @@ h2#description {
 }
 
 #content a {
-    color: #3A83FF;
+    color: #263461;
     font-size: 0.8em;
     text-decoration: none;
     text-transform: uppercase;
@@ -340,19 +371,19 @@ em {
 /*========== EQUIPE ==========*/
 /*============================*/
 
-#formeindex, h2 {
+.formeindex, h2 {
     margin-top: 20px;
     margin-bottom: 0px;
-    color: #3A83FF;
+    color: #263461;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     padding: 15px;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 20px;
 }
 
-#formeindex p {
+.formeindex p {
     font-size: 0.7em;
     text-align: center;
     background-color: white;
@@ -461,7 +492,7 @@ em {
 }
 
 .docteur:hover .docteur-present {
-    background-color: #3A83FF;
+    background-color: #263461;
     opacity: .9;
     transition: .3s;
 } [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */ 
@@ -471,7 +502,7 @@ em {
 /*============================*/
 
 #bloc-medium-savoirfaire {
-    margin-top: 100px;
+    margin: 100px 50px 0 50px;
     display: flex;
     height: 240px;
 }
@@ -494,7 +525,7 @@ em {
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #3A83FF;
+    color: #263461;
     font-size: .8em;
 }
 
@@ -510,18 +541,18 @@ em {
     margin: -50px auto 0 auto;
     text-align: center;
     border-radius: 200px;
-    border: 2px solid #3A83FF;
+    border: 2px solid #263461;
     background-color: #fff;
     transition: .4s;
 }
 
 .fa-sf i {
-    color: #3A83FF;
+    color: #263461;
     transition: .4s;
 }
 
 .fa-sf:hover {
-    background-color: #3A83FF;
+    background-color: #263461;
     transition: .4s;
 }
 
@@ -542,13 +573,13 @@ em {
     position: relative;
     margin: -60px auto 50px auto;
     width: 100%;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
 }
 
 .carousel-img {
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-image: url(img/caroussel/Espace_Vente.JPG);
     background-repeat: no-repeat;
     background-position: center center;
@@ -567,7 +598,7 @@ em {
     color: #fff;
     font-size: 2em;
     font-weight: 700;
-    background-color: #3A83FF;
+    background-color: #263461;
     box-shadow: 0 0 15px #111;
     z-index: 2;
     
@@ -607,7 +638,7 @@ em {
     margin: 0 2px;
     border: 0;
     border-radius: 60px;
-    background-color: #3A83FF;
+    background-color: #263461;
     box-shadow: 0 0 5px #444;
 }
 
@@ -695,7 +726,7 @@ em {
 .uniforme-article h2 {
     margin-top: 20px;
     margin-bottom: 0px;
-    color: #3A83FF;
+    color: #263461;
     text-align: center;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
@@ -712,6 +743,7 @@ em {
 }
 
 .imgPage img {
+    margin-top: 10px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -719,7 +751,7 @@ em {
 
 .contenu_article p {
     padding-left: 30px;
-    font-size: .9em;
+    font-size: 15px;
     color: #222;
 }
 
@@ -746,9 +778,51 @@ em {
     display: none;
 }
 
+
+
 /*============================*/
-/*========= CONSEILS =========*/
+/*========== VENTE ===========*/
 /*============================*/
+
+.vente {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.vente section {
+    display: block;
+}
+
+.vente div {
+
+    margin: 0 auto;
+}
+
+.vente i {
+    padding: 20px;
+    cursor: pointer;
+    padding-left: 25%;
+}
+
+.vente h3 {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.vente p {
+   color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    text-align: left;
+}
+
+#article-croquettes, #article-vermifuges, #article-shampoings, #article-brosses, #article-colliers {
+    display: none;
+}
 
 
 /*============================*/
@@ -813,7 +887,6 @@ textarea {
     flex-wrap: wrap;
     justify-content: space-around;
     font-size: 15px;
-
 }
 
 
@@ -823,11 +896,11 @@ textarea {
 }
 
 .section {
-    width: 350px;  
+    width: 450px;  
     display: flex;
     flex-direction: column;
     float: left;
-    margin-right: 5px;    
+    margin-right: 15px;    
 }
 
 .section input {
@@ -876,13 +949,16 @@ textarea {
 >>>>>>> e69c30c52beba56903566bfa279ba0fa57a62b77
 }
 
+.agenda p {
+    
+}
 /*============================*/
 /*========== FOOTER ==========*/
 /*============================*/
 
 #footer {
     font-size: 0.8em;
-    background: #3A83FF;
+    background: #263461;
     color: white;
     width: 100%;
     margin-bottom: -2vh;
