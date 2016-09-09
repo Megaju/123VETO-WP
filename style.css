@@ -244,19 +244,21 @@ h2#description {
     font-size: 20px;
     left: 0px;
     text-transform: uppercase;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    background-color: #3A83FF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #F58900;
     border: 0px solid white;
     font-family: "Open Sans", sans-serif;
     color: white;
     position: absolute;
+    cursor: pointer;
 }
 
-.sidebar button:hover,
-#priseRDV:hover {
-    background-color: #F58900;
-		transition: .2s;
+#priseRDV p {
+    font-size: 0.7em;
+    text-transform: lowercase;
+    margin-top: 0px;
+    padding-bottom: 5px;
 }
 
 #content {
@@ -678,7 +680,7 @@ em {
 }
 
 #consultation,
-#dent,
+#dents,
 #medicament {
     display: block;
 }
@@ -688,18 +690,22 @@ em {
 #chirurgie,
 #hospitalisation,
 #nac,
-#yeux-oreilles,
-#yeux-oreilles,
+#yeux,
 #pelage,
-#parasite,
-#vaccin-chien,
-#vaccin-chat,
-#id,
+#parasites,
+#vaccinChien,
+#vaccinChat,
+#identification,
 #education,
 #alimentation,
 #index {
     display: none;
 }
+
+/*============================*/
+/*========= CONSEILS =========*/
+/*============================*/
+
 
 /*============================*/
 /*========= CONTACT =========*/
