@@ -24,11 +24,52 @@ function fiche_conseil(target) {
 
 //VENTE
 $( document ).ready(function() {
-    $("#medicament").click(function() {
-        if ($("#article").css("display") == "none") {
-            $("#article").css("display", "block");
+    $("#croquettes").click(function() {
+        if ($("#article-croquettes").css("display") == "none") {
+            $("#article-croquettes").css("display", "block");
+            $("#article-croquettes").css("display", "block");
         } else {
-            $("#article").css("display", "none");
+            $("#article-croquettes").css("display", "none");
+        }
+    }); 
+});
+
+$( document ).ready(function() {
+    $("#vermifuges").click(function() {
+        if ($("#article-vermifuges").css("display") == "none") {
+            $("#article-vermifuges").css("display", "block");
+        } else {
+            $("#article-vermifuges").css("display", "none");
+        }
+    }); 
+});
+
+$( document ).ready(function() {
+    $("#shampoings").click(function() {
+        if ($("#article-shampoings").css("display") == "none") {
+            $("#article-shampoings").css("display", "block");
+        } else {
+            $("#article-shampoings").css("display", "none");
+        }
+    }); 
+});
+
+$( document ).ready(function() {
+    $("#brosses").click(function() {
+        if ($("#article-brosses").css("display") == "none") {
+            $("#article-brosses").css("display", "block");
+        } else {
+            $("#article-brosses").css("display", "none");
+        }
+    }); 
+});
+
+$( document ).ready(function() {
+    $("#colliers").click(function() {
+        if ($("#article-colliers").css("display") == "none") {
+            $("#article-colliers").css("display", "block");
+        } else {
+            $("#article-colliers").css("display", "none");
         }
     }); 
 });
