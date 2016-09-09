@@ -88,7 +88,7 @@
                     </div>
                     
                     <!-- CONSEILS -->
-                    <section class="formeindex">
+                    
                         <h2 class="bandeau">Nos Conseils</h2>
                     <!-- ICONES -->       
                         <div class="icone-generique">
@@ -134,7 +134,7 @@
                                 <button class="bouton-generique" onclick="fiche_conseil('education')">Education</button>
                             </div>
                         </div>
-                    </section>
+                    
                     
                     <!-- VENTES -->
                     <section id="formeindex">
