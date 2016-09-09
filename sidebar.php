@@ -23,7 +23,9 @@
                     <div class= "post_content">
                         <?php the_post_thumbnail(array(250,250));?>
                         <p class="postmetadata">
-                            <?php the_time('j F Y') ?> par <?php the_author() ?>
+                         <?php the_content() ?>
+                         <?php get_the_excerpt() ?>
+                         par <?php the_author() ?>
                         </p>
                     </div> 
                 </div>

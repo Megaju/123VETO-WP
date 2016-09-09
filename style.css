@@ -535,31 +535,25 @@ em {
 
 .fa-sf {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
     margin: -50px auto 0 auto;
+    font-size: 6em;
     text-align: center;
     border-radius: 200px;
     border: 2px solid #263461;
     background-color: #fff;
     transition: .4s;
-}
-
-.fa-sf i {
     color: #263461;
-    transition: .4s;
 }
 
 .fa-sf:hover {
+    color: #fff;
     background-color: #263461;
     transition: .4s;
-}
-
-.fa-sf:hover i {
-    color: #fff;
     cursor: pointer;
-    transition: .4s;
 }
 
 
@@ -829,34 +823,54 @@ em {
 /*========= CONTACT =========*/
 /*============================*/
 
+.TitreForm1 {
+
+    float: left;
+    margin-left: 54px;
+}
+
+.TitreForm2 {
+
+    margin-right: -176px;
+}
+
 .contact {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     height: 90vh;
 }
 .type1 {
     margin-left: 2vh;
     height: 40px;
-    padding: 5px 10px;
+    padding: 5px 7px;
     border: 01px solid #777;
     background-color: #eee;
 }
+
 #form1 {
+    width: 0 auto;
     border-right: 1px solid lightgray;
-}
+    margin-top: 18px; }
+
+
 .formulaire {
     width: 45%;
 }
-#typan {
-    font-size: 15px;
-    margin-right: 4vh;
-}
+
 .localisation {
-    width: 33%;
+    width: 38%;
+
 }
 
+#locapara {
+ font-size: 12.5px;
+ margin-right: 5vh;
+ line-height: 1.8em;
+ margin-top: -21px;
+ margin-bottom: 50px;
+
+}
 input, textarea {
     height: 40px;
     padding: 5px 10px;
@@ -864,18 +878,21 @@ input, textarea {
     background-color: #eee;
 }
 
+
 textarea {
     height: 22vh;
-    width: 52vh;
+    width: 45vh;
 }
+
 .EnvoieForm {
-    width: 40%;
-    height: 40px;
+    width: 22%;
+    height: 50px;
     background-color: white;
     border: 1px solid darkgrey;
     font-family: "Open Sans", sans-serif;
     color: #F58900;
     cursor: pointer;
+    overflow: hidden;
 }
 
 /*============================*/

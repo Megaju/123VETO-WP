@@ -16,9 +16,24 @@ Template Name: conseils
 
                 <div>
                     <section class="formeindex">
-                        <h2>Nos Conseils</h2>
-                        <div class="index-separator"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur dolorum ullam quisquam ut qui velit molestias inventore esse asperiores modi possimus.</p>
+                        <div class="uniform-article">
+                                <?php query_posts('category_name=titre-intro-conseils'); ?>
+                                    <?php if(have_posts()) : ?>
+                                        <?php while(have_posts()) : the_post();?>
+
+                                            <!-- affichage des articles -->
+                                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
+                                            <div class="index-separator"></div>
+                                            <div class="post" id="post-<?php the_ID(); ?>">
+                                                <div class="post_content alignement_article">
+                                                    <div class="contenu_article">
+                                                        <?php the_content(); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <?php endwhile; ?>
+                                                <?php endif; ?>
+                            </div>
 
                     <!-- ICONES -->       
                         <div class="icone-generique">
