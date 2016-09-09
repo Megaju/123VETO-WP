@@ -309,6 +309,51 @@ em {
 
 /* --------- THE TEAM --------- */
 
+.docteurs {
+    text-align: center;
+}
+
+.docteur {
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#docteur1 {
+    background-image: url(img/dr-aurelie.jpg);
+}
+
+#docteur2 {
+    background-image: url(img/dr-eric.jpg);
+}
+
+.docteur-present {
+    display: inline-block;
+    margin-right: 10px;
+    width: 25%;
+}
+
+.docteur-present h3 {
+    font-size: 1em;
+    text-align: left;
+}
+
+.docteur-present h4 {
+    font-size: .8em;
+    text-align: left;
+}
+
+.docteur-present p {
+    font-size: .6em;
+    text-align: justify;
+    cursor: default;
+}
+
+/* ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;)
 .docteur {
     width: 400px;
     height: 400px;
@@ -362,7 +407,7 @@ em {
     background-color: #3A83FF;
     opacity: .9;
     transition: .3s;
-}
+} [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */ 
 
 /*============================*/
 /*========= SAVOIR-FAIRE =====*/
