@@ -24,6 +24,7 @@
 				<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery_v3.1.0.js"></script>           
 				<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/button_fixed.js"></script>
 				<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
+
             <?php wp_get_archives('type=monthly&format=link'); ?>
                 
 

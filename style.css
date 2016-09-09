@@ -309,6 +309,52 @@ em {
 
 /* --------- THE TEAM --------- */
 
+.docteurs {
+    text-align: center;
+}
+
+.docteur {
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#docteur1 {
+    background-image: url(img/dr-aurelie.jpg);
+}
+
+#docteur2 {
+    background-image: url(img/dr-eric.jpg);
+}
+
+.docteur-present {
+    display: inline-block;
+    margin-right: 10px;
+    width: 25%;
+    color: #333;
+}
+
+.docteur-present h3 {
+    font-size: 1em;
+    text-align: left;
+}
+
+.docteur-present h4 {
+    font-size: .8em;
+    text-align: left;
+}
+
+.docteur-present p {
+    font-size: .6em;
+    text-align: justify;
+    cursor: default;
+}
+
+/* ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;)
 .docteur {
     width: 400px;
     height: 400px;
@@ -362,7 +408,7 @@ em {
     background-color: #3A83FF;
     opacity: .9;
     transition: .3s;
-}
+} [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */ 
 
 /*============================*/
 /*========= SAVOIR-FAIRE =====*/
@@ -508,6 +554,7 @@ em {
     border: 0;
     border-radius: 60px;
     background-color: #3A83FF;
+    box-shadow: 0 0 5px #444;
 }
 
 #bloc-carousel ul li:hover {
@@ -545,6 +592,7 @@ em {
 .uniform-article {
     width: 85%;
     margin: auto;
+    margin-bottom: 70px;
 }
 
 .uniforme-article h2 {
@@ -576,6 +624,30 @@ em {
     padding-left: 30px;
     font-size: .9em;
     color: #222;
+}
+
+#consultation,
+#dent,
+#medicament {
+    display: block;
+}
+
+#imagerie,
+#analyse,
+#chirurgie,
+#hospitalisation,
+#nac,
+#yeux-oreilles,
+#yeux-oreilles,
+#pelage,
+#parasite,
+#vaccin-chien,
+#vaccin-chat,
+#id,
+#education,
+#alimentation,
+#index {
+    display: none;
 }
 
 /*============================*/
