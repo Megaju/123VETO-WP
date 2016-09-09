@@ -335,6 +335,7 @@ em {
     display: inline-block;
     margin-right: 10px;
     width: 25%;
+    color: #333;
 }
 
 .docteur-present h3 {
