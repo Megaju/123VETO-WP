@@ -1,6 +1,4 @@
-<?php //fix bug header ?>
-
-    <?php
+<?php
 /*
 Template Name: prestations
 */
@@ -179,4 +177,3 @@ Template Name: prestations
 
             <!-- pour insérer le footer -->
             <?php get_footer(); ?>
->>>>>>> ed30eb70a9d22918b957bcbfb2aee73ce2b1e68c
