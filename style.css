@@ -312,14 +312,16 @@ em {
 /* --------- THE TEAM --------- */
 
 .docteur {
-    height: 500px;
-    margin: 0 20px;
+    width: 400px;
+    height: 400px;
+    margin: 20px 20px 0 20px;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: default;
 }
 
 .docteur h3 {
-    font-size: 250%;
+    font-size: 2em;
     color: #fff;
 }
 
@@ -490,24 +492,32 @@ em {
 }
 
 #bloc-carousel ul {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    margin: 0px auto 10px auto;
     list-style: none;
-    display: inline-flex;
+    text-align: center;
 }
 
 #bloc-carousel ul li {
+    display: inline-block;
     font-size: 0;
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
     border: 0;
     border-radius: 60px;
-    background-color: #333;
+    background-color: #3A83FF;
+    box-shadow: 0 0 5px #444;
 }
 
 #bloc-carousel ul li:hover {
-    background-color: #111;
+    background-color: #F58900;
     cursor: pointer;
 }
+
 /*============================*/
 /*========= PAGE =============*/
 /*============================*/
@@ -603,7 +613,50 @@ em {
 .contact {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-around;
+    height: 90vh;
+}
+.type1 {
+    margin-left: 2vh;
+    height: 40px;
+    padding: 5px 10px;
+    border: 01px solid #777;
+    background-color: #eee;
+}
+#form1 {
+    border-right: 1px solid lightgray;
+}
+.formulaire {
+    width: 45%;
+}
+#typan {
+    font-size: 15px;
+    margin-right: 4vh;
+}
+.localisation {
+    width: 33%;
+}
+
+input, textarea {
+    height: 40px;
+    padding: 5px 10px;
+    border: 01px solid #777;
+    background-color: #eee;
+}
+
+textarea {
+    height: 22vh;
+    width: 52vh;
+}
+.EnvoieForm {
+    width: 40%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    color: #F58900;
+    cursor: pointer;
 }
 
 /*============================*/
@@ -615,6 +668,7 @@ em {
     background: #3A83FF;
     color: white;
     width: 100%;
+    margin-bottom: -2vh;
 }
 
 #footer p, #footer a {
