@@ -535,31 +535,25 @@ em {
 
 .fa-sf {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
     margin: -50px auto 0 auto;
+    font-size: 6em;
     text-align: center;
     border-radius: 200px;
     border: 2px solid #263461;
     background-color: #fff;
     transition: .4s;
-}
-
-.fa-sf i {
     color: #263461;
-    transition: .4s;
 }
 
 .fa-sf:hover {
+    color: #fff;
     background-color: #263461;
     transition: .4s;
-}
-
-.fa-sf:hover i {
-    color: #fff;
     cursor: pointer;
-    transition: .4s;
 }
 
 
