@@ -15,12 +15,12 @@ Template Name: conseils
                 <?php get_sidebar(); ?>
 
                 <div>
-                    <section id="formeindex">
+                    <section class="formeindex">
                         <h2>Nos Conseils</h2>
                         <div class="index-separator"></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur dolorum ullam quisquam ut qui velit molestias inventore esse asperiores modi possimus.</p>
 
-                <!-- ICONES -->       
+                    <!-- ICONES -->       
                         <div class="icone-generique">
                             <div class="center-generique">
                                 <i class="fa fa-user-md fa-3x"></i>
@@ -68,162 +68,162 @@ Template Name: conseils
                 
         
 
-                <section>
-                    <!--AFFICHAGE DES ARTICLES-->
-                    
-                    <!-- articles dents -->                           
-                    <div class="uniform-article" id="dents">
-                       <?php query_posts('category_name=dents'); ?>
-                       <?php if(have_posts()) : ?>
-                       <?php while(have_posts()) : the_post();?>
+                    <section>
+                <!--AFFICHAGE DES ARTICLES-->
+                        
+                <!-- articles dents -->                           
+                        <div class="uniform-article" id="dents">
+                           <?php query_posts('category_name=dents'); ?>
+                           <?php if(have_posts()) : ?>
+                           <?php while(have_posts()) : the_post();?>
 
-                        <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
-                        <div class="index-separator"></div>
-                            <div class= "post" id="post-<?php the_ID(); ?>"> 
-                                <div class= "post_content alignement_article">
-                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
-                                    </div>
-                                    <div class="contenu_article"><?php the_content(); ?></div>
-                                </div> 
-                            </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                    
-                    <!-- articles yeux oreilles -->
-                    <div class="uniform-article" id="yeux">
-                       <?php query_posts('category_name=yeux'); ?>
-                       <?php if(have_posts()) : ?>
-                       <?php while(have_posts()) : the_post();?>
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
+                            <div class="index-separator"></div>
+                                <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                    <div class= "post_content alignement_article">
+                                        <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                        </div>
+                                        <div class="contenu_article"><?php the_content(); ?></div>
+                                    </div> 
+                                </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
+                        
+                        <!-- articles yeux oreilles -->
+                        <div class="uniform-article" id="yeux">
+                           <?php query_posts('category_name=yeux'); ?>
+                           <?php if(have_posts()) : ?>
+                           <?php while(have_posts()) : the_post();?>
 
-                        <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
-                        <div class="index-separator"></div>
-                            <div class= "post" id="post-<?php the_ID(); ?>"> 
-                                <div class= "post_content alignement_article">
-                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
-                                    </div>
-                                    <div class="contenu_article"><?php the_content(); ?></div>
-                                </div> 
-                            </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                    
-                    <!-- articles pelage -->
-                    <div class="uniform-article" id="pelage">
-                       <?php query_posts('category_name=pelage'); ?>
-                       <?php if(have_posts()) : ?>
-                       <?php while(have_posts()) : the_post();?>
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
+                            <div class="index-separator"></div>
+                                <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                    <div class= "post_content alignement_article">
+                                        <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                        </div>
+                                        <div class="contenu_article"><?php the_content(); ?></div>
+                                    </div> 
+                                </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
+                        
+                        <!-- articles pelage -->
+                        <div class="uniform-article" id="pelage">
+                           <?php query_posts('category_name=pelage'); ?>
+                           <?php if(have_posts()) : ?>
+                           <?php while(have_posts()) : the_post();?>
 
-                        <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
-                        <div class="index-separator"></div>
-                            <div class= "post" id="post-<?php the_ID(); ?>"> 
-                                <div class= "post_content alignement_article">
-                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
-                                    </div>
-                                    <div class="contenu_article"><?php the_content(); ?></div>
-                                </div> 
-                            </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                    
-                    <!-- articles parasites -->
-                    <div class="uniform-article" id="parasites">
-                       <?php query_posts('category_name=parasites'); ?>
-                       <?php if(have_posts()) : ?>
-                       <?php while(have_posts()) : the_post();?>
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
+                            <div class="index-separator"></div>
+                                <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                    <div class= "post_content alignement_article">
+                                        <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                        </div>
+                                        <div class="contenu_article"><?php the_content(); ?></div>
+                                    </div> 
+                                </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
+                        
+                        <!-- articles parasites -->
+                        <div class="uniform-article" id="parasites">
+                           <?php query_posts('category_name=parasites'); ?>
+                           <?php if(have_posts()) : ?>
+                           <?php while(have_posts()) : the_post();?>
 
-                        <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
-                        <div class="index-separator"></div>
-                            <div class= "post" id="post-<?php the_ID(); ?>"> 
-                                <div class= "post_content alignement_article">
-                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
-                                    </div>
-                                    <div class="contenu_article"><?php the_content(); ?></div>
-                                </div> 
-                            </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                    
-                    <!-- articles vaccin chien -->
-                    <div class="uniform-article" id="vaccinChien">
-                       <?php query_posts('category_name=vaccinChien'); ?>
-                       <?php if(have_posts()) : ?>
-                       <?php while(have_posts()) : the_post();?>
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
+                            <div class="index-separator"></div>
+                                <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                    <div class= "post_content alignement_article">
+                                        <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                        </div>
+                                        <div class="contenu_article"><?php the_content(); ?></div>
+                                    </div> 
+                                </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
+                        
+                        <!-- articles vaccin chien -->
+                        <div class="uniform-article" id="vaccinChien">
+                           <?php query_posts('category_name=vaccinChien'); ?>
+                           <?php if(have_posts()) : ?>
+                           <?php while(have_posts()) : the_post();?>
 
-                        <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
-                        <div class="index-separator"></div>
-                            <div class= "post" id="post-<?php the_ID(); ?>"> 
-                                <div class= "post_content alignement_article">
-                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
-                                    </div>
-                                    <div class="contenu_article"><?php the_content(); ?></div>
-                                </div> 
-                            </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                    
-                    <!-- articles vaccin chat -->
-                    <div class="uniform-article" id="vaccinChat">
-                       <?php query_posts('category_name=vaccinChat'); ?>
-                       <?php if(have_posts()) : ?>
-                       <?php while(have_posts()) : the_post();?>
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
+                            <div class="index-separator"></div>
+                                <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                    <div class= "post_content alignement_article">
+                                        <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                        </div>
+                                        <div class="contenu_article"><?php the_content(); ?></div>
+                                    </div> 
+                                </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
+                        
+                        <!-- articles vaccin chat -->
+                        <div class="uniform-article" id="vaccinChat">
+                           <?php query_posts('category_name=vaccinChat'); ?>
+                           <?php if(have_posts()) : ?>
+                           <?php while(have_posts()) : the_post();?>
 
-                        <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
-                        <div class="index-separator"></div>
-                            <div class= "post" id="post-<?php the_ID(); ?>"> 
-                                <div class= "post_content alignement_article">
-                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
-                                    </div>
-                                    <div class="contenu_article"><?php the_content(); ?></div>
-                                </div> 
-                            </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                    
-                    <!-- articles identification -->
-                    <div class="uniform-article" id="identification">
-                       <?php query_posts('category_name=identification'); ?>
-                       <?php if(have_posts()) : ?>
-                       <?php while(have_posts()) : the_post();?>
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
+                            <div class="index-separator"></div>
+                                <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                    <div class= "post_content alignement_article">
+                                        <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                        </div>
+                                        <div class="contenu_article"><?php the_content(); ?></div>
+                                    </div> 
+                                </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
+                        
+                        <!-- articles identification -->
+                        <div class="uniform-article" id="identification">
+                           <?php query_posts('category_name=identification'); ?>
+                           <?php if(have_posts()) : ?>
+                           <?php while(have_posts()) : the_post();?>
 
-                        <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
-                        <div class="index-separator"></div>
-                            <div class= "post" id="post-<?php the_ID(); ?>"> 
-                                <div class= "post_content alignement_article">
-                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
-                                    </div>
-                                    <div class="contenu_article"><?php the_content(); ?></div>
-                                </div> 
-                            </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
+                            <div class="index-separator"></div>
+                                <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                    <div class= "post_content alignement_article">
+                                        <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                        </div>
+                                        <div class="contenu_article"><?php the_content(); ?></div>
+                                    </div> 
+                                </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
 
-                    <!-- articles education -->
-                    <div class="uniform-article" id="education">
-                       <?php query_posts('category_name=education'); ?>
-                       <?php if(have_posts()) : ?>
-                       <?php while(have_posts()) : the_post();?>
+                        <!-- articles education -->
+                        <div class="uniform-article" id="education">
+                           <?php query_posts('category_name=education'); ?>
+                           <?php if(have_posts()) : ?>
+                           <?php while(have_posts()) : the_post();?>
 
-                    
-                        <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
-                        <div class="index-separator"></div>
-                            <div class= "post" id="post-<?php the_ID(); ?>"> 
-                                <div class= "post_content alignement_article">
-                                    <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
-                                    </div>
-                                    <div class="contenu_article"><?php the_content(); ?></div>
-                                </div> 
-                            </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                </section>
+                        
+                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>    
+                            <div class="index-separator"></div>
+                                <div class= "post" id="post-<?php the_ID(); ?>"> 
+                                    <div class= "post_content alignement_article">
+                                        <div class="imgPage"> <?php the_post_thumbnail(array(250,250));?>
+                                        </div>
+                                        <div class="contenu_article"><?php the_content(); ?></div>
+                                    </div> 
+                                </div>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
+                    </section>
                 </div>
             </div>
 
