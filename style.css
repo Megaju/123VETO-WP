@@ -9,6 +9,7 @@ Author: Solène, Lise et Julien
 /*========== GENERAL =========*/
 /*============================*/
 
+
 .flexbox{
     display: flex;
     justify-content: space-around;
@@ -178,6 +179,18 @@ h2#description {
     border-bottom: 1px solid #263461;
 }
 
+.menuNav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #3A83FF;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.menu-top-container {
+    height: 100%;
+}
+
 .menu-top-container ul {
     text-align: center;
     list-style: none;
@@ -206,27 +219,45 @@ h2#description {
 }
 
 .site-logo {
-    position: absolute;
     background: url(img/logo-nav.png) no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 44%;
+    margin-top: -16px;
     top: 0;
     left: 4vw;
     height: 8vh;
     width: 14vw;
     color: #263461;
     text-transform: uppercase;
+    /*border-bottom: 1px solid #3A83FF;*/
 }
 
+
 .raisonSociale {
-    right: 0;
-    padding-left: 37%;
     font-family: Gabriela;
+    padding-left: 27%;
+    padding-top: 15px;
 }
 
 .linkAccueil:hover {
     background-color: #263461;
     color: white;
+}
+
+.linkAccueil {
+    text-decoration: none;
+    color: #3A83FF;
+    text-align: center;
+}
+
+.menuNav .fa {
+   color: #3A83FF;
+   margin-top: 17px;
+   margin-left: 25px;
+}
+
+.menuNav .fa:hover {
+    color: lightblue;
 }
 /*============================*/
 /*========== SIDEBAR =========*/
@@ -334,11 +365,13 @@ em {
 	transition: .2s;
 }
 
+
+
 /*============================*/
 /*========== EQUIPE ==========*/
 /*============================*/
 
-#formeindex, h2 {
+.formeindex, h2 {
     margin-top: 20px;
     margin-bottom: 0px;
     color: #263461;
@@ -347,10 +380,10 @@ em {
     text-transform: uppercase;
     padding: 15px;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 20px;
 }
 
-#formeindex p {
+.formeindex p {
     font-size: 0.7em;
     text-align: center;
     background-color: white;
@@ -502,31 +535,25 @@ em {
 
 .fa-sf {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
     margin: -50px auto 0 auto;
+    font-size: 6em;
     text-align: center;
     border-radius: 200px;
     border: 2px solid #263461;
     background-color: #fff;
     transition: .4s;
-}
-
-.fa-sf i {
     color: #263461;
-    transition: .4s;
 }
 
 .fa-sf:hover {
+    color: #fff;
     background-color: #263461;
     transition: .4s;
-}
-
-.fa-sf:hover i {
-    color: #fff;
     cursor: pointer;
-    transition: .4s;
 }
 
 
@@ -540,13 +567,13 @@ em {
     position: relative;
     margin: -60px auto 50px auto;
     width: 100%;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
 }
 
 .carousel-img {
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-image: url(img/caroussel/Espace_Vente.JPG);
     background-repeat: no-repeat;
     background-position: center center;
@@ -743,6 +770,7 @@ em {
 }
 
 .imgPage img {
+    margin-top: 10px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -750,7 +778,7 @@ em {
 
 .contenu_article p {
     padding-left: 30px;
-    font-size: .9em;
+    font-size: 15px;
     color: #222;
 }
 
@@ -777,13 +805,52 @@ em {
     display: none;
 }
 
+
+
 /*============================*/
-/*========= CONSEILS =========*/
+/*========== VENTE ===========*/
 /*============================*/
-#pageConseil{
-    display: block;
-    width: 85%;
+
+.vente {
+    margin-top: 50px;
+    text-align: left;
 }
+
+.vente section {
+    display: block;
+}
+
+.vente div {
+
+    margin: 0 auto;
+}
+
+.vente i {
+    padding: 20px;
+    cursor: pointer;
+    padding-left: 25%;
+}
+
+.vente h3 {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.vente p {
+   color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    text-align: left;
+}
+
+#article-croquettes, #article-vermifuges, #article-shampoings, #article-brosses, #article-colliers {
+    display: none;
+}
+
 
 /*============================*/
 /*========= CONTACT =========*/
@@ -836,6 +903,66 @@ textarea {
     font-family: "Open Sans", sans-serif;
     color: #F58900;
     cursor: pointer;
+}
+
+/*============================*/
+/*============ RDV ===========*/
+/*============================*/
+
+#rdv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px; 
+}
+
+#rdv h1 {
+    padding: 20px;
+    color: #263461;
+}
+
+.section {   
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 5px;    
+}
+
+.section input {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+
+}
+
+label {
+    margin: 5px;
+    display: inline-block;
+    font-size: 15px;
+    color: #263461;
+}
+
+select {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+}
+
+textarea {
+     width: auto;
+     border-radius: 5px;
+     border: 01px solid #fff;     
+     font-family: 'Open Sans', sans-serif;
+     font-size: 15px;
+     cursor: pointer;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    float: left;  
 }
 
 /*============================*/

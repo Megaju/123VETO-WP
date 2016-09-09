@@ -29,47 +29,9 @@
                                     <p>Dr Eric Wintz Diplômé de l’école vétérinaire de Nantes en 1990, il se passionne pour la dermatologie et la cardiologie. Le Dr Wintz possède quatre chats Leelas (européenne), Gribouille (européen), Hannah (Mane Coon), et Joey (Ragdoll), des Platis, deux lapins nains Neige et Teddy ainsi que Lexie, chihuahua.</p>
                             </div>
                         </div>
-
                     </div>
-
-                    <div id="bloc-large-savoirfaire">
-                        <h2 class="bandeau">Notre savoir-faire</h2>
-                        <div class="index-separator-0"></div>
-                        <div id="bloc-medium-savoirfaire">
-                            <div class="bloc-small-savoirfaire">
-                                <div class="fa-sf">
-                                    <i class="fa fa-4x">1</i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
-                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
-                            </div>
-
-                            <div class="bloc-small-savoirfaire">
-                                <div class="fa-sf">
-                                    <i class="fa fa-4x">2</i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
-                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
-                            </div>
-
-                            <div class="bloc-small-savoirfaire">
-                                <div class="fa-sf">
-                                    <i class="fa fa-4x">3</i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
-                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
-                            </div>
-
-                            <div class="bloc-small-savoirfaire">
-                                <div class="fa-sf">
-                                    <i class="fa fa-4x">V</i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
-                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
+                    
+                    <!-- CAROUSEL -->
                     <div id="bloc-carousel">
                         <h2 class="bandeau">Découverte de la clinique</h2>
                         <div class="index-separator-0"></div>
@@ -78,12 +40,6 @@
                             <div class="carousel-img"></div>
                             <h2 id="carousel-titre">Titre associé</h2>
                             <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
-                            
-                            <ul>
-                            <li id="carousel1"></li>
-                            <li id="carousel2"></li>
-                            <li id="carousel3"></li>
-                        </ul>
                         
                         <button id="left-button-carou" class="fa fa-chevron-left"></button>
                         
@@ -91,6 +47,115 @@
                         
                         </div>
                     </div>
+                    
+                    <!-- SAVOIR-FAIRE 1 2 3 VETO -->
+                    <div id="bloc-large-savoirfaire">
+                        <h2 class="bandeau">Notre savoir-faire</h2>
+                        <div class="index-separator-0"></div>
+                        <div id="bloc-medium-savoirfaire">
+                            <div class="bloc-small-savoirfaire">
+                                <div class="fa-sf">
+                                    1
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
+                            </div>
+
+                            <div class="bloc-small-savoirfaire">
+                                <div class="fa-sf">
+                                    2
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
+                            </div>
+
+                            <div class="bloc-small-savoirfaire">
+                                <div class="fa-sf">
+                                    3
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
+                            </div>
+
+                            <div class="bloc-small-savoirfaire">
+                                <div class="fa-sf">
+                                    V
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CONSEILS -->
+                    
+                        <h2 class="bandeau">Nos Conseils</h2>
+                    <!-- ICONES -->       
+                        <div class="icone-generique">
+                            <div class="center-generique">
+                                <i class="fa fa-user-md fa-3x"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('dents')">Dents</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <i class="fa fa-eye fa-3x"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('yeux')">Yeux / Oreilles</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <i class="fa fa-paw fa-3x text-center"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('pelage')">Pelage</button>
+                            </div>
+                            
+                            <div class="center-generique">
+                                <i class="fa fa-bug fa-3x text-center"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button>
+                            </div>
+                        </div>
+                        
+                        <div class="icone-generique">
+                            <div class="center-generique">
+                                <i class="fa fa-plus-square fa-3x"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('vaccinChien')">Vaccin Chien</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <i class="fa fa-medkit fa-3x"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('vaccinChat')">Vaccin Chat</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <i class="fa fa-barcode fa-3x text-center"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button>
+                            </div>
+                            
+                            <div class="center-generique">
+                                <i class="fa fa-book fa-3x text-center"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('education')">Education</button>
+                            </div>
+                        </div>
+                    
+                    
+                    <!-- VENTES -->
+                    <section id="formeindex">
+                            <h2 class="bandeau">Ventes</h2>
+                            <div class="icone-generique">
+                                <div class="center-generique">
+                                    <i class="fa fa-medkit fa-3x"></i>
+                                    <button class="bouton-generique" onclick="affich_consultation()">Medication</button>
+                                </div>
+
+                                <div class="center-generique">
+                                    <i class="fa fa-cutlery fa-3x"></i>
+                                    <button class="bouton-generique" onclick="affich_imagerie()">Alimentation</button>
+                                </div>
+
+                                <div class="center-generique">
+                                    <i class="fa fa-list fa-3x text-center"></i>
+                                    <button class="bouton-generique" onclick="affich_analyse()">Index</button>
+                                </div>
+                            </div>
+                        </section>
 
                      <!-- section prestation -->
                     <section class="secpage">
