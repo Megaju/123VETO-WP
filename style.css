@@ -583,7 +583,7 @@ em {
 }
 
 #consultation,
-#dent,
+#dents,
 #medicament {
     display: block;
 }
@@ -593,18 +593,22 @@ em {
 #chirurgie,
 #hospitalisation,
 #nac,
-#yeux-oreilles,
-#yeux-oreilles,
+#yeux,
 #pelage,
-#parasite,
-#vaccin-chien,
-#vaccin-chat,
-#id,
+#parasites,
+#vaccinChien,
+#vaccinChat,
+#identification,
 #education,
 #alimentation,
 #index {
     display: none;
 }
+
+/*============================*/
+/*========= CONSEILS =========*/
+/*============================*/
+
 
 /*============================*/
 /*========= CONTACT =========*/
