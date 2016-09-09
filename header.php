@@ -48,9 +48,9 @@
                 <div class="logo-img img-responsive"></div>
                 <!-- infos -->
                 <div class="info">
-                    <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> - <?php bloginfo('description'); ?></h1>
+                    <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1><h2 id="description"><?php bloginfo('description'); ?></h2> 
                     <h2>Dr Eric Wintz - Dr Aurélie Mayoussier</h2>
-                    <p class="description">123 Véto vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h
+                    <p class="horaires">123 Véto vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h
                     											Les urgences sont assurées 24h/24 7 jours sur 7 sur appel téléphonique au 02 40 01 61 69</p>
                 </div>
             </div>
