@@ -41,7 +41,7 @@
 
         <!-- menu de navigation -->
         <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
-       
+        <a href="#accueil" class="linkAccueil"><div class="site-logo"><p class="raisonSociale">123veto</p></div></a>
         <div id="header">
             <div class="header-corp">
                 <!-- logo -->
