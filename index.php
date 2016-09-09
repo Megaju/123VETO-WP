@@ -7,9 +7,9 @@
                 <div>
                     <!-- le bloc team pour le hover est stocké dans le pc 26 -->
                     <div id="bloc-team">
-                        <h2>L'équipe à votre service</h2>
+                        <h2 class="bandeau bandeau-mt0">L'équipe à votre service</h2>
 
-                        <div class="index-separator"></div>
+                        <div class="index-separator-0"></div>
 
                         <div class="docteurs">                          <!-- DOCTEUR I -->
                             <div class="docteur" id="docteur1">  
@@ -33,8 +33,8 @@
                     </div>
 
                     <div id="bloc-large-savoirfaire">
-                        <h2>Notre savoir-faire</h2>
-                        <div class="index-separator"></div>
+                        <h2 class="bandeau">Notre savoir-faire</h2>
+                        <div class="index-separator-0"></div>
                         <div id="bloc-medium-savoirfaire">
                             <div class="bloc-small-savoirfaire">
                                 <div class="fa-sf">
@@ -73,8 +73,8 @@
                     </div>
 
                     <div id="bloc-carousel">
-                        <h2>Découverte de la clinique</h2>
-                        <div class="index-separator"></div>
+                        <h2 class="bandeau">Découverte de la clinique</h2>
+                        <div class="index-separator-0"></div>
 
                         <div class="carousel">
                             <div class="carousel-img"></div>
