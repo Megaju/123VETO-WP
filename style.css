@@ -238,6 +238,9 @@ h2#description {
     padding-left: 27%;
     padding-top: 15px;
 }
+.raisonSociale:hover {
+    color: white;
+}
 
 .linkAccueil:hover {
     background-color: #263461;
