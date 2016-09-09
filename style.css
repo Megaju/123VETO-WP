@@ -178,6 +178,18 @@ h2#description {
     border-bottom: 1px solid #263461;
 }
 
+.menuNav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #3A83FF;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.menu-top-container {
+    height: 100%;
+}
+
 .menu-top-container ul {
     text-align: center;
     list-style: none;
@@ -206,27 +218,52 @@ h2#description {
 }
 
 .site-logo {
-    position: absolute;
     background: url(img/logo-nav.png) no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 44%;
+    margin-top: -16px;
     top: 0;
+<<<<<<< HEAD
     left: 4vw;
     height: 8vh;
     width: 14vw;
     color: #263461;
+=======
+    left: 0;
+    height: 100%;
+    width: 150px;
+    color: #3A83FF;
+>>>>>>> 12b704b4de592b5f3deeeb157d474a0361e7fee6
     text-transform: uppercase;
+    /*border-bottom: 1px solid #3A83FF;*/
 }
 
+
 .raisonSociale {
-    right: 0;
-    padding-left: 37%;
     font-family: Gabriela;
+    padding-left: 27%;
+    padding-top: 15px;
 }
 
 .linkAccueil:hover {
     background-color: #263461;
     color: white;
+}
+
+.linkAccueil {
+    text-decoration: none;
+    color: #3A83FF;
+    text-align: center;
+}
+
+.fa {
+   color: #3A83FF;
+   margin-top: 17px;
+   margin-left: 25px;
+}
+
+.fa:hover {
+    color: lightblue;
 }
 /*============================*/
 /*========== SIDEBAR =========*/
