@@ -19,6 +19,11 @@ Author: Solène, Lise et Julien
     flex-wrap: wrap;
 }
 
+@font-face {
+    font-family: Gabriela;
+    src: url(fonts/Gabriela-Regular.ttf);
+}
+
 /* Le bleu : #3A83FF 
    Le orange : #F58900 */
 
@@ -50,6 +55,20 @@ h1 {
 
 h2 {
     font-size: 2em;
+}
+
+h2.bandeau {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #263461;
+}
+
+h2.bandeau-mt0 {
+    margin-top: 0;
 }
 
 .index-separator {
@@ -90,7 +109,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
     margin: 0;
     padding: 0;
     background-color: #3A83FF;
@@ -103,11 +122,12 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 30px;
-    background-color: rgba(10, 10, 10, 0.7);
+    padding: 20px 30px;
+    background-color: rgba(4, 52, 89,0.6);
 }
 
 #header h1 a {
+    font-size: 2em;
     color: #fff;
     text-decoration: none;
 }
@@ -117,13 +137,22 @@ i {
     color: #eee;
     margin: 0 0 20px 0;
     padding: 0 0 15px 0px;
-    font-size: 18px;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: right;
 }
 
-#header p.description {
+h2#description {
+    border: 0;
+    font-size: 2em;
+    text-align: left;
+}
+
+#header p.horaires {
     width: 700px;
     color: #fff;
-    font-weight: 300;
+    font-size: .9em;
+    font-weight: 700;
     line-height: 30px;
 }
 
@@ -176,6 +205,29 @@ i {
     transition: .2s;
 }
 
+.site-logo {
+    position: absolute;
+    background: url(img/logo-nav.png) no-repeat;
+    background-position: left;
+    background-size: 40%;
+    top: 0;
+    left: 4vw;
+    height: 8vh;
+    width: 14vw;
+    color: #3A83FF;
+    text-transform: uppercase;
+}
+
+.raisonSociale {
+    right: 0;
+    padding-left: 37%;
+    font-family: Gabriela;
+}
+
+.linkAccueil:hover {
+    background-color: #3A83FF;
+    color: white;
+}
 /*============================*/
 /*========== SIDEBAR =========*/
 /*============================*/
@@ -234,19 +286,21 @@ i {
     font-size: 20px;
     left: 0px;
     text-transform: uppercase;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    background-color: #3A83FF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #F58900;
     border: 0px solid white;
     font-family: "Open Sans", sans-serif;
     color: white;
     position: absolute;
+    cursor: pointer;
 }
 
-.sidebar button:hover,
-#priseRDV:hover {
-    background-color: #F58900;
-		transition: .2s;
+#priseRDV p {
+    font-size: 0.7em;
+    text-transform: lowercase;
+    margin-top: 0px;
+    padding-bottom: 5px;
 }
 
 #content {
@@ -311,6 +365,52 @@ em {
 
 /* --------- THE TEAM --------- */
 
+.docteurs {
+    text-align: center;
+}
+
+.docteur {
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#docteur1 {
+    background-image: url(img/dr-aurelie.jpg);
+}
+
+#docteur2 {
+    background-image: url(img/dr-eric.jpg);
+}
+
+.docteur-present {
+    display: inline-block;
+    margin-right: 10px;
+    width: 25%;
+    color: #333;
+}
+
+.docteur-present h3 {
+    font-size: 1em;
+    text-align: left;
+}
+
+.docteur-present h4 {
+    font-size: .8em;
+    text-align: left;
+}
+
+.docteur-present p {
+    font-size: .6em;
+    text-align: justify;
+    cursor: default;
+}
+
+/* ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;)
 .docteur {
     width: 400px;
     height: 400px;
@@ -364,7 +464,7 @@ em {
     background-color: #3A83FF;
     opacity: .9;
     transition: .3s;
-}
+} [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */ 
 
 /*============================*/
 /*========= SAVOIR-FAIRE =====*/
@@ -440,7 +540,7 @@ em {
 .carousel {
     display: block;
     position: relative;
-    margin: 50px auto;
+    margin: -60px auto 50px auto;
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -454,10 +554,6 @@ em {
     background-position: center center;
     background-size: cover;
     transition: .4s;
-}
-
-.carousel:hover .carousel-img {
-    width: 102%;
     cursor: pointer;
 }
 
@@ -473,6 +569,7 @@ em {
     font-weight: 700;
     background-color: #3A83FF;
     box-shadow: 0 0 15px #111;
+    z-index: 2;
     
 }
 
@@ -489,6 +586,7 @@ em {
     color: #eee;
     font-weight: 700;
     background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
 }
 
 #bloc-carousel ul {
@@ -510,11 +608,55 @@ em {
     border: 0;
     border-radius: 60px;
     background-color: #3A83FF;
+    box-shadow: 0 0 5px #444;
 }
 
 #bloc-carousel ul li:hover {
     background-color: #F58900;
     cursor: pointer;
+}
+
+#bloc-carousel button {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1;
+}
+
+#bloc-carousel button:hover {
+    transition: .5s;
+}
+
+#left-button-carou {
+    left: 0;
+    padding-right: 50px;
+    opacity: .85;
+    background: -moz-linear-gradient(left,  rgba(237,237,237,1) 0%, rgba(237,237,237,1) 21%, rgba(237,237,237,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(237,237,237,1) 0%,rgba(237,237,237,1) 21%,rgba(237,237,237,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(237,237,237,1) 0%,rgba(237,237,237,1) 21%,rgba(237,237,237,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#00ededed',GradientType=1 ); /* IE6-9 */
+}
+
+#left-button-carou:hover {
+    opacity: 1;
+}
+
+#right-button-carou {
+    right: 0;
+    padding-left: 50px;
+    opacity: .85;
+    background: -moz-linear-gradient(left, rgba(237,237,237,0) 0%, rgba(237,237,237,1) 79%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 79%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 79%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ededed', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+}
+
+#right-button-carou:hover {
+    opacity: 1;
 }
 
 /*============================*/
@@ -547,6 +689,7 @@ em {
 .uniform-article {
     width: 85%;
     margin: auto;
+    margin-bottom: 70px;
 }
 
 .uniforme-article h2 {
@@ -579,6 +722,34 @@ em {
     font-size: .9em;
     color: #222;
 }
+
+#consultation,
+#dents,
+#medicament {
+    display: block;
+}
+
+#imagerie,
+#analyse,
+#chirurgie,
+#hospitalisation,
+#nac,
+#yeux,
+#pelage,
+#parasites,
+#vaccinChien,
+#vaccinChat,
+#identification,
+#education,
+#alimentation,
+#index {
+    display: none;
+}
+
+/*============================*/
+/*========= CONSEILS =========*/
+/*============================*/
+
 
 /*============================*/
 /*========= CONTACT =========*/
@@ -685,3 +856,4 @@ label {
 #footer a:hover {
     color: #F58900;
 }
+
