@@ -250,13 +250,13 @@ h2#description {
     text-align: center;
 }
 
-.fa {
+.menuNav .fa {
    color: #3A83FF;
    margin-top: 17px;
    margin-left: 25px;
 }
 
-.fa:hover {
+.menuNav .fa:hover {
     color: lightblue;
 }
 /*============================*/
