@@ -622,14 +622,14 @@ em {
 }
 
 .vente div {
-    text-align: center;
+
     margin: 0 auto;
-    cursor: pointer;
-    display: flex;
 }
 
 .vente i {
     padding: 20px;
+    cursor: pointer;
+    padding-left: 25%;
 }
 
 .vente h3 {
@@ -637,6 +637,7 @@ em {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .vente p {
@@ -647,7 +648,7 @@ em {
     text-align: left;
 }
 
-#article {
+#article-croquettes, #article-vermifuges, #article-shampoings, #article-brosses, #article-colliers {
     display: none;
 }
 

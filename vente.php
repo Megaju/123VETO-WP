@@ -21,12 +21,12 @@ Template Name: vente
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur dolorum ullam quisquam ut qui velit molestias inventore esse asperiores modi possimus.</p>
 
                             <div class="vente">
-                                <div id="medicament">
+                                <div id="croquettes">
                                     <i class="fa fa-medkit fa-3x" aria-hidden="true"></i>
-                                    <h3>médicamentation - <small>cliquer ici</small></h3>
+                                    <h3>croquettes - <small>cliquer ici</small></h3>
 
-                                    <div class="uniform-article" id="article">
-                                        <?php query_posts('category_name=medicament'); ?>
+                                    <div class="uniform-article" id="article-croquettes">
+                                        <?php query_posts('category_name=croquettes'); ?>
                                             <?php if(have_posts()) : ?>
                                                 <?php while(have_posts()) : the_post();?>
 
@@ -49,12 +49,12 @@ Template Name: vente
                                     </div>
                                 </div>
                                 
-                                <div id="medicament">
+                                <div id="vermifuges">
                                     <i class="fa fa-heartbeat fa-3x" aria-hidden="true"></i>
-                                    <h3>médicamentation - <small>cliquer ici</small></h3>
+                                    <h3>vermifuges et antiparasitaires externes - <small>cliquer ici</small></h3>
 
-                                    <div class="uniform-article" id="article">
-                                        <?php query_posts('category_name=medicament'); ?>
+                                    <div class="uniform-article" id="article-vermifuges">
+                                        <?php query_posts('category_name=vermifuges'); ?>
                                             <?php if(have_posts()) : ?>
                                                 <?php while(have_posts()) : the_post();?>
 
@@ -77,12 +77,12 @@ Template Name: vente
                                     </div>
                                 </div>
                                 
-                                <div id="medicament">
+                                <div id="shampoings">
                                     <i class="fa fa-ambulance fa-3x" aria-hidden="true"></i>
-                                    <h3>médicamentation - <small>cliquer ici</small></h3>
+                                    <h3>shampoings - <small>cliquer ici</small></h3>
 
-                                    <div class="uniform-article" id="article">
-                                        <?php query_posts('category_name=medicament'); ?>
+                                    <div class="uniform-article" id="article-shampoings">
+                                        <?php query_posts('category_name=shampoings'); ?>
                                             <?php if(have_posts()) : ?>
                                                 <?php while(have_posts()) : the_post();?>
 
@@ -105,12 +105,12 @@ Template Name: vente
                                     </div>
                                 </div>
                                 
-                                <div id="medicament">
+                                <div id="brosses">
                                     <i class="fa fa-plus-square fa-3x" aria-hidden="true"></i>
-                                    <h3>médicamentation - <small>cliquer ici</small></h3>
+                                    <h3>brosses - <small>cliquer ici</small></h3>
 
-                                    <div class="uniform-article" id="article">
-                                        <?php query_posts('category_name=medicament'); ?>
+                                    <div class="uniform-article" id="article-brosses">
+                                        <?php query_posts('category_name=brosses'); ?>
                                             <?php if(have_posts()) : ?>
                                                 <?php while(have_posts()) : the_post();?>
 
@@ -133,12 +133,12 @@ Template Name: vente
                                     </div>
                                 </div>
                                 
-                                <div id="medicament">
+                                <div id="colliers">
                                     <i class="fa fa-stethoscope fa-3x" aria-hidden="true"></i>
-                                    <h3>médicamentation - <small>cliquer ici</small></h3>
+                                    <h3>Colliers et laisses - <small>cliquer ici</small></h3>
 
-                                    <div class="uniform-article" id="article">
-                                        <?php query_posts('category_name=medicament'); ?>
+                                    <div class="uniform-article" id="article-colliers">
+                                        <?php query_posts('category_name=colliers-laisses'); ?>
                                             <?php if(have_posts()) : ?>
                                                 <?php while(have_posts()) : the_post();?>
 
