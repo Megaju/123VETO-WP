@@ -19,6 +19,11 @@ Author: Solène, Lise et Julien
     flex-wrap: wrap;
 }
 
+@font-face {
+    font-family: Gabriela;
+    src: url(fonts/Gabriela-Regular.ttf);
+}
+
 /* Le bleu : #3A83FF 
    Le orange : #F58900 */
 
@@ -186,6 +191,29 @@ h2#description {
     transition: .2s;
 }
 
+.site-logo {
+    position: absolute;
+    background: url(img/logo-nav.png) no-repeat;
+    background-position: left;
+    background-size: 40%;
+    top: 0;
+    left: 4vw;
+    height: 8vh;
+    width: 14vw;
+    color: #3A83FF;
+    text-transform: uppercase;
+}
+
+.raisonSociale {
+    right: 0;
+    padding-left: 37%;
+    font-family: Gabriela;
+}
+
+.linkAccueil:hover {
+    background-color: #3A83FF;
+    color: white;
+}
 /*============================*/
 /*========== SIDEBAR =========*/
 /*============================*/
@@ -785,3 +813,4 @@ textarea {
 #footer a:hover {
     color: #F58900;
 }
+
