@@ -224,17 +224,10 @@ h2#description {
     background-size: 44%;
     margin-top: -16px;
     top: 0;
-<<<<<<< HEAD
     left: 4vw;
     height: 8vh;
     width: 14vw;
     color: #263461;
-=======
-    left: 0;
-    height: 100%;
-    width: 150px;
-    color: #3A83FF;
->>>>>>> 12b704b4de592b5f3deeeb157d474a0361e7fee6
     text-transform: uppercase;
     /*border-bottom: 1px solid #3A83FF;*/
 }
