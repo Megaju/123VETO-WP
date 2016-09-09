@@ -540,13 +540,13 @@ em {
     position: relative;
     margin: -60px auto 50px auto;
     width: 100%;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
 
 .carousel-img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-image: url(img/caroussel/Espace_Vente.JPG);
     background-repeat: no-repeat;
     background-position: center center;

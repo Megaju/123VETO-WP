@@ -31,6 +31,7 @@
                         </div>
                     </div>
                     
+                    <!-- CAROUSEL -->
                     <div id="bloc-carousel">
                         <h2 class="bandeau">Découverte de la clinique</h2>
                         <div class="index-separator-0"></div>
@@ -39,12 +40,6 @@
                             <div class="carousel-img"></div>
                             <h2 id="carousel-titre">Titre associé</h2>
                             <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
-                            
-                            <ul>
-                            <li id="carousel1"></li>
-                            <li id="carousel2"></li>
-                            <li id="carousel3"></li>
-                        </ul>
                         
                         <button id="left-button-carou" class="fa fa-chevron-left"></button>
                         
@@ -52,7 +47,8 @@
                         
                         </div>
                     </div>
-
+                    
+                    <!-- SAVOIR-FAIRE 1 2 3 VETO -->
                     <div id="bloc-large-savoirfaire">
                         <h2 class="bandeau">Notre savoir-faire</h2>
                         <div class="index-separator-0"></div>
