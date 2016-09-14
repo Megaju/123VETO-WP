@@ -209,6 +209,5 @@ Template Name: prestations
                     </div>
             </div>
 
-
             <!-- pour insérer le footer -->
             <?php get_footer(); ?>
