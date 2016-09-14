@@ -4,14 +4,15 @@ Template Name: prestations
 */
 ?>
 
+
         <!-- pour insérer le header -->
         <?php get_header(); ?>
 
-            <div id="attente-bootstrap" class="placement">
-                <!-- pour insérer la sidebar -->
-                <?php get_sidebar(); ?>
-
-                    <div>
+            <div id="page">
+                <section class="flexbox">
+                    <!-- aside -->
+                    <?php get_sidebar(); ?>
+                        <div>
                         <section class="formeindex">
                             
                             <div class="uniform-article">
