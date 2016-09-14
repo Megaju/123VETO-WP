@@ -795,6 +795,18 @@ em {
     margin: 0 auto;
 }
 
+.vente svg {
+    padding-left: 25%;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.icone-vente {
+    width: 50px;
+    height: 50px;
+}
+
 .vente section {
     display: block;
 }
