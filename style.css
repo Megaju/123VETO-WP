@@ -757,8 +757,11 @@ h2 {
     float: left;
     text-align: center;
 }
+
 #Capa_1 {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    width: 60px;
+    height: 60px;
 }
 .btnPre {
     height: 40px;
@@ -781,7 +784,7 @@ h2 {
 /*============================*/
 
 .center-generique {
-    width: 150px;
+    width: 147px;
     text-align: center;
     padding: 10px;
     display: block;
