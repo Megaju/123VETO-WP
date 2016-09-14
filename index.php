@@ -142,17 +142,27 @@
                             <div class="icone-generique">
                                 <div class="center-generique">
                                     <i class="fa fa-medkit fa-3x"></i>
-                                    <button class="bouton-generique" onclick="affich_consultation()">Medication</button>
+                                    <button class="bouton-generique">Medication</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <i class="fa fa-cutlery fa-3x"></i>
-                                    <button class="bouton-generique" onclick="affich_imagerie()">Alimentation</button>
+                                    <i class="fa fa-medkit fa-3x"></i>
+                                    <button class="bouton-generique">Medication</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <i class="fa fa-list fa-3x text-center"></i>
-                                    <button class="bouton-generique" onclick="affich_analyse()">Index</button>
+                                    <i class="fa fa-medkit fa-3x"></i>
+                                    <button class="bouton-generique">Medication</button>
+                                </div>
+                                
+                                <div class="center-generique">
+                                    <i class="fa fa-medkit fa-3x"></i>
+                                    <button class="bouton-generique">Medication</button>
+                                </div>
+                                
+                                <div class="center-generique">
+                                    <i class="fa fa-medkit fa-3x"></i>
+                                    <button class="bouton-generique">Medication</button>
                                 </div>
                             </div>
                         </section>
