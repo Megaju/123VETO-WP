@@ -38,7 +38,8 @@ Template Name: vente
                             <div class="vente">
                                 <div id="croquettes" class="separation">
                                     <i class="fa fa-medkit fa-3x" aria-hidden="true"></i>
-                                    <h3>croquettes - <small>cliquer ici</small></h3>
+                                    <h3>croquettes</h3>
+                                    <i class="fa fa-chevron-down direction-vente" aria-hidden="true"></i>
 
                                     <div class="uniform-article" id="article-croquettes">
                                         <?php query_posts('category_name=croquettes'); ?>
@@ -66,7 +67,8 @@ Template Name: vente
                                 
                                 <div id="vermifuges" class="separation">
                                     <i class="fa fa-heartbeat fa-3x" aria-hidden="true"></i>
-                                    <h3>vermifuges et antiparasitaires externes - <small>cliquer ici</small></h3>
+                                    <h3>vermifuges et antiparasitaires externes</h3>
+                                    <i class="fa fa-chevron-down direction-vente" aria-hidden="true"></i>
 
                                     <div class="uniform-article" id="article-vermifuges">
                                         <?php query_posts('category_name=vermifuges'); ?>
@@ -94,7 +96,8 @@ Template Name: vente
                                 
                                 <div id="shampoings" class="separation">
                                     <i class="fa fa-ambulance fa-3x" aria-hidden="true"></i>
-                                    <h3>shampoings - <small>cliquer ici</small></h3>
+                                    <h3>shampoings</h3>
+                                    <i class="fa fa-chevron-down direction-vente" aria-hidden="true"></i>
 
                                     <div class="uniform-article" id="article-shampoings">
                                         <?php query_posts('category_name=shampoings'); ?>
@@ -122,7 +125,8 @@ Template Name: vente
                                 
                                 <div id="brosses" class="separation">
                                     <i class="fa fa-plus-square fa-3x" aria-hidden="true"></i>
-                                    <h3>brosses - <small>cliquer ici</small></h3>
+                                    <h3>brosses</h3>
+                                    <i class="fa fa-chevron-down direction-vente" aria-hidden="true"></i>
 
                                     <div class="uniform-article" id="article-brosses">
                                         <?php query_posts('category_name=brosses'); ?>
@@ -150,7 +154,8 @@ Template Name: vente
                                 
                                 <div id="colliers" class="separation">
                                     <i class="fa fa-stethoscope fa-3x" aria-hidden="true"></i>
-                                    <h3>Colliers et laisses - <small>cliquer ici</small></h3>
+                                    <h3>Colliers et laisses</h3>
+                                    <i class="fa fa-chevron-down direction-vente" aria-hidden="true"></i>
 
                                     <div class="uniform-article" id="article-colliers">
                                         <?php query_posts('category_name=colliers-laisses'); ?>

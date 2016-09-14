@@ -821,6 +821,10 @@ em {
     cursor: pointer;
 }
 
+.direction-vente {
+    padding-left: 20px !important;
+}
+
 .vente p {
    color: #222;
     font-family: "Open Sans", sans-serif;
