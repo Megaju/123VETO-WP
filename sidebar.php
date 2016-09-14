@@ -1,7 +1,7 @@
 <?php 
     //ça en ligne 1 sinon ça plante.
 ?>
-<a href="http://localhost/wordpress/index.php/prise-de-rdv/"><button id="priseRDV">Prise de RDV</button></a>
+<a href="http://localhost/wordpress/index.php/prise-de-rdv/"><button id="priseRDV">Prise de RDV<p>Cliquez ici</p></button></a>
 <div class="sidebar">
     <ul>
     <!-- calendar -->
@@ -23,7 +23,9 @@
                     <div class= "post_content">
                         <?php the_post_thumbnail(array(250,250));?>
                         <p class="postmetadata">
-                            <?php the_time('j F Y') ?> par <?php the_author() ?>
+                         <?php the_content() ?>
+                         <?php get_the_excerpt() ?>
+                         par <?php the_author() ?>
                         </p>
                     </div> 
                 </div>
