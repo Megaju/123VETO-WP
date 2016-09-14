@@ -16,7 +16,7 @@
                             </div>
                             <div class="docteur-present">
                                     <h3>Dr Aurélie Mayoussier</h3>
-                                    <h4>Diplômée de l’école vétérinaire de MaisonsAlfort en 2008</h4>
+                                    <h4>Diplômée de l’école vétérinaire de Maisons Alfort en 2008</h4>
                                     <p>Dr Aurélie Mayoussier Diplômée de l’école vétérinaire de MaisonsAlfort en 2008, elle se passionne pour la médecine de l’élevage et de la reproduction et la médecine des NAC. Le Dr Mayoussier possède deux chats Pratchett et Bubule ainsi que Bambou, chien loup de Saarloos.</p>
                                 </div>
                                 
@@ -86,6 +86,76 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- CONSEILS -->
+                    
+                        <h2 class="bandeau">Nos Conseils</h2>
+                    <!-- ICONES -->       
+                        <div class="icone-generique">
+                            <div class="center-generique">
+                                <i class="fa fa-user-md fa-3x"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('dents')">Dents</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <i class="fa fa-eye fa-3x"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('yeux')">Yeux / Oreilles</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <i class="fa fa-paw fa-3x text-center"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('pelage')">Pelage</button>
+                            </div>
+                            
+                            <div class="center-generique">
+                                <i class="fa fa-bug fa-3x text-center"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button>
+                            </div>
+                        </div>
+                        
+                        <div class="icone-generique">
+                            <div class="center-generique">
+                                <i class="fa fa-plus-square fa-3x"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('vaccinChien')">Vaccin Chien</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <i class="fa fa-medkit fa-3x"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('vaccinChat')">Vaccin Chat</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <i class="fa fa-barcode fa-3x text-center"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button>
+                            </div>
+                            
+                            <div class="center-generique">
+                                <i class="fa fa-book fa-3x text-center"></i>
+                                <button class="bouton-generique" onclick="fiche_conseil('education')">Education</button>
+                            </div>
+                        </div>
+                    
+                    
+                    <!-- VENTES -->
+                    <section id="formeindex">
+                            <h2 class="bandeau">Ventes</h2>
+                            <div class="icone-generique">
+                                <div class="center-generique">
+                                    <i class="fa fa-medkit fa-3x"></i>
+                                    <button class="bouton-generique" onclick="affich_consultation()">Medication</button>
+                                </div>
+
+                                <div class="center-generique">
+                                    <i class="fa fa-cutlery fa-3x"></i>
+                                    <button class="bouton-generique" onclick="affich_imagerie()">Alimentation</button>
+                                </div>
+
+                                <div class="center-generique">
+                                    <i class="fa fa-list fa-3x text-center"></i>
+                                    <button class="bouton-generique" onclick="affich_analyse()">Index</button>
+                                </div>
+                            </div>
+                        </section>
 
                 </div>
         </section>
