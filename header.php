@@ -41,17 +41,25 @@
 
 
         <!-- menu de navigation -->
-        <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
-       
+        <div class="menuNav">
+            <a href="#" class="linkAccueil">
+                <div class="site-logo"><p class="raisonSociale">123veto</p></div>
+            </a>
+            <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
+            <div class="icones">
+                <a href="#" class="linkAccueil fa fa-facebook" aria-hidden="true"></a>
+                <a href="#" class="linkAcceuil fa fa-google-plus" aria-hidden="true" style="padding-right: 25px"></a>
+            </div>    
+        </div>
         <div id="header">
             <div class="header-corp">
                 <!-- logo -->
                 <div class="logo-img img-responsive"></div>
                 <!-- infos -->
                 <div class="info">
-                    <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> - <?php bloginfo('description'); ?></h1>
+                    <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1><h2 id="description"><?php bloginfo('description'); ?></h2> 
                     <h2>Dr Eric Wintz - Dr Aurélie Mayoussier</h2>
-                    <p class="description">123 Véto vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h
+                    <p class="horaires">123 Véto vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h
                     											Les urgences sont assurées 24h/24 7 jours sur 7 sur appel téléphonique au 02 40 01 61 69</p>
                 </div>
             </div>

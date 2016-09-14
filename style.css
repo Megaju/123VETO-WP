@@ -20,7 +20,12 @@ Author: Solène, Lise et Julien
     flex-wrap: wrap;
 }
 
-/* Le bleu : #3A83FF 
+@font-face {
+    font-family: Gabriela;
+    src: url(fonts/Gabriela-Regular.ttf);
+}
+
+/* Le bleu : #263461 SVG DE L'ANCIEN BLEU 3A83FF 
    Le orange : #F58900 */
 
 html, body {
@@ -53,12 +58,26 @@ h2 {
     font-size: 2em;
 }
 
+h2.bandeau {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #263461;
+}
+
+h2.bandeau-mt0 {
+    margin-top: 0;
+}
+
 .index-separator {
     display: block;
     margin: 20px auto;
     width: 30%;
     height: 1px;
-    background-color: #3A83FF;
+    background-color: #263461;
 }
 
 i {
@@ -91,10 +110,10 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
     margin: 0;
     padding: 0;
-    background-color: #3A83FF;
+    background-color: #263461;
     background-image: url(img/facade.JPG);
     background-size: cover;
     background-position: center center;
@@ -104,11 +123,12 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 30px;
-    background-color: rgba(10, 10, 10, 0.7);
+    padding: 20px 30px;
+    background-color: rgba(4, 52, 89,0.6);
 }
 
 #header h1 a {
+    font-size: 2em;
     color: #fff;
     text-decoration: none;
 }
@@ -118,13 +138,22 @@ i {
     color: #eee;
     margin: 0 0 20px 0;
     padding: 0 0 15px 0px;
-    font-size: 18px;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: right;
 }
 
-#header p.description {
+h2#description {
+    border: 0;
+    font-size: 2em;
+    text-align: left;
+}
+
+#header p.horaires {
     width: 700px;
     color: #fff;
-    font-weight: 300;
+    font-size: .9em;
+    font-weight: 700;
     line-height: 30px;
 }
 
@@ -147,7 +176,19 @@ i {
 
 .menu-top-container {
     height: 50px;
+    border-bottom: 1px solid #263461;
+}
+
+.menuNav {
+    display: flex;
+    flex-direction: row;
     border-bottom: 1px solid #3A83FF;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.menu-top-container {
+    height: 100%;
 }
 
 .menu-top-container ul {
@@ -166,17 +207,58 @@ i {
     height: 50px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #3A83FF;
+    color: #263461;
     text-decoration: none;
     transition: .2s;
 }
 
 .menu-top-container ul li:hover a, .current_page_item a {
-    background-color: #3A83FF;
+    background-color: #263461;
     color: #fff!important;
     transition: .2s;
 }
 
+.site-logo {
+    background: url(img/logo-nav.png) no-repeat;
+    background-position: left;
+    background-size: 44%;
+    margin-top: -16px;
+    top: 0;
+    left: 4vw;
+    height: 8vh;
+    width: 14vw;
+    color: #263461;
+    text-transform: uppercase;
+    /*border-bottom: 1px solid #3A83FF;*/
+}
+
+
+.raisonSociale {
+    font-family: Gabriela;
+    padding-left: 27%;
+    padding-top: 15px;
+}
+
+.linkAccueil:hover {
+    background-color: #263461;
+    color: white;
+}
+
+.linkAccueil {
+    text-decoration: none;
+    color: #3A83FF;
+    text-align: center;
+}
+
+.menuNav .fa {
+   color: #3A83FF;
+   margin-top: 17px;
+   margin-left: 25px;
+}
+
+.menuNav .fa:hover {
+    color: lightblue;
+}
 /*============================*/
 /*========== SIDEBAR =========*/
 /*============================*/
@@ -184,7 +266,7 @@ i {
 .sidebar {
     background-image: url(img/aside-fond.png);
     width: 25%;
-    color: #3A83FF;
+    color: #263461;
     text-transform: capitalize;
     font-size: 0.8em;
 }
@@ -222,7 +304,7 @@ i {
     border: 0px solid white;
     width: 70%;
     height: 35px;
-    background-color: #3A83FF;
+    background-color: #263461;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
@@ -264,7 +346,7 @@ i {
 }
 
 #content a {
-    color: #3A83FF;
+    color: #263461;
     font-size: 0.8em;
     text-decoration: none;
     text-transform: uppercase;
@@ -283,6 +365,8 @@ em {
 	transition: .2s;
 }
 
+
+
 /*============================*/
 /*========== EQUIPE ==========*/
 /*============================*/
@@ -290,7 +374,7 @@ em {
 .formeindex, h2 {
     margin-top: 20px;
     margin-bottom: 0px;
-    color: #3A83FF;
+    color: #263461;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
@@ -312,6 +396,62 @@ em {
 
 /* --------- THE TEAM --------- */
 
+.docteurs {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.docteur {
+    vertical-align: top;
+    display: inline-block;
+    width: 185px;
+    height: 185px;
+    border-radius: 400px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.39);
+}
+
+#docteur1 {
+    background-image: url(img/dr-aurelie.jpg);
+}
+
+#docteur2 {
+    background-image: url(img/dr-eric.jpg);
+}
+
+.docteur-present {
+    display: inline-block;
+    margin-right: 10px;
+    width: 25%;
+    color: #333;
+}
+
+.docteur-present h3 {
+    margin-top: 5px;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 15px;
+    width: 240px;
+}
+
+.docteur-present h4 {
+    font-size: .8em;
+    text-align: left;
+    padding-left: 15px;
+    width: 240px;
+}
+
+.docteur-present p {
+    font-size: .6em;
+    text-align: justify;
+    cursor: default;
+    padding-left: 15px;
+    width: 240px;
+}
+
+/* ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;)
 .docteur {
     width: 400px;
     height: 400px;
@@ -362,17 +502,17 @@ em {
 }
 
 .docteur:hover .docteur-present {
-    background-color: #3A83FF;
+    background-color: #263461;
     opacity: .9;
     transition: .3s;
-}
+} [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */ 
 
 /*============================*/
 /*========= SAVOIR-FAIRE =====*/
 /*============================*/
 
 #bloc-medium-savoirfaire {
-    margin-top: 100px;
+    margin: 100px 50px 0 50px;
     display: flex;
     height: 240px;
 }
@@ -395,7 +535,7 @@ em {
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #3A83FF;
+    color: #263461;
     font-size: .8em;
 }
 
@@ -405,31 +545,25 @@ em {
 
 .fa-sf {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
     margin: -50px auto 0 auto;
+    font-size: 6em;
     text-align: center;
     border-radius: 200px;
-    border: 2px solid #3A83FF;
+    border: 2px solid #263461;
     background-color: #fff;
     transition: .4s;
-}
-
-.fa-sf i {
-    color: #3A83FF;
-    transition: .4s;
+    color: #263461;
 }
 
 .fa-sf:hover {
-    background-color: #3A83FF;
-    transition: .4s;
-}
-
-.fa-sf:hover i {
     color: #fff;
-    cursor: pointer;
+    background-color: #263461;
     transition: .4s;
+    cursor: pointer;
 }
 
 
@@ -441,24 +575,20 @@ em {
 .carousel {
     display: block;
     position: relative;
-    margin: 50px auto;
+    margin: -60px auto 50px auto;
     width: 100%;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
 }
 
 .carousel-img {
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-image: url(img/caroussel/Espace_Vente.JPG);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transition: .4s;
-}
-
-.carousel:hover .carousel-img {
-    width: 102%;
     cursor: pointer;
 }
 
@@ -472,8 +602,9 @@ em {
     color: #fff;
     font-size: 2em;
     font-weight: 700;
-    background-color: #3A83FF;
+    background-color: #263461;
     box-shadow: 0 0 15px #111;
+    z-index: 2;
     
 }
 
@@ -490,6 +621,7 @@ em {
     color: #eee;
     font-weight: 700;
     background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
 }
 
 #bloc-carousel ul {
@@ -510,13 +642,56 @@ em {
     margin: 0 2px;
     border: 0;
     border-radius: 60px;
-    background-color: #3A83FF;
+    background-color: #263461;
     box-shadow: 0 0 5px #444;
 }
 
 #bloc-carousel ul li:hover {
     background-color: #F58900;
     cursor: pointer;
+}
+
+#bloc-carousel button {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1;
+}
+
+#bloc-carousel button:hover {
+    transition: .5s;
+}
+
+#left-button-carou {
+    left: 0;
+    padding-right: 50px;
+    opacity: .85;
+    background: -moz-linear-gradient(left,  rgba(237,237,237,1) 0%, rgba(237,237,237,1) 21%, rgba(237,237,237,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(237,237,237,1) 0%,rgba(237,237,237,1) 21%,rgba(237,237,237,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(237,237,237,1) 0%,rgba(237,237,237,1) 21%,rgba(237,237,237,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#00ededed',GradientType=1 ); /* IE6-9 */
+}
+
+#left-button-carou:hover {
+    opacity: 1;
+}
+
+#right-button-carou {
+    right: 0;
+    padding-left: 50px;
+    opacity: .85;
+    background: -moz-linear-gradient(left, rgba(237,237,237,0) 0%, rgba(237,237,237,1) 79%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 79%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 79%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ededed', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+}
+
+#right-button-carou:hover {
+    opacity: 1;
 }
 
 /*============================*/
@@ -555,7 +730,7 @@ em {
 .uniforme-article h2 {
     margin-top: 20px;
     margin-bottom: 0px;
-    color: #3A83FF;
+    color: #263461;
     text-align: center;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
@@ -613,16 +788,33 @@ em {
 /*============================*/
 
 .vente {
-    margin-top: 50px;
     text-align: left;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.vente svg {
+    padding-left: 25%;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.icone-vente {
+    width: 50px;
+    height: 50px;
 }
 
 .vente section {
     display: block;
 }
 
-.vente div {
+.separation {
+    border-bottom: 1px solid #F58900;
+}
 
+.vente div {
     margin: 0 auto;
 }
 
@@ -638,6 +830,10 @@ em {
     font-weight: 400;
     font-size: 1em;
     cursor: pointer;
+}
+
+.direction-vente {
+    padding-left: 20px !important;
 }
 
 .vente p {
@@ -707,12 +903,72 @@ textarea {
 }
 
 /*============================*/
+/*============ RDV ===========*/
+/*============================*/
+
+#rdv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px; 
+}
+
+#rdv h1 {
+    padding: 20px;
+    color: #263461;
+}
+
+.section {   
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 5px;    
+}
+
+.section input {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+
+}
+
+label {
+    margin: 5px;
+    display: inline-block;
+    font-size: 15px;
+    color: #263461;
+}
+
+select {
+    margin: 5px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    cursor: pointer;
+}
+
+textarea {
+     width: auto;
+     border-radius: 5px;
+     border: 01px solid #fff;     
+     font-family: 'Open Sans', sans-serif;
+     font-size: 15px;
+     cursor: pointer;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    float: left;  
+}
+
+/*============================*/
 /*========== FOOTER ==========*/
 /*============================*/
 
 #footer {
     font-size: 0.8em;
-    background: #3A83FF;
+    background: #263461;
     color: white;
     width: 100%;
     margin-bottom: -2vh;
@@ -731,3 +987,4 @@ textarea {
 #footer a:hover {
     color: #F58900;
 }
+
