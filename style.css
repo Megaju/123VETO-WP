@@ -454,21 +454,21 @@ h2 {
 
 .docteur-present h3 {
     margin-top: 5px;
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: left;
     padding-left: 15px;
     width: 240px;
 }
 
 .docteur-present h4 {
-    font-size: .8em;
+    font-size: 1em;
     text-align: left;
     padding-left: 15px;
     width: 240px;
 }
 
 .docteur-present p {
-    font-size: .6em;
+    font-size: .8em;
     text-align: justify;
     cursor: default;
     padding-left: 15px;
@@ -556,7 +556,7 @@ h2 {
 
 .bloc-small-savoirfaire p {
     margin: 40px 0 0 0;
-    font-size: .8em;
+    font-size: .9em;
     overflow-y: auto;
     color: #222;
 }
@@ -751,9 +751,33 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.bloc {
+    float: left;
+    text-align: center;
+}
+
 #Capa_1 {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     width: 60px;
+    height: 60px;
+}
+
+#Capa_2 {
+    width: 60px;
+    height: 60px;
+}
+
+.btnPre {
+    height: 40px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+.btnPre a {
+    color: #F58900;
+    text-decoration: none;
 }
 
 /*============================*/
@@ -765,7 +789,7 @@ h2 {
 /*============================*/
 
 .center-generique {
-    width: 150px;
+    width: 147px;
     text-align: center;
     padding: 10px;
     display: block;
@@ -861,6 +885,18 @@ h2 {
     width: 90%;
     display: block;
     margin: 0 auto;
+}
+
+.vente svg {
+    padding-left: 25%;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.icone-vente {
+    width: 50px;
+    height: 50px;
 }
 
 .vente section {
@@ -1101,4 +1137,32 @@ textarea.big {
 
 #footer a:hover {
     color: #F58900;
+}
+
+/* ====================================================================
+*/
+
+
+
+.page {
+    font-size: 0;
+}
+
+.sidebar {
+    margin: 0;
+    font-size: 12px;
+    display: inline-block;
+    width: 20%;
+}
+
+.content {
+    margin: 0;
+    display: inline-block;
+    font-size: 14px;   
+    width: 80%;
+    vertical-align: top;
+}
+
+.contenu_article {
+    font-size: .8em;
 }

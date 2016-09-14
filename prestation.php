@@ -1,18 +1,17 @@
 <?php
 /*
-Template Name: prestations
+Template Name: modele de test
 */
 ?>
 
-        <!-- pour insérer le header -->
-        <?php get_header(); ?>
+<?php get_header(); ?>
 
-            <div id="attente-bootstrap" class="placement">
-                <!-- pour insérer la sidebar -->
-                <?php get_sidebar(); ?>
 
-                    <div>
-                        <section class="formeindex">
+<div class="page">
+    <?php get_sidebar(); ?>
+    
+    <div class="content">
+        <section class="formeindex">
                             
                             <div class="uniform-article">
                                 <?php query_posts('category_name=titre-intro-prestation'); ?>
@@ -206,8 +205,5 @@ Template Name: prestations
                                                 <?php endif; ?>
                             </div>
                         </section>
-                    </div>
-            </div>
-
-            <!-- pour insérer le footer -->
-            <?php get_footer(); ?>
+    </div>
+</div>
