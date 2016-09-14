@@ -1139,3 +1139,30 @@ textarea.big {
 #footer a:hover {
     color: #F58900;
 }
+
+/* ====================================================================
+*/
+
+
+
+.page {
+    font-size: 0;
+}
+
+.sidebar {
+    margin: 0;
+    font-size: 12px;
+    display: inline-block;
+    width: 20%;
+}
+
+.content {
+    margin: 0;
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+.contenu_article {
+    font-size: .8em;
+}
