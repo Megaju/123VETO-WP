@@ -11,8 +11,6 @@
 	
 		<h2 class="TitreForm1">Contact</h2>
 		<h2 class="TitreForm2">Localisation</h2></br>
-	
-
 
 
 	<div class="contact">
