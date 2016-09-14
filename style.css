@@ -455,21 +455,21 @@ h2 {
 
 .docteur-present h3 {
     margin-top: 5px;
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: left;
     padding-left: 15px;
     width: 240px;
 }
 
 .docteur-present h4 {
-    font-size: .8em;
+    font-size: 1em;
     text-align: left;
     padding-left: 15px;
     width: 240px;
 }
 
 .docteur-present p {
-    font-size: .6em;
+    font-size: .8em;
     text-align: justify;
     cursor: default;
     padding-left: 15px;
@@ -557,7 +557,7 @@ h2 {
 
 .bloc-small-savoirfaire p {
     margin: 40px 0 0 0;
-    font-size: .8em;
+    font-size: .9em;
     overflow-y: auto;
     color: #222;
 }
@@ -1158,6 +1158,7 @@ textarea.big {
 .content {
     margin: 0;
     display: inline-block;
+    font-size: 14px;   
     width: 80%;
     vertical-align: top;
 }
