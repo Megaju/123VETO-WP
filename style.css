@@ -244,6 +244,9 @@ h2#description {
     padding-left: 27%;
     padding-top: 15px;
 }
+.raisonSociale:hover {
+    color: white;
+}
 
 .linkAccueil {
     text-decoration: none;
@@ -733,6 +736,41 @@ h2 {
     opacity: 1;
 }
 
+/*============================*/
+
+
+/*========= PRESTATION =======*/
+
+
+/*============================*/
+
+.secpage {
+    height: 40vh;
+}
+.lesblocs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bloc {
+    float: left;
+    text-align: center;
+}
+#Capa_1 {
+    padding-bottom: 10px;
+}
+.btnPre {
+    height: 40px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+.btnPre a {
+    color: #F58900;
+    text-decoration: none;
+}
 
 /*============================*/
 
