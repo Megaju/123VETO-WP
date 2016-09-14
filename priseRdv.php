@@ -42,7 +42,7 @@
                       </select><br />
                   </p>    
                 </div>    
-              <textarea id="mess" placeholder="Votre message (facultatif)"></textarea>
+              <textarea id="mess" placeholder="Votre message (facultatif)" class="big"></textarea>
                 <div id="bouton">
                       <input type="submit" value="Envoyer" style="color: #f58900">
                       <input type="reset" value="Effacer" style="color: #f58900">

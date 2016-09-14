@@ -874,7 +874,7 @@ em {
 input, textarea {
     height: 40px;
     padding: 5px 10px;
-    border: 01px solid #777;
+    border: 1px solid #777;
     background-color: #eee;
 }
 
@@ -923,7 +923,7 @@ textarea {
 .section input {
     margin: 5px;
     border-radius: 5px;
-    border: 01px solid #fff;
+    border: 1px solid #fff;
     cursor: pointer;
 
 }
@@ -943,12 +943,17 @@ select {
 }
 
 textarea {
-     width: auto;
+    padding: 8px 10px;
+     width: 230px;
      border-radius: 5px;
      border: 01px solid #fff;     
      font-family: 'Open Sans', sans-serif;
      font-size: 15px;
      cursor: pointer;
+}
+
+textarea.big {
+    width: 425px;
 }
 
 #bouton {
