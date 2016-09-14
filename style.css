@@ -763,6 +763,12 @@ h2 {
     width: 60px;
     height: 60px;
 }
+
+#Capa_2 {
+    width: 60px;
+    height: 60px;
+}
+
 .btnPre {
     height: 40px;
     background-color: white;
@@ -1094,6 +1100,8 @@ textarea.big {
     flex-direction: column;
     float: left;
 }
+
+.agenda p {}
 
 .agenda iframe {
     height: 500px;
