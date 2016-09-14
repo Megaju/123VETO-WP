@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: modele de test
+Template Name: prestation
 */
 ?>
 
