@@ -41,13 +41,11 @@
 
         <!-- menu de navigation -->
         <div class="menuNav">
-            <a href="#" class="linkAccueil">
-                <div class="site-logo"><p class="raisonSociale">123veto</p></div>
-            </a>
+            <a href="" class="site-logo"><p class="bitch">123VETO</p></a>
             <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
             <div class="icones">
-                <a href="#" class="linkAccueil fa fa-facebook" aria-hidden="true"></a>
-                <a href="#" class="linkAcceuil fa fa-google-plus" aria-hidden="true" style="padding-right: 25px"></a>
+                <a href="#" class="linkAccueil fa fa-facebook-square" aria-hidden="true"></a>
+                <a href="#" class="linkAcceuil fa fa-google-plus-square" aria-hidden="true"></a>
             </div>    
         </div>
         <div id="header">

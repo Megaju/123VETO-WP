@@ -5,12 +5,16 @@ Version: 0.1
 Author: Solène, Lise et Julien
 */
 
+
 /*============================*/
+
+
 /*========== GENERAL =========*/
+
+
 /*============================*/
 
-
-.flexbox{
+.flexbox {
     display: flex;
     justify-content: space-around;
 }
@@ -20,15 +24,12 @@ Author: Solène, Lise et Julien
     flex-wrap: wrap;
 }
 
-@font-face {
-    font-family: Gabriela;
-    src: url(fonts/Gabriela-Regular.ttf);
-}
 
-/* Le bleu : #263461 SVG DE L'ANCIEN BLEU 3A83FF 
+/* Le bleu : #263461 SVG DE L'ANCIEN BLEU 263461 
    Le orange : #F58900 */
 
-html, body {
+html,
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -102,8 +103,13 @@ i {
     margin: 0 auto;
 }
 
+
 /*============================*/
+
+
 /*========== HEADER ==========*/
+
+
 /*============================*/
 
 #header {
@@ -124,7 +130,7 @@ i {
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
-    background-color: rgba(4, 52, 89,0.6);
+    background-color: rgba(4, 52, 89, 0.6);
 }
 
 #header h1 a {
@@ -166,12 +172,15 @@ h2#description {
     background-position: center center;
 }
 
-.info {
-    
-}
+.info {}
+
 
 /*============================*/
+
+
 /*======== NAVIGATION ========*/
+
+
 /*============================*/
 
 .menu-top-container {
@@ -182,7 +191,7 @@ h2#description {
 .menuNav {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #3A83FF;
+    border-bottom: 1px solid #263461;
     justify-content: space-between;
     height: 50px;
 }
@@ -212,29 +221,26 @@ h2#description {
     transition: .2s;
 }
 
-.menu-top-container ul li:hover a, .current_page_item a {
+.menu-top-container ul li:hover a,
+.current_page_item a {
     background-color: #263461;
     color: #fff!important;
     transition: .2s;
 }
 
 .site-logo {
-    background: url(img/logo-nav.png) no-repeat;
-    background-position: left;
-    background-size: 44%;
-    margin-top: -16px;
-    top: 0;
-    left: 4vw;
-    height: 8vh;
-    width: 14vw;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
     color: #263461;
-    text-transform: uppercase;
-    /*border-bottom: 1px solid #3A83FF;*/
+    text-align: right;
+    display: inline-block;
+    background-image: url(img/logo-nav.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-
 .raisonSociale {
-    font-family: Gabriela;
     padding-left: 27%;
     padding-top: 15px;
 }
@@ -242,28 +248,37 @@ h2#description {
     color: white;
 }
 
-.linkAccueil:hover {
-    background-color: #263461;
-    color: white;
-}
-
 .linkAccueil {
     text-decoration: none;
-    color: #3A83FF;
+    color: #263461;
     text-align: center;
 }
 
 .menuNav .fa {
-   color: #3A83FF;
-   margin-top: 17px;
-   margin-left: 25px;
+    font-size: 1.5em;
+    color: #263461;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.icones {
+    padding: 0 25px;
+    height: 50px;
+    line-height: 50px;
 }
 
 .menuNav .fa:hover {
-    color: lightblue;
+    color: #F58900;
+    transition: .2s;
 }
+
+
 /*============================*/
+
+
 /*========== SIDEBAR =========*/
+
+
 /*============================*/
 
 .sidebar {
@@ -361,20 +376,25 @@ em {
 }
 
 .sidebar .fa-map {
-	padding: 3px;
+    padding: 3px;
 }
+
 .sidebar .fa-map:hover {
-	color: #4685F1;
-	transition: .2s;
+    color: #4685F1;
+    transition: .2s;
 }
 
 
-
 /*============================*/
+
+
 /*========== EQUIPE ==========*/
+
+
 /*============================*/
 
-.formeindex, h2 {
+.formeindex,
+h2 {
     margin-top: 20px;
     margin-bottom: 0px;
     color: #263461;
@@ -397,20 +417,24 @@ em {
     opacity: 0.8;
 }
 
+
 /* --------- THE TEAM --------- */
 
 .docteurs {
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .docteur {
     vertical-align: top;
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 185px;
+    height: 185px;
     border-radius: 400px;
     background-size: cover;
     background-position: center center;
+    box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.39);
 }
 
 #docteur1 {
@@ -429,20 +453,28 @@ em {
 }
 
 .docteur-present h3 {
+    margin-top: 5px;
     font-size: 1em;
     text-align: left;
+    padding-left: 15px;
+    width: 240px;
 }
 
 .docteur-present h4 {
     font-size: .8em;
     text-align: left;
+    padding-left: 15px;
+    width: 240px;
 }
 
 .docteur-present p {
     font-size: .6em;
     text-align: justify;
     cursor: default;
+    padding-left: 15px;
+    width: 240px;
 }
+
 
 /* ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;)
 .docteur {
@@ -498,10 +530,15 @@ em {
     background-color: #263461;
     opacity: .9;
     transition: .3s;
-} [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */ 
+} [TEAM] ON GARDE L'ANCIEN CODE AVEC LE HOVER ON SAIT JAMAIS !!!! MERCI ! ;) */
+
 
 /*============================*/
+
+
 /*========= SAVOIR-FAIRE =====*/
+
+
 /*============================*/
 
 #bloc-medium-savoirfaire {
@@ -524,7 +561,8 @@ em {
     color: #222;
 }
 
-.bloc-small-savoirfaire a, .bloc-small-savoirfaire a i {
+.bloc-small-savoirfaire a,
+.bloc-small-savoirfaire a i {
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
@@ -532,7 +570,8 @@ em {
     font-size: .8em;
 }
 
-.bloc-small-savoirfaire a:hover, .bloc-small-savoirfaire a:hover i {
+.bloc-small-savoirfaire a:hover,
+.bloc-small-savoirfaire a:hover i {
     color: #F58900;
 }
 
@@ -560,9 +599,12 @@ em {
 }
 
 
-
 /*============================*/
+
+
 /*========= CLINIQUE =========*/
+
+
 /*============================*/
 
 .carousel {
@@ -590,7 +632,7 @@ em {
     position: absolute;
     top: 0;
     left: 0;
-    margin: 30px  0 0 0;
+    margin: 30px 0 0 0;
     padding: 10px 50px 10px 10px;
     color: #fff;
     font-size: 2em;
@@ -598,7 +640,6 @@ em {
     background-color: #263461;
     box-shadow: 0 0 15px #111;
     z-index: 2;
-    
 }
 
 .carousel p {
@@ -663,10 +704,14 @@ em {
     left: 0;
     padding-right: 50px;
     opacity: .85;
-    background: -moz-linear-gradient(left,  rgba(237,237,237,1) 0%, rgba(237,237,237,1) 21%, rgba(237,237,237,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(237,237,237,1) 0%,rgba(237,237,237,1) 21%,rgba(237,237,237,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(237,237,237,1) 0%,rgba(237,237,237,1) 21%,rgba(237,237,237,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#00ededed',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#00ededed', GradientType=1);
+    /* IE6-9 */
 }
 
 #left-button-carou:hover {
@@ -677,10 +722,14 @@ em {
     right: 0;
     padding-left: 50px;
     opacity: .85;
-    background: -moz-linear-gradient(left, rgba(237,237,237,0) 0%, rgba(237,237,237,1) 79%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 79%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 79%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ededed', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ededed', endColorstr='#ededed', GradientType=1);
+    /* IE6-9 */
 }
 
 #right-button-carou:hover {
@@ -688,7 +737,11 @@ em {
 }
 
 /*============================*/
+
+
 /*========= PRESTATION =======*/
+
+
 /*============================*/
 
 .secpage {
@@ -720,7 +773,11 @@ em {
 }
 
 /*============================*/
+
+
 /*========= PAGE =============*/
+
+
 /*============================*/
 
 .center-generique {
@@ -768,7 +825,6 @@ em {
 .alignement_article {
     display: inline-flex;
     margin-top: 20px;
-    
 }
 
 .imgPage img {
@@ -808,22 +864,30 @@ em {
 }
 
 
-
 /*============================*/
+
+
 /*========== VENTE ===========*/
+
+
 /*============================*/
 
 .vente {
-    margin-top: 50px;
     text-align: left;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 .vente section {
     display: block;
 }
 
-.vente div {
+.separation {
+    border-bottom: 1px solid #F58900;
+}
 
+.vente div {
     margin: 0 auto;
 }
 
@@ -841,31 +905,41 @@ em {
     cursor: pointer;
 }
 
+.direction-vente {
+    padding-left: 20px !important;
+}
+
 .vente p {
-   color: #222;
+    color: #222;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     text-transform: none;
     text-align: left;
 }
 
-#article-croquettes, #article-vermifuges, #article-shampoings, #article-brosses, #article-colliers {
+#article-croquettes,
+#article-vermifuges,
+#article-shampoings,
+#article-brosses,
+#article-colliers {
     display: none;
 }
 
 
 /*============================*/
+
+
 /*========= CONTACT =========*/
+
+
 /*============================*/
 
 .TitreForm1 {
-
     float: left;
     margin-left: 54px;
 }
 
 .TitreForm2 {
-
     margin-right: -176px;
 }
 
@@ -875,6 +949,7 @@ em {
     justify-content: space-around;
     height: 90vh;
 }
+
 .type1 {
     margin-left: 2vh;
     height: 40px;
@@ -886,8 +961,8 @@ em {
 #form1 {
     width: 0 auto;
     border-right: 1px solid lightgray;
-    margin-top: 18px; }
-
+    margin-top: 18px;
+}
 
 .formulaire {
     width: 45%;
@@ -895,24 +970,23 @@ em {
 
 .localisation {
     width: 38%;
-
 }
 
 #locapara {
- font-size: 12.5px;
- margin-right: 5vh;
- line-height: 1.8em;
- margin-top: -21px;
- margin-bottom: 50px;
-
+    font-size: 12.5px;
+    margin-right: 5vh;
+    line-height: 1.8em;
+    margin-top: -21px;
+    margin-bottom: 50px;
 }
-input, textarea {
+
+input,
+textarea {
     height: 40px;
     padding: 5px 10px;
-    border: 01px solid #777;
+    border: 1px solid #777;
     background-color: #eee;
 }
-
 
 textarea {
     height: 22vh;
@@ -930,8 +1004,13 @@ textarea {
     overflow: hidden;
 }
 
+
 /*============================*/
+
+
 /*============ RDV ===========*/
+
+
 /*============================*/
 
 #rdv {
@@ -941,26 +1020,24 @@ textarea {
     font-size: 15px;
 }
 
-
 #rdv h1 {
     padding: 20px;
     color: #263461;
 }
 
 .section {
-    width: 450px;  
+    width: 450px;
     display: flex;
     flex-direction: column;
     float: left;
-    margin-right: 15px;    
+    margin-right: 15px;
 }
 
 .section input {
     margin: 5px;
     border-radius: 5px;
-    border: 01px solid #fff;
+    border: 1px solid #fff;
     cursor: pointer;
-
 }
 
 label {
@@ -978,12 +1055,17 @@ select {
 }
 
 textarea {
-     width: auto;
-     border-radius: 5px;
-     border: 01px solid #fff;     
-     font-family: 'Open Sans', sans-serif;
-     font-size: 15px;
-     cursor: pointer;
+    padding: 8px 10px;
+    width: 230px;
+    border-radius: 5px;
+    border: 01px solid #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+textarea.big {
+    width: 425px;
 }
 
 #bouton {
@@ -992,17 +1074,13 @@ textarea {
     padding: 5px;
 }
 
-
-
 .agenda {
     display: flex;
     flex-direction: column;
-    float: left; 
+    float: left;
 }
 
-.agenda p {
-    
-}
+.agenda p {}
 
 .agenda iframe {
     height: 500px;
@@ -1011,7 +1089,11 @@ textarea {
 
 
 /*============================*/
+
+
 /*========== FOOTER ==========*/
+
+
 /*============================*/
 
 #footer {
@@ -1022,17 +1104,17 @@ textarea {
     margin-bottom: -2vh;
 }
 
-#footer p, #footer a {
+#footer p,
+#footer a {
     color: white;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     text-decoration: none;
     padding-top: 8px;
-		padding-bottom: 8px;
-		margin-bottom: 0;
+    padding-bottom: 8px;
+    margin-bottom: 0;
 }
 
 #footer a:hover {
     color: #F58900;
 }
-
