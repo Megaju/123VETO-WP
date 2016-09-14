@@ -1,10 +1,8 @@
 <?php get_header(); ?>
-
-    <div id="page">
-        <section class="flexbox">
+    <div class="page">
             <!-- aside -->
             <?php get_sidebar(); ?>
-                <div>
+                <div class="content">
                     <!-- le bloc team pour le hover est stocké dans le pc 26 -->
                     <div id="bloc-team">
                         <h2 class="bandeau bandeau-mt0">L'équipe à votre service</h2>
@@ -276,9 +274,7 @@
                         </section>
 
                 </div>
-        </section>
-
-    </div>
+</div>
     
     <?php get_footer(); ?>
 
