@@ -94,12 +94,12 @@
                         <div class="lesblocs">
                             <!-- bloc 1/6 -->                            
                             <div class="center-generique">
-                                <i class="fa fa-stethoscope fa-3x"></i>
+                                <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
                                 <button class="bouton-generique" onclick="">Consultation</button>
                             </div>
                             <!-- bloc 2/6 -->
                             <div class="center-generique">
-                                <i class="fa fa-camera fa-3x"></i>
+                                <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
                                 <button class="bouton-generique" onclick="">Imagerie</button>
                             </div>                                                       
                             <!-- bloc 3/6 -->

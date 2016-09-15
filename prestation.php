@@ -34,12 +34,12 @@ Template Name: prestation
                             
                             <div class="icone-generique">
                                 <div class="center-generique">
-                                    <i class="fa fa-stethoscope fa-3x"></i>
+                                    <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
                                     <button class="bouton-generique" onclick="affiche_presta('consultation')">Consul.</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <i class="fa fa-camera fa-3x"></i>
+                                    <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
                                     <button class="bouton-generique" onclick="affiche_presta('imagerie')">Imagerie</button>
                                 </div>
 
