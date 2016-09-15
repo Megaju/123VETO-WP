@@ -1,6 +1,4 @@
-<?php //fix bug header ?>
-
-    <?php
+<?php
 /*
 Template Name: conseils
 */
