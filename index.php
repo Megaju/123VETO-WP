@@ -1,96 +1,113 @@
 <?php get_header(); ?>
+
+
+
+    <div id="header">
+        <div class="header-corp">
+            <!-- logo -->
+            <div class="logo-img img-responsive"></div>
+            <!-- infos -->
+            <div class="info">
+                <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+                <h2 id="description"><?php bloginfo('description'); ?></h2>
+                <h2>Dr Eric Wintz - Dr Aurélie Mayoussier</h2>
+                <p class="horaires">123 Véto vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h Les urgences sont assurées 24h/24 7 jours sur 7 sur appel téléphonique au 02 40 01 61 69</p>
+            </div>
+        </div>
+    </div>
     <div class="page">
-            <!-- aside -->
-            <?php get_sidebar(); ?>
-                <div class="content">
-                    <!-- le bloc team pour le hover est stocké dans le pc 26 -->
-                    <div id="bloc-team">
-                        <h2 class="bandeau bandeau-mt0">L'équipe à votre service</h2>
+        <!-- aside -->
+        <?php get_sidebar(); ?>
+            <div class="content">
+                <!-- le bloc team pour le hover est stocké dans le pc 26 -->
+                <div id="bloc-team">
+                    <h2 class="bandeau bandeau-mt0">L'équipe à votre service</h2>
 
-                        <div class="index-separator-0"></div>
+                    <div class="index-separator-0"></div>
 
-                        <div class="docteurs">                          <!-- DOCTEUR I -->
-                            <div class="docteur" id="docteur1">  
-                            </div>
-                            <div class="docteur-present">
-                                    <h3>Dr Aurélie Mayoussier</h3>
-                                    <h4>Diplômée de l’école vétérinaire de Maisons Alfort en 2008</h4>
-                                    <p>Dr Aurélie Mayoussier Diplômée de l’école vétérinaire de MaisonsAlfort en 2008, elle se passionne pour la médecine de l’élevage et de la reproduction et la médecine des NAC. Le Dr Mayoussier possède deux chats Pratchett et Bubule ainsi que Bambou, chien loup de Saarloos.</p>
-                                </div>
-                                
-                            <!-- DOCTEUR II -->  
-                            <div class="docteur" id="docteur2"> 
-                            </div>
-                            <div class="docteur-present">
-                                    <h3>Dr Eric Wintz</h3>
-                                    <h4>Diplômé de l’école vétérinaire de Nantes en 1990</h4>
-                                    <p>Dr Eric Wintz Diplômé de l’école vétérinaire de Nantes en 1990, il se passionne pour la dermatologie et la cardiologie. Le Dr Wintz possède quatre chats Leelas (européenne), Gribouille (européen), Hannah (Mane Coon), et Joey (Ragdoll), des Platis, deux lapins nains Neige et Teddy ainsi que Lexie, chihuahua.</p>
-                            </div>
+                    <div class="docteurs">
+                        <!-- DOCTEUR I -->
+                        <div class="docteur" id="docteur1">
+                        </div>
+                        <div class="docteur-present">
+                            <h3>Dr Aurélie Mayoussier</h3>
+                            <h4>Diplômée de l’école vétérinaire de Maisons Alfort en 2008</h4>
+                            <p>Dr Aurélie Mayoussier Diplômée de l’école vétérinaire de MaisonsAlfort en 2008, elle se passionne pour la médecine de l’élevage et de la reproduction et la médecine des NAC. Le Dr Mayoussier possède deux chats Pratchett et Bubule ainsi que Bambou, chien loup de Saarloos.</p>
+                        </div>
+
+                        <!-- DOCTEUR II -->
+                        <div class="docteur" id="docteur2">
+                        </div>
+                        <div class="docteur-present">
+                            <h3>Dr Eric Wintz</h3>
+                            <h4>Diplômé de l’école vétérinaire de Nantes en 1990</h4>
+                            <p>Dr Eric Wintz Diplômé de l’école vétérinaire de Nantes en 1990, il se passionne pour la dermatologie et la cardiologie. Le Dr Wintz possède quatre chats Leelas (européenne), Gribouille (européen), Hannah (Mane Coon), et Joey (Ragdoll), des Platis, deux lapins nains Neige et Teddy ainsi que Lexie, chihuahua.</p>
                         </div>
                     </div>
-                    
-                    <!-- CAROUSEL -->
-                    <div id="bloc-carousel">
-                        <h2 class="bandeau">Découverte de la clinique</h2>
-                        <div class="index-separator-0"></div>
+                </div>
 
-                        <div class="carousel">
-                            <div class="carousel-img"></div>
-                            <h2 id="carousel-titre">Titre associé</h2>
-                            <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
-                        
+                <!-- CAROUSEL -->
+                <div id="bloc-carousel">
+                    <h2 class="bandeau">Découverte de la clinique</h2>
+                    <div class="index-separator-0"></div>
+
+                    <div class="carousel">
+                        <div class="carousel-img"></div>
+                        <h2 id="carousel-titre">Titre associé</h2>
+                        <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
+
                         <button id="left-button-carou" class="fa fa-chevron-left"></button>
-                        
+
                         <button id="right-button-carou" class="fa fa-chevron-right"></button>
-                        
+
+                    </div>
+                </div>
+
+                <!-- SAVOIR-FAIRE 1 2 3 VETO -->
+                <div id="bloc-large-savoirfaire">
+                    <h2 class="bandeau">Notre savoir-faire</h2>
+                    <div class="index-separator-0"></div>
+                    <div id="bloc-medium-savoirfaire">
+                        <div class="bloc-small-savoirfaire">
+                            <div class="fa-sf">
+                                1
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                            <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
+                        </div>
+
+                        <div class="bloc-small-savoirfaire">
+                            <div class="fa-sf">
+                                2
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                            <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
+                        </div>
+
+                        <div class="bloc-small-savoirfaire">
+                            <div class="fa-sf">
+                                3
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                            <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
+                        </div>
+
+                        <div class="bloc-small-savoirfaire">
+                            <div class="fa-sf">
+                                V
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                            <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
-                    <!-- SAVOIR-FAIRE 1 2 3 VETO -->
-                    <div id="bloc-large-savoirfaire">
-                        <h2 class="bandeau">Notre savoir-faire</h2>
-                        <div class="index-separator-0"></div>
-                        <div id="bloc-medium-savoirfaire">
-                            <div class="bloc-small-savoirfaire">
-                                <div class="fa-sf">
-                                    1
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
-                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
-                            </div>
+                </div>
 
-                            <div class="bloc-small-savoirfaire">
-                                <div class="fa-sf">
-                                    2
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
-                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
-                            </div>
+                <!-- PRESTATIONS -->
 
-                            <div class="bloc-small-savoirfaire">
-                                <div class="fa-sf">
-                                    3
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
-                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
-                            </div>
-
-                            <div class="bloc-small-savoirfaire">
-                                <div class="fa-sf">
-                                    V
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
-                                <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
-                            </div>
-                        </div>
+                <section>
+                    <div class="section-header">
+                        <h2 class="bandeau">Nos prestations</h2>
                     </div>
-
-                    <!-- PRESTATIONS -->
-
-                    <section>
-                        <div class="section-header">
-                            <h2  class="bandeau">Nos prestations</h2>
-                        </div>
                         <div class="lesblocs">
                             <!-- bloc 1/6 -->                            
                             <div class="center-generique">
@@ -203,11 +220,12 @@
                                     <button class="bouton-generique">Colliers et laisses</button>
                                 </div>
                             </div>
-                        </section>
+                        </section>                     
+                            
 
-                </div>
-</div>
-    
+            </div>
+    </div>
+
     <?php get_footer(); ?>
 
         </body>
