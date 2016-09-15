@@ -4,7 +4,7 @@ Template Name: prestation
 */
 ?>
 
-<?php get_header(); ?>
+ <?php get_header('header-single'); ?>
 
 
 <div class="page">
@@ -207,3 +207,8 @@ Template Name: prestation
                         </section>
     </div>
 </div>
+   <?php get_footer(); ?>
+
+                        </body>
+
+                        </html>
