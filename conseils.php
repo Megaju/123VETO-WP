@@ -54,7 +54,7 @@ Template Name: conseils
                                 </div>
 
                                 <div class="center-generique">
-                                    <i class="fa fa-bug fa-3x text-center"></i>
+                                    <?php include("img/svg/conseil_svg/conseil_parasite.php"); ?>
                                     <button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@ Template Name: conseils
                                 </div>
 
                                 <div class="center-generique">
-                                    <i class="fa fa-barcode fa-3x text-center"></i>
+                                    <?php include("img/svg/conseil_svg/conseil_barcode.php"); ?>
                                     <button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button>
                                 </div>
 
