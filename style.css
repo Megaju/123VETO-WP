@@ -769,6 +769,13 @@ h2 {
     height: 60px;
 }
 
+.exception-vente {
+    margin-bottom: -25px;
+    padding-bottom: 10px;
+    width: 60px;
+    height: 60px;
+}
+
 .btnPre {
     height: 40px;
     background-color: white;
