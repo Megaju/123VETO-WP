@@ -147,7 +147,6 @@ i {
     padding: 0 0 15px 0px;
     font-size: 1.5em;
     font-weight: 700;
-    text-align: right;
 }
 
 h2#description {
@@ -236,7 +235,7 @@ h2#description {
     color: #263461;
     text-align: right;
     display: inline-block;
-    background-image: url(img/logo-nav.png);
+    background-image: url(img/logo-veto2.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -770,10 +769,14 @@ h2 {
 }
 
 .exception-vente {
-    margin-bottom: -25px;
+   /* margin-bottom: -25px;*/
     padding-bottom: 10px;
     width: 60px;
     height: 60px;
+}
+
+#croquettes svg, #colliers svg {
+    margin-bottom: -25px
 }
 
 .btnPre {
@@ -1180,7 +1183,6 @@ textarea.big {
     font-size: .8em;
 }
 
-
 /* ===== PAGE NEWSLETTER ===== */
 
 #newsletter {
@@ -1198,3 +1200,92 @@ textarea.big {
     outline: 1px solid blue;
 }
 
+
+/* ==================== */
+/* ===== ANIMATION ==== */
+/* ==================== */
+
+.numero{
+    display:inline-block;
+    transform:translateZ(0.1px);
+}
+
+.animation {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+@@-webkit-keyframes anim {
+     0% {
+        transform: scale(0) rotate(-180deg) ; 
+        opacity: 0;            
+    }
+    50% {
+        transform: scale(1) rotate(0deg) ;   
+        opacity: 1;
+    }
+    70% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(0.8) rotate(0deg);
+    }
+}
+
+
+@-moz-keyframes anim {
+    0% {
+        transform: scale(0) rotate(-180deg);
+        opacity: 0;            
+    }
+    50% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    70%{
+         transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(0.8) rotate(0deg); 
+    }
+}
+@-o-keyframes anim {
+    0% {
+        transform: scale(0) rotate(-180deg);
+        opacity: 0;            
+    }
+    50% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    70%{
+         transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(0.8) rotate(0deg); 
+    }
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(0) rotate(-180deg);         
+        opacity: 0;            
+    }
+    50% {
+        transform: scale(1) rotate(0deg);                    
+        opacity: 1;
+    }
+    70%{
+         transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(0.8) rotate(0deg); 
+    }
+}
+
+.anim {
+    backface-visibility: visible !important;
+    animation-name: anim;
+    cursor: default;
+}
+>>>>>>> 2c52da3ef258779116af0cc3b940e491851101e8
