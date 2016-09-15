@@ -41,7 +41,7 @@
 
         <!-- menu de navigation -->
         <div class="menuNav">
-            <a href="" class="site-logo"><p class="bitch">123VETO</p></a>
+            <a href="" class="site-logo"><p>123VETO</p></a>
             <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
             <div class="icones">
                 <a href="#" class="linkAccueil fa fa-facebook-square" aria-hidden="true"></a>

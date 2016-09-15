@@ -236,7 +236,7 @@ h2#description {
     color: #263461;
     text-align: right;
     display: inline-block;
-    background-image: url(img/logo-nav.png);
+    background-image: url(img/logo-veto2.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -770,7 +770,7 @@ h2 {
 }
 
 .exception-vente {
-    margin-bottom: -25px;
+   /* margin-bottom: -25px;*/
     padding-bottom: 10px;
     width: 60px;
     height: 60px;
