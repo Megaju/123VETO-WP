@@ -1,20 +1,23 @@
-<?php
+<?php //fix bug header ?>
+
+    <?php
 /*
-Template Name: prestation
+Template Name: conseils
 */
 ?>
 
- <?php get_header('header-single'); ?>
 
+        <!-- pour insérer le header -->
+        <?php get_header(); ?>
 
-<div class="page">
-    <?php get_sidebar(); ?>
-    
-    <div class="content">
-        <section class="formeindex">
-                            
+            <div class="page">
+                <?php get_sidebar(); ?>
+
+                    <div class="content">
+                        <section class="formeindex">
+
                             <div class="uniform-article">
-                                <?php query_posts('category_name=titre-intro-prestation'); ?>
+                                <?php query_posts('category_name=titre-intro-conseils'); ?>
                                     <?php if(have_posts()) : ?>
                                         <?php while(have_posts()) : the_post();?>
 
@@ -31,48 +34,65 @@ Template Name: prestation
                                             <?php endwhile; ?>
                                                 <?php endif; ?>
                             </div>
-                            
+
+                            <!-- ICONES -->
                             <div class="icone-generique">
                                 <div class="center-generique">
-                                    <i class="fa fa-stethoscope fa-3x"></i>
-                                    <button class="bouton-generique" onclick="affiche_presta('consultation')">Consul.</button>
+                                    <?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
+                                    
+                                    <button class="bouton-generique" onclick="fiche_conseil('dents')">Dents</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <i class="fa fa-camera fa-3x"></i>
-                                    <button class="bouton-generique" onclick="affiche_presta('imagerie')">Imagerie</button>
+                                    <?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
+                                    <button class="bouton-generique" onclick="fiche_conseil('yeux')">Yeux / Oreilles</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
-                                    <button class="bouton-generique" onclick="affiche_presta('analyse')">Analyses</button>
+                                    <?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
+                                    <button class="bouton-generique" onclick="fiche_conseil('pelage')">Pelage</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>
-                                    <button class="bouton-generique" onclick="affiche_presta('chirurgie')">Chirurgie</button>
+                                    <i class="fa fa-bug fa-3x text-center"></i>
+                                    <button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button>
+                                </div>
+                            </div>
+
+                            <div class="icone-generique">
+                                <div class="center-generique">
+                                    <?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
+                                    <button class="bouton-generique" onclick="fiche_conseil('vaccinChien')">Vaccin Chien</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
-                                    <button class="bouton-generique" onclick="affiche_presta('hospitalisation')">Hosp.</button>
+                                    <?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
+                                    <button class="bouton-generique" onclick="fiche_conseil('vaccinChat')">Vaccin Chat</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>
-                                    <button class="bouton-generique" onclick="affiche_presta('nac')">NAC</button>
+                                    <i class="fa fa-barcode fa-3x text-center"></i>
+                                    <button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button>
+                                </div>
+
+                                <div class="center-generique">
+                                    <?php include("img/svg/conseil_svg/conseil_education.php"); ?>
+                                    <button class="bouton-generique" onclick="fiche_conseil('education')">Education</button>
                                 </div>
                             </div>
                         </section>
+
+
 
                         <section>
+                            <!--AFFICHAGE DES ARTICLES-->
 
-                            <div class="uniform-article" id="consultation">
-                                <?php query_posts('category_name=consultation'); ?>
+                            <!-- articles dents -->
+                            <div class="uniform-article" id="dents">
+                                <?php query_posts('category_name=dents'); ?>
                                     <?php if(have_posts()) : ?>
                                         <?php while(have_posts()) : the_post();?>
 
-                                            <!-- affichage des articles -->
                                             <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
                                             <div class="index-separator"></div>
                                             <div class="post" id="post-<?php the_ID(); ?>">
@@ -80,7 +100,6 @@ Template Name: prestation
                                                     <div class="imgPage">
                                                         <?php the_post_thumbnail(array(250,250));?>
                                                     </div>
-
                                                     <div class="contenu_article">
                                                         <?php the_content(); ?>
                                                     </div>
@@ -90,12 +109,12 @@ Template Name: prestation
                                                 <?php endif; ?>
                             </div>
 
-                            <div class="uniform-article" id="imagerie">
-                                <?php query_posts('category_name=imagerie'); ?>
+                            <!-- articles yeux oreilles -->
+                            <div class="uniform-article" id="yeux">
+                                <?php query_posts('category_name=yeux'); ?>
                                     <?php if(have_posts()) : ?>
                                         <?php while(have_posts()) : the_post();?>
 
-                                            <!-- affichage des articles -->
                                             <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
                                             <div class="index-separator"></div>
                                             <div class="post" id="post-<?php the_ID(); ?>">
@@ -103,7 +122,6 @@ Template Name: prestation
                                                     <div class="imgPage">
                                                         <?php the_post_thumbnail(array(250,250));?>
                                                     </div>
-
                                                     <div class="contenu_article">
                                                         <?php the_content(); ?>
                                                     </div>
@@ -113,12 +131,12 @@ Template Name: prestation
                                                 <?php endif; ?>
                             </div>
 
-                            <div class="uniform-article" id="analyse">
-                                <?php query_posts('category_name=analyses'); ?>
+                            <!-- articles pelage -->
+                            <div class="uniform-article" id="pelage">
+                                <?php query_posts('category_name=pelage'); ?>
                                     <?php if(have_posts()) : ?>
                                         <?php while(have_posts()) : the_post();?>
 
-                                            <!-- affichage des articles -->
                                             <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
                                             <div class="index-separator"></div>
                                             <div class="post" id="post-<?php the_ID(); ?>">
@@ -126,7 +144,6 @@ Template Name: prestation
                                                     <div class="imgPage">
                                                         <?php the_post_thumbnail(array(250,250));?>
                                                     </div>
-
                                                     <div class="contenu_article">
                                                         <?php the_content(); ?>
                                                     </div>
@@ -136,12 +153,12 @@ Template Name: prestation
                                                 <?php endif; ?>
                             </div>
 
-                            <div class="uniform-article" id="chirurgie">
-                                <?php query_posts('category_name=chirurgie'); ?>
+                            <!-- articles parasites -->
+                            <div class="uniform-article" id="parasites">
+                                <?php query_posts('category_name=parasites'); ?>
                                     <?php if(have_posts()) : ?>
                                         <?php while(have_posts()) : the_post();?>
 
-                                            <!-- affichage des articles -->
                                             <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
                                             <div class="index-separator"></div>
                                             <div class="post" id="post-<?php the_ID(); ?>">
@@ -149,7 +166,6 @@ Template Name: prestation
                                                     <div class="imgPage">
                                                         <?php the_post_thumbnail(array(250,250));?>
                                                     </div>
-
                                                     <div class="contenu_article">
                                                         <?php the_content(); ?>
                                                     </div>
@@ -159,12 +175,12 @@ Template Name: prestation
                                                 <?php endif; ?>
                             </div>
 
-                            <div class="uniform-article" id="hospitalisation">
-                                <?php query_posts('category_name=hospitalisation'); ?>
+                            <!-- articles vaccin chien -->
+                            <div class="uniform-article" id="vaccinChien">
+                                <?php query_posts('category_name=vaccinChien'); ?>
                                     <?php if(have_posts()) : ?>
                                         <?php while(have_posts()) : the_post();?>
 
-                                            <!-- affichage des articles -->
                                             <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
                                             <div class="index-separator"></div>
                                             <div class="post" id="post-<?php the_ID(); ?>">
@@ -172,7 +188,6 @@ Template Name: prestation
                                                     <div class="imgPage">
                                                         <?php the_post_thumbnail(array(250,250));?>
                                                     </div>
-
                                                     <div class="contenu_article">
                                                         <?php the_content(); ?>
                                                     </div>
@@ -182,12 +197,12 @@ Template Name: prestation
                                                 <?php endif; ?>
                             </div>
 
-                            <div class="uniform-article" id="nac">
-                                <?php query_posts('category_name=nac'); ?>
+                            <!-- articles vaccin chat -->
+                            <div class="uniform-article" id="vaccinChat">
+                                <?php query_posts('category_name=vaccinChat'); ?>
                                     <?php if(have_posts()) : ?>
                                         <?php while(have_posts()) : the_post();?>
 
-                                            <!-- affichage des articles -->
                                             <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
                                             <div class="index-separator"></div>
                                             <div class="post" id="post-<?php the_ID(); ?>">
@@ -195,7 +210,51 @@ Template Name: prestation
                                                     <div class="imgPage">
                                                         <?php the_post_thumbnail(array(250,250));?>
                                                     </div>
+                                                    <div class="contenu_article">
+                                                        <?php the_content(); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <?php endwhile; ?>
+                                                <?php endif; ?>
+                            </div>
 
+                            <!-- articles identification -->
+                            <div class="uniform-article" id="identification">
+                                <?php query_posts('category_name=identification'); ?>
+                                    <?php if(have_posts()) : ?>
+                                        <?php while(have_posts()) : the_post();?>
+
+                                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
+                                            <div class="index-separator"></div>
+                                            <div class="post" id="post-<?php the_ID(); ?>">
+                                                <div class="post_content alignement_article">
+                                                    <div class="imgPage">
+                                                        <?php the_post_thumbnail(array(250,250));?>
+                                                    </div>
+                                                    <div class="contenu_article">
+                                                        <?php the_content(); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <?php endwhile; ?>
+                                                <?php endif; ?>
+                            </div>
+
+                            <!-- articles education -->
+                            <div class="uniform-article" id="education">
+                                <?php query_posts('category_name=education'); ?>
+                                    <?php if(have_posts()) : ?>
+                                        <?php while(have_posts()) : the_post();?>
+
+
+                                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
+                                            <div class="index-separator"></div>
+                                            <div class="post" id="post-<?php the_ID(); ?>">
+                                                <div class="post_content alignement_article">
+                                                    <div class="imgPage">
+                                                        <?php the_post_thumbnail(array(250,250));?>
+                                                    </div>
                                                     <div class="contenu_article">
                                                         <?php the_content(); ?>
                                                     </div>
@@ -205,10 +264,10 @@ Template Name: prestation
                                                 <?php endif; ?>
                             </div>
                         </section>
-    </div>
-</div>
-   <?php get_footer(); ?>
+                    </div>
+            </div>
 
-                        </body>
 
-                        </html>
+
+            <!-- pour insérer le footer -->
+            <?php get_footer(); ?>
