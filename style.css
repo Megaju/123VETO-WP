@@ -1156,6 +1156,12 @@ textarea.big {
     width: 20%;
 }
 
+.sidebar-became-a-section {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+}
+
 .content {
     margin: 0;
     display: inline-block;
