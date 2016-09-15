@@ -776,6 +776,10 @@ h2 {
     height: 60px;
 }
 
+#croquettes svg, #colliers svg {
+    margin-bottom: -25px
+}
+
 .btnPre {
     height: 40px;
     background-color: white;
