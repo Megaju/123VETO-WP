@@ -316,7 +316,7 @@ h2#description {
     height: auto;
 }
 
-.sidebar button {
+.sidebar button, .actu-on-newsletter button {
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: blue;
@@ -1179,3 +1179,22 @@ textarea.big {
 .contenu_article {
     font-size: .8em;
 }
+
+
+/* ===== PAGE NEWSLETTER ===== */
+
+#newsletter {
+    width: 85%;
+    margin: 0 auto;
+    
+    background-color: #987;
+}
+
+.actu-on-newsletter {
+    width: 45%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    outline: 1px solid blue;
+}
+
