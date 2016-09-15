@@ -987,6 +987,9 @@ h2 {
 .formulaire {
     width: 45%;
 }
+.test {
+    border: solid 1px red;
+}
 
 .localisation {
     width: 38%;
