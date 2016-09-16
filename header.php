@@ -47,7 +47,7 @@
             <a href="" class="site-logo"><p>123VETO</p></a>
             <!-- menu de navigation -->
             <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
-            <!-- menu déroulant pour smartphone -->
+            <!-- bouton menu déroulant pour smartphone -->
             <div class="smart-menu" id="display-menu">
                 <i class="fa fa-chevron-circle-down"></i>
             </div>
@@ -58,3 +58,17 @@
             </div>    
         </div>
         
+        <!-- menu déroulant pour smartphone -->
+        <div id="menu-deroulant">
+            <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
+        </div>
+        
+    <script>
+        
+        $("#display-menu").click(function(){
+            $( "#menu-deroulant" ).css({
+                "display": "block"
+            });
+        });
+        
+    </script>

@@ -183,6 +183,10 @@ h2#description {
 
 /*============================*/
 
+#menu-deroulant {
+    display: none;
+}
+
 .menu-top-container {
     height: 50px;
     border-bottom: 1px solid #263461;
@@ -1376,6 +1380,10 @@ textarea.big {
     .smart-menu {
         display: none;
     }
+    
+    #menu-deroulant {
+        display: none;
+    }
 }
 
 @media (max-width: 871px) {
@@ -1387,6 +1395,27 @@ textarea.big {
     
     .menu-top-container {
         display: none;
+    }
+    
+    #menu-deroulant .menu-top-container {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    #menu-deroulant .menu-top-container ul {
+        padding: 0;
+    }
+    
+    #menu-deroulant .menu-top-container ul li {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    #menu-deroulant .menu-top-container ul li a {
+        width: 100%;
+        padding: 0;
     }
     
     .icones {
