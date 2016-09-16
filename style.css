@@ -1150,6 +1150,12 @@ textarea.big {
 #footer a:hover {
     color: #F58900;
 }
+.close {
+    background: #F58900;
+    border: none;
+    top: 85vh;
+    margin-left: 1vh;
+}
 
 
 /* ====================================================================

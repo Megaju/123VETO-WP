@@ -36,7 +36,7 @@
   				<div class="modal-content">
   					
   					<div class="modal-header">
-    					<button class="close">×</button>
+    					<button class="close" style="position: fixed;">×</button>
     				</div>
 
     				<p class="mentions"> Le site internet <strong><a href="#">www.123VETO</a></strong>
@@ -154,4 +154,3 @@
                     
 		</div>
     </div>
-						
