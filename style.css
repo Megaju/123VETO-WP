@@ -1187,19 +1187,63 @@ textarea.big {
 
 #newsletter {
     width: 85%;
-    margin: 0 auto;
-    
-    background-color: #987;
+    margin: 0 auto 100px auto;
 }
 
 .actu-on-newsletter {
-    width: 45%;
-    padding: 20px;
     display: inline-block;
+    padding: 5px 25px 50px 25px;
     vertical-align: top;
-    outline: 1px solid blue;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #aaa;
 }
 
+#newsletter h2 {
+    width: 50%;
+    margin: 0 auto 25px auto;
+    padding-bottom: 0;
+    border-bottom: 1px solid #263461;
+}
+
+#newsletter h2 a {
+    color: #263461;
+    text-decoration: none;
+}
+
+.news-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    margin-right: 25px;
+}
+
+.news-img {
+    display: inline-block;
+}
+
+.news-p {
+    position: relative;
+    width: 70%;
+    float: right;
+    min-height: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#newsletter button.read-more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+#newsletter button.read-more:hover {
+    background-color: #F58900;
+    cursor: pointer;
+    transition: .3s;
+}
 
 /* ==================== */
 /* ===== ANIMATION ==== */
