@@ -15,6 +15,7 @@
         </title>
         <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
         <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- leave this for stats -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
         <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -42,11 +43,32 @@
 
         <!-- menu de navigation -->
         <div class="menuNav">
+            <!-- logo et nom du site -->
             <a href="" class="site-logo"><p>123VETO</p></a>
+            <!-- menu de navigation -->
             <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
+            <!-- bouton menu déroulant pour smartphone -->
+            <div class="smart-menu" id="display-menu">
+                <i class="fa fa-chevron-circle-down"></i>
+            </div>
+            <!-- icones réseaux socieux -->
             <div class="icones">
                 <a href="#" class="linkAccueil fa fa-facebook-square" aria-hidden="true"></a>
                 <a href="#" class="linkAcceuil fa fa-google-plus-square" aria-hidden="true"></a>
             </div>    
         </div>
         
+        <!-- menu déroulant pour smartphone -->
+        <div id="menu-deroulant">
+            <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
+        </div>
+        
+    <script>
+        
+        $("#display-menu").click(function(){
+            $( "#menu-deroulant" ).css({
+                "display": "block"
+            });
+        });
+        
+    </script>
