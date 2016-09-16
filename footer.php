@@ -7,13 +7,31 @@
         <p> Copyright &#169;
             <?php print(date(Y)); ?>
                 <?php bloginfo('name'); ?>
-                    <br /> Site propulsé par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par <a href="#">La Team 123VETO</a>
-
+                    <br /> Site propulsé par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par <a href="#">La Team 123VETO.</a>
+					<a href="#" id="link">Mentions légales</a>
     <div class="mentionslegales">
 
-    	<a href="#" id="link">Mentions légales</a>
+	<!-- Modal -->
+	<div class="modal" id="myModal" role="dialog">
+		<div class="modal-dialog">
+		
+		<!-- Modal content-->
+		<div class="modal-content">
 
-			<div id="myModal" class="modal">
+			<div class="modal-body">
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+		
+		</div>
+	</div>
+
+		<!-- div id="myModal" class="modal">
 
   				<div class="modal-content">
   					
@@ -132,8 +150,8 @@
 						erreurs ou corrections par mail.
 					</p>
   				</div>
-			</div>
-    </div>                
-
+			</div> -->
+                    
+		</div>
     </div>
 						
