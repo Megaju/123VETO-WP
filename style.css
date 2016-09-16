@@ -1332,4 +1332,31 @@ textarea.big {
     animation-name: anim;
     cursor: default;
 }
->>>>>>> 2c52da3ef258779116af0cc3b940e491851101e8
+
+
+/* ========== [ RESPONSIVE ] ========== */
+
+@media (max-width: 1300px) {
+    .menu-top-container ul li a {
+        font-size: .7em;
+    }
+}
+
+@media (max-width: 1085px) {
+    .menuNav {
+        position: relative;
+        display: block;
+        height: 100px;
+    }
+    
+    .menu-top-container {
+        display: block;
+        border: 0;
+    }
+    
+    .icones {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
