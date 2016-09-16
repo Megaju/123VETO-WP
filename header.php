@@ -48,7 +48,7 @@
             <!-- menu de navigation -->
             <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
             <!-- menu déroulant pour smartphone -->
-            <div class="smart-menu">
+            <div class="smart-menu" id="display-menu">
                 <i class="fa fa-chevron-circle-down"></i>
             </div>
             <!-- icones réseaux socieux -->
