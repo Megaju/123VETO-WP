@@ -1,4 +1,5 @@
 /* Theme Name: 123VETO
+/* Theme Name: 123VETO
 Theme URI: http://www.123veto.com/ 
 Description: Thème pour le site 132VETO
 Version: 0.1 
@@ -768,6 +769,13 @@ h2 {
     height: 60px;
 }
 
+.exception-vente {
+    margin-bottom: -25px;
+    padding-bottom: 10px;
+    width: 60px;
+    height: 60px;
+}
+
 .btnPre {
     height: 40px;
     background-color: white;
@@ -1143,7 +1151,6 @@ textarea.big {
 */
 
 
-
 .page {
     font-size: 0;
 }
@@ -1153,6 +1160,12 @@ textarea.big {
     font-size: 12px;
     display: inline-block;
     width: 20%;
+}
+
+.sidebar-became-a-section {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .content {
