@@ -382,7 +382,7 @@ em {
 }
 
 .sidebar .fa-map:hover {
-    color: #4685F1;
+    color: #263461;
     transition: .2s;
 }
 
@@ -1345,6 +1345,7 @@ textarea.big {
     animation-name: anim;
     cursor: default;
 }
+<<<<<<< HEAD
 
 
 /* ========== [ RESPONSIVE ] ========== */
@@ -1404,3 +1405,5 @@ textarea.big {
     
     
 }
+=======
+>>>>>>> 451df4fdad926e2fb07953654dda043c1520ef7a
