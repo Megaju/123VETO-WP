@@ -972,7 +972,7 @@ h2 {
 .contact {
     display: block;
     margin: 0 auto;
-    height: 700px;
+    height: 800px;
     width: 90%;
     margin-top: 40px;
 }
@@ -1043,6 +1043,21 @@ iframe {
 
 /*============================*/
 
+.priseRDV-form {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.priseRDV-form h2 {
+    text-align: center;
+}
+
+.priseRDV-form input {
+    100%;
+    display: block;
+    margin: 0 auto;
+}
+
 #rdv {
     display: flex;
     flex-wrap: wrap;
@@ -1053,14 +1068,6 @@ iframe {
 #rdv h1 {
     padding: 20px;
     color: #263461;
-}
-
-.section {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    margin-right: 15px;
 }
 
 .section input {
