@@ -970,7 +970,6 @@ h2 {
 
 /*============================*/
 
-
 .contact {
     display: block;
     margin: 0 auto;
@@ -1016,14 +1015,14 @@ h2 {
     width: 40%;
 }
 
-.localisation .formulaire, h2 {
+.contact h2 {
     text-align: left;
     margin-bottom: 0px;
     padding: 0px;
     padding-left: 50px;
 }
 
-.localisation .formulaire, p {
+.contact p {
     font-size: 0.9em;
     white-space: pre-line;
     color: #222;
@@ -1034,7 +1033,6 @@ iframe {
     padding-left: 50px;
     width: 100%;
     margin-top: 20px;
-}
 }
 
 
