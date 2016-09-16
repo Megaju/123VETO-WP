@@ -38,45 +38,60 @@ Template Name: conseils
                             <!-- ICONES -->
                             <div class="icone-generique">
                                 <div class="center-generique">
-                                    <?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
-                                    
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
+                                    </div>
                                     <button class="bouton-generique" onclick="fiche_conseil('dents')">Dents</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
+																		</div>
                                     <button class="bouton-generique" onclick="fiche_conseil('yeux')">Yeux / Oreilles</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
+																		</div>
                                     <button class="bouton-generique" onclick="fiche_conseil('pelage')">Pelage</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <i class="fa fa-bug fa-3x text-center"></i>
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_parasite.php"); ?>
+																		</div>
                                     <button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button>
                                 </div>
                             </div>
 
                             <div class="icone-generique">
                                 <div class="center-generique">
-                                    <?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
+																		</div>
                                     <button class="bouton-generique" onclick="fiche_conseil('vaccinChien')">Vaccin Chien</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
+																		</div>
                                     <button class="bouton-generique" onclick="fiche_conseil('vaccinChat')">Vaccin Chat</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <i class="fa fa-barcode fa-3x text-center"></i>
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_barcode.php"); ?>
+																		</div>
                                     <button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button>
                                 </div>
 
                                 <div class="center-generique">
-                                    <?php include("img/svg/conseil_svg/conseil_education.php"); ?>
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_education.php"); ?>
+																		</div>
                                     <button class="bouton-generique" onclick="fiche_conseil('education')">Education</button>
                                 </div>
                             </div>

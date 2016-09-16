@@ -8,14 +8,14 @@
             <?php print(date(Y)); ?>
                 <?php bloginfo('name'); ?>
                     <br /> Site propulsé par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par <a href="#">La Team 123VETO.</a>
-					<a href="#" id="link">Mentions légales</a>
+					<a href="#myModal" id="link">Mentions légales</a>
+
     <div class="mentionslegales">
 
-	<!-- Modal -->
-	<div class="modal" id="myModal" role="dialog">
+
+<!--	<div class="modal" id="myModal" role="dialog">
 		<div class="modal-dialog">
 		
-		<!-- Modal content-->
 		<div class="modal-content">
 
 			<div class="modal-body">
@@ -29,9 +29,9 @@
 		</div>
 		
 		</div>
-	</div>
+	</div>  -->
 
-		<!-- div id="myModal" class="modal">
+		 <div id="myModal" class="modal">
 
   				<div class="modal-content">
   					
@@ -150,7 +150,7 @@
 						erreurs ou corrections par mail.
 					</p>
   				</div>
-			</div> -->
+			</div>
                     
 		</div>
     </div>
