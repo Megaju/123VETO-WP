@@ -866,7 +866,6 @@ h2 {
 .uniform-article {
     width: 85%;
     margin: auto;
-    margin-bottom: 70px;
 }
 
 .uniforme-article h2 {
@@ -1203,6 +1202,7 @@ iframe {
     color: white;
     width: 100%;
     margin-bottom: -2vh;
+    margin-top: 100px;
 }
 
 #footer p,
@@ -1695,8 +1695,12 @@ iframe {
     }
     /* ======= Prestations ========== */
     .icone-generique {
+        margin-top: 0px;
         width: 100%;
         display: inline-block;
+    }
+    .uniform-article {
+        margin-bottom: 0px;
     }
     .center-generique {
         display: inline-block;
@@ -1713,6 +1717,7 @@ iframe {
         padding-top: 20px;
         text-align: center;
     }
+
     /* ======PRISE RDV ======= */
     .priseRDV-form {
         margin-top: 40px;
@@ -1732,5 +1737,45 @@ iframe {
         width: 75%;
         display: block;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .icone-generique {
+        margin-top: 0px;
+        width: 100%;
+        display: inline-block;
+    }
+    .uniform-article {
+        margin-bottom: 0px;
+    }
+    .center-generique {
+        display: inline-block;
+    }
+    .alignement_article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenu_article p {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .icone-generique svg {
+        display: none;
+    }
+    .vente svg {
+        display: none;
+    }
+    .contenu_article p {
+        padding: 0px;
+    }
+    .vente h3 {
+        font-size: 0.75em;
+    }
+    .uniform-article h2 {
+        margin-top: 0px;
     }
 }
