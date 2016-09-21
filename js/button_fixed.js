@@ -8,11 +8,13 @@ $(document).ready(function () {
 			$('#priseRDV').css("position", "fixed");
 			$('#priseRDV').css("top", "0px");
 			$('#priseRDV').css("margin-top", "0");
+            $('.content').css("margin-top", "0");
 		}
 		else {
 			$('#priseRDV').css("position", "absolute");
 			$('#priseRDV').css("top", "auto");
 			$('#priseRDV').css("margin-top", "0px");
+            $('.content').css("margin-top", "60px");
 		}
 	}
 	document.onscroll = scroll;
