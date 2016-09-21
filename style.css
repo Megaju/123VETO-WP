@@ -1213,6 +1213,7 @@ cursor: pointer;===========*/
 .overlay:target {
     visibility: visible;
     opacity: 1;
+    z-index: 5;
 }
 
 .popup {
