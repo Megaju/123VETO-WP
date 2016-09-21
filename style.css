@@ -1,4 +1,4 @@
-    /* Theme Name: 123VETO
+/* Theme Name: 123VETO
 /* Theme Name: 123VETO
 Theme URI: http://www.123veto.com/ 
 Description: Thème pour le site 132VETO
@@ -320,18 +320,42 @@ h2#description {
     height: auto;
 }
 
-.sidebar button,
-.actu-on-newsletter button {
+.normal-button {
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: blue;
-    border: 0px solid white;
+    border: 0;
     width: 70%;
     height: 35px;
     background-color: #263461;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
+    transition: .15s;
+}
+
+.normal-button:hover {
+    background-color: #F58900;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.sidebar button.read-more {
+    background: 0;
+    border: 0;
+    display: block;
+    margin: 15px auto;
+}
+
+.sidebar button.read-more .fa {
+    color: #263461;
+    transition: .15s;
+}
+
+.sidebar button.read-more .fa:hover {
+    color: #F58900;
+    cursor: pointer;
+    transition: .15s;
 }
 
 #priseRDV {
@@ -349,6 +373,7 @@ h2#description {
     color: white;
     position: absolute;
     cursor: pointer;
+    z-index: 99;
 }
 
 #priseRDV p {
@@ -426,22 +451,22 @@ h2 {
 
 /* --------- THE TEAM --------- */
 
-#imgPage{
+#imgPage {
     margin-left: 10px;
 }
 
-#bandeau_presentation{
+#bandeau_presentation {
     margin-bottom: 20px;
 }
 
-.team-member{
+.team-member {
     padding-right: 30px;
 }
 
 .docteurs {
     padding-top: 25px;
-    display: inline-block;
 }
+
 
 /*.docteur {
     vertical-align: top;
@@ -465,7 +490,6 @@ h2 {
     width: 25%;
     color: #333;
     display: flex;
-    justify-content: space-between;
 }
 
 .docteur-present h3 {
@@ -473,8 +497,8 @@ h2 {
     font-size: 1.5em;
     text-align: center;
     padding-left: 15px;
- 
 }
+
 
 /*.docteur-present h4 {
     font-size: 1em;
@@ -847,7 +871,6 @@ h2 {
 .uniform-article {
     width: 85%;
     margin: auto;
-    margin-bottom: 70px;
 }
 
 .uniforme-article h2 {
@@ -869,7 +892,7 @@ h2 {
 }
 
 .imgPage img {
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -918,6 +941,8 @@ h2 {
     width: 90%;
     display: block;
     margin: 0 auto;
+    margin-bottom: 75px;
+    margin-top: 20px;;
 }
 
 .vente svg {
@@ -1054,10 +1079,7 @@ iframe {
 /*============================*/
 
 
-/*============ F58900;
-color: whitesmoke;
-border: 0px solid white;
-cursor: pointer;===========*/
+/*======== PRISE RDV===========*/
 
 
 /*============================*/
@@ -1160,7 +1182,7 @@ cursor: pointer;===========*/
 }
 
 .bouton-envoyer-effacer input {
-    width: 15vw;
+    width: 75%;
     margin-bottom: 75px;
 }
 
@@ -1186,6 +1208,7 @@ cursor: pointer;===========*/
     color: white;
     width: 100%;
     margin-bottom: -2vh;
+    margin-top: 100px;
 }
 
 #footer p,
@@ -1251,7 +1274,7 @@ cursor: pointer;===========*/
 .popup-txt {
     display: block;
     margin: 0 auto;
-    width: 75%; 
+    width: 75%;
 }
 
 .popup .popup-txt {
@@ -1264,8 +1287,7 @@ cursor: pointer;===========*/
     color: #333;
 }
 
-.contenu_mentions {
-}
+.contenu_mentions {}
 
 @media screen and (max-width: 700px) {
     .box {
@@ -1323,12 +1345,13 @@ cursor: pointer;===========*/
     vertical-align: top;
     margin-bottom: 50px;
     border-bottom: 1px solid #aaa;
+    font-size: 0.9em;
 }
 
 #newsletter h2 {
     width: 50%;
     margin: 0 auto 25px auto;
-    padding-bottom: 0;
+    padding-bottom: 15px;
     border-bottom: 1px solid #263461;
 }
 
@@ -1391,7 +1414,7 @@ cursor: pointer;===========*/
     animation-duration: 1s;
 }
 
-@@-webkit-keyframes anim {
+@-webkit-keyframes anim {
     0% {
         transform: scale(0) rotate(-180deg);
         opacity: 0;
@@ -1492,6 +1515,81 @@ cursor: pointer;===========*/
     .logo-img {
         display: none;
     }
+    /* supression de la sidebar */
+    .sidebar {
+        display: none;
+    }
+    /* le contenu prend toute la largeur */
+    .content {
+        margin-top: 60px;
+        width: 100%;
+    }
+    
+    /* bouton prise de RDV */
+    #priseRDV {
+        display: block;
+        width: 100%;
+    }    
+
+    /* présentation de l'équipe */
+    .team-member {
+        border-bottom: 1px solid #999;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    :last-child.team-member {
+        border: 0;
+        margin-bottom: 0;
+    }
+    
+    .docteur-present {
+        display: block;
+        width: 100%;
+    }
+    
+    .docteur-present h3 {
+        text-align: left;
+    }
+    
+    .docteur-present p {
+        width: 90%;
+    }
+    /* ======= Small newslettes ======== */
+    #newsletter {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .actu-on-newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 25px 50px 25px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #aaa;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    #newsletter h2 {
+        width: 50%;
+        margin: 0 auto 25px auto;
+        padding-bottom: 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #263461;
+    }
+    .news-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 500px;
+        margin: 0px;
+    }
+    .bouton-envoyer-effacer {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 871px) {
@@ -1562,3 +1660,128 @@ cursor: pointer;===========*/
     p.horaires {
         text-align: center;
     }
+    
+    /* NOTRE SAVOIR-FAIRE */
+    #bloc-medium-savoirfaire, .bloc-small-savoirfaire {
+        margin: 0;
+    }
+    #bloc-medium-savoirfaire {
+        padding-top: 30px;
+    }
+
+    /* ======= Small newslettes ======== */
+    #newsletter {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .actu-on-newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 25px 50px 25px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #aaa;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    #newsletter h2 {
+        width: 50%;
+        margin: 0 auto 25px auto;
+        padding-bottom: 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #263461;
+    }
+    .news-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 500px;
+        margin: 0px;
+    }
+    /* ======= Prestations ========== */
+    .icone-generique {
+        margin-top: 0px;
+        width: 100%;
+        display: inline-block;
+    }
+    .uniform-article {
+        margin-bottom: 0px;
+    }
+    .center-generique {
+        display: inline-block;
+    }
+    .alignement_article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenu_article p {
+        padding-left: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    /* ======PRISE RDV ======= */
+    .priseRDV-form {
+        margin-top: 40px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .priseRDV-form input {
+        width: 85%;
+    }
+    .option {
+        width: 85%;
+    }
+    .priseRDV-form textarea {
+        width: 85%;
+    }
+    .bouton-envoyer-effacer {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .icone-generique {
+        margin-top: 0px;
+        width: 100%;
+        display: inline-block;
+    }
+    .uniform-article {
+        margin-bottom: 0px;
+    }
+    .center-generique {
+        display: inline-block;
+    }
+    .alignement_article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenu_article p {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .icone-generique svg {
+        display: none;
+    }
+    .vente svg {
+        display: none;
+    }
+    .contenu_article p {
+        padding: 0px;
+    }
+    .vente h3 {
+        font-size: 0.75em;
+    }
+    .uniform-article h2 {
+        margin-top: 0px;
+    }
+}
