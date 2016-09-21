@@ -1,4 +1,4 @@
-/* Theme Name: 123VETO
+    /* Theme Name: 123VETO
 /* Theme Name: 123VETO
 Theme URI: http://www.123veto.com/ 
 Description: Thème pour le site 132VETO
@@ -373,6 +373,7 @@ h2#description {
     color: white;
     position: absolute;
     cursor: pointer;
+    z-index: 99;
 }
 
 #priseRDV p {
@@ -450,21 +451,30 @@ h2 {
 
 /* --------- THE TEAM --------- */
 
-.docteurs {
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+#imgPage{
+    margin-left: 10px;
 }
 
-.docteur {
-    vertical-align: top;
+#bandeau_presentation{
+    margin-bottom: 20px;
+}
+
+.team-member{
+    padding-right: 30px;
+}
+
+.docteurs {
+    padding-top: 25px;
     display: inline-block;
+}
+
+/*.docteur {
+    vertical-align: top;
     width: 185px;
     height: 185px;
     border-radius: 400px;
     background-size: cover;
     background-position: center center;
-    box-shadow: 5px 5px 5px -4px rgba(0, 0, 0, 0.39);
 }
 
 #docteur1 {
@@ -473,33 +483,33 @@ h2 {
 
 #docteur2 {
     background-image: url(img/dr-eric.jpg);
-}
+}*/
 
 .docteur-present {
-    display: inline-block;
     margin-right: 10px;
     width: 25%;
     color: #333;
+    display: flex;
+    justify-content: space-between;
 }
 
 .docteur-present h3 {
     margin-top: 5px;
     font-size: 1.5em;
-    text-align: left;
+    text-align: center;
     padding-left: 15px;
-    width: 240px;
+ 
 }
 
-.docteur-present h4 {
+/*.docteur-present h4 {
     font-size: 1em;
     text-align: left;
     padding-left: 15px;
     width: 240px;
-}
+}*/
 
 .docteur-present p {
     font-size: .8em;
-    text-align: justify;
     cursor: default;
     padding-left: 15px;
     width: 240px;
@@ -1001,7 +1011,7 @@ h2 {
 .contact {
     display: block;
     margin: 0 auto;
-    height: 800px;
+    height: 100vh;
     width: 90%;
     margin-top: 40px;
 }
@@ -1016,23 +1026,21 @@ h2 {
 .formulaire label {
     font-size: 1em;
     color: #222;
-    padding-bottom: 15px;
-    padding-left: 0px;
 }
 
 
 .formulaire input {
     margin-top: 5px;
     padding-left: 0px;
-    height: 30px;
-    width: 494px;
+    height: 40px;
+    width: 35vw;
     border: 1px solid #a9a9a9;
     background-color: ghostwhite;
 }
 
-.formulaire textarea{
+.formulaire textarea {
     margin-top: 5px;
-    width: 488px;
+    width: 35vw;
     border: 1px solid #a9a9a9;
     background-color: ghostwhite;
     border-radius: 0%;
@@ -1068,7 +1076,10 @@ iframe {
 /*============================*/
 
 
-/*============ RDV ===========*/
+/*============ F58900;
+color: whitesmoke;
+border: 0px solid white;
+cursor: pointer;===========*/
 
 
 /*============================*/
@@ -1089,17 +1100,17 @@ iframe {
 }
 
 .priseRDV-form input {
-    width: 100%;
+    width: 50vw;
     display: block;
     margin: 0 auto;
     height: 40px;
     margin-top: 15px;
     border-radius: 0px;
     border: 1px solid #a9a9a9;
-    padding: 5px;
-    padding-left: 10px;
     background-color: ghostwhite;
     color: #222;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .priseRDV-form input:focus {
@@ -1108,20 +1119,28 @@ iframe {
 }
 
 .option {
+    padding-left: 10px;
+    padding-right: 10px;
     display: block;
     margin: 0 auto;
-    width: 102%;
-    height: 250px;
+    width: 50vw;
+    height: 100%;
     margin-top: 15px;
     border: 1px solid #a9a9a9;
     background-color: ghostwhite;
 }
 
+.center-RDV {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+
 .priseRDV-form label {
     text-transform: capitalize;
-    height: 40px;
     width: 100%;
-    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .priseRDV-form select {
@@ -1131,32 +1150,47 @@ iframe {
     border-radius: 0px;
     border: 1px solid #a9a9a9;
     background-color: white;
+    margin-bottom: 15px;
 }
 
-.option {
-    margin-top: 15px;
-}
-
-.option label {
-    padding-bottom: 20px;
-    font-size: 1em;
-}
-
-.jsaisplus {
+.select-RDV {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
 }
 
 .priseRDV-form textarea {
-    width:102%;    
+    font-family: "Open Sans", sans-serif;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
     margin-top: 15px;
     border: 1px solid #a9a9a9;
     background-color: ghostwhite;
     border-radius: 0%;
-    height: 300px;    
+    height: 300px;
 }
 
-.priseRDV-form input {
-    color: #f58900;
+.bouton-envoyer-effacer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bouton-envoyer-effacer input {
+    width: 15vw;
+    margin-bottom: 75px;
+}
+
+.bouton-envoyer-effacer input:hover {
+    background-color: #F58900;
+    color: whitesmoke;
+    border: 0px solid white;
+    cursor: pointer;
 }
 
 
@@ -1200,6 +1234,79 @@ iframe {
     display: none;
 }
 
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+}
+
+.popup {
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0px;
+    width: 75%;
+    height: 85%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    text-align: center;
+}
+
+#popup1 a {
+    color: #333;
+}
+
+.popup .close {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup-txt {
+    display: block;
+    margin: 0 auto;
+    width: 75%; 
+}
+
+.popup .popup-txt {
+    max-height: 100%;
+    overflow: auto;
+    color: #333;
+}
+
+#popup1 p {
+    color: #333;
+}
+
+.contenu_mentions {
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+}
 
 
 /* ====================================================================
@@ -1316,7 +1423,7 @@ iframe {
     animation-duration: 1s;
 }
 
-@@-webkit-keyframes anim {
+@-webkit-keyframes anim {
     0% {
         transform: scale(0) rotate(-180deg);
         opacity: 0;
@@ -1391,26 +1498,6 @@ iframe {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========== [ RESPONSIVE ] ========== */
 
 @media (max-width: 1300px) {
@@ -1437,13 +1524,28 @@ iframe {
     .logo-img {
         display: none;
     }
+    
+    /* supression de la sidebar */
+    .sidebar {
+        display: none;
+    }
+    
+    /* le contenu prend toute la largeur */
+    .content {
+        margin-top: 60px;
+        width: 100%;
+    }
+    
+    #priseRDV {
+        display: block;
+        width: 100%;
+    }
 }
 
 @media (min-width: 871px) {
     .smart-menu {
         display: none;
     }
-    
     #menu-deroulant {
         display: none;
     }
@@ -1455,36 +1557,29 @@ iframe {
         justify-content: space-between;
         height: 50px;
     }
-    
     .menu-top-container {
         display: none;
     }
-    
     #menu-deroulant .menu-top-container {
         display: block;
         width: 100%;
         background-color: #fff;
     }
-    
     #menu-deroulant .menu-top-container ul {
         padding: 0;
     }
-    
     #menu-deroulant .menu-top-container ul li {
         display: block;
         width: 100%;
         background-color: #fff;
     }
-    
     #menu-deroulant .menu-top-container ul li a {
         width: 100%;
         padding: 0;
     }
-    
     .icones {
         position: relative;
     }
-    
     .smart-menu {
         display: flex;
         align-items: center;
@@ -1493,7 +1588,6 @@ iframe {
         padding: 5px 0 0 0;
         text-align: center;
     }
-    
     #header {
         height: 320px;
     }
@@ -1501,7 +1595,8 @@ iframe {
         width: 100%;
         padding: 25px 0;
     }
-    .header-corp h1, .header-corp h2#description {
+    .header-corp h1,
+    .header-corp h2#description {
         font-size: 8px;
         display: inline-block;
     }
