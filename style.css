@@ -465,7 +465,6 @@ h2 {
 
 .docteurs {
     padding-top: 25px;
-    display: inline-block;
 }
 
 /*.docteur {
@@ -490,7 +489,6 @@ h2 {
     width: 25%;
     color: #333;
     display: flex;
-    justify-content: space-between;
 }
 
 .docteur-present h3 {
@@ -498,7 +496,6 @@ h2 {
     font-size: 1.5em;
     text-align: center;
     padding-left: 15px;
- 
 }
 
 /*.docteur-present h4 {
@@ -1524,9 +1521,35 @@ cursor: pointer;===========*/
         width: 100%;
     }
     
+    /* bouton prise de RDV */
     #priseRDV {
         display: block;
         width: 100%;
+    }
+    
+    /* présentation de l'équipe */
+    .team-member {
+        border-bottom: 1px solid #999;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    :last-child.team-member {
+        border: 0;
+        margin-bottom: 0;
+    }
+    
+    .docteur-present {
+        display: block;
+        width: 100%;
+    }
+    
+    .docteur-present h3 {
+        text-align: left;
+    }
+    
+    .docteur-present p {
+        width: 90%;
     }
 }
 
@@ -1597,6 +1620,14 @@ cursor: pointer;===========*/
     }
     p.horaires {
         text-align: center;
+    }
+    
+    /* NOTRE SAVOIR-FAIRE */
+    #bloc-medium-savoirfaire, .bloc-small-savoirfaire {
+        margin: 0;
+    }
+    #bloc-medium-savoirfaire {
+        padding-top: 30px;
     }
     
 }
