@@ -10,10 +10,10 @@
 
 	<div class="contact">
 		
-		<div class="formulaire">
-			</form>
+		<div class="formulaire">		
+
 			<h2>Contact</h2>
-			<?php echo do_shortcode( '[contact-form-7 id="99" title="Untitled"]' ); ?>
+			<?php the_post(); the_content(); ?>
 		</div>
 
 		<div class="localisation">
