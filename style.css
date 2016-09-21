@@ -320,18 +320,42 @@ h2#description {
     height: auto;
 }
 
-.sidebar button,
-.actu-on-newsletter button {
+.normal-button {
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: blue;
-    border: 0px solid white;
+    border: 0;
     width: 70%;
     height: 35px;
     background-color: #263461;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
+    transition: .15s;
+}
+
+.normal-button:hover {
+    background-color: #F58900;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.sidebar button.read-more {
+    background: 0;
+    border: 0;
+    display: block;
+    margin: 15px auto;
+}
+
+.sidebar button.read-more .fa {
+    color: #263461;
+    transition: .15s;
+}
+
+.sidebar button.read-more .fa:hover {
+    color: #F58900;
+    cursor: pointer;
+    transition: .15s;
 }
 
 #priseRDV {
@@ -386,7 +410,7 @@ em {
 }
 
 .sidebar .fa-map:hover {
-    color: #4685F1;
+    color: #263461;
     transition: .2s;
 }
 
@@ -782,8 +806,7 @@ h2 {
     height: 60px;
 }
 
-#croquettes svg,
-#colliers svg {
+.vente svg {
     margin-bottom: -25px
 }
 
@@ -975,21 +998,10 @@ h2 {
 
 /*============================*/
 
-
-.TitreForm1 {
-    float: left;
-    margin-left: 54px;
-}
-
-/*
-.TitreForm2 {
-    margin-right: 0px;
-}*/
-
 .contact {
     display: block;
     margin: 0 auto;
-    height: 700px;
+    height: 800px;
     width: 90%;
     margin-top: 40px;
 }
@@ -1032,14 +1044,14 @@ h2 {
     width: 40%;
 }
 
-.localisation .formulaire, h2 {
+.contact h2 {
     text-align: left;
     margin-bottom: 0px;
     padding: 0px;
     padding-left: 50px;
 }
 
-.localisation .formulaire, p {
+.contact p {
     font-size: 0.9em;
     white-space: pre-line;
     color: #222;
@@ -1061,78 +1073,90 @@ iframe {
 
 /*============================*/
 
-#rdv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: 15px;
+.priseRDV-form {
+    margin-left: 25%;
+    margin-top: 40px;
+    width: 50%;
 }
 
-#rdv h1 {
-    padding: 20px;
-    color: #263461;
+.priseRDV-form p {
+    color: #444;
+    padding-bottom: 40px;
 }
 
-.section {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    margin-right: 15px;
+.priseRDV-form h2 {
+    text-align: center;
 }
 
-.section input {
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    cursor: pointer;
-}
-
-label {
-    margin: 5px;
-    display: inline-block;
-    font-size: 15px;
-    color: #263461;
-}
-
-select {
-    margin: 5px;
-    border-radius: 5px;
-    border: 01px solid #fff;
-    cursor: pointer;
-}
-
-textarea {
-    padding: 8px 10px;
-    width: 230px;
-    border-radius: 5px;
-    border: 01px solid #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-textarea.big {
-    width: 425px;
-}
-
-#bouton {
-    display: flex;
-    flex-direction: row;
+.priseRDV-form input {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 0px;
+    border: 1px solid #a9a9a9;
     padding: 5px;
+    padding-left: 10px;
+    background-color: ghostwhite;
+    color: #222;
 }
 
-.agenda {
-    display: flex;
-    flex-direction: column;
-    float: left;
+.priseRDV-form input:focus {
+    outline: 0;
+    border: 1px solid #F58900;
 }
 
-.agenda p {}
+.option {
+    display: block;
+    margin: 0 auto;
+    width: 102%;
+    height: 250px;
+    margin-top: 15px;
+    border: 1px solid #a9a9a9;
+    background-color: ghostwhite;
+}
 
-.agenda iframe {
-    height: 500px;
-    width: 550px;
+.priseRDV-form label {
+    text-transform: capitalize;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.priseRDV-form select {
+    height: 40px;
+    padding: 3px;
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #a9a9a9;
+    background-color: white;
+}
+
+.option {
+    margin-top: 15px;
+}
+
+.option label {
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+
+.jsaisplus {
+    margin-top: 20px;
+}
+
+.priseRDV-form textarea {
+    width:102%;    
+    margin-top: 15px;
+    border: 1px solid #a9a9a9;
+    background-color: ghostwhite;
+    border-radius: 0%;
+    height: 300px;    
+}
+
+.priseRDV-form input {
+    color: #f58900;
 }
 
 
@@ -1367,6 +1391,26 @@ textarea.big {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========== [ RESPONSIVE ] ========== */
 
 @media (max-width: 1300px) {
@@ -1389,6 +1433,9 @@ textarea.big {
         position: absolute;
         top: 0;
         right: 0;
+    }
+    .logo-img {
+        display: none;
     }
 }
 
@@ -1447,5 +1494,26 @@ textarea.big {
         text-align: center;
     }
     
+    #header {
+        height: 320px;
+    }
+    .header-corp {
+        width: 100%;
+        padding: 25px 0;
+    }
+    .header-corp h1, .header-corp h2#description {
+        font-size: 8px;
+        display: inline-block;
+    }
+    .header-corp h2#description {
+        font-size: 16px;
+    }
+    #header h2 {
+        border-bottom: 0;
+        font-size: 18px;
+    }
+    p.horaires {
+        text-align: center;
+    }
     
 }

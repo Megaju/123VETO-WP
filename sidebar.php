@@ -24,13 +24,13 @@
                     <div class= "post_content">
                         <?php the_post_thumbnail(array(250,250));?>
                         <p class="postmetadata">
-                            <?php the_content(__('<button class="read-more">Lire la suite</button>')); ?>
+                            <?php the_content(__('<button class="read-more"><i class="fa fa-2x fa-plus-circle"></i></button>')); ?>
                         </p>
                     </div> 
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
-                <a href="#"><button>News Letters</button></a>
+                <a href="#"><button class="normal-button">News Letters</button></a>
             </div>
         
             <div class="aside-separator"></div>
