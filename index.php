@@ -19,30 +19,48 @@
             <div class="content">
                 <!-- le bloc team pour le hover est stocké dans le pc 26 -->
                 <div id="bloc-team">
-                    <h2 class="bandeau bandeau-mt0">L'équipe à votre service</h2>
+                    <h2 class="bandeau bandeau-mt0" id="bandeau_presentation">L'équipe à votre service</h2>
 
-                    <div class="index-separator-0"></div>
-
-                    <div class="docteurs">
+                     <div class="docteurs">
                         <!-- DOCTEUR I -->
-                        <div class="docteur" id="docteur1">
+                        <div class="docteur docteur-present">
+                        <?php query_posts('category_name=presentation'); ?>
+                         <?php if(have_posts()) : ?>
+                             <?php while(have_posts()) : the_post();?>
+                                 <div class="team-member">
+                                 <h3 title="<?php the_title(); ?>"><?php the_title(); ?></h3>
+                                 <div class="post" id="post-<?php the_ID(); ?>">
+                                     <div class="post_content alignement_article article-presentation">
+                                         <div class="imgPage" id="imgPage">
+                                             <?php the_post_thumbnail(array(250,250));?>
+                                         </div>
+                                         <div class="contenu_article">
+                                             <?php the_content(); ?>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 </div>
+                               <?php endwhile; ?>
+                             <?php endif; ?>
                         </div>
-                        <div class="docteur-present">
+                      </div>
+                    </div>
+                        <!--<div class="docteur-present">
                             <h3>Dr Aurélie Mayoussier</h3>
                             <h4>Diplômée de l’école vétérinaire de Maisons Alfort en 2008</h4>
                             <p>Dr Aurélie Mayoussier Diplômée de l’école vétérinaire de MaisonsAlfort en 2008, elle se passionne pour la médecine de l’élevage et de la reproduction et la médecine des NAC. Le Dr Mayoussier possède deux chats Pratchett et Bubule ainsi que Bambou, chien loup de Saarloos.</p>
-                        </div>
+                        </div>-->
 
                         <!-- DOCTEUR II -->
-                        <div class="docteur" id="docteur2">
+                        <!--<div class="docteur" id="docteur2">
                         </div>
                         <div class="docteur-present">
                             <h3>Dr Eric Wintz</h3>
                             <h4>Diplômé de l’école vétérinaire de Nantes en 1990</h4>
                             <p>Dr Eric Wintz Diplômé de l’école vétérinaire de Nantes en 1990, il se passionne pour la dermatologie et la cardiologie. Le Dr Wintz possède quatre chats Leelas (européenne), Gribouille (européen), Hannah (Mane Coon), et Joey (Ragdoll), des Platis, deux lapins nains Neige et Teddy ainsi que Lexie, chihuahua.</p>
-                        </div>
-                    </div>
-                </div>
+                        </div>-->
+                    
+                
 
                 <!-- CAROUSEL -->
                 <div id="bloc-carousel">

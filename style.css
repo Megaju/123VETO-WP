@@ -426,21 +426,30 @@ h2 {
 
 /* --------- THE TEAM --------- */
 
-.docteurs {
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+#imgPage{
+    margin-left: 10px;
 }
 
-.docteur {
-    vertical-align: top;
+#bandeau_presentation{
+    margin-bottom: 20px;
+}
+
+.team-member{
+    padding-right: 30px;
+}
+
+.docteurs {
+    padding-top: 25px;
     display: inline-block;
+}
+
+/*.docteur {
+    vertical-align: top;
     width: 185px;
     height: 185px;
     border-radius: 400px;
     background-size: cover;
     background-position: center center;
-    box-shadow: 5px 5px 5px -4px rgba(0, 0, 0, 0.39);
 }
 
 #docteur1 {
@@ -449,33 +458,33 @@ h2 {
 
 #docteur2 {
     background-image: url(img/dr-eric.jpg);
-}
+}*/
 
 .docteur-present {
-    display: inline-block;
     margin-right: 10px;
     width: 25%;
     color: #333;
+    display: flex;
+    justify-content: space-between;
 }
 
 .docteur-present h3 {
     margin-top: 5px;
     font-size: 1.5em;
-    text-align: left;
+    text-align: center;
     padding-left: 15px;
-    width: 240px;
+ 
 }
 
-.docteur-present h4 {
+/*.docteur-present h4 {
     font-size: 1em;
     text-align: left;
     padding-left: 15px;
     width: 240px;
-}
+}*/
 
 .docteur-present p {
     font-size: .8em;
-    text-align: justify;
     cursor: default;
     padding-left: 15px;
     width: 240px;
