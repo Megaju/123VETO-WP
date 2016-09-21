@@ -777,8 +777,7 @@ h2 {
     height: 60px;
 }
 
-#croquettes svg,
-#colliers svg {
+.vente svg {
     margin-bottom: -25px
 }
 
@@ -1046,7 +1045,13 @@ iframe {
 
 .priseRDV-form {
     margin-left: 25%;
+    margin-top: 40px;
     width: 50%;
+}
+
+.priseRDV-form p {
+    color: #444;
+    padding-bottom: 40px;
 }
 
 .priseRDV-form h2 {
@@ -1054,75 +1059,69 @@ iframe {
 }
 
 .priseRDV-form input {
-    100%;
+    width: 100%;
     display: block;
     margin: 0 auto;
-}
-
-#rdv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: 15px;
-}
-
-#rdv h1 {
-    padding: 20px;
-    color: #263461;
-}
-
-.section input {
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    cursor: pointer;
-}
-
-label {
-    margin: 5px;
-    display: inline-block;
-    font-size: 15px;
-    color: #263461;
-}
-
-select {
-    margin: 5px;
-    border-radius: 5px;
-    border: 01px solid #fff;
-    cursor: pointer;
-}
-
-textarea {
-    padding: 8px 10px;
-    width: 230px;
-    border-radius: 5px;
-    border: 01px solid #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-textarea.big {
-    width: 425px;
-}
-
-#bouton {
-    display: flex;
-    flex-direction: row;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 0px;
+    border: 1px solid #a9a9a9;
     padding: 5px;
+    padding-left: 10px;
+    background-color: ghostwhite;
+    color: #222;
 }
 
-.agenda {
-    display: flex;
-    flex-direction: column;
-    float: left;
+.option {
+    display: block;
+    margin: 0 auto;
+    width: 102%;
+    height: 250px;
+    margin-top: 15px;
+    border: 1px solid #a9a9a9;
+    background-color: ghostwhite;
 }
 
-.agenda p {}
+.priseRDV-form label {
+    text-transform: capitalize;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+}
 
-.agenda iframe {
-    height: 500px;
-    width: 550px;
+.priseRDV-form select {
+    height: 40px;
+    padding: 3px;
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #a9a9a9;
+    background-color: white;
+}
+
+.option {
+    margin-top: 15px;
+}
+
+.option label {
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+
+.jsaisplus {
+    margin-top: 20px;
+}
+
+.priseRDV-form textarea {
+    width:102%;    
+    margin-top: 15px;
+    border: 1px solid #a9a9a9;
+    background-color: ghostwhite;
+    border-radius: 0%;
+    height: 300px;    
+}
+
+.priseRDV-form input {
+    color: #f58900;
 }
 
 
@@ -1345,7 +1344,6 @@ textarea.big {
     animation-name: anim;
     cursor: default;
 }
-<<<<<<< HEAD
 
 
 /* ========== [ RESPONSIVE ] ========== */
@@ -1405,5 +1403,3 @@ textarea.big {
     
     
 }
-=======
->>>>>>> 451df4fdad926e2fb07953654dda043c1520ef7a
