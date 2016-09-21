@@ -183,6 +183,10 @@ h2#description {
 
 /*============================*/
 
+#menu-deroulant {
+    display: none;
+}
+
 .menu-top-container {
     height: 50px;
     border-bottom: 1px solid #263461;
@@ -981,7 +985,7 @@ h2 {
 .contact {
     display: block;
     margin: 0 auto;
-    height: 800px;
+    height: 100vh;
     width: 90%;
     margin-top: 40px;
 }
@@ -996,22 +1000,20 @@ h2 {
 .formulaire label {
     font-size: 1em;
     color: #222;
-    padding-bottom: 15px;
-    padding-left: 0px;
 }
 
 .formulaire input {
     margin-top: 5px;
     padding-left: 0px;
-    height: 30px;
-    width: 494px;
+    height: 40px;
+    width: 35vw;
     border: 1px solid #a9a9a9;
     background-color: ghostwhite;
 }
 
-.formulaire textarea{
+.formulaire textarea {
     margin-top: 5px;
-    width: 475px;
+    width: 35vw;
     border: 1px solid #a9a9a9;
     background-color: ghostwhite;
     border-radius: 0%;
@@ -1047,7 +1049,10 @@ iframe {
 /*============================*/
 
 
-/*============ RDV ===========*/
+/*============ F58900;
+color: whitesmoke;
+border: 0px solid white;
+cursor: pointer;===========*/
 
 
 /*============================*/
@@ -1068,34 +1073,47 @@ iframe {
 }
 
 .priseRDV-form input {
-    width: 100%;
+    width: 50vw;
     display: block;
     margin: 0 auto;
     height: 40px;
     margin-top: 15px;
     border-radius: 0px;
     border: 1px solid #a9a9a9;
-    padding: 5px;
-    padding-left: 10px;
     background-color: ghostwhite;
     color: #222;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.priseRDV-form input:focus {
+    outline: 0;
+    border: 1px solid #F58900;
 }
 
 .option {
+    padding-left: 10px;
+    padding-right: 10px;
     display: block;
     margin: 0 auto;
-    width: 102%;
-    height: 250px;
+    width: 50vw;
+    height: 100%;
     margin-top: 15px;
     border: 1px solid #a9a9a9;
     background-color: ghostwhite;
 }
 
+.center-RDV {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+
 .priseRDV-form label {
     text-transform: capitalize;
-    height: 40px;
     width: 100%;
-    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .priseRDV-form select {
@@ -1105,32 +1123,47 @@ iframe {
     border-radius: 0px;
     border: 1px solid #a9a9a9;
     background-color: white;
+    margin-bottom: 15px;
 }
 
-.option {
-    margin-top: 15px;
-}
-
-.option label {
-    padding-bottom: 20px;
-    font-size: 1em;
-}
-
-.jsaisplus {
+.select-RDV {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
 }
 
 .priseRDV-form textarea {
-    width:102%;    
+    font-family: "Open Sans", sans-serif;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
     margin-top: 15px;
     border: 1px solid #a9a9a9;
     background-color: ghostwhite;
     border-radius: 0%;
-    height: 300px;    
+    height: 300px;
 }
 
-.priseRDV-form input {
-    color: #f58900;
+.bouton-envoyer-effacer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bouton-envoyer-effacer input {
+    width: 15vw;
+    margin-bottom: 75px;
+}
+
+.bouton-envoyer-effacer input:hover {
+    background-color: #F58900;
+    color: whitesmoke;
+    border: 0px solid white;
+    cursor: pointer;
 }
 
 
@@ -1355,6 +1388,26 @@ iframe {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========== [ RESPONSIVE ] ========== */
 
 @media (max-width: 1300px) {
@@ -1378,10 +1431,16 @@ iframe {
         top: 0;
         right: 0;
     }
+    .logo-img {
+        display: none;
+    }
 }
 
 @media (min-width: 871px) {
     .smart-menu {
+        display: none;
+    }
+    #menu-deroulant {
         display: none;
     }
 }
@@ -1392,15 +1451,29 @@ iframe {
         justify-content: space-between;
         height: 50px;
     }
-    
     .menu-top-container {
         display: none;
     }
-    
+    #menu-deroulant .menu-top-container {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+    }
+    #menu-deroulant .menu-top-container ul {
+        padding: 0;
+    }
+    #menu-deroulant .menu-top-container ul li {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+    }
+    #menu-deroulant .menu-top-container ul li a {
+        width: 100%;
+        padding: 0;
+    }
     .icones {
         position: relative;
     }
-    
     .smart-menu {
         display: flex;
         align-items: center;
@@ -1410,5 +1483,25 @@ iframe {
         text-align: center;
     }
     
+    #header {
+        height: 320px;
+    }
+    .header-corp {
+        width: 100%;
+        padding: 25px 0;
+    }
+    .header-corp h1, .header-corp h2#description {
+        font-size: 8px;
+        display: inline-block;
+    }
+    .header-corp h2#description {
+        font-size: 16px;
+    }
+    #header h2 {
+        border-bottom: 0;
+        font-size: 18px;
+    }
+    p.horaires {
+        text-align: center;
+    }
     
-}
