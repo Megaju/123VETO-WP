@@ -603,7 +603,8 @@ h2 {
 }
 
 .bloc-small-savoirfaire p {
-    margin: 40px 0 0 0;
+ /* margin: 40px 0 0 0;*/
+    margin: 1vh 3vh 0 -4vh;
     font-size: .9em;
     overflow-y: auto;
     color: #222;
@@ -1036,6 +1037,7 @@ h2 {
     color: #222;
 }
 
+
 .formulaire input {
     margin-top: 5px;
     padding-left: 0px;
@@ -1197,6 +1199,18 @@ iframe {
     cursor: pointer;
 }
 
+.screen-reader-response {
+    display: none;
+    margin-bottom: -12vh;
+}
+.wpcf7-not-valid-tip {
+    margin: 0 0 0 35vh;
+    color: red;
+}
+.wpcf7-validation-errors {
+    color: red;
+    margin: 0 14vh;
+}
 
 /*============================*/
 
@@ -1228,6 +1242,16 @@ iframe {
 #footer a:hover {
     color: #F58900;
 }
+.close {
+    background: #F58900;
+    border: none;
+    top: 85vh;
+    margin-left: 1vh;
+}
+.modal {
+    display: none;
+}
+
 
 .overlay {
     position: fixed;
