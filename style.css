@@ -1,4 +1,4 @@
-    /* Theme Name: 123VETO
+/* Theme Name: 123VETO
 /* Theme Name: 123VETO
 Theme URI: http://www.123veto.com/ 
 Description: Thème pour le site 132VETO
@@ -451,22 +451,22 @@ h2 {
 
 /* --------- THE TEAM --------- */
 
-#imgPage{
+#imgPage {
     margin-left: 10px;
 }
 
-#bandeau_presentation{
+#bandeau_presentation {
     margin-bottom: 20px;
 }
 
-.team-member{
+.team-member {
     padding-right: 30px;
 }
 
 .docteurs {
     padding-top: 25px;
-    display: inline-block;
 }
+
 
 /*.docteur {
     vertical-align: top;
@@ -490,7 +490,6 @@ h2 {
     width: 25%;
     color: #333;
     display: flex;
-    justify-content: space-between;
 }
 
 .docteur-present h3 {
@@ -498,8 +497,8 @@ h2 {
     font-size: 1.5em;
     text-align: center;
     padding-left: 15px;
- 
 }
+
 
 /*.docteur-present h4 {
     font-size: 1em;
@@ -939,6 +938,7 @@ h2 {
     width: 90%;
     display: block;
     margin: 0 auto;
+    margin-bottom: 75px;
 }
 
 .vente svg {
@@ -1076,10 +1076,7 @@ iframe {
 /*============================*/
 
 
-/*============ F58900;
-color: whitesmoke;
-border: 0px solid white;
-cursor: pointer;===========*/
+/*======== PRISE RDV===========*/
 
 
 /*============================*/
@@ -1283,7 +1280,7 @@ cursor: pointer;===========*/
 .popup-txt {
     display: block;
     margin: 0 auto;
-    width: 75%; 
+    width: 75%;
 }
 
 .popup .popup-txt {
@@ -1296,8 +1293,7 @@ cursor: pointer;===========*/
     color: #333;
 }
 
-.contenu_mentions {
-}
+.contenu_mentions {}
 
 @media screen and (max-width: 700px) {
     .box {
@@ -1355,12 +1351,13 @@ cursor: pointer;===========*/
     vertical-align: top;
     margin-bottom: 50px;
     border-bottom: 1px solid #aaa;
+    font-size: 0.9em;
 }
 
 #newsletter h2 {
     width: 50%;
     margin: 0 auto 25px auto;
-    padding-bottom: 0;
+    padding-bottom: 15px;
     border-bottom: 1px solid #263461;
 }
 
@@ -1524,21 +1521,76 @@ cursor: pointer;===========*/
     .logo-img {
         display: none;
     }
-    
     /* supression de la sidebar */
     .sidebar {
         display: none;
     }
-    
     /* le contenu prend toute la largeur */
     .content {
         margin-top: 60px;
         width: 100%;
     }
     
+    /* bouton prise de RDV */
     #priseRDV {
         display: block;
         width: 100%;
+    }
+    
+
+    /* présentation de l'équipe */
+    .team-member {
+        border-bottom: 1px solid #999;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    :last-child.team-member {
+        border: 0;
+        margin-bottom: 0;
+    }
+    
+    .docteur-present {
+        display: block;
+        width: 100%;
+    }
+    
+    .docteur-present h3 {
+        text-align: left;
+    }
+    
+    .docteur-present p {
+        width: 90%;
+    }
+    /* ======= Small newslettes ======== */
+    #newsletter {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .actu-on-newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 25px 50px 25px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #aaa;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    #newsletter h2 {
+        width: 50%;
+        margin: 0 auto 25px auto;
+        padding-bottom: 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #263461;
+    }
+    .news-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 500px;
+        margin: 0px;
     }
 }
 
@@ -1611,4 +1663,42 @@ cursor: pointer;===========*/
         text-align: center;
     }
     
+    /* NOTRE SAVOIR-FAIRE */
+    #bloc-medium-savoirfaire, .bloc-small-savoirfaire {
+        margin: 0;
+    }
+    #bloc-medium-savoirfaire {
+        padding-top: 30px;
+    }
+
+    /* ======= Small newslettes ======== */
+    #newsletter {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .actu-on-newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 25px 50px 25px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #aaa;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    #newsletter h2 {
+        width: 50%;
+        margin: 0 auto 25px auto;
+        padding-bottom: 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #263461;
+    }
+    .news-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 500px;
+        margin: 0px;
+    }
 }
