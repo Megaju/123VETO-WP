@@ -1656,4 +1656,24 @@ iframe {
         border-radius: 500px;
         margin: 0px;
     }
+    
+    /* ======= Prestations ========== */
+    
+    .icone-generique {
+        width: 100%;
+        display: inline-block;
+    }
+    .center-generique {
+        display: inline-block;
+    }
+    .alignement_article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenu_article p {
+        padding-left: 0px;
+    }
 }
