@@ -34,44 +34,45 @@ Template Name: prestation
 
                         <div class="icone-generique">
                             <div class="center-generique">
-                                    <div class="numero animation anim"><i class="fa fa-stethoscope fa-3x"></i>
-                                    </div>
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
+                                </div>
                                 <button class="bouton-generique" onclick="affiche_presta('consultation')">Consul.</button>
                             </div>
 
                             <div class="center-generique">
-                               <div class="numero animation anim">
-                                <i class="fa fa-camera fa-3x"></i>
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
                                 </div>
                                 <button class="bouton-generique" onclick="affiche_presta('imagerie')">Imagerie</button>
                             </div>
 
                             <div class="center-generique">
-                               <div class="numero animation anim">
-                                <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
-                                   </div>
-                                    <button class="bouton-generique" onclick="affiche_presta('analyse')">Analyses</button>
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('analyse')">Analyses</button>
                             </div>
 
                             <div class="center-generique">
-                               <div class="numero animation anim">
-                                <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>
-                                   </div>
-                                    <button class="bouton-generique" onclick="affiche_presta('chirurgie')">Chirurgie</button>
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('chirurgie')">Chirurgie</button>
                             </div>
 
                             <div class="center-generique">
-                               <div class="numero animation anim">
-                                <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
-                                   </div>
-                                    <button class="bouton-generique" onclick="affiche_presta('hospitalisation')">Hosp.</button>
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('hospitalisation')">Hosp.</button>
                             </div>
 
                             <div class="center-generique">
-                               <div class="numero animation anim">
-                                <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>
-                                   </div>
-                                    <button class="bouton-generique" onclick="affiche_presta('nac')">NAC</button>
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('nac')">NAC</button>
                             </div>
                         </div>
                     </section>

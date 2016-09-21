@@ -386,7 +386,7 @@ em {
 }
 
 .sidebar .fa-map:hover {
-    color: #4685F1;
+    color: #263461;
     transition: .2s;
 }
 
@@ -781,8 +781,7 @@ h2 {
     height: 60px;
 }
 
-#croquettes svg,
-#colliers svg {
+.img-svg-vente {
     margin-bottom: -25px
 }
 
@@ -974,76 +973,69 @@ h2 {
 
 /*============================*/
 
-.TitreForm1 {
-    float: left;
-    margin-left: 54px;
-}
-
-
-/*
-.TitreForm2 {
-    margin-right: 0px;
-}*/
-
 .contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 90vh;
-}
-
-.type1 {
-    margin-left: 2vh;
-    height: 40px;
-    padding: 5px 7px;
-    border: 01px solid #777;
-    background-color: #eee;
-}
-
-#form1 {
-    width: 0 auto;
-    border-right: 1px solid lightgray;
-    margin-top: 18px;
+    display: block;
+    margin: 0 auto;
+    height: 800px;
+    width: 90%;
+    margin-top: 40px;
 }
 
 .formulaire {
-    width: 45%;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid #263461;
+}
+
+.formulaire label {
+    font-size: 1em;
+    color: #222;
+    padding-bottom: 15px;
+    padding-left: 0px;
+}
+
+.formulaire input {
+    margin-top: 5px;
+    padding-left: 0px;
+    height: 30px;
+    width: 494px;
+    border: 1px solid #a9a9a9;
+    background-color: ghostwhite;
+}
+
+.formulaire textarea{
+    margin-top: 5px;
+    width: 475px;
+    border: 1px solid #a9a9a9;
+    background-color: ghostwhite;
+    border-radius: 0%;
+    height: 150px;
 }
 
 .localisation {
-    width: 38%;
+    display: inline-block;
+    width: 40%;
 }
 
-#locapara {
-    font-size: 12.5px;
-    margin-right: 5vh;
-    line-height: 1.8em;
-    margin-top: -21px;
-    margin-bottom: 50px;
+.contact h2 {
+    text-align: left;
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-left: 50px;
 }
 
-input,
-textarea {
-    height: 40px;
-    padding: 5px 10px;
-    border: 1px solid #777;
-    background-color: #eee;
+.contact p {
+    font-size: 0.9em;
+    white-space: pre-line;
+    color: #222;
+    padding-left: 50px;
 }
 
-textarea {
-    height: 22vh;
-    width: 45vh;
-}
-
-.EnvoieForm {
-    width: 22%;
-    height: 50px;
-    background-color: white;
-    border: 1px solid darkgrey;
-    font-family: "Open Sans", sans-serif;
-    color: #F58900;
-    cursor: pointer;
-    overflow: hidden;
+iframe {
+    padding-left: 50px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 
@@ -1055,78 +1047,85 @@ textarea {
 
 /*============================*/
 
-#rdv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: 15px;
+.priseRDV-form {
+    margin-left: 25%;
+    margin-top: 40px;
+    width: 50%;
 }
 
-#rdv h1 {
-    padding: 20px;
-    color: #263461;
+.priseRDV-form p {
+    color: #444;
+    padding-bottom: 40px;
 }
 
-.section {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    margin-right: 15px;
+.priseRDV-form h2 {
+    text-align: center;
 }
 
-.section input {
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    cursor: pointer;
-}
-
-label {
-    margin: 5px;
-    display: inline-block;
-    font-size: 15px;
-    color: #263461;
-}
-
-select {
-    margin: 5px;
-    border-radius: 5px;
-    border: 01px solid #fff;
-    cursor: pointer;
-}
-
-textarea {
-    padding: 8px 10px;
-    width: 230px;
-    border-radius: 5px;
-    border: 01px solid #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-textarea.big {
-    width: 425px;
-}
-
-#bouton {
-    display: flex;
-    flex-direction: row;
+.priseRDV-form input {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 0px;
+    border: 1px solid #a9a9a9;
     padding: 5px;
+    padding-left: 10px;
+    background-color: ghostwhite;
+    color: #222;
 }
 
-.agenda {
-    display: flex;
-    flex-direction: column;
-    float: left;
+.option {
+    display: block;
+    margin: 0 auto;
+    width: 102%;
+    height: 250px;
+    margin-top: 15px;
+    border: 1px solid #a9a9a9;
+    background-color: ghostwhite;
 }
 
-.agenda p {}
+.priseRDV-form label {
+    text-transform: capitalize;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+}
 
-.agenda iframe {
-    height: 500px;
-    width: 550px;
+.priseRDV-form select {
+    height: 40px;
+    padding: 3px;
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #a9a9a9;
+    background-color: white;
+}
+
+.option {
+    margin-top: 15px;
+}
+
+.option label {
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+
+.jsaisplus {
+    margin-top: 20px;
+}
+
+.priseRDV-form textarea {
+    width:102%;    
+    margin-top: 15px;
+    border: 1px solid #a9a9a9;
+    background-color: ghostwhite;
+    border-radius: 0%;
+    height: 300px;    
+}
+
+.priseRDV-form input {
+    color: #f58900;
 }
 
 
