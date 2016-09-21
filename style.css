@@ -1549,7 +1549,7 @@ iframe {
     
     .docteur-present p {
         width: 90%;
-=======
+    }
     /* ======= Small newslettes ======== */
     #newsletter {
         width: 90%;
@@ -1579,7 +1579,6 @@ iframe {
         height: 200px;
         border-radius: 500px;
         margin: 0px;
->>>>>>> ddf9d64ae3648f80856ad2f956ec965f71140777
     }
 }
 
@@ -1690,5 +1689,4 @@ iframe {
         border-radius: 500px;
         margin: 0px;
     }
->>>>>>> ddf9d64ae3648f80856ad2f956ec965f71140777
 }
