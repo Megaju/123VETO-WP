@@ -129,8 +129,8 @@ Template Name: vente
 
                                 <div id="brosses" class="separation">
                                     <div class="numero animation anim">
-																		<?php include("img/svg/vente_svg/vente_brosse.php"); ?>
-																		</div>
+										<?php include("img/svg/vente_svg/vente_brosse.php"); ?>
+									</div>
                                     <h3>brosses</h3>
                                     <i class="fa fa-chevron-down direction-vente" aria-hidden="true"></i>
 
