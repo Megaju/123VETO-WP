@@ -70,7 +70,7 @@
                    <?php 
                      echo do_shortcode("[metaslider id=120]"); 
                     ?>
-                    <!--div <class="carousel">
+                    <div class="carousel">
                         <div class="carousel-img"></div>
                         <h2 id="carousel-titre">Titre associé</h2>
                         <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
@@ -79,7 +79,7 @@
 
                         <button id="right-button-carou" class="fa fa-chevron-right"></button>
 
-                    </div>-->
+                    </div>
                 </div>
 
                 <!-- SAVOIR-FAIRE 1 2 3 VETO -->
