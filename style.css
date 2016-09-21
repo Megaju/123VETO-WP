@@ -1,4 +1,4 @@
-/* Theme Name: 123VETO
+    /* Theme Name: 123VETO
 /* Theme Name: 123VETO
 Theme URI: http://www.123veto.com/ 
 Description: Thème pour le site 132VETO
@@ -1189,6 +1189,78 @@ cursor: pointer;===========*/
     color: #F58900;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0px;
+    width: 75%;
+    height: 85%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    text-align: center;
+}
+
+#popup1 a {
+    color: #333;
+}
+
+.popup .close {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup-txt {
+    display: block;
+    margin: 0 auto;
+    width: 75%; 
+}
+
+.popup .popup-txt {
+    max-height: 100%;
+    overflow: auto;
+    color: #333;
+}
+
+#popup1 p {
+    color: #333;
+}
+
+.contenu_mentions {
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+}
+
 
 /* ====================================================================
 */
@@ -1379,26 +1451,6 @@ cursor: pointer;===========*/
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========== [ RESPONSIVE ] ========== */
 
 @media (max-width: 1300px) {
@@ -1473,7 +1525,6 @@ cursor: pointer;===========*/
         padding: 5px 0 0 0;
         text-align: center;
     }
-    
     #header {
         height: 320px;
     }
@@ -1481,7 +1532,8 @@ cursor: pointer;===========*/
         width: 100%;
         padding: 25px 0;
     }
-    .header-corp h1, .header-corp h2#description {
+    .header-corp h1,
+    .header-corp h2#description {
         font-size: 8px;
         display: inline-block;
     }
@@ -1495,4 +1547,3 @@ cursor: pointer;===========*/
     p.horaires {
         text-align: center;
     }
-    
