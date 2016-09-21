@@ -889,7 +889,7 @@ h2 {
 }
 
 .imgPage img {
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -1179,7 +1179,7 @@ iframe {
 }
 
 .bouton-envoyer-effacer input {
-    width: 15vw;
+    width: 75%;
     margin-bottom: 75px;
 }
 
@@ -1535,8 +1535,7 @@ iframe {
     #priseRDV {
         display: block;
         width: 100%;
-    }
-    
+    }    
 
     /* présentation de l'équipe */
     .team-member {
@@ -1591,6 +1590,11 @@ iframe {
         height: 200px;
         border-radius: 500px;
         margin: 0px;
+    }
+    .bouton-envoyer-effacer {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -1700,5 +1704,45 @@ iframe {
         height: 200px;
         border-radius: 500px;
         margin: 0px;
+    }
+    /* ======= Prestations ========== */
+    .icone-generique {
+        width: 100%;
+        display: inline-block;
+    }
+    .center-generique {
+        display: inline-block;
+    }
+    .alignement_article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenu_article p {
+        padding-left: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    /* ======PRISE RDV ======= */
+    .priseRDV-form {
+        margin-top: 40px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .priseRDV-form input {
+        width: 85%;
+    }
+    .option {
+        width: 85%;
+    }
+    .priseRDV-form textarea {
+        width: 85%;
+    }
+    .bouton-envoyer-effacer {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
     }
 }
