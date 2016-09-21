@@ -69,7 +69,7 @@ Template Name: vente
                                     <div class="numero animation anim">
 																		<?php include("img/svg/vente_svg/vente_antiparasitaire.php"); ?>
 																		</div>
-                                    <h3>vermifuges et antiparasitaires externes</h3>
+                                    <h3>vermifuges & antipara.</h3>
                                     <i class="fa fa-chevron-down direction-vente" aria-hidden="true"></i>
 
                                     <div class="uniform-article" id="article-vermifuges">
