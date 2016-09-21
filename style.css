@@ -1076,6 +1076,11 @@ iframe {
     color: #222;
 }
 
+.priseRDV-form input:focus {
+    outline: 0;
+    border: 1px solid #F58900;
+}
+
 .option {
     display: block;
     margin: 0 auto;
