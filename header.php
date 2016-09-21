@@ -40,7 +40,6 @@
 
     <body>
 
-
         <!-- menu de navigation -->
         <div class="menuNav">
             <!-- logo et nom du site -->
@@ -64,11 +63,20 @@
         </div>
         
     <script>
+        $menuOpen = 0;
         
         $("#display-menu").click(function(){
-            $( "#menu-deroulant" ).css({
-                "display": "block"
-            });
+            if($menuOpen === 0){
+                $( "#menu-deroulant" ).css({
+                    "display": "block"
+                });
+                $menuOpen = 1;
+            } else {
+                $( "#menu-deroulant" ).css({
+                    "display": "none"
+                });
+                $menuOpen = 0;
+            }
+            
         });
-        
     </script>
