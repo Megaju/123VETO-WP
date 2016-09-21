@@ -33,7 +33,8 @@
 
 			</form> -->
 			<h2>Contact</h2>
-			<?php echo do_shortcode( '[contact-form-7 id="61" title="Formulaire de contact 1"]' ); ?>
+			<!--echo do_shortcode( '[contact-form-7 id="61" title="Formulaire de contact 1"]' );-->
+			<?php the_post(); the_content(); ?>
 		</div>
 
 		<div class="localisation">
