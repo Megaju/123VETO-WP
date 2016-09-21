@@ -320,7 +320,7 @@ h2#description {
     height: auto;
 }
 
-.actu-on-newsletter button {
+.normal-button {
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: blue;
@@ -331,21 +331,28 @@ h2#description {
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
+    transition: .15s;
 }
 
-.sidebar button {
+.normal-button:hover {
+    background-color: #F58900;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.sidebar button.read-more {
     background: 0;
     border: 0;
     display: block;
     margin: 15px auto;
 }
 
-.sidebar button .fa {
+.sidebar button.read-more .fa {
     color: #263461;
     transition: .15s;
 }
 
-.sidebar button .fa:hover {
+.sidebar button.read-more .fa:hover {
     color: #F58900;
     cursor: pointer;
     transition: .15s;

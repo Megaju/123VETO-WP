@@ -30,7 +30,7 @@
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
-                <a href="#"><button>News Letters</button></a>
+                <a href="#"><button class="normal-button">News Letters</button></a>
             </div>
         
             <div class="aside-separator"></div>
