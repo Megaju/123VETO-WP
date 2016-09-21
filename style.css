@@ -7,6 +7,7 @@ Author: Solène, Lise et Julien
 */
 
 
+
 /*============================*/
 
 
@@ -381,6 +382,14 @@ h2#description {
     text-transform: lowercase;
     margin-top: 0px;
     padding-bottom: 5px;
+}
+
+#birs_booking_box ul {
+    list-style-type: none;
+}
+
+.birs_form_field.birs_appointment_location {
+    display: none;
 }
 
 #content {
