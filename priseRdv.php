@@ -54,7 +54,6 @@
             <textarea placeholder="Votre message (facultatif)"></textarea>
             <div class="bouton-envoyer-effacer">
                 <input type="submit" value="Envoyer">
-                <input type="reset" value="Effacer">
             </div>
             </div>
 
