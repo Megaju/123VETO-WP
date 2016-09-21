@@ -320,18 +320,35 @@ h2#description {
     height: auto;
 }
 
-.sidebar button,
 .actu-on-newsletter button {
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: blue;
-    border: 0px solid white;
+    border: 0;
     width: 70%;
     height: 35px;
     background-color: #263461;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: white;
+}
+
+.sidebar button {
+    background: 0;
+    border: 0;
+    display: block;
+    margin: 15px auto;
+}
+
+.sidebar button .fa {
+    color: #263461;
+    transition: .15s;
+}
+
+.sidebar button .fa:hover {
+    color: #F58900;
+    cursor: pointer;
+    transition: .15s;
 }
 
 #priseRDV {
