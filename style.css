@@ -1202,6 +1202,10 @@ iframe {
     color: red;
     margin: 0 14vh;
 }
+.wpcf7-mail-sent-ok {
+    color: green;
+    margin: 0 14vh;
+}
 
 /*============================*/
 
