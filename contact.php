@@ -10,30 +10,9 @@
 
 	<div class="contact">
 		
-		<div class="formulaire">
-			<!--<form action="formulaire de contact" method="post" id="form1">
-					
-					<input type="text" name="nom" placeholder="NOM" class="identite"></input> 
-					</br></br>
-					
-					<input type="text" name="Prenom"placeholder="Prenom"></input>
-					</br></br>
-					
-					<input type="text" name="email" placeholder="votre email"></input>
-					</br></br>
+		<div class="formulaire">		
 
-
-				<div class="commentaire">
-					<textarea name="avis" placeholder="Commentaire"></textarea>
-					</br></br>
-					<button type="button" class="btn btn-default EnvoieForm">ENVOYER</button>
-					<button type="button" class="btn btn-default EnvoieForm">EFFACER</button>
-				</div>
-				
-
-			</form> -->
 			<h2>Contact</h2>
-			<!--echo do_shortcode( '[contact-form-7 id="61" title="Formulaire de contact 1"]' );-->
 			<?php the_post(); the_content(); ?>
 		</div>
 
