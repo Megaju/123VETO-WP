@@ -19,7 +19,7 @@
             <div class="content">
                 <!-- le bloc team pour le hover est stocké dans le pc 26 -->
                 <div id="bloc-team">
-                    <h2 class="bandeau bandeau-mt0">L'équipe à votre service</h2>
+                    <h2 class="bandeau bandeau-mt0" id="bandeau_presentation">L'équipe à votre service</h2>
 
                      <div class="docteurs">
                         <!-- DOCTEUR I -->
@@ -31,7 +31,7 @@
                                  <h3 title="<?php the_title(); ?>"><?php the_title(); ?></h3>
                                  <div class="post" id="post-<?php the_ID(); ?>">
                                      <div class="post_content alignement_article article-presentation">
-                                         <div class="imgPage">
+                                         <div class="imgPage" id="imgPage">
                                              <?php the_post_thumbnail(array(250,250));?>
                                          </div>
                                          <div class="contenu_article">

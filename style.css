@@ -422,14 +422,20 @@ h2 {
 
 /* --------- THE TEAM --------- */
 
-.article-presentation{
-    float: left;
+#imgPage{
+    margin-left: 10px;
+}
+
+#bandeau_presentation{
+    margin-bottom: 20px;
+}
+
+.team-member{
+    padding-right: 30px;
 }
 
 .docteurs {
-    text-align: center;
     padding-top: 25px;
-    padding-bottom: 25px;
     display: inline-block;
 }
 
@@ -454,14 +460,16 @@ h2 {
     margin-right: 10px;
     width: 25%;
     color: #333;
+    display: flex;
+    justify-content: space-between;
 }
 
 .docteur-present h3 {
     margin-top: 5px;
     font-size: 1.5em;
-    text-align: left;
+    text-align: center;
     padding-left: 15px;
-    width: 240px;
+ 
 }
 
 /*.docteur-present h4 {
@@ -473,7 +481,6 @@ h2 {
 
 .docteur-present p {
     font-size: .8em;
-    text-align: justify;
     cursor: default;
     padding-left: 15px;
     width: 240px;
