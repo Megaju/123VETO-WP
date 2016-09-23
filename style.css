@@ -674,7 +674,6 @@ h2 {
 }
 
 #bloc-carousel ul {
-    position: absolute;
     bottom: 0;
     left: 25%;
     right: 25%;
@@ -687,11 +686,8 @@ h2 {
     display: inline-block;
     font-size: 0;
     width: 15px;
-    height: 15px;
     margin: 0 2px;
     border: 0;
-    border-radius: 60px;
-    background-color: #263461;
     box-shadow: 0 0 5px #444;
 }
 
@@ -701,7 +697,6 @@ h2 {
 }
 
 #bloc-carousel button {
-    position: absolute;
     top: 0;
     width: 200px;
     height: 100%;
