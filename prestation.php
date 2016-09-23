@@ -90,11 +90,11 @@ Template Name: prestation
                                         <div class="post" id="post-<?php the_ID(); ?>">
                                             <div class="post_content alignement_article">
                                                 <div class="imgPage">
-                                                    <?php the_post_thumbnail(array(250,250));?>
+                                                    <?php the_post_thumbnail();?>
                                                 </div>
 
                                                 <div class="contenu_article">
-                                                    <?php the_content(); ?>
+                                                    <?php the_post(); the_content(array(250,250)); ?>
                                                 </div>
                                             </div>
                                         </div>
