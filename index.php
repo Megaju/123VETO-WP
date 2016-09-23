@@ -216,27 +216,27 @@
                             <div class="icone-generique">
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_croquette.php"); ?>
-                                    <button class="bouton-generique">Croquettes</button>
+                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Croquettes</button>
                                 </div>
 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_antiparasitaire.php"); ?>
-                                    <button class="bouton-generique">Vermifuges</button>
+                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Vermifuges</button>
                                 </div>
 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_shampooing.php"); ?>
-                                    <button class="bouton-generique">Shampoings</button>
+                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Shampoings</button>
                                 </div>
                                 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_brosse.php"); ?>
-                                    <button class="bouton-generique">Brosses</button>
+                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Brosses</button>
                                 </div>
                                 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_collier.php"); ?>
-                                    <button class="bouton-generique">Colliers et laisses</button>
+                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Colliers et laisses</button>
                                 </div>
                             </div>
                         </section>                     
