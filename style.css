@@ -633,6 +633,17 @@ h2 {
 
 /*============================*/
 
+/*modification du titre dans le nouveau carousel*/
+.su-slider-slide-title{
+    height: 60px;
+    background-color: blue !important;
+}
+
+.su-slider-next{
+    background-color: blue !important;
+    border-radius: 0 !important;
+}
+
 h2.bandeau.bandeau-carousel {
     margin-bottom: 0;
 }
