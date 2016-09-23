@@ -639,14 +639,15 @@ h2.bandeau.bandeau-carousel {
 
 .carousel-wp {
     height: 450px;
+    padding: 0 !important;
 }
 
-.su-carousel .su-carousel-prev {
-    right: 0!important;
-    width: 100px!important;
-    height: 100%!important;
-    border-radius: 0 !imporant;
-    background-color: red!important;
+.carousel-wp .su-carousel-slides .su-carousel-slide swiper-slide-duplicate > a {
+    padding: 0;
+}
+
+.su-carousel .su-carousel-slide a {
+    padding: 0 !imporant;
 }
 
 .su-carousel-responsive-yes .su-carousel-slide > a, .su-carousel-responsive-yes .su-carousel-slide > img, .su-carousel-responsive-yes .su-carousel-slide > a > img {
@@ -1152,9 +1153,8 @@ h2.bandeau.bandeau-carousel {
 }
 
 .wpcf7-submit:hover {
-        background-color: #F58900;
+    background-color: #F58900;
     color: white;
-    
 }
 
 .formulaire {
@@ -1198,11 +1198,16 @@ iframe {
     text-align: center;
 }
 
-.select-RDV  {
+.select-RDV {
     width: 80%;
 }
 
-#birs_appointment_form .birs_field_content, #birs_appointment_form .birs_form_field select {
+.select-RDV span {
+    color: #222;
+}
+
+#birs_appointment_form .birs_field_content,
+#birs_appointment_form .birs_form_field select {
     max-width: 100% !important;
 }
 
@@ -1210,18 +1215,24 @@ iframe {
     border-radius: 0px !important;
 }
 
+.hasDatepicker {
+    background-color: white;
+}
+
 .button {
     margin-left: 5px;
     width: 99% !important;
+    margin-bottom: 50px;
 }
 
 .button:hover {
     background-color: #F58900;
     color: white;
 }
-/*.birs_field_content {
-    max-width: 100% !important;
-}*/
+
+#birs_appointment_form .birs_section {
+    border-bottom: 1px solid #263461 !important;
+}
 
 .select-RDV input {
     margin-top: 5px;
@@ -1240,7 +1251,7 @@ iframe {
     border-radius: 0px;
 }
 
-.select-RDV label{
+.select-RDV label {
     font-weight: normal !important;
     font-size: 1em !important;
     color: #222 !important;
@@ -1261,6 +1272,7 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 30px;
+    background-image: url(img/aside-fond.png);
 }
 
 .select-RDV label {
@@ -1282,6 +1294,11 @@ iframe {
 .wpcf7-validation-errors {
     color: red;
     margin: 0 14vh;
+}
+
+.RDV {
+    height: 100%;
+    display: flex;
 }
 
 
@@ -1845,31 +1862,30 @@ iframe {
         margin: 0 auto;
     }
 
-    .team-member {
-        border: 0;
-    }
 
     /* ======= Contact ========== */
-
     .contact {
         display: inline;
     }
-    
     .contact input {
         width: 100%;
     }
-    
     .contact textarea {
         width: 100%;
     }
-    
-    .formulaire, .localisation {
+    .formulaire,
+    .localisation {
         display: block;
         float: none;
         width: 100%;
     }
     .localisation {
         margin-bottom: 50px;
+
+    }
+    .team-member {
+        border: 0;
+
     }
 }
 
@@ -1962,6 +1978,18 @@ iframe {
         margin-top: 0px;
     }
     
+    /* ======= Contact ========== */
+    .contact {
+        display: inline;
+    }
+    .formulaire,
+    .localisation {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    
+
     /* carousel */
     #bloc-carousel {
         display: none;
@@ -1994,8 +2022,7 @@ iframe {
         font-size: 2em;
     }
     
-    
-=======
+
     /* ======= Contact ========== */
     
     .contact {
@@ -2007,5 +2034,5 @@ iframe {
         float: none;
         width: 100%;
     }
->>>>>>> 1bffa10ceb73021205295001b65fb65fe387b174
+
 }
