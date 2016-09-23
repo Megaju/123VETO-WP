@@ -1177,7 +1177,6 @@ iframe {
 
 .priseRDV-form {
     margin-top: 40px;
-    width: 100%;
 }
 
 .priseRDV-form p {
@@ -1190,7 +1189,7 @@ iframe {
 }
 
 .select-RDV {
-    width: 80%;
+    width: 50%;
 }
 
 .select-RDV span {
@@ -1258,7 +1257,6 @@ iframe {
 }
 
 .center-RDV {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1288,8 +1286,8 @@ iframe {
 }
 
 .RDV {
+    width: 100%;
     height: 100%;
-    display: flex;
 }
 
 
@@ -1993,6 +1991,10 @@ iframe {
     .bloc-small-savoirfaire p {
         padding: 0;
     }
+    
+    .select-RDV {
+    width: 100%;
+}
 }
 
 @media (max-width: 375px) {
