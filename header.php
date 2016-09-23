@@ -22,11 +22,12 @@
         <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
         <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-				<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery_v3.1.0.js"></script>           
-				<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/button_fixed.js"></script>
-				<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
-                <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/accordeon.js"></script>
-                <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
+    		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery_v3.1.0.js"></script>           
+    		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/button_fixed.js"></script>
+    		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
+            <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/accordeon.js"></script>
+            <!-- homemade modal-->
+            <!--<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>-->
 
             <?php wp_get_archives('type=monthly&format=link'); ?>
                 
@@ -36,8 +37,7 @@
                     <link rel="stylesheet" href="css/font-awesome.css" />
                     <link rel="stylesheet" href="youropotionalfolder/font-awesome/css/font-awesome.min.css">
                     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-                    <link rel="stylesheet" href="css/responsive.css">
-                    
+                    <link rel="stylesheet" href="css/responsive.css">                   
                     <?php wp_head(); ?>
     </head>
 
