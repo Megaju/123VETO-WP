@@ -1600,7 +1600,6 @@ iframe {
     cursor: default;
 }
 
-
 /* ========== [ RESPONSIVE ] ========== */
 
 @media (max-width: 1300px) {
@@ -1651,16 +1650,20 @@ iframe {
         border: 0;
         margin-bottom: 0;
     }
-    .docteur-present {
+    .docteurs {
         display: block;
         width: 100%;
     }
-    .docteur-present h3 {
+    .docteurs h3 {
         text-align: left;
     }
-    .docteur-present p {
+    .docteurs .contenu_article p {
         width: 90%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
     }
+    
     /* ======= Small newslettes ======== */
     #newsletter {
         width: 90%;
@@ -1848,9 +1851,52 @@ iframe {
         display: block;
         margin: 0 auto;
     }
+    .team-member {
+        border: 0;
+    }
 }
 
 @media (max-width: 540px) {
+    /* HEADER BANNIERE */
+    .header-corp {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .header-corp .info {
+        width: 90%;
+    }
+    #header p.horaires {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    /* NOTRE SAVOIR-FAIRE */
+    #bloc-large-savoirfaire {
+        height: 100%;
+    }
+    #bloc-medium-savoirfaire,
+    .bloc-small-savoirfaire {
+        padding: 0;
+        height: 100%;
+    }
+    #bloc-medium-savoirfaire {
+        padding-top: 30px;
+    }
+    .bloc-small-savoirfaire p {
+        padding: 5px;
+    }
+    
+    /* TEAM */
+    .team-member {
+        padding: 0;
+    }
+    
+    
+    /* ------ */
+    
+    
     .icone-generique {
         margin-top: 0px;
         width: 100%;
