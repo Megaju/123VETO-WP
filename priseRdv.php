@@ -6,11 +6,6 @@
 
     <?php get_header(); ?>
 
-
-
-
-
-        
             <h2>Rendez-vous</h2>
 
             <!--<input name="prenom" id="prenom" placeholder="Prénom" required="required">
@@ -57,7 +52,5 @@
                 <input type="submit" value="Envoyer">
             </div>-->
             </div>
-
-        
 
         <?php get_footer(); ?>
