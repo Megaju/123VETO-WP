@@ -208,7 +208,7 @@
                     
                     
                     <!-- VENTES -->
-                        <section id="formeindex">
+                        <section id="formeindex" class="vente-index">
                             <h2 class="bandeau">Ventes</h2>
                             <div class="icone-generique">
                                 <div class="center-generique">

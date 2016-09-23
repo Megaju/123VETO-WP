@@ -63,8 +63,8 @@ h2 {
 h2.bandeau {
     height: 30px;
     line-height: 30px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+   /* margin-top: 60px;
+    margin-bottom: 60px;*/
     color: #fff;
     font-weight: 700;
     background-color: #263461;
@@ -104,6 +104,9 @@ i {
     margin: 0 auto;
 }
 
+.vente-index {
+    margin-bottom: 50px;
+}
 
 /*============================*/
 
@@ -641,15 +644,15 @@ h2.bandeau.bandeau-carousel {
     height: 450px;
 }
 
-.su-carousel-responsive-yes .su-carousel-slide > a, .su-carousel-responsive-yes .su-carousel-slide > img, .su-carousel-responsive-yes .su-carousel-slide > a > img {
+.su-carousel-responsive-yes .su-carousel-slide > a,
+.su-carousel-responsive-yes .su-carousel-slide > img,
+.su-carousel-responsive-yes .su-carousel-slide > a > img {
     border: 0;
     border-radius: 0;
     padding: 0;
 }
 
-.su-carousel-prev {
-    
-}
+.su-carousel-prev {}
 
 #bloc-carousel .slides {
     padding-left: 0;
@@ -941,7 +944,7 @@ h2.bandeau.bandeau-carousel {
 }
 
 .imgPage img {
-    margin-top: 20px;
+    margin-top: 0px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -1453,7 +1456,7 @@ iframe {
     padding: 5px 25px 50px 25px;
     vertical-align: top;
     margin-bottom: 50px;
-    border: 1px solid lightgrey;
+    border: 1px solid blue;
     font-size: 0.9em;
     background: white;
 }
@@ -1598,6 +1601,7 @@ iframe {
     cursor: default;
 }
 
+
 /* ========== [ RESPONSIVE ] ========== */
 
 @media (max-width: 1300px) {
@@ -1662,7 +1666,6 @@ iframe {
         margin: 0 auto;
         text-align: center;
     }
-    
     /* ======= Small newslettes ======== */
     #newsletter {
         width: 90%;
@@ -1850,7 +1853,6 @@ iframe {
         display: block;
         margin: 0 auto;
     }
-
     /* ======= Contact ========== */
     .contact {
         display: inline;
@@ -1898,7 +1900,6 @@ iframe {
         margin: 0 auto;
         font-size: .8em;
     }
-    
     /* NOTRE SAVOIR-FAIRE */
     #bloc-large-savoirfaire {
         height: 100%;
@@ -1914,15 +1915,11 @@ iframe {
     .bloc-small-savoirfaire p {
         padding: 5px;
     }
-    
     /* TEAM */
     .team-member {
         padding: 0;
     }
-    
     /* ------ */
-    
-    
     .icone-generique {
         margin-top: 0px;
         width: 100%;
@@ -1963,7 +1960,6 @@ iframe {
     .uniform-article h2 {
         margin-top: 0px;
     }
-    
     /* ======= Contact ========== */
     .contact {
         display: inline;
@@ -1974,12 +1970,10 @@ iframe {
         float: none;
         width: 100%;
     }
-    
     /* carousel */
     #bloc-carousel {
         display: none;
     }
-    
     /* icone 1 2 3 V */
     .fa-sf {
         margin: -20px auto 0 auto;
@@ -1987,14 +1981,12 @@ iframe {
         height: 50px;
         font-size: 2em;
     }
-    
     .bloc-small-savoirfaire p {
         padding: 0;
     }
-    
     .select-RDV {
-    width: 100%;
-}
+        width: 100%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2002,7 +1994,6 @@ iframe {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
     /* icone 1 2 3 V */
     .fa-sf {
         margin: -20px auto 0 auto;
@@ -2010,5 +2001,4 @@ iframe {
         height: 40px;
         font-size: 2em;
     }
-    
 }
