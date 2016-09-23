@@ -52,8 +52,8 @@
             </div>
             <!-- icones réseaux socieux -->
             <div class="icones">
-                <a href="#" class="linkAccueil fa fa-facebook-square" aria-hidden="true"></a>
-                <a href="#" class="linkAcceuil fa fa-google-plus-square" aria-hidden="true"></a>
+                <a href="https://fr-fr.facebook.com/" class="linkAccueil fa fa-facebook-square" aria-hidden="true"></a>
+                <a href="https://plus.google.com/" class="linkAcceuil fa fa-google-plus-square" aria-hidden="true"></a>
             </div>    
         </div>
         
