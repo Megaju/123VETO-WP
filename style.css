@@ -1866,10 +1866,18 @@ iframe {
     }
     .header-corp .info {
         width: 90%;
+        height: 100%;
+    }
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     #header p.horaires {
-        width: 90%;
-        margin: 10px auto;
+        width: 100%;
+        margin: 0 auto;
+        font-size: .8em;
     }
     
     /* NOTRE SAVOIR-FAIRE */
@@ -1933,5 +1941,25 @@ iframe {
     }
     .uniform-article h2 {
         margin-top: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    h2.bandeau {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* icone 1 2 3 V */
+    .fa-sf {
+        margin: -20px auto 0 auto;
+        width: 40px;
+        height: 40px;
+        font-size: 2em;
+    }
+    
+    /* carousel */
+    #bloc-carousel {
+        display: none;
     }
 }
