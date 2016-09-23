@@ -10,7 +10,7 @@
 
 
 
-        <form class="priseRDV-form" action="mon-formulaire" method="post">
+
             <h2>Rendez-vous</h2>
 
             <!--<input name="prenom" id="prenom" placeholder="Prénom" required="required">
@@ -58,6 +58,5 @@
             </div>-->
             </div>
 
-        </form>
 
         <?php get_footer(); ?>
