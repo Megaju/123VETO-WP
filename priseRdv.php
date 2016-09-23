@@ -6,7 +6,9 @@
 
     <?php get_header(); ?>
 
+
             <h2>Rendez-vous</h2>
+
 
             <!--<input name="prenom" id="prenom" placeholder="Prénom" required="required">
             <input name="nom" id="nom" placeholder="Nom" required="required">
@@ -14,7 +16,6 @@
             <input name="mail" id="mail" placeholder="E-mail">
             <input name="aniName" id="aniName" placeholder="Nom de l'animal" required="required">-->
 
-            <div class="option">
                 <div class="center-RDV">
                     <div class="select-RDV">
                         <!--<label for="veto">Vétérinaire :</label>
@@ -46,7 +47,6 @@
                         <?php the_post(); the_content(); ?>
                     </div>
                 </div>
-            </div>
             <!--<textarea placeholder="Votre message (facultatif)"></textarea>
             <div class="bouton-envoyer-effacer">
                 <input type="submit" value="Envoyer">
