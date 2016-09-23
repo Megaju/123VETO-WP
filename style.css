@@ -584,8 +584,7 @@ h2 {
 }
 
 .bloc-small-savoirfaire p {
- /* margin: 40px 0 0 0;*/
-    margin: 1vh 3vh 0 -4vh;
+    text-align: center;
     font-size: .9em;
     overflow-y: auto;
     color: #222;
