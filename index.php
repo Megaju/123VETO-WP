@@ -8,8 +8,9 @@
             <div class="info">
                 <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
                 <h2 id="description"><?php bloginfo('description'); ?></h2>
-                <h2>Dr Eric Wintz - Dr Aurélie Mayoussier</h2>
-                <p class="horaires">123 Véto vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h Les urgences sont assurées 24h/24 7 jours sur 7 sur appel téléphonique au 02 40 01 61 69</p>
+                <h2 class="names">Dr Eric Wintz - Dr Aurélie Mayoussier</h2>
+                <p class="horaires">123 Véto vous accueille du <i class="orange">lundi au vendredi</i> de <i class="orange">9h à 12h</i> et de <i class="orange">14h à 19h</i> et le <i class="orange">samedi</i> de <i class="orange">9h à 12h</i>.</p><p class="horaires">Les <i class="orange">urgences</i> sont assurées <i class="orange">24h/24 7 jours sur 7</i> sur appel téléphonique au <i class="orange">02 40 01 61 69</i></p>
+                <p class="horaires"><i class="orange">Adresse : </i>32 rue du Vélodrome 44160 Pontchateau</p>
             </div>
         </div>
     </div>
@@ -21,9 +22,8 @@
                 <div id="bloc-team">
                     <h2 class="bandeau bandeau-mt0" id="bandeau_presentation">L'équipe à votre service</h2>
 
-                     <div class="docteurs">
-                        <!-- DOCTEUR I -->
-                        <div class="docteur docteur-present">
+                                            <!-- DOCTEUR I -->
+                        <div class="docteurs">
                         <?php query_posts('category_name=presentation'); ?>
                          <?php if(have_posts()) : ?>
                              <?php while(have_posts()) : the_post();?>
@@ -43,7 +43,7 @@
                                <?php endwhile; ?>
                              <?php endif; ?>
                         </div>
-                      </div>
+                     
                     </div>
                         <!--<div class="docteur-present">
                             <h3>Dr Aurélie Mayoussier</h3>
@@ -64,26 +64,19 @@
 
                 <!-- CAROUSEL -->
                 <div id="bloc-carousel">
-                    <h2 class="bandeau">Découverte de la clinique</h2>
+                    <h2 class="bandeau bandeau-carousel">Découverte de la clinique</h2>
                     <div class="index-separator-0"></div>
 
-                    <!--Meta-slider-->
-                    <div>
-                    <?php echo do_shortcode("[metaslider id=102]");?>
-                    </div>
+                    <!-- new carousel -->
+                    <?php query_posts('category_name=carousel'); ?>
+                        <?php if(have_posts()) : ?>
+                            <?php while(have_posts()) : the_post();?>
+                                <?php the_content(); ?>
+                            <?php endwhile; ?>
+                    <?php endif; ?>
 
                     
 
-                    <!-- <div class="carousel">
-                        <div class="carousel-img"></div>
-                        <h2 id="carousel-titre">Titre associé</h2>
-                        <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
-
-                        <button id="left-button-carou" class="fa fa-chevron-left"></button>
-
-                        <button id="right-button-carou" class="fa fa-chevron-right"></button>
-
-                    </div>-->
                 </div>
 
                 <!-- SAVOIR-FAIRE 1 2 3 VETO -->
@@ -131,7 +124,7 @@
                     <div class="section-header">
                         <h2 class="bandeau">Nos prestations</h2>
                     </div>
-                        <div class="lesblocs">
+                        <div class="icone-generique">
                             <!-- bloc 1/6 -->                            
                             <div class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
@@ -145,7 +138,7 @@
                             <!-- bloc 3/6 -->
                             <div class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
-                                <button class="bouton-generique" onclick="">Analyse sanguine</button>                                
+                                <button class="bouton-generique" onclick="">Analyse</button>                                
                             </div>
                             <!-- bloc 4/6 -->
                             <div class="center-generique">     
