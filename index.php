@@ -266,6 +266,17 @@
 
     <?php get_footer(); ?>
 
+    <script type="text/javascript">
+    $(window).scroll(function(){
+    if( $(window).scrollTop() > 2000){
+      console.log($(window).scrollTop());
+    }
+  });
+    </script>
+
+
+
+
         </body>
 
         </html>

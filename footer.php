@@ -2,7 +2,6 @@
     //ça en ligne 1 sinon ça plante.
 ?>
 
-
     <div id="footer">
         <p> Copyright &#169;
             <?php print(date(Y)); ?>
@@ -41,12 +40,12 @@
 
 					<p class="mentions"><strong>Responsable du contenu proposé par la clinique</strong>
 					  	<br>
-						Docteur X
+						Docteurs Wintz et Maroussier
 					</p>
 
 					<p class="mentions"><strong>Traitement des données personnelles et droits d'accès de modification et de supression</strong>
 					  	<br>
-						Les informations recueillies vous concernant ne font pas l'objet d'un traitement automatisé.
+						  Les informations recueillies vous concernant ne font pas l'objet d'un traitement automatisé.
   						Les données de trafic collectées ont uniquement pour finalité de nous permettre d'analyser
   						la fréquentation de nos pages d'information afin d'en améliorer le contenu.
   						Les données relatives à la navigation des visiteurs ne sont pas exploitées nominativement.
@@ -57,7 +56,7 @@
   						Chaque utilisateur est, de ce fait, seul responsable du contenu de sa correspondance.
   						Conformément à l'article 34 de la loi 78-17 du 6 janvier 1978 relative à l'information, aux fichiers
   						et aux libertés, vous disposez d'un droit d'accès et de rectification de vos données nominatives.
-  						Afin d'exercer ce droit, vous pouvez vous contacter la clinique.
+  						Afin d'exercer ce droit, vous pouvez contacter la clinique.
   					</p>
 
   					<p class="mentions"><strong>Dispositions Légales</strong>
@@ -105,8 +104,8 @@
   						polémique, violent, pornographique, xénophobe ou pouvant, dans une plus large
   						mesure porter atteinte à la sensibilité du plus grand nombre.
   						Le lien doit aboutir à la page d'accueil du site (home page) et le site <span>123VETO</span>
-						doit apparaître dans une nouvelle fenêtre. Les pages du site <span>123VETO</span> ne doivent
-						en aucun cas être intégrées à l'intérieur des pages d'un autre site (Frame).
+						  doit apparaître dans une nouvelle fenêtre. Les pages du site <span>123VETO</span> ne doivent
+						  en aucun cas être intégrées à l'intérieur des pages d'un autre site (Frame).
   						Dans tous les cas d'espèce, la clinique vétérinaire <span>123VETO</span> ou
   						<span>Code Academie Face</span> se réserve le droit de demander la suppression d'un lien s'il
   						estime que le site cible ne respecte pas les règles ainsi définies.
@@ -128,7 +127,7 @@
   						des informations fiables et vérifiées.
   						Cependant, malgré tous les soins apportés, le site peut comporter des inexactitudes,
   						des défauts de mise à jour ou des erreurs.
-						Nous remercions les utilisateurs du site de nous faire part d'éventuelles omissions,
+						  Nous remercions les utilisateurs du site de nous faire part d'éventuelles omissions,
 						erreurs ou corrections par mail.
 					</p>
   				</div>
