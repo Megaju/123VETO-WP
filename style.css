@@ -1312,6 +1312,9 @@ iframe {
     /* margin-top: 100px;*/
 }
 
+
+
+
 #footer p,
 #footer a {
     color: white;
@@ -1443,6 +1446,7 @@ iframe {
 .contenu_article {
     font-size: .8em;
 }
+
 
 
 /* ===== PAGE NEWSLETTER ===== */
@@ -1852,6 +1856,7 @@ iframe {
     }
 }
 
+
 @media (max-width: 540px) {
     .icone-generique {
         margin-top: 0px;
@@ -1891,3 +1896,4 @@ iframe {
         margin-top: 0px;
     }
 }
+
