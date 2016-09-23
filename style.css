@@ -7,6 +7,7 @@ Author: Solène, Lise et Julien
 */
 
 
+
 /*============================*/
 
 
@@ -383,6 +384,14 @@ h2#description {
     padding-bottom: 5px;
 }
 
+#birs_booking_box ul {
+    list-style-type: none;
+}
+
+.birs_form_field.birs_appointment_location {
+    display: none;
+}
+
 #content {
     border: 1px solid #abc;
     background-color: rgba(100, 200, 155, 0.1);
@@ -647,6 +656,14 @@ h2 {
 
 /*============================*/
 
+
+#bloc-carousel .slides {
+    padding-left: 0;
+}
+
+#bloc-carousel .slide-51 {
+    width: 100%;
+}
 .carousel {
     display: block;
     position: relative;
@@ -699,7 +716,6 @@ h2 {
 }
 
 #bloc-carousel ul {
-    position: absolute;
     bottom: 0;
     left: 25%;
     right: 25%;
@@ -712,28 +728,26 @@ h2 {
     display: inline-block;
     font-size: 0;
     width: 15px;
-    height: 15px;
     margin: 0 2px;
     border: 0;
     border-radius: 60px;
-    background-color: #263461;
+    background-color: #EDEDED;
     box-shadow: 0 0 5px #444;
 }
 
 #bloc-carousel ul li:hover {
     background-color: #F58900;
-    cursor: pointer;
 }
 
 #bloc-carousel button {
-    position: absolute;
     top: 0;
     width: 200px;
     height: 100%;
     border: 0;
     cursor: pointer;
     transition: .5s;
-    z-index: 1;
+    z-index: 10;
+    color: chartreuse;
 }
 
 #bloc-carousel button:hover {
@@ -867,7 +881,6 @@ h2 {
 .uniform-article {
     width: 85%;
     margin: auto;
-    margin-bottom: 70px;
 }
 
 .uniforme-article h2 {
@@ -939,6 +952,7 @@ h2 {
     display: block;
     margin: 0 auto;
     margin-bottom: 75px;
+    margin-top: 20px;;
 }
 
 .vente svg {
@@ -1221,6 +1235,7 @@ iframe {
     color: white;
     width: 100%;
     margin-bottom: -2vh;
+    margin-top: 100px;
 }
 
 
@@ -1370,12 +1385,13 @@ iframe {
     padding: 5px 25px 50px 25px;
     vertical-align: top;
     margin-bottom: 50px;
-    border-bottom: 1px solid #aaa;
+    border: 1px solid lightgrey;
     font-size: 0.9em;
+    background: white;
 }
 
 #newsletter h2 {
-    width: 50%;
+    width: 25%;
     margin: 0 auto 25px auto;
     padding-bottom: 15px;
     border-bottom: 1px solid #263461;
@@ -1593,7 +1609,7 @@ iframe {
         justify-content: center;
         align-items: center;
         padding: 5px 25px 50px 25px;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         border-bottom: 1px solid #aaa;
         text-align: center;
         font-size: 0.9em;
@@ -1727,8 +1743,12 @@ iframe {
     }
     /* ======= Prestations ========== */
     .icone-generique {
+        margin-top: 0px;
         width: 100%;
         display: inline-block;
+    }
+    .uniform-article {
+        margin-bottom: 0px;
     }
     .center-generique {
         display: inline-block;
@@ -1745,6 +1765,7 @@ iframe {
         padding-top: 20px;
         text-align: center;
     }
+
     /* ======PRISE RDV ======= */
     .priseRDV-form {
         margin-top: 40px;
@@ -1764,6 +1785,47 @@ iframe {
         width: 75%;
         display: block;
         margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .icone-generique {
+        margin-top: 0px;
+        width: 100%;
+        display: inline-block;
+    }
+    .uniform-article {
+        margin-bottom: 0px;
+    }
+    .center-generique {
+        display: inline-block;
+    }
+    .alignement_article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenu_article p {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .icone-generique svg {
+        display: none;
+    }
+    .vente svg {
+        display: none;
+    }
+    .contenu_article p {
+        padding: 0px;
+    }
+    .vente h3 {
+        font-size: 0.75em;
+    }
+    .uniform-article h2 {
+        margin-top: 0px;
     }
 }
 

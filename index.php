@@ -66,7 +66,10 @@
                 <div id="bloc-carousel">
                     <h2 class="bandeau">Découverte de la clinique</h2>
                     <div class="index-separator-0"></div>
-
+                    
+                   <?php 
+                     echo do_shortcode("[metaslider id=120]"); 
+                    ?>
                     <div class="carousel">
                         <div class="carousel-img"></div>
                         <h2 id="carousel-titre">Titre associé</h2>
