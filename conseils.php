@@ -10,7 +10,7 @@ Template Name: conseils
         <!-- pour insérer le header -->
         <?php get_header(); ?>
 
-            <div class="page">
+            <div class="page conseils">
                 <?php get_sidebar(); ?>
 
                     <div class="content">

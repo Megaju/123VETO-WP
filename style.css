@@ -631,10 +631,28 @@ h2 {
 /*============================*/
 
 
-/*========= CLINIQUE =========*/
+/*========= CAROUSEL =========*/
 
 
 /*============================*/
+
+h2.bandeau.bandeau-carousel {
+    margin-bottom: 0;
+}
+
+.carousel-wp {
+    height: 450px;
+}
+
+.su-carousel-responsive-yes .su-carousel-slide > a, .su-carousel-responsive-yes .su-carousel-slide > img, .su-carousel-responsive-yes .su-carousel-slide > a > img {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.su-carousel-prev {
+    
+}
 
 #bloc-carousel .slides {
     padding-left: 0;
@@ -730,11 +748,11 @@ h2 {
     color: chartreuse;
 }
 
-bloc-carousel button:hover {
+.bloc-carousel button:hover {
     transition: .5s;
 }
 
-left-button-carou {
+.left-button-carou {
     left: 0;
     padding-right: 50px;
     opacity: .85;
@@ -831,22 +849,15 @@ left-button-carou {
 /*============================*/
 
 
-/*========= PRESTATION =======*/
+/*========= PRESTATION / CONSEILS =======*/
 
 
 /*============================*/
 
-.lesblocs {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.bloc {
+/*.bloc {
     float: left;
     text-align: center;
-}
+}*/
 
 #Capa_1 {
     padding-bottom: 10px;
@@ -864,10 +875,6 @@ left-button-carou {
     padding-bottom: 10px;
     width: 60px;
     height: 60px;
-}
-
-.vente svg {
-    margin-bottom: -25px
 }
 
 .btnPre {
@@ -896,7 +903,7 @@ left-button-carou {
     width: 147px;
     text-align: center;
     padding: 10px;
-    display: block;
+    display: inline-block;
 }
 
 .icone-generique {
@@ -911,9 +918,6 @@ left-button-carou {
     margin-right: auto;
 }
 
-.placement {
-    display: flex;
-}
 
 .uniform-article {
     width: 85%;
@@ -994,6 +998,7 @@ left-button-carou {
 }
 
 .vente svg {
+    margin-bottom: -25px;
     padding-left: 25%;
     padding-right: 20px;
     padding-top: 20px;
@@ -1029,6 +1034,7 @@ left-button-carou {
     font-weight: 400;
     font-size: 1em;
     cursor: pointer;
+    padding-bottom: 20px;
 }
 
 .direction-vente {
@@ -1661,12 +1667,13 @@ iframe {
         width: 100%;
     }
     .docteurs h3 {
+        margin: 0 0 0 10px;
         text-align: left;
     }
     .docteurs .contenu_article p {
         width: 90%;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         text-align: center;
     }
     
@@ -1908,7 +1915,6 @@ iframe {
         padding: 0;
     }
     
-    
     /* ------ */
     
     
@@ -1934,10 +1940,13 @@ iframe {
         padding-top: 20px;
         text-align: center;
     }
-    .icone-generique svg {
+    .prestation svg {
         display: none;
     }
     .vente svg {
+        display: none;
+    }
+    .conseils svg {
         display: none;
     }
     .contenu_article p {
@@ -1948,6 +1957,23 @@ iframe {
     }
     .uniform-article h2 {
         margin-top: 0px;
+    }
+    
+    /* carousel */
+    #bloc-carousel {
+        display: none;
+    }
+    
+    /* icone 1 2 3 V */
+    .fa-sf {
+        margin: -20px auto 0 auto;
+        width: 50px;
+        height: 50px;
+        font-size: 2em;
+    }
+    
+    .bloc-small-savoirfaire p {
+        padding: 0;
     }
 }
 
@@ -1964,9 +1990,6 @@ iframe {
         height: 40px;
         font-size: 2em;
     }
-    
-    /* carousel */
-    #bloc-carousel {
-        display: none;
-    }
+     
 }
+

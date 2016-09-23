@@ -7,7 +7,7 @@ Template Name: prestation
     <?php get_header('header-single'); ?>
 
 
-        <div class="page">
+        <div class="page prestation">
             <?php get_sidebar(); ?>
 
                 <div class="content">
