@@ -45,7 +45,7 @@
         <!-- menu de navigation -->
         <div class="menuNav">
             <!-- logo et nom du site -->
-            <a href="" class="site-logo"><p>123VETO</p></a>
+            <a href="http://localhost/html/123VETO/" class="site-logo"><p>123VETO</p></a>
             <!-- menu de navigation -->
             <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
             <!-- bouton menu déroulant pour smartphone -->
