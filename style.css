@@ -7,7 +7,6 @@ Author: Solène, Lise et Julien
 */
 
 
-
 /*============================*/
 
 
@@ -174,8 +173,6 @@ h2.names {
 #header p.horaires .orange {
     color: #FFC731;
 }
-
-
 
 .logo-img {
     width: 150px;
@@ -770,6 +767,7 @@ left-button-carou {
     opacity: 1;
 }
 
+
 /*#bloc-carousel button:hover {
     transition: .5s;
 }*/
@@ -836,6 +834,7 @@ left-button-carou {
 
 /*============================*/
 
+
 /*.bloc {
     float: left;
     text-align: center;
@@ -899,7 +898,6 @@ left-button-carou {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .uniform-article {
     width: 85%;
@@ -1834,6 +1832,29 @@ iframe {
         display: block;
         margin: 0 auto;
     }
+
+    /* ======= Contact ========== */
+
+    .contact {
+        display: inline;
+    }
+    
+    .contact input {
+        width: 100%;
+    }
+    
+    .contact textarea {
+        width: 100%;
+    }
+    
+    .formulaire, .localisation {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .localisation {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -1876,5 +1897,17 @@ iframe {
     }
     .uniform-article h2 {
         margin-top: 0px;
+    }
+    
+    /* ======= Contact ========== */
+    
+    .contact {
+        display: inline;
+    }
+    
+    .formulaire, .localisation {
+        display: block;
+        float: none;
+        width: 100%;
     }
 }
