@@ -1040,29 +1040,23 @@ h2 {
 
 /*============================*/
 
+.center-element-contact {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
 .contact {
     height: 750px;
     display: flex;
 }
 
-.formulaire {
-    width: 50%;
-    display: inline-block;
-    float: left;
-    vertical-align: top;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid white;
-background-image: url(img/aside-fond.png);}
-
-.formulaire label {
+.contact label {
     font-size: 1em;
     color: #222;
 }
 
-.formulaire input {
+.contact input {
     margin-top: 5px;
     padding-left: 0px;
     height: 40px;
@@ -1071,12 +1065,30 @@ background-image: url(img/aside-fond.png);}
     background-color: white;
 }
 
-.formulaire textarea {
+.contact textarea {
     margin-top: 5px;
     width: 35vw;
     border: 1px solid #a9a9a9;
     border-radius: 0%;
     height: 150px;
+}
+
+.contact h2 {
+    text-align: left;
+    margin-bottom: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.contact i {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.contact p {
+    font-size: 0.9em;
+    white-space: pre-line;
+    color: #222;
 }
 
 .localisation {
@@ -1107,15 +1119,22 @@ background-image: url(img/aside-fond.png);}
     color: #222;
 }
 
+.formulaire {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    background-image: url(img/aside-fond.png);
+}
+
 iframe {
     width: 100%;
     margin-top: 20px;
-}
-
-.center-element-contact {
-    display: block;
-    margin: 0 auto;
-    width: 75%;
 }
 
 
