@@ -19,7 +19,7 @@
             <input name="tel" id="tel" placeholder="Téléphone" required="required">
             <input name="mail" id="mail" placeholder="E-mail">
             <input name="aniName" id="aniName" placeholder="Nom de l'animal" required="required">-->
-
+            <div class="RDV">
                 <div class="center-RDV">
                     <div class="select-RDV">
                         <!--<label for="veto">Vétérinaire :</label>
@@ -50,6 +50,10 @@
                         </select>-->
                         <?php the_post(); the_content(); ?>
                     </div>
+                </div>
+                <div class="localisation">
+                gfch:h;;kg:fdc
+                </div>
                 </div>
             <!--<textarea placeholder="Votre message (facultatif)"></textarea>
             <div class="bouton-envoyer-effacer">

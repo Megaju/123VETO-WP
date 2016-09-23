@@ -1126,9 +1126,8 @@ left-button-carou {
 }
 
 .wpcf7-submit:hover {
-        background-color: #F58900;
+    background-color: #F58900;
     color: white;
-    
 }
 
 .formulaire {
@@ -1172,11 +1171,16 @@ iframe {
     text-align: center;
 }
 
-.select-RDV  {
+.select-RDV {
     width: 80%;
 }
 
-#birs_appointment_form .birs_field_content, #birs_appointment_form .birs_form_field select {
+.select-RDV span {
+    color: #222;
+}
+
+#birs_appointment_form .birs_field_content,
+#birs_appointment_form .birs_form_field select {
     max-width: 100% !important;
 }
 
@@ -1184,18 +1188,24 @@ iframe {
     border-radius: 0px !important;
 }
 
+.hasDatepicker {
+    background-color: white;
+}
+
 .button {
     margin-left: 5px;
     width: 99% !important;
+    margin-bottom: 50px;
 }
 
 .button:hover {
     background-color: #F58900;
     color: white;
 }
-/*.birs_field_content {
-    max-width: 100% !important;
-}*/
+
+#birs_appointment_form .birs_section {
+    border-bottom: 1px solid #263461 !important;
+}
 
 .select-RDV input {
     margin-top: 5px;
@@ -1214,7 +1224,7 @@ iframe {
     border-radius: 0px;
 }
 
-.select-RDV label{
+.select-RDV label {
     font-weight: normal !important;
     font-size: 1em !important;
     color: #222 !important;
@@ -1235,6 +1245,7 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 30px;
+    background-image: url(img/aside-fond.png);
 }
 
 .select-RDV label {
@@ -1256,6 +1267,11 @@ iframe {
 .wpcf7-validation-errors {
     color: red;
     margin: 0 14vh;
+}
+
+.RDV {
+    height: 100%;
+    display: flex;
 }
 
 
@@ -1814,22 +1830,18 @@ iframe {
         display: block;
         margin: 0 auto;
     }
-
     /* ======= Contact ========== */
-
     .contact {
         display: inline;
     }
-    
     .contact input {
         width: 100%;
     }
-    
     .contact textarea {
         width: 100%;
     }
-    
-    .formulaire, .localisation {
+    .formulaire,
+    .localisation {
         display: block;
         float: none;
         width: 100%;
@@ -1880,14 +1892,12 @@ iframe {
     .uniform-article h2 {
         margin-top: 0px;
     }
-    
     /* ======= Contact ========== */
-    
     .contact {
         display: inline;
     }
-    
-    .formulaire, .localisation {
+    .formulaire,
+    .localisation {
         display: block;
         float: none;
         width: 100%;
