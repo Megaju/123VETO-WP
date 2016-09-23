@@ -22,9 +22,8 @@
                 <div id="bloc-team">
                     <h2 class="bandeau bandeau-mt0" id="bandeau_presentation">L'équipe à votre service</h2>
 
-                     <div class="docteurs">
-                        <!-- DOCTEUR I -->
-                        <div class="docteur docteur-present">
+                                            <!-- DOCTEUR I -->
+                        <div class="docteurs">
                         <?php query_posts('category_name=presentation'); ?>
                          <?php if(have_posts()) : ?>
                              <?php while(have_posts()) : the_post();?>
@@ -44,7 +43,7 @@
                                <?php endwhile; ?>
                              <?php endif; ?>
                         </div>
-                      </div>
+                     
                     </div>
                         <!--<div class="docteur-present">
                             <h3>Dr Aurélie Mayoussier</h3>
