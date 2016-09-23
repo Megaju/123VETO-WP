@@ -631,10 +631,28 @@ h2 {
 /*============================*/
 
 
-/*========= CLINIQUE =========*/
+/*========= CAROUSEL =========*/
 
 
 /*============================*/
+
+h2.bandeau.bandeau-carousel {
+    margin-bottom: 0;
+}
+
+.carousel-wp {
+    height: 450px;
+}
+
+.su-carousel-responsive-yes .su-carousel-slide > a, .su-carousel-responsive-yes .su-carousel-slide > img, .su-carousel-responsive-yes .su-carousel-slide > a > img {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.su-carousel-prev {
+    
+}
 
 #bloc-carousel .slides {
     padding-left: 0;
@@ -730,11 +748,11 @@ h2 {
     color: chartreuse;
 }
 
-bloc-carousel button:hover {
+.bloc-carousel button:hover {
     transition: .5s;
 }
 
-left-button-carou {
+.left-button-carou {
     left: 0;
     padding-right: 50px;
     opacity: .85;
@@ -1641,12 +1659,13 @@ iframe {
         width: 100%;
     }
     .docteurs h3 {
+        margin: 0 0 0 10px;
         text-align: left;
     }
     .docteurs .contenu_article p {
         width: 90%;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         text-align: center;
     }
     
@@ -1887,7 +1906,6 @@ iframe {
         padding: 0;
     }
     
-    
     /* ------ */
     
     
@@ -1931,6 +1949,23 @@ iframe {
     .uniform-article h2 {
         margin-top: 0px;
     }
+    
+    /* carousel */
+    #bloc-carousel {
+        display: none;
+    }
+    
+    /* icone 1 2 3 V */
+    .fa-sf {
+        margin: -20px auto 0 auto;
+        width: 50px;
+        height: 50px;
+        font-size: 2em;
+    }
+    
+    .bloc-small-savoirfaire p {
+        padding: 0;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1947,8 +1982,5 @@ iframe {
         font-size: 2em;
     }
     
-    /* carousel */
-    #bloc-carousel {
-        display: none;
-    }
+    
 }
