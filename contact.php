@@ -7,6 +7,8 @@
         <?php get_header(); ?>
 
             <!--Formulaire de contact-->
+                    <h2 class="bandeau bandeau-mt0">CONTACT</h2>
+
             <div class="contact">
 
 
