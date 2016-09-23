@@ -636,11 +636,23 @@ h2 {
 
 /*============================*/
 
+/*modification du titre dans le nouveau carousel*/
+.su-slider-slide-title{
+   height: 60px;
+   background-color: blue !important;
+}
+
+.su-carousel .su-carousel-next{
+   background-color: blue !important;
+   border-radius: 0 !important;
+}
+
+
 h2.bandeau.bandeau-carousel {
     margin-bottom: 0;
 }
 
-.carousel-wp {
+/*.carousel-wp {
     height: 450px;
     padding: 0 !important;
 }
@@ -662,6 +674,8 @@ h2.bandeau.bandeau-carousel {
 }
 
 .su-carousel-prev {}
+
+
 
 #bloc-carousel .slides {
     padding-left: 0;
@@ -759,7 +773,7 @@ h2.bandeau.bandeau-carousel {
 
 .bloc-carousel button:hover {
     transition: .5s;
-}
+}*/
 
 .left-button-carou {
     left: 0;
