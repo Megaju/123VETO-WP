@@ -6,14 +6,6 @@
 
     <?php get_header(); ?>
 
-
-
-
-
-
-            
-            
-
             <!--<input name="prenom" id="prenom" placeholder="Prénom" required="required">
             <input name="nom" id="nom" placeholder="Nom" required="required">
             <input name="tel" id="tel" placeholder="Téléphone" required="required">
@@ -60,6 +52,5 @@
                 <input type="submit" value="Envoyer">
             </div>-->
             </div>
-
 
         <?php get_footer(); ?>

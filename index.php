@@ -64,22 +64,18 @@
 
                 <!-- CAROUSEL -->
                 <div id="bloc-carousel">
-                    <h2 class="bandeau">Découverte de la clinique</h2>
+                    <h2 class="bandeau bandeau-carousel">Découverte de la clinique</h2>
                     <div class="index-separator-0"></div>
+                    <!-- new carousel -->
+                    <?php query_posts('category_name=carousel'); ?>
+                        <?php if(have_posts()) : ?>
+                            <?php while(have_posts()) : the_post();?>
+                                <?php the_content(); ?>
+                            <?php endwhile; ?>
+                    <?php endif; ?>
                     
-                   <?php 
-                     echo do_shortcode("[metaslider id=120]"); 
-                    ?>
-                    <div class="carousel">
-                        <div class="carousel-img"></div>
-                        <h2 id="carousel-titre">Titre associé</h2>
-                        <p id="carousel-text">Écrire ici une courte description, une phrase d'accroche.</p>
-
-                        <button id="left-button-carou" class="fa fa-chevron-left"></button>
-
-                        <button id="right-button-carou" class="fa fa-chevron-right"></button>
-
-                    </div>
+                    <!-- ancien carousel -->
+                    
                 </div>
 
                 <!-- SAVOIR-FAIRE 1 2 3 VETO -->
