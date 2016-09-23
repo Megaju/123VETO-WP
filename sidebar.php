@@ -1,7 +1,7 @@
 <?php 
     //ça en ligne 1 sinon ça plante.
 ?>
-<a href="http://localhost/wordpress/index.php/prise-de-rdv/"><button id="priseRDV">Prise de RDV<p>Cliquez ici</p></button></a>
+<a href="http://localhost/html/123VETO/index.php/prise-rdv/"><button id="priseRDV">Prise de RDV<p>Cliquez ici</p></button></a>
 <div class="sidebar">
     <ul>
     <!-- calendar -->
