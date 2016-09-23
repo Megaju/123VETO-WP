@@ -36,9 +36,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-
-=======
     
    <?php wp_footer(); ?>
 
