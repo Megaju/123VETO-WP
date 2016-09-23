@@ -769,7 +769,6 @@ left-button-carou {
 #right-button-carou:hover {
     opacity: 1;
 }
-=======
 
 /*#bloc-carousel button:hover {
     transition: .5s;
@@ -827,28 +826,20 @@ left-button-carou {
 /*#right-button-carou:hover {
 /*    opacity: 1;
 /*}
->>>>>>> 97c04582887c39751d733d3695bee7cce09919ba
 
 
 /*============================*/
 
 
-/*========= PRESTATION =======*/
+/*========= PRESTATION / CONSEILS =======*/
 
 
 /*============================*/
 
-.lesblocs {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.bloc {
+/*.bloc {
     float: left;
     text-align: center;
-}
+}*/
 
 #Capa_1 {
     padding-bottom: 10px;
@@ -866,10 +857,6 @@ left-button-carou {
     padding-bottom: 10px;
     width: 60px;
     height: 60px;
-}
-
-.vente svg {
-    margin-bottom: -25px
 }
 
 .btnPre {
@@ -898,7 +885,7 @@ left-button-carou {
     width: 147px;
     text-align: center;
     padding: 10px;
-    display: block;
+    display: inline-block;
 }
 
 .icone-generique {
@@ -913,9 +900,6 @@ left-button-carou {
     margin-right: auto;
 }
 
-.placement {
-    display: flex;
-}
 
 .uniform-article {
     width: 85%;
@@ -996,6 +980,7 @@ left-button-carou {
 }
 
 .vente svg {
+    margin-bottom: -25px;
     padding-left: 25%;
     padding-right: 20px;
     padding-top: 20px;
@@ -1031,6 +1016,7 @@ left-button-carou {
     font-weight: 400;
     font-size: 1em;
     cursor: pointer;
+    padding-bottom: 20px;
 }
 
 .direction-vente {
@@ -1927,10 +1913,13 @@ iframe {
         padding-top: 20px;
         text-align: center;
     }
-    .icone-generique svg {
+    .prestation svg {
         display: none;
     }
     .vente svg {
+        display: none;
+    }
+    .conseils svg {
         display: none;
     }
     .contenu_article p {

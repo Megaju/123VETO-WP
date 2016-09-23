@@ -127,7 +127,7 @@
                     <div class="section-header">
                         <h2 class="bandeau">Nos prestations</h2>
                     </div>
-                        <div class="lesblocs">
+                        <div class="icone-generique">
                             <!-- bloc 1/6 -->                            
                             <div class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
@@ -141,7 +141,7 @@
                             <!-- bloc 3/6 -->
                             <div class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
-                                <button class="bouton-generique" onclick="">Analyse sanguine</button>                                
+                                <button class="bouton-generique" onclick="">Analyse</button>                                
                             </div>
                             <!-- bloc 4/6 -->
                             <div class="center-generique">     
