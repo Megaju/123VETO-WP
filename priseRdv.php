@@ -14,9 +14,9 @@
                         <?php the_post(); the_content(); ?>
                     </div>
                 </div>
-                <div class="localisation">
+                <!--<div class="localisation">
                 <img src="img/dr-aurelie.jpg" alt="">
-                </div>
+                </div>-->
                 </div>
             </div>
 
