@@ -20,3 +20,16 @@ add_filter( 'pre_option_link_manager_enabled', '__return_true' );
  ?>
 
 <?php add_theme_support( 'post-thumbnails' ); ?>
+
+<?php
+
+	$args = array(
+	'width'         => 800,
+	'height'        => 540,
+	'default-image' => get_template_directory_uri() . '/img/facade.JPG',
+	'uploads'       => true,
+	);
+
+add_theme_support( 'custom-header', $args ); 
+
+?>
