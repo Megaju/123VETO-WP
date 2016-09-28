@@ -63,7 +63,7 @@ h2 {
 h2.bandeau {
     height: 30px;
     line-height: 30px;
-   /* margin-top: 60px;
+    /* margin-top: 60px;
     margin-bottom: 60px;*/
     color: #fff;
     font-weight: 700;
@@ -107,6 +107,7 @@ i {
 .vente-index {
     margin-bottom: 50px;
 }
+
 
 /*============================*/
 
