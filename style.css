@@ -1566,7 +1566,7 @@ iframe {
     border-radius: 0px;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 13px #0000001a;
+    box-shadow: 0 0 13px lightgrey;
 
 }
 
@@ -1577,7 +1577,7 @@ iframe {
     margin: 0 auto;
     padding-top: 0px;
     margin-top: 0px;
-    box-shadow: 0 0 13px #0000001a;
+    box-shadow: 0 0 13px lightgrey;
 }
 
 .commentaire-single {
@@ -1587,7 +1587,7 @@ iframe {
     margin: 0 auto;
     padding-top: 0px;
     margin-top: 30px;
-    box-shadow: 0 0 13px #0000001a;
+    box-shadow: 0 0 13px lightgrey;
 }
 
 .commentaire-single h3 {
@@ -1627,7 +1627,128 @@ iframe {
     text-align: left;
 }
 
+.commentaire-single textarea {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 
+.commentaire-single label {
+    padding-left: 35px;
+    color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: none;
+
+}
+
+.commentaire-single input {
+    border-radius: 0px;
+    border : 1px solid #263461 !important;
+    background-color: white;
+    border: #263461;
+    width: 30%;
+    height: 30px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+
+.commentaire-single input:hover {
+    background-color: #f58900;
+    border: 1px solid white !important;
+    color: white;
+}
+
+.commentaire-single  img {
+    margin-bottom: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.comment-author {
+    padding-left: 20px;
+}
+
+.comment-author cite {
+    padding-left: 15px;
+}
+
+.comment-meta {
+    padding-left: 53px;
+}
+
+.comment-body {
+    margin-top: 50px;    
+}
+
+.comment-body p {
+    /*margin-left: 25px;*/
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.reply a {
+    padding-left: 0px;
+}
+
+.post-navigation h2 {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.nav-previous {
+    width: 25%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #263461 !important;
+    box-shadow: 0 0 13px lightgrey;
+}
+
+.nav-previous button {
+    border-radius: 0px;
+    width: 200px;
+    padding-right: 15px;
+    border: 0px solid white;
+    height: 40px;
+    background-color: white;
+    
+}
+
+.nav-next {
+    width: 25%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #263461 !important;
+    box-shadow: 0 0 13px lightgrey;
+}
+
+.nav-next button {
+    border-radius: 0px;
+    float: left;
+    border: 0px solid white;
+    height: 40px;
+    background-color: white;
+    width: 200px;
+}
+
+.nav-next button:hover , .nav-previous button:hover {
+    background-color: #f58900;
+    color: white;
+}
 /* ==================== */
 
 

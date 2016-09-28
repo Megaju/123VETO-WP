@@ -11,11 +11,6 @@
                 <div class="content-single">
                 <p><?php the_content(); ?></p>
                 </div>
-                
-                <!-- commentaire -->
-                <div class="commentaire-single">
-                <div class="comments-template"><?php comments_template(); ?></div>
-                </div>
     </section>
     
             <!-- s'il n'y a pas d'article -->
