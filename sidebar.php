@@ -24,7 +24,7 @@
                     <div class= "post_content">
                         <?php the_post_thumbnail(array(250,250));?>
                         <p class="postmetadata">
-                            <?php the_content(__('<button class="read-more"><i class="fa fa-2x fa-plus-circle"></i></button>')); ?>
+                            <?php the_content(__('<i class="fa fa-3x fa-plus-circle read-more"></i>')); ?>
                         </p>
                     </div> 
                 </div>

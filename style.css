@@ -7,7 +7,6 @@ Author: Solène, Lise et Julien
 */
 
 
-
 /*============================*/
 
 
@@ -64,8 +63,8 @@ h2 {
 h2.bandeau {
     height: 30px;
     line-height: 30px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+   /* margin-top: 60px;
+    margin-bottom: 60px;*/
     color: #fff;
     font-weight: 700;
     background-color: #263461;
@@ -105,6 +104,13 @@ i {
     margin: 0 auto;
 }
 
+.vente-index {
+    margin-bottom: 50px;
+}
+
+.button, button, a {
+    cursor: pointer;
+}
 
 /*============================*/
 
@@ -174,8 +180,6 @@ h2.names {
 #header p.horaires .orange {
     color: #FFC731;
 }
-
-
 
 .logo-img {
     width: 150px;
@@ -354,19 +358,19 @@ h2.names {
     transition: .15s;
 }
 
-.sidebar button.read-more {
+.sidebar .read-more {
     background: 0;
     border: 0;
-    display: block;
+    /*display: block;*/
     margin: 15px auto;
 }
 
-.sidebar button.read-more .fa {
+.sidebar .read-more {
     color: #263461;
     transition: .15s;
 }
 
-.sidebar button.read-more .fa:hover {
+.sidebar .read-more:hover {
     color: #F58900;
     cursor: pointer;
     transition: .15s;
@@ -636,23 +640,46 @@ h2 {
 
 /*============================*/
 
+/*modification du titre dans le nouveau carousel*/
+.su-slider-slide-title{
+   height: 60px;
+   background-color: blue !important;
+}
+
+.su-carousel .su-carousel-next{
+   background-color: blue !important;
+   border-radius: 0 !important;
+}
+
+
 h2.bandeau.bandeau-carousel {
     margin-bottom: 0;
 }
 
-.carousel-wp {
+/*.carousel-wp {
     height: 450px;
+    padding: 0 !important;
 }
 
-.su-carousel-responsive-yes .su-carousel-slide > a, .su-carousel-responsive-yes .su-carousel-slide > img, .su-carousel-responsive-yes .su-carousel-slide > a > img {
+.carousel-wp .su-carousel-slides .su-carousel-slide swiper-slide-duplicate > a {
+    padding: 0;
+}
+
+.su-carousel .su-carousel-slide a {
+    padding: 0 !imporant;
+}
+
+.su-carousel-responsive-yes .su-carousel-slide > a,
+.su-carousel-responsive-yes .su-carousel-slide > img,
+.su-carousel-responsive-yes .su-carousel-slide > a > img {
     border: 0;
     border-radius: 0;
     padding: 0;
 }
 
-.su-carousel-prev {
-    
-}
+.su-carousel-prev {}
+
+
 
 #bloc-carousel .slides {
     padding-left: 0;
@@ -750,7 +777,7 @@ h2.bandeau.bandeau-carousel {
 
 .bloc-carousel button:hover {
     transition: .5s;
-}
+}*/
 
 .left-button-carou {
     left: 0;
@@ -787,6 +814,7 @@ h2.bandeau.bandeau-carousel {
 #right-button-carou:hover {
     opacity: 1;
 }
+
 
 /*#bloc-carousel button:hover {
     transition: .5s;
@@ -854,6 +882,7 @@ h2.bandeau.bandeau-carousel {
 
 /*============================*/
 
+
 /*.bloc {
     float: left;
     text-align: center;
@@ -918,7 +947,6 @@ h2.bandeau.bandeau-carousel {
     margin-right: auto;
 }
 
-
 .uniform-article {
     width: 85%;
     margin: auto;
@@ -943,7 +971,7 @@ h2.bandeau.bandeau-carousel {
 }
 
 .imgPage img {
-    margin-top: 20px;
+    margin-top: 0px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -1145,6 +1173,11 @@ h2.bandeau.bandeau-carousel {
     color: #222;
 }
 
+.wpcf7-submit:hover {
+    background-color: #F58900;
+    color: white;
+}
+
 .formulaire {
     width: 50%;
     display: inline-block;
@@ -1173,9 +1206,7 @@ iframe {
 /*============================*/
 
 .priseRDV-form {
-    margin-left: 25%;
     margin-top: 40px;
-    width: 50%;
 }
 
 .priseRDV-form p {
@@ -1187,98 +1218,86 @@ iframe {
     text-align: center;
 }
 
-.priseRDV-form input {
-    width: 50vw;
-    display: block;
-    margin: 0 auto;
-    height: 40px;
-    margin-top: 15px;
-    border-radius: 0px;
-    border: 1px solid #a9a9a9;
-    background-color: ghostwhite;
+.select-RDV {
+    width: 50%;
+}
+
+.select-RDV span {
     color: #222;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
-.priseRDV-form input:focus {
-    outline: 0;
-    border: 1px solid #F58900;
+#birs_appointment_form .birs_field_content,
+#birs_appointment_form .birs_form_field select {
+    max-width: 100% !important;
 }
 
-.option {
-    padding-left: 10px;
-    padding-right: 10px;
-    display: block;
-    margin: 0 auto;
-    width: 50vw;
-    height: 100%;
-    margin-top: 15px;
+#birs_appointment_form .ui-datepicker {
+    border-radius: 0px !important;
+}
+
+.hasDatepicker {
+    background-color: white;
+}
+
+.button {
+    margin-left: 5px;
+    width: 99% !important;
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    background-color: #F58900;
+    color: white;
+}
+
+#birs_appointment_form .birs_section {
+    border-bottom: 1px solid #263461 !important;
+}
+
+.select-RDV input {
+    margin-top: 5px;
+    height: 40px;
+    width: 75%;
     border: 1px solid #a9a9a9;
-    background-color: ghostwhite;
+    background-color: white;
+}
+
+.select-RDV select {
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #a9a9a9;
+    background-color: white;
+    border-radius: 0px;
+}
+
+.select-RDV label {
+    font-weight: normal !important;
+    font-size: 1em !important;
+    color: #222 !important;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.select-RDV textarea {
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #a9a9a9;
+    background-color: white;
 }
 
 .center-RDV {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
+    background-image: url(img/aside-fond.png);
 }
 
-.priseRDV-form label {
-    text-transform: capitalize;
-    width: 100%;
-    padding-bottom: 5px;
-}
-
-.priseRDV-form select {
-    height: 40px;
-    padding: 3px;
-    width: 100%;
-    border-radius: 0px;
-    border: 1px solid #a9a9a9;
-    background-color: white;
-    margin-bottom: 15px;
-}
-
-.select-RDV {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.priseRDV-form textarea {
-    font-family: "Open Sans", sans-serif;
-    padding-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: block;
-    margin: 0 auto;
-    width: 50vw;
-    margin-top: 15px;
-    border: 1px solid #a9a9a9;
-    background-color: ghostwhite;
-    border-radius: 0%;
-    height: 300px;
-}
-
-.bouton-envoyer-effacer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.bouton-envoyer-effacer input {
-    width: 75%;
-    margin-bottom: 75px;
-}
-
-.bouton-envoyer-effacer input:hover {
-    background-color: #F58900;
-    color: whitesmoke;
-    border: 0px solid white;
-    cursor: pointer;
+.select-RDV label {
+    font-size: 1em;
+    color: #222;
+    font-weight: 400;
 }
 
 .screen-reader-response {
@@ -1298,6 +1317,11 @@ iframe {
 .wpcf7-mail-sent-ok {
     color: green;
     margin: 0 14vh;
+}
+
+.RDV {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1467,7 +1491,7 @@ iframe {
     padding: 5px 25px 50px 25px;
     vertical-align: top;
     margin-bottom: 50px;
-    border: 1px solid lightgrey;
+    border: 1px solid blue;
     font-size: 0.9em;
     background: white;
 }
@@ -1504,7 +1528,7 @@ iframe {
     vertical-align: top;
 }
 
-#newsletter button.read-more {
+#newsletter .read-more {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1513,7 +1537,7 @@ iframe {
     transition: .3s;
 }
 
-#newsletter button.read-more:hover {
+#newsletter .read-more:hover {
     background-color: #F58900;
     cursor: pointer;
     transition: .3s;
@@ -1612,6 +1636,7 @@ iframe {
     cursor: default;
 }
 
+
 /* ========== [ RESPONSIVE ] ========== */
 
 @media (max-width: 1300px) {
@@ -1676,7 +1701,6 @@ iframe {
         margin: 0 auto;
         text-align: center;
     }
-    
     /* ======= Small newslettes ======== */
     #newsletter {
         width: 90%;
@@ -1864,8 +1888,31 @@ iframe {
         display: block;
         margin: 0 auto;
     }
+
+    
+    /* ======= Contact ========== */
+    .contact {
+        display: inline;
+    }
+    .contact input {
+        width: 100%;
+    }
+    .contact textarea {
+        width: 100%;
+    }
+    .formulaire,
+    .localisation {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .localisation {
+        margin-bottom: 50px;
+
+    }
     .team-member {
         border: 0;
+
     }
 }
 
@@ -1893,7 +1940,6 @@ iframe {
         margin: 0 auto;
         font-size: .8em;
     }
-    
     /* NOTRE SAVOIR-FAIRE */
     #bloc-large-savoirfaire {
         height: 100%;
@@ -1909,15 +1955,11 @@ iframe {
     .bloc-small-savoirfaire p {
         padding: 5px;
     }
-    
     /* TEAM */
     .team-member {
         padding: 0;
     }
-    
     /* ------ */
-    
-    
     .icone-generique {
         margin-top: 0px;
         width: 100%;
@@ -1958,12 +2000,21 @@ iframe {
     .uniform-article h2 {
         margin-top: 0px;
     }
-    
+    /* ======= Contact ========== */
+    .contact {
+        display: inline;
+    }
+    .formulaire,
+    .localisation {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
     /* carousel */
     #bloc-carousel {
         display: none;
     }
-    
     /* icone 1 2 3 V */
     .fa-sf {
         margin: -20px auto 0 auto;
@@ -1971,9 +2022,11 @@ iframe {
         height: 50px;
         font-size: 2em;
     }
-    
     .bloc-small-savoirfaire p {
         padding: 0;
+    }
+    .select-RDV {
+        width: 100%;
     }
 }
 
@@ -1982,7 +2035,6 @@ iframe {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
     /* icone 1 2 3 V */
     .fa-sf {
         margin: -20px auto 0 auto;
@@ -1990,6 +2042,25 @@ iframe {
         height: 40px;
         font-size: 2em;
     }
+<<<<<<< HEAD
      
 }
 
+=======
+
+    
+
+    /* ======= Contact ========== */
+    
+    .contact {
+        display: inline;
+    }
+    
+    .formulaire, .localisation {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+}
+>>>>>>> 2361b83dc29632cdf3ae04369d50198c6d034d31
