@@ -13,6 +13,7 @@ Template Name: vente
                 <?php get_sidebar(); ?>
 
                     <div class="content">
+                       <h2 class="bandeau bandeau-mt0">ESPACE VENTE</h2>
                         <section class="formeindex">
                             <div class="uniform-article">
                                 <?php query_posts('category_name=titre-intro-vente'); ?>
@@ -20,8 +21,7 @@ Template Name: vente
                                         <?php while(have_posts()) : the_post();?>
 
                                             <!-- affichage des articles -->
-                                            <h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>
-                                            <div class="index-separator"></div>
+                                            <!--<h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>-->
                                             <div class="post" id="post-<?php the_ID(); ?>">
                                                 <div class="post_content alignement_article">
                                                     <div class="contenu_article">
@@ -31,6 +31,7 @@ Template Name: vente
                                             </div>
                                             <?php endwhile; ?>
                                                 <?php endif; ?>
+                                                <div class="index-separator"></div>
                             </div>
 
                             <div class="vente">
