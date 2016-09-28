@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
     <div id="header" style='background-image:url(<?php header_image(); ?>)'>
-        
         <div class="header-corp">
             <!-- logo -->
             <div class="logo-img img-responsive"></div>
@@ -91,69 +90,35 @@
                             <div class="fa-sf">
                                 1
                             </div>
-                            <?php query_posts('category_name=NotreSavoirFaire1'); ?>
-                             <?php if(have_posts()) : ?>
-                                 <?php while(have_posts()) : the_post();?>
-                                     <div>
-                                        <div class="post" id="post-<?php the_ID(); ?>">    
-                                            <?php the_content(); ?>                                    
-                                        </div>
-                                     </div>
-                                   <?php endwhile; ?>
-                                 <?php endif; ?>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                            <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                         </div>
 
                         <div class="bloc-small-savoirfaire">
                             <div class="fa-sf">
                                 2
                             </div>
-                            <?php query_posts('category_name=NotreSavoirFaire2'); ?>
-                             <?php if(have_posts()) : ?>
-                                 <?php while(have_posts()) : the_post();?>
-                                     <div>
-                                        <div class="post" id="post-<?php the_ID(); ?>">    
-                                            <?php the_content(); ?>                                    
-                                        </div>
-                                     </div>
-                                   <?php endwhile; ?>
-                                 <?php endif; ?>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                            <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                         </div>
-                        
 
                         <div class="bloc-small-savoirfaire">
                             <div class="fa-sf">
                                 3
                             </div>
-                            <?php query_posts('category_name=NotreSavoirFaire3'); ?>
-                             <?php if(have_posts()) : ?>
-                                 <?php while(have_posts()) : the_post();?>
-                                     <div>
-                                        <div class="post" id="post-<?php the_ID(); ?>">    
-                                            <?php the_content(); ?>                                    
-                                        </div>
-                                     </div>
-                                   <?php endwhile; ?>
-                                 <?php endif; ?>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                            <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                         </div>
 
                         <div class="bloc-small-savoirfaire">
                             <div class="fa-sf">
                                 V
                             </div>
-                            <?php query_posts('category_name=NotreSavoirFaireV'); ?>
-                             <?php if(have_posts()) : ?>
-                                 <?php while(have_posts()) : the_post();?>
-                                     <div>
-                                        <div class="post" id="post-<?php the_ID(); ?>">    
-                                            <?php the_content(); ?>                                    
-                                        </div>
-                                     </div>
-                                   <?php endwhile; ?>
-                                 <?php endif; ?>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit[...]</p>
+                            <a href="#">Read More <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-                
 
                 <!-- PRESTATIONS -->
 
