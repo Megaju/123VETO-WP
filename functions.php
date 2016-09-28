@@ -13,6 +13,10 @@ add_action( 'wp_enqueue_scripts', 'add_font_awesome' );
 register_nav_menus( array(
         'Top' => 'Navigation principale',
     ) );
+
+/* gestionnaire de liens */ 
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
  ?>
 
 <?php add_theme_support( 'post-thumbnails' ); ?>

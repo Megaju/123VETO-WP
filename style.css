@@ -1687,7 +1687,6 @@ iframe {
     font-size: 15px;
     text-transform: none;
     text-align: left;
->>>>>>> 014fe96d912447a12f6a236f17b9909827e14aff
 }
 
 
@@ -2202,6 +2201,12 @@ iframe {
         font-size: 2em;
     }
 
+
+     
+}
+
+
+
     /* ======= Contact ========== */
     .contact {
         display: inline;
@@ -2213,12 +2218,4 @@ iframe {
         width: 100%;
     }
 
-    /*====== SINGLE ARTICLE ======*/
-    .single-article {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        padding-top: 0px;
-        padding-bottom: 100px;
-    }
-}
+
