@@ -651,7 +651,6 @@ h2 {
    border-radius: 0 !important;
 }
 
-
 h2.bandeau.bandeau-carousel {
     margin-bottom: 0;
 }
@@ -1246,7 +1245,6 @@ iframe {
 }
 
 .button:hover {
-    background-color: #F58900;
     color: white;
 }
 
