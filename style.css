@@ -108,6 +108,9 @@ i {
     margin-bottom: 50px;
 }
 
+.button, button, a {
+    cursor: pointer;
+}
 
 /*============================*/
 
@@ -637,12 +640,33 @@ h2 {
 
 /*============================*/
 
+/*modification du titre dans le nouveau carousel*/
+.su-slider-slide-title{
+   height: 60px;
+   background-color: blue !important;
+}
+
+.su-carousel .su-carousel-next{
+   background-color: blue !important;
+   border-radius: 0 !important;
+}
+
+
 h2.bandeau.bandeau-carousel {
     margin-bottom: 0;
 }
 
-.carousel-wp {
+/*.carousel-wp {
     height: 450px;
+    padding: 0 !important;
+}
+
+.carousel-wp .su-carousel-slides .su-carousel-slide swiper-slide-duplicate > a {
+    padding: 0;
+}
+
+.su-carousel .su-carousel-slide a {
+    padding: 0 !imporant;
 }
 
 .su-carousel-responsive-yes .su-carousel-slide > a,
@@ -654,6 +678,8 @@ h2.bandeau.bandeau-carousel {
 }
 
 .su-carousel-prev {}
+
+
 
 #bloc-carousel .slides {
     padding-left: 0;
@@ -751,7 +777,7 @@ h2.bandeau.bandeau-carousel {
 
 .bloc-carousel button:hover {
     transition: .5s;
-}
+}*/
 
 .left-button-carou {
     left: 0;
@@ -1854,6 +1880,8 @@ iframe {
         display: block;
         margin: 0 auto;
     }
+
+    
     /* ======= Contact ========== */
     .contact {
         display: inline;
@@ -1872,9 +1900,11 @@ iframe {
     }
     .localisation {
         margin-bottom: 50px;
+
     }
     .team-member {
         border: 0;
+
     }
 }
 
@@ -1971,6 +2001,7 @@ iframe {
         float: none;
         width: 100%;
     }
+
     /* carousel */
     #bloc-carousel {
         display: none;
@@ -2002,4 +2033,19 @@ iframe {
         height: 40px;
         font-size: 2em;
     }
+
+    
+
+    /* ======= Contact ========== */
+    
+    .contact {
+        display: inline;
+    }
+    
+    .formulaire, .localisation {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
 }
