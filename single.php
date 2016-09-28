@@ -5,7 +5,7 @@
                             <h1><?php the_title(); ?></h1>
                             <h4>Posté le <?php the_time('j F, Y') ?></h4>
                             <p>
-                                <?php the_content(__('<button class="read-more">Lire la suite</button>')); ?>
+                                <?php the_content(__('<button>Lire la suite</button>')); ?>
                             </p>
                             
                             <!-- comments -->
@@ -20,11 +20,11 @@
                                 
                               <?php  // Previous/next post navigation.
 			                     the_post_navigation( array(
-                                    'next_text' => '<button class="prev-next float-left"' . '<span class="meta-nav" aria-hidden="true">' . __( '&laquo;', 'kijewoku' ) . '</span> ' .
-					                '<span class="screen-reader-text">' . __( '', 'kijewoku' ) . '</span> ' .
-					                '<span class="post-title">%title</span>' . '</button>',
-                                    'prev_text' => '<button class="prev-next"' . '<span class="screen-reader-text">' . __( '', 'kijewoku' ) . '</span> ' .
-					                '<span class="post-title">%title</span>' . '<span class="meta-nav" aria-hidden="true">' . __( ' &raquo;', 'kijewoku' ) . '</span> ' . '</button>',
+                                    'next_text' => '<button>' . '<span>' . __( '&laquo;', '123veto' ) . '</span> ' .
+					                '<span>' . __( '', '123veto' ) . '</span> ' .
+					                '<span>%title</span>' . '</button>',
+                                    'prev_text' => '<button>' . '<span>' . __( '', '123veto' ) . '</span> ' .
+					                '<span>%title</span>' . '<span>' . __( ' &raquo;', '123veto' ) . '</span> ' . '</button>',
 			                  ) ); ?>
                     
                     
