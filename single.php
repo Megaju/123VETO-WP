@@ -11,16 +11,18 @@
                 <div class="content-single">
                 <p><?php the_content(); ?></p>
                 </div>
-    </section>                            
-                <!-- commentaire -->
-                <div class="comments-template"><?php comments_template(); ?></div>
                 
-            
+                <!-- commentaire -->
+                <div class="commentaire-single">
+                <div class="comments-template"><?php comments_template(); ?></div>
+                </div>
+    </section>
+    
             <!-- s'il n'y a pas d'article -->
             <?php endwhile; else: ?>
                 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
-                                        
+                                  
         <?php  // Previous/next post navigation.
         the_post_navigation( array(
             'next_text' => '<button>' . '<span>' . __( '&laquo;', '123veto' ) . '</span> ' .

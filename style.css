@@ -1580,6 +1580,40 @@ iframe {
     box-shadow: 0 0 13px #0000001a;
 }
 
+.commentaire-single {
+    background-color: white;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0px;
+    margin-top: 30px;
+    box-shadow: 0 0 13px #0000001a;
+}
+
+.commentaire-single h3 {
+    padding-top: 20px;
+    padding-left: 35px;
+    color: #263461;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.commentaire-single p {
+    margin-top: 5px;
+}
+
+.commentaire-single a {
+    padding-left: 35px;
+    text-decoration: none;
+    color: #263461;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: none;
+}
+
 .content-single p {
     padding-left: 35px;
     padding-right: 35px;
