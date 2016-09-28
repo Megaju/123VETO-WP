@@ -6,7 +6,7 @@
         <p> Copyright &#169;
             <?php print(date(Y)); ?>
                 <?php bloginfo('name'); ?>
-                    <br /> Site propulsé par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par <a href="#">La Team 123VETO</a>
+                    <br /> Site propulsé par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par La Team 123VETO
 
                     <a class="button" href="#popup1"> - Mentions légales</a>
         </p>

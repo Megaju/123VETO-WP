@@ -1,7 +1,7 @@
 <?php 
     //ça en ligne 1 sinon ça plante.
 ?>
-<a href="http://localhost/html/123VETO/index.php/prise-rdv/"><button id="priseRDV">Prise de RDV<p>Cliquez ici</p></button></a>
+<a href="http://123-veto.fr/index.php/prise-rdv/"><button id="priseRDV">Prise de RDV<p>Cliquez ici</p></button></a>
 <div class="sidebar">
     <ul>
     <!-- calendar -->

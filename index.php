@@ -119,6 +119,11 @@
                 </div>
 
                 <!-- PRESTATIONS -->
+                <?php 
+                    $presta_url = get_post_permalink(get_page_by_title ( 'Prestations' )->ID); 
+                    $conseil_url = get_post_permalink(get_page_by_title ( 'Fiche conseil' )->ID); 
+                    $vente_url = get_post_permalink(get_page_by_title ( 'Espace vente' )->ID); 
+                 ?>
 
                 <section>
                     <div class="section-header">
@@ -127,33 +132,33 @@
                         <div class="icone-generique">
                             <!-- bloc 1/6 -->                            
                             <div class="center-generique">
-                                <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/prestations/';">Consultation</button>
+                                <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>          
+                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Consultation</button>
                             </div>
                             <!-- bloc 2/6 -->
                             <div class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/prestations/';">Imagerie</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Imagerie</button>
                             </div>                                                       
                             <!-- bloc 3/6 -->
                             <div class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/prestations/';">Analyse</button>                                
+                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Analyse</button>                                
                             </div>
                             <!-- bloc 4/6 -->
                             <div class="center-generique">     
                             <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>          
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/prestations/';">Chirurgie</button>                                
+                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Chirurgie</button>                                
                             </div>
                             <!-- bloc 5/6 -->
                             <div class="center-generique">     
                             <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/prestations/';">Hospitalisation</button>                                
+                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Hospitalisation</button>                                
                             </div>
                             <!-- bloc 6/6 -->
                             <div class="center-generique">    
                             <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>                             
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/prestations/';">NAC</button>                                
+                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">NAC</button>                                
                             </div>
                         </div>
                     </section>
@@ -165,44 +170,44 @@
                         <div class="icone-generique">
                             <div class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/fiche-conseil/';">Dents</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Dents</button>
                             </div>
 
                             <div class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/fiche-conseil/';">Yeux / Oreilles</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Yeux / Oreilles</button>
                             </div>
 
                             <div class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/fiche-conseil/';">Pelage</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Pelage</button>
                             </div>
                             
                             <div class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_parasite.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/fiche-conseil/';">Parasites</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Parasites</button>
                             </div>
                         </div>
                         
                         <div class="icone-generique">
                             <div class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/fiche-conseil/';">Vaccin Chien</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Vaccin Chien</button>
                             </div>
 
                             <div class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/fiche-conseil/';">Vaccin Chat</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Vaccin Chat</button>
                             </div>
 
                             <div class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_barcode.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/fiche-conseil/';">Identification</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Identification</button>
                             </div>
                             
                             <div class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_education.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/fiche-conseil/';">Education</button>
+                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Education</button>
                             </div>
                         </div>
                     
@@ -213,27 +218,27 @@
                             <div class="icone-generique">
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_croquette.php"); ?>
-                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Croquettes</button>
+                                    <button class="bouton-generique" onclick="location.href='<?= $vente_url ?>';">Croquettes</button>
                                 </div>
 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_antiparasitaire.php"); ?>
-                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Vermifuges</button>
+                                    <button class="bouton-generique" onclick="location.href='<?= $vente_url ?>';">Vermifuges</button>
                                 </div>
 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_shampooing.php"); ?>
-                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Shampoings</button>
+                                    <button class="bouton-generique" onclick="location.href='<?= $vente_url ?>';">Shampoings</button>
                                 </div>
                                 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_brosse.php"); ?>
-                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Brosses</button>
+                                    <button class="bouton-generique" onclick="location.href='<?= $vente_url ?>';">Brosses</button>
                                 </div>
                                 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_collier.php"); ?>
-                                    <button class="bouton-generique" onclick="location.href='http://localhost/html/123VETO/index.php/espace-vente/';">Colliers et laisses</button>
+                                    <button class="bouton-generique" onclick="location.href='<?= $vente_url ?>';">Colliers et laisses</button>
                                 </div>
                             </div>
                         </section>                     
