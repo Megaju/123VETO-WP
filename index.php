@@ -30,7 +30,6 @@
                                 <?php while(have_posts()) : the_post();?>
                                     <div class="team-member">
                                         <h3 title="<?php the_title(); ?>"><?php the_title(); ?></h3>
-                                        <div class="team-separator"></div>
                                         <div class="post" id="post-<?php the_ID(); ?>">
                                             <div class="post_content alignement_article article-presentation">
                                                 <div class="" id="">

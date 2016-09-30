@@ -6,10 +6,12 @@ Version: 0.1
 Author: Solène, Lise et Julien
 */
 
+
 /*body:active {
     transform: rotate(180deg);
     transition: 2s;
 }*/
+
 
 /*============================*/
 
@@ -507,6 +509,7 @@ h2 {
 }
 
 .docteurs h3 {
+    border-bottom: 1px solid #263461;
     font-size: 1.4em;
     text-align: center;
     color: #263461;
@@ -592,16 +595,24 @@ h2 {
 /*============================*/
 
 #bloc-medium-savoirfaire {
-    margin: 100px 50px 0 50px;
     display: flex;
-    height: 240px;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .bloc-small-savoirfaire {
-    margin: 10px;
-    padding: 0 20px;
+    vertical-align: top;
+    display: inline-block;
+    height: 275px;
+    width: 23%;
+    margin: 5px;
     text-align: center;
     background-color: whitesmoke;
+    box-shadow: 0 0 3px grey;
 }
 
 .bloc-small-savoirfaire p {
@@ -609,11 +620,11 @@ h2 {
     font-size: .9em;
     overflow-y: auto;
     color: #222;
+    padding: 15px;
 }
 
 .bloc-small-savoirfaire a,
 .bloc-small-savoirfaire a i {
-    margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
     color: #263461;
@@ -632,10 +643,12 @@ h2 {
     width: 100px;
     height: 100px;
     margin: -50px auto 0 auto;
-    font-size: 6em;
+    font-family: "Opens Sans", sans-serif;
+    font-weight: 500;
+    font-size: 75px;
     text-align: center;
     border-radius: 200px;
-    border: 2px solid #263461;
+    border: 2px solid dimgrey;
     background-color: #fff;
     transition: .4s;
     color: #263461;
@@ -643,7 +656,8 @@ h2 {
 
 .fa-sf:hover {
     color: #fff;
-    background-color: #263461;
+    background-color: #f58900;
+    border: 2px solid white;
     transition: .4s;
     cursor: pointer;
 }
@@ -688,7 +702,6 @@ h2 {
     float: left;
     text-align: center;
 }*/
-
 
 #Capa_1 {
     padding-bottom: 10px;
@@ -808,7 +821,8 @@ h2 {
     display: none;
 }
 
-.prestation a , .conseils a {
+.prestation a,
+.conseils a {
     transition: 4s;
 }
 
@@ -1613,30 +1627,7 @@ iframe {
         display: block;
         width: 100%;
     }
-    /* présentation de l'équipe */
-    .team-member {
-        border-bottom: 1px solid #999;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-    }
-    :last-child.team-member {
-        border: 0;
-        margin-bottom: 0;
-    }
-    .docteurs {
-        display: block;
-        width: 100%;
-    }
-    .docteurs h3 {
-        margin: 0 0 0 10px;
-        text-align: left;
-    }
-    .docteurs .contenu_article p {
-        width: 90%;
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
-    }
+   
     /* ======= Small newslettes ======== */
     #newsletter {
         width: 90%;
@@ -1742,14 +1733,38 @@ iframe {
     p.horaires {
         text-align: center;
     }
+    
+    
     /* NOTRE SAVOIR-FAIRE */
-    #bloc-medium-savoirfaire,
-    .bloc-small-savoirfaire {
-        margin: 0;
-    }
     #bloc-medium-savoirfaire {
-        padding-top: 30px;
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 100px;
     }
+    .bloc-small-savoirfaire {
+        margin-bottom: 50px;
+        vertical-align: top;
+        display: inline-block;
+        width: 44%;
+        height: 100%;
+        margin: 5px;
+        margin-left: 4%;
+        margin-bottom: 100px;
+        text-align: center;
+        background-color: whitesmoke;
+        box-shadow: 0 0 3px grey;
+    }
+    .bloc-small-savoirfaire p {
+        text-align: center;
+        font-size: .9em;
+        overflow-y: auto;
+        color: #222;
+        padding: 15px !important;
+    }
+    
     /* ======= Small newslettes ======== */
     #newsletter {
         width: 90%;
@@ -1781,7 +1796,6 @@ iframe {
         margin: 0px;
     }
     /* ======= Prestations ========== */
-    
     .smart-indication {
         display: none;
     }
@@ -1902,24 +1916,29 @@ iframe {
         margin: 0 auto;
         font-size: .8em;
     }
-    /* NOTRE SAVOIR-FAIRE */
-    #bloc-large-savoirfaire {
-        height: 100%;
-    }
-    #bloc-medium-savoirfaire,
-    .bloc-small-savoirfaire {
-        padding: 0;
-        height: 100%;
-    }
-    #bloc-medium-savoirfaire {
-        padding-top: 30px;
-    }
-    .bloc-small-savoirfaire p {
-        padding: 5px;
-    }
-    /* TEAM */
+   /* présentation de l'équipe */
     .team-member {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    :last-child.team-member {
+        border: 0;
+        margin-bottom: 0;
+    }
+    .docteurs {
+        display: block;
+        width: 100%;
+    }
+    .docteurs .contenu_article p {
+        width: 90%;
         padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .team-member img {
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     /* ------ */
     .icone-generique {
@@ -2025,7 +2044,6 @@ iframe {
     .smart-indication {
         display: block;
     }
-    
     h2.bandeau {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -2037,6 +2055,7 @@ iframe {
         height: 40px;
         font-size: 2em;
     }
+   
     /* ======= Contact ========== */
     .contact {
         display: inline;
@@ -2074,7 +2093,6 @@ iframe {
         box-shadow: 0 0 13px lightgrey;
         vertical-align: top;
     }
-    
     .imgPage img {
         margin-top: 30px;
     }
