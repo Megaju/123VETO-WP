@@ -15,7 +15,7 @@ Template Name: newsletter
                     <h2 title="<?php the_title(); ?>"><?php the_title();?></h2>
                     <div class="bloc-news-content">
                         <?php the_post_thumbnail(array(250,250));?>
-                        <p><?php the_content(__('<button class="normal-button">Lire la suite</button>')); ?></p>
+                        <p><?php the_content(__('<button class="normal-button">Lire la suite</button>')); ?>
                     </div>
                 </div>
             <?php endwhile; else: ?>

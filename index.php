@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div id="header">
+    <div id="header" style='background-image:url(<?php header_image(); ?>)'>
         <div class="header-corp">
             <!-- logo -->
             <div class="logo-img img-responsive"></div>
