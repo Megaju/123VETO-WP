@@ -66,16 +66,11 @@
 
                 <!-- CAROUSEL -->
                 <div id="bloc-carousel">
-                    <h2 class="bandeau bandeau-carousel">Découverte de la clinique</h2>
+                    <h2 class="bandeau bandeau-mt0 bandeau-carousel ">Découverte de la clinique</h2>
                     <div class="index-separator-0"></div>
 
-                    <!-- new carousel -->
-                    <?php query_posts('category_name=carousel'); ?>
-                        <?php if(have_posts()) : ?>
-                            <?php while(have_posts()) : the_post();?>
-                                <?php the_content(); ?>
-                                    <?php endwhile; ?>
-                                        <?php endif; ?>
+                    <!-- carousel -->
+                    <?php echo do_shortcode("[metaslider id=219]"); ?>
 
 
 

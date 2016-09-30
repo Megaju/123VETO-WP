@@ -657,103 +657,22 @@ h2 {
 
 /*============================*/
 
-.bloc-carousel button:hover {
-    transition: .5s;
+.nivoSlider {
+   margin-top: 50px;
+   box-shadow: 0 0 13px #aaa !important;
 }
 
-.left-button-carou {
-    left: 0;
-    padding-right: 50px;
-    opacity: .85;
-    background: -moz-linear-gradient(left, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#00ededed', GradientType=1);
-    /* IE6-9 */
+#bloc-carousel {
+   background-color: whitesmoke;
+   background-image: url(img/aside-fond.png);
+
 }
 
-#left-button-carou:hover {
-    opacity: 1;
+.theme-default .nivo-caption {
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: 700;
 }
-
-#right-button-carou {
-    right: 0;
-    padding-left: 50px;
-    opacity: .85;
-    background: -moz-linear-gradient(left, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ededed', endColorstr='#ededed', GradientType=1);
-    /* IE6-9 */
-}
-
-#right-button-carou:hover {
-    opacity: 1;
-}
-
-
-/*#bloc-carousel button:hover {
-    transition: .5s;
-}*/
-
-
-/*#left-button-carou {
-/*    left: 0;
-/*    padding-right: 50px;
-/*    opacity: .85;
-/*    background: -moz-linear-gradient(left, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
-/*    /* FF3.6-15 */
-
-
-/*    background: -webkit-linear-gradient(left, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
-/*    /* Chrome10-25,Safari5.1-6 */
-
-
-/*    background: linear-gradient(to right, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 21%, rgba(237, 237, 237, 0) 100%);
-/*    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-
-/*    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#00ededed', GradientType=1);
-/*    /* IE6-9 */
-
-
-/*}
-/*
-/*#left-button-carou:hover {
-/*    opacity: 1;
-/*}
-/*
-/*#right-button-carou {
-/*    right: 0;
-/*    padding-left: 50px;
-/*    opacity: .85;
-/*    background: -moz-linear-gradient(left, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
-/*    /* FF3.6-15 */
-
-
-/*    background: -webkit-linear-gradient(left, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
-/*    /* Chrome10-25,Safari5.1-6 */
-
-
-/*    background: linear-gradient(to right, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 1) 79%, rgba(237, 237, 237, 1) 100%);
-/*    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-
-/*    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ededed', endColorstr='#ededed', GradientType=1);
-/*    /* IE6-9 */
-
-
-/*}
-/*
-/*#right-button-carou:hover {
-/*    opacity: 1;
-/*}
 
 
 /*============================*/
