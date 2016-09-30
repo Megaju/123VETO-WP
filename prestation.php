@@ -19,42 +19,42 @@ Template Name: prestation
                                 <div class="numero animation anim">
                                     <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
                                 </div>
-                                <a href="#consultation"><button class="bouton-generique" onclick="affiche_presta('consultation')">Consul.</button></a>
+                                <a href="#consultation"><button class="bouton-generique" id="p_consul">Consul.</button></a>
                             </div>
 
                             <div class="center-generique">
                                 <div class="numero animation anim">
                                     <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
                                 </div>
-                                <a href="#imagerie"><button class="bouton-generique" onclick="affiche_presta('imagerie')">Imagerie</button></a>
+                                <a href="#imagerie"><button class="bouton-generique" id="p_imagerie">Imagerie</button></a>
                             </div>
 
                             <div class="center-generique">
                                 <div class="numero animation anim">
                                     <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
                                 </div>
-                                <a href="#analyse"><button class="bouton-generique" onclick="affiche_presta('analyse')">Analyses</button></a>
+                                <a href="#analyses"><button class="bouton-generique" id="p_analyses">Analyses</button></a>
                             </div>
 
                             <div class="center-generique">
                                 <div class="numero animation anim">
                                     <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>
                                 </div>
-                                <a href="#chirurgie"><button class="bouton-generique" onclick="affiche_presta('chirurgie')">Chirurgie</button></a>
+                                <a href="#chirurgie"><button class="bouton-generique" id="p_chirurgie">Chirurgie</button></a>
                             </div>
 
                             <div class="center-generique">
                                 <div class="numero animation anim">
                                     <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
                                 </div>
-                                <a href="#hospitalisation"><button class="bouton-generique" onclick="affiche_presta('hospitalisation')">Hosp.</button></a>
+                                <a href="#hospitalisation"><button class="bouton-generique" id="p_hosp">Hosp.</button></a>
                             </div>
 
                             <div class="center-generique">
                                 <div class="numero animation anim">
                                     <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>
                                 </div>
-                                <a href="#nac"></a><button class="bouton-generique" onclick="affiche_presta('nac')">NAC</button>
+                                <a href="#nac"></a><button class="bouton-generique" id="p_nac">NAC</button>
                             </div>
                         </div>
                     </section>
@@ -109,7 +109,7 @@ Template Name: prestation
                                             <?php endif; ?>
                         </div>
 
-                        <div class="uniform-article" id="analyse">
+                        <div class="uniform-article" id="analyses">
                             <?php query_posts('category_name=analyses'); ?>
                                 <?php if(have_posts()) : ?>
                                     <?php while(have_posts()) : the_post();?>
