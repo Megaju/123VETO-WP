@@ -38,12 +38,26 @@
         </li>
         
         <li id="contact">
-        
-               <p><strong>123 Véto clinique vétérinaire</strong> vous accueille du lundi au vendredi de <i class="text-info">9h à 12h</i> et de <i class="text-info">14h à 19h</i> et le samedi de <i class="text-info">9h à 12h</i>. <a href="contact.html"><i class="fa fa-1x fa-map"></i></a></p>
-                <p><strong>Les urgences</strong> sont assurées <i class="text-info">24h/24</i> sur simple appel téléphonique.</p>
-                <p>tél : <em>02 99 55 55 55 - 06 55 55 55 55 </em></p>
-                </p>
+            <?php query_posts('category_name=contactSideBar'); ?>
+                <?php if(have_posts()) : ?>
+                    <?php while(have_posts()) : the_post();?>
+                        <div class="">
+                            <h3 title="<?php the_title(); ?>"><?php the_title(); ?></h3>
+                            <div class="post" id="post-<?php the_ID(); ?>">
+                                <div class="">
+                                    <div class="" id="">
+                                        <?php the_post_thumbnail(array(250,250));?>
+                                    </div>
+                                    <div class="contenu_article">
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endwhile; ?>
+            <?php endif; ?>
 
+        
                 <p>
                     <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
 
