@@ -171,44 +171,44 @@
                         <h2 class="bandeau">Nos Conseils</h2>
                     <!-- ICONES -->       
                         <div class="icone-generique">
-                            <div class="center-generique">
+                            <div id="i_dents" class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Dents</button>
                             </div>
 
-                            <div class="center-generique">
+                            <div id="i_yeux" class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Yeux / Oreilles</button>
                             </div>
 
-                            <div class="center-generique">
+                            <div id="i_pelage" class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Pelage</button>
                             </div>
                             
-                            <div class="center-generique">
+                            <div id="i_parasites" class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_parasite.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Parasites</button>
                             </div>
                         </div>
                         
                         <div class="icone-generique">
-                            <div class="center-generique">
+                            <div id="i_vaccinChien" class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Vaccin Chien</button>
                             </div>
 
-                            <div class="center-generique">
+                            <div id="i_vaccinChat" class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Vaccin Chat</button>
                             </div>
 
-                            <div class="center-generique">
+                            <div id="i_identification" class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_barcode.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Identification</button>
                             </div>
                             
-                            <div class="center-generique">
+                            <div id="i_education" class="center-generique">
                                 <?php include("img/svg/conseil_svg/conseil_education.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Education</button>
                             </div>

@@ -1,11 +1,6 @@
 //FICHE PRESTATION
 $( document ).ready(function() {
 	
-	/*var today = new Date();
-	var expires = new Date();
-	expires.setTime(today.getTime() + (1*1*1*1*5000));
-	var d = expires.toGMTString();*/
-	
 	$("#i_consul").click(function() {
 		document.cookie = "value=consul";
 	});
@@ -184,17 +179,203 @@ $( document ).ready(function() {
             $("#article-colliers").css("display", "none");
         }
     }); 
-});
 
-//FICHE CONSEILS
-function fiche_conseil(target) {
-	document.getElementById("dents").style.display="none";
-	document.getElementById("yeux").style.display="none";
-	document.getElementById("pelage").style.display="none";
-	document.getElementById("parasites").style.display="none";
-	document.getElementById("vaccinChien").style.display="none";
-	document.getElementById("vaccinChat").style.display="none";
-	document.getElementById("identification").style.display="none";
-	document.getElementById("education").style.display="none";
-	document.getElementById(target).style.display="block";
-};
+	//Fiche Conseils
+	$("#i_dents").click(function() {
+		document.cookie = "value=dents";
+	});
+	$("#i_yeux").click(function() {
+		document.cookie = "value=yeux";
+	});
+	$("#i_pelage").click(function() {
+		document.cookie = "value=pelage";
+	});
+	$("#i_parasites").click(function() {
+		document.cookie = "value=parasites";
+	});
+	$("#i_vaccinChien").click(function() {
+		document.cookie = "value=vaccinChien";
+	});
+	$("#i_vaccinChat").click(function() {
+		document.cookie = "value=vaccinChat";
+	});
+	$("#i_identification").click(function() {
+		document.cookie = "value=identification";
+	});
+	$("#i_education").click(function() {
+		document.cookie = "value=education";
+	});
+	switch(getCookie("value")) {
+		case "yeux":
+			$("#dents").hide();
+			$("#yeux").show();
+			$("#pelage").hide();
+			$("#parasites").hide();
+			$("#vaccinChien").hide();
+			$("#vaccinChat").hide();
+			$("#identification").hide();
+			$("#education").hide();
+			break;
+		case "pelage":
+			$("#dents").hide();
+			$("#yeux").hide();
+			$("#pelage").show();
+			$("#parasites").hide();
+			$("#vaccinChien").hide();
+			$("#vaccinChat").hide();
+			$("#identification").hide();
+			$("#education").hide();
+			break;
+		case "parasites":
+			$("#dents").hide();
+			$("#yeux").hide();
+			$("#pelage").hide();
+			$("#parasites").show();
+			$("#vaccinChien").hide();
+			$("#vaccinChat").hide();
+			$("#identification").hide();
+			$("#education").hide();
+			break;
+		case "parasites":
+			$("#dents").hide();
+			$("#yeux").hide();
+			$("#pelage").hide();
+			$("#parasites").show();
+			$("#vaccinChien").hide();
+			$("#vaccinChat").hide();
+			$("#identification").hide();
+			$("#education").hide();
+			break;
+		case "vaccinChien":
+			$("#dents").hide();
+			$("#yeux").hide();
+			$("#pelage").hide();
+			$("#parasites").hide();
+			$("#vaccinChien").show();
+			$("#vaccinChat").hide();
+			$("#identification").hide();
+			$("#education").hide();
+			break;
+		case "vaccinChat":
+			$("#dents").hide();
+			$("#yeux").hide();
+			$("#pelage").hide();
+			$("#parasites").hide();
+			$("#vaccinChien").hide();
+			$("#vaccinChat").show();
+			$("#identification").hide();
+			$("#education").hide();
+			break;
+		case "identification":
+			$("#dents").hide();
+			$("#yeux").hide();
+			$("#pelage").hide();
+			$("#parasites").hide();
+			$("#vaccinChien").hide();
+			$("#vaccinChat").hide();
+			$("#identification").show();
+			$("#education").hide();
+			break;
+		case "education":
+			$("#dents").hide();
+			$("#yeux").hide();
+			$("#pelage").hide();
+			$("#parasites").hide();
+			$("#vaccinChien").hide();
+			$("#vaccinChat").hide();
+			$("#identification").hide();
+			$("#education").show();
+			break;
+		default:
+      	$("#dents").show();
+			$("#yeux").hide();
+			$("#pelage").hide();
+			$("#parasites").hide();
+			$("#vaccinChien").hide();
+			$("#vaccinChat").hide();
+			$("#identification").hide();
+			$("#education").hide();
+			break;
+	}
+	$("#p_dents").click(function() {
+		$("#dents").show();
+		$("#yeux").hide();
+		$("#pelage").hide();
+		$("#parasites").hide();
+		$("#vaccinChien").hide();
+		$("#vaccinChat").hide();
+		$("#identification").hide();
+		$("#education").hide();
+	});
+	$("#p_yeux").click(function() {
+		$("#dents").hide();
+		$("#yeux").show();
+		$("#pelage").hide();
+		$("#parasites").hide();
+		$("#vaccinChien").hide();
+		$("#vaccinChat").hide();
+		$("#identification").hide();
+		$("#education").hide();
+	});
+	$("#p_pelage").click(function() {
+		$("#dents").hide();
+		$("#yeux").hide();
+		$("#pelage").show();
+		$("#parasites").hide();
+		$("#vaccinChien").hide();
+		$("#vaccinChat").hide();
+		$("#identification").hide();
+		$("#education").hide();
+	});
+	$("#p_parasites").click(function() {
+		$("#dents").hide();
+		$("#yeux").hide();
+		$("#pelage").hide();
+		$("#parasites").show();
+		$("#vaccinChien").hide();
+		$("#vaccinChat").hide();
+		$("#identification").hide();
+		$("#education").hide();
+	});
+	$("#p_vaccinChien").click(function() {
+		$("#dents").hide();
+		$("#yeux").hide();
+		$("#pelage").hide();
+		$("#parasites").hide();
+		$("#vaccinChien").show();
+		$("#vaccinChat").hide();
+		$("#identification").hide();
+		$("#education").hide();
+	});
+	$("#p_vaccinChat").click(function() {
+		$("#dents").hide();
+		$("#yeux").hide();
+		$("#pelage").hide();
+		$("#parasites").hide();
+		$("#vaccinChien").hide();
+		$("#vaccinChat").show();
+		$("#identification").hide();
+		$("#education").hide();
+	});
+	$("#p_identification").click(function() {
+		$("#dents").hide();
+		$("#yeux").hide();
+		$("#pelage").hide();
+		$("#parasites").hide();
+		$("#vaccinChien").hide();
+		$("#vaccinChat").hide();
+		$("#identification").show();
+		$("#education").hide();
+	});
+	$("#p_education").click(function() {
+		$("#dents").hide();
+		$("#yeux").hide();
+		$("#pelage").hide();
+		$("#parasites").hide();
+		$("#vaccinChien").hide();
+		$("#vaccinChat").hide();
+		$("#identification").hide();
+		$("#education").show();
+	});
+	
+});

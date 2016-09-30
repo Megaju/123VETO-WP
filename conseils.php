@@ -24,28 +24,28 @@ Template Name: conseils
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
                                     </div>
-                                    <a href="#dents"><button class="bouton-generique" onclick="fiche_conseil('dents')">Dents</button></a>
+                                    <a href="#dents"><button class="bouton-generique" onclick="fiche_conseil('dents')" id="p_dents">Dents</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
 																		</div>
-                                    <a href="#yeux"><button class="bouton-generique" onclick="fiche_conseil('yeux')">Yeux / Oreilles</button></a>
+                                    <a href="#yeux"><button class="bouton-generique" onclick="fiche_conseil('yeux')" id="p_yeux">Yeux / Oreilles</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
 																		</div>
-                                    <a href="#pelage"><button class="bouton-generique" onclick="fiche_conseil('pelage')">Pelage</button></a>
+                                    <a href="#pelage"><button class="bouton-generique" onclick="fiche_conseil('pelage')" id="p_pelage">Pelage</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_parasite.php"); ?>
 																		</div>
-                                    <a href="#parasites"><button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button></a>
+                                    <a href="#parasites"><button class="bouton-generique" onclick="fiche_conseil('parasites')" id="p_parasites">Parasites</button></a>
                                 </div>
                             </div>
 
@@ -54,28 +54,28 @@ Template Name: conseils
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
 																		</div>
-                                    <a href="#vaccinChien"><button class="bouton-generique" onclick="fiche_conseil('vaccinChien')">Vaccin Chien</button></a>
+                                    <a href="#vaccinChien"><button class="bouton-generique" onclick="fiche_conseil('vaccinChien')" id="p_vaccinChien">Vaccin Chien</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
 																		</div>
-                                    <a href="#vaccinChat"><button class="bouton-generique" onclick="fiche_conseil('vaccinChat')">Vaccin Chat</button></a>
+                                    <a href="#vaccinChat"><button class="bouton-generique" onclick="fiche_conseil('vaccinChat')" id="p_vaccinChat">Vaccin Chat</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_barcode.php"); ?>
 																		</div>
-                                    <a href="#identification"><button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button></a>
+                                    <a href="#identification"><button class="bouton-generique" onclick="fiche_conseil('identification')" id="p_identification">Identification</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_education.php"); ?>
 																		</div>
-                                    <a href="#education"><button class="bouton-generique" onclick="fiche_conseil('education')">Education</button></a>
+                                    <a href="#education"><button class="bouton-generique" onclick="fiche_conseil('education')" id="p_education">Education</button></a>
                                 </div>
                             </div>
                         </section>
