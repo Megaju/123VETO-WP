@@ -34,7 +34,7 @@ Author: Solène, Lise et Julien
    Le orange : #F58900 */
 
 html,
-body {
+body, .app_services_dropdown_title, .app_workers_dropdown_title, .app_service_locations_dropdown_title, .app_provider_locations_dropdown_title, .appointments-wrapper h3, .appointments-confirmation-wrapper h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -93,7 +93,7 @@ i {
     padding-bottom: 10px;
 }
 
-.bouton-generique {
+.bouton-generique, .select-RDV input {
     width: 100%;
     height: 40px;
     background-color: white;
@@ -114,7 +114,7 @@ i {
 
 .button,
 button,
-a {
+a, .select-RDV input {
     cursor: pointer;
 }
 
@@ -1062,7 +1062,6 @@ iframe {
 .select-RDV input {
     margin-top: 5px;
     height: 40px;
-    width: 75%;
     border: 1px solid #a9a9a9;
     background-color: white;
 }
@@ -1472,6 +1471,12 @@ iframe {
     font-size: 15px;
     text-transform: none;
     text-align: left;
+}
+
+
+/* ===== PRISE DE RDV ===== */
+.appointments-list table td {
+    
 }
 
 
