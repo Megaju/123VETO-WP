@@ -646,6 +646,19 @@ h2 {
 
 /*modification du titre dans le nouveau carousel*/
 
+
+
+.nivoSlider {
+    margin-top: 50px;
+    box-shadow: 0 0 13px #aaa !important;
+}
+
+#bloc-carousel {
+    background-color: whitesmoke;
+    background-image: url(img/aside-fond.png);
+
+}
+
 .su-slider-slide-title {
     height: 60px;
     background-color: blue !important;
@@ -2012,6 +2025,12 @@ iframe {
         text-align: center;
     }
     /* NOTRE SAVOIR-FAIRE */
+
+    h2#bandeauNSF{
+        margin-top: 0px !important;
+    }
+
+
     #bloc-medium-savoirfaire,
     .bloc-small-savoirfaire {
         margin: 0;

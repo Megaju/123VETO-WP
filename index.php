@@ -67,21 +67,15 @@
                     <h2 class="bandeau bandeau-carousel">Découverte de la clinique</h2>
                     <div class="index-separator-0"></div>
 
-                    <!-- new carousel -->
-                    <?php query_posts('category_name=carousel'); ?>
-                        <?php if(have_posts()) : ?>
-                            <?php while(have_posts()) : the_post();?>
-                                <?php the_content(); ?>
-                            <?php endwhile; ?>
-                    <?php endif; ?>
-
-                    
+                        <?php 
+                            echo do_shortcode("[metaslider id=102]"); 
+                        ?>
 
                 </div>
 
                 <!-- SAVOIR-FAIRE 1 2 3 VETO -->
                 <div id="bloc-large-savoirfaire">
-                    <h2 class="bandeau">Notre savoir-faire</h2>
+                    <h2 class="bandeau bandeau-mt0" id="bandeauNSF">Notre savoir-faire</h2>
                     <div class="index-separator-0"></div>
                     <div id="bloc-medium-savoirfaire">
                         <div class="bloc-small-savoirfaire">
