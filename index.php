@@ -134,32 +134,32 @@
                         <section class="formeindex">
 
                         <div class="icone-generique">
-                            <div class="center-generique">
+                            <div id ="i_consul" class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>          
                                 <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Consultation</button>
                             </div>
 
-                            <div class="center-generique">
+                            <div id="i_imagerie" class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Imagerie</button>
                             </div>                                                       
                             <!-- bloc 3/6 -->
-                            <div class="center-generique">
+                            <div id="i_analyses" class="center-generique">
                                 <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Analyse</button>                                
+                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Analyses</button>                                
                             </div>
                             <!-- bloc 4/6 -->
-                            <div class="center-generique">     
+                            <div id="i_chirurgie" class="center-generique">     
                             <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>          
                                 <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Chirurgie</button>                                
                             </div>
                             <!-- bloc 5/6 -->
-                            <div class="center-generique">     
+                            <div id="i_hosp" class="center-generique">     
                             <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
                                 <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Hospitalisation</button>                                
                             </div>
                             <!-- bloc 6/6 -->
-                            <div class="center-generique">    
+                            <div id="i_nac" class="center-generique">    
                             <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>                             
                                 <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">NAC</button>                                
                             </div>
