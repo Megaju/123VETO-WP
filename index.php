@@ -131,36 +131,49 @@
                     <div class="section-header">
                         <h2 class="bandeau">Nos prestations</h2>
                     </div>
+                        <section class="formeindex">
+
                         <div class="icone-generique">
-                            <!-- bloc 1/6 -->                            
                             <div class="center-generique">
-                                <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>          
-                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Consultation</button>
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('consultation')">Consul.</button>
                             </div>
-                            <!-- bloc 2/6 -->
+
                             <div class="center-generique">
-                                <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Imagerie</button>
-                            </div>                                                       
-                            <!-- bloc 3/6 -->
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('imagerie')">Imagerie</button>
+                            </div>
+
                             <div class="center-generique">
-                                <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Analyse</button>                                
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('analyse')">Analyses</button>
                             </div>
-                            <!-- bloc 4/6 -->
-                            <div class="center-generique">     
-                            <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>          
-                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Chirurgie</button>                                
+
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('chirurgie')">Chirurgie</button>
                             </div>
-                            <!-- bloc 5/6 -->
-                            <div class="center-generique">     
-                            <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">Hospitalisation</button>                                
+
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('hospitalisation')">Hosp.</button>
                             </div>
-                            <!-- bloc 6/6 -->
-                            <div class="center-generique">    
-                            <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>                             
-                                <button class="bouton-generique" onclick="location.href='<?= $presta_url ?>';">NAC</button>                                
+
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('nac')">NAC</button>
                             </div>
                         </div>
                     </section>
@@ -169,55 +182,77 @@
                     
                         <h2 class="bandeau">Nos Conseils</h2>
                     <!-- ICONES -->       
-                        <div class="icone-generique">
-                            <div class="center-generique">
-                                <?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Dents</button>
+                        <section class="formeindex">
+
+                            <!-- ICONES -->
+                            <div class="icone-generique">
+                                <div class="center-generique">
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
+                                    </div>
+                                    <button class="bouton-generique" onclick="fiche_conseil('dents')">Dents</button>
+                                </div>
+
+                                <div class="center-generique">
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
+																		</div>
+                                    <button class="bouton-generique" onclick="fiche_conseil('yeux')">Yeux / Oreilles</button>
+                                </div>
+
+                                <div class="center-generique">
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
+																		</div>
+                                    <button class="bouton-generique" onclick="fiche_conseil('pelage')">Pelage</button>
+                                </div>
+
+                                <div class="center-generique">
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_parasite.php"); ?>
+																		</div>
+                                    <button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button>
+                                </div>
                             </div>
 
-                            <div class="center-generique">
-                                <?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Yeux / Oreilles</button>
-                            </div>
+                            <div class="icone-generique">
+                                <div class="center-generique">
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
+																		</div>
+                                    <button class="bouton-generique" onclick="fiche_conseil('vaccinChien')">Vaccin Chien</button>
+                                </div>
 
-                            <div class="center-generique">
-                                <?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Pelage</button>
-                            </div>
-                            
-                            <div class="center-generique">
-                                <?php include("img/svg/conseil_svg/conseil_parasite.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Parasites</button>
-                            </div>
-                        </div>
-                        
-                        <div class="icone-generique">
-                            <div class="center-generique">
-                                <?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Vaccin Chien</button>
-                            </div>
+                                <div class="center-generique">
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
+																		</div>
+                                    <button class="bouton-generique" onclick="fiche_conseil('vaccinChat')">Vaccin Chat</button>
+                                </div>
 
-                            <div class="center-generique">
-                                <?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Vaccin Chat</button>
-                            </div>
+                                <div class="center-generique">
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_barcode.php"); ?>
+																		</div>
+                                    <button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button>
+                                </div>
 
-                            <div class="center-generique">
-                                <?php include("img/svg/conseil_svg/conseil_barcode.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Identification</button>
+                                <div class="center-generique">
+                                    <div class="numero animation anim">
+																		<?php include("img/svg/conseil_svg/conseil_education.php"); ?>
+																		</div>
+                                    <button class="bouton-generique" onclick="fiche_conseil('education')">Education</button>
+                                </div>
                             </div>
-                            
-                            <div class="center-generique">
-                                <?php include("img/svg/conseil_svg/conseil_education.php"); ?>
-                                <button class="bouton-generique" onclick="location.href='<?= $conseil_url ?>';">Education</button>
-                            </div>
-                        </div>
+                        </section>
                     
                     
                     <!-- VENTES -->
-                        <section id="formeindex" class="vente-index">
-                            <h2 class="bandeau">Ventes</h2>
-                            <div class="icone-generique">
+                       <div class="section-header">
+                        <h2 class="bandeau">VENTES</h2>
+                    </div>
+                        <section id="formeindex" class="formeindex ente-index">
+                            <div class="icone-gerique">
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_croquette.php"); ?>
                                     <button class="bouton-generique" onclick="location.href='<?= $vente_url ?>';">Croquettes</button>
@@ -240,11 +275,62 @@
                                 
                                 <div class="center-generique">
                                     <?php include("img/svg/vente_svg/vente_collier.php"); ?>
-                                    <button class="bouton-generique" onclick="location.href='<?= $vente_url ?>';">Colliers et laisses</button>
+                                    <button class="bouton-generique">Accesoires</button>
                                 </div>
                             </div>
                         </section>                     
                             
+                            
+                            <!-- <section>
+                    <div class="section-header">
+                        <h2 class="bandeau">Nos prestations</h2>
+                    </div>
+                        <section class="formeindex">
+
+                        <div class="icone-generique">
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_stethoscope.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('consultation')">Consul.</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_camera.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('imagerie')">Imagerie</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_microscope.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('analyse')">Analyses</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_scalpel.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('chirurgie')">Chirurgie</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_hopital.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('hospitalisation')">Hosp.</button>
+                            </div>
+
+                            <div class="center-generique">
+                                <div class="numero animation anim">
+                                    <?php include("img/svg/prestation_svg/prestation_lapin.php"); ?>
+                                </div>
+                                <button class="bouton-generique" onclick="affiche_presta('nac')">NAC</button>
+                            </div>
+                        </div>
+                    </section> -->
 
             </div>
     </div>

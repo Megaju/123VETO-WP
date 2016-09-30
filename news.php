@@ -5,7 +5,7 @@ Template Name: newsletter
 ?>
     <?php get_header() ?>
         <!-- TITRE DE LA PAGE -->
-        <h2 class="bandeau bandeau-mt0">NEWS</h2>
+        <h2 class="bandeau bandeau-mt0" id="page-news">NOS NEWS DU MOMENT</h2>
         
         <!-- AFFICHAGE DU POST -->
         <section class="body-news">
@@ -15,7 +15,7 @@ Template Name: newsletter
                     <h2 title="<?php the_title(); ?>"><?php the_title();?></h2>
                     <div class="bloc-news-content">
                         <?php the_post_thumbnail(array(250,250));?>
-                        <p><?php the_content(__('<button class="normal-button">Lire la suite</button>')); ?></p>
+                        <p><?php the_content(__('<button class="normal-button">+</button>')); ?></p>
                     </div>
                 </div>
             <?php endwhile; else: ?>

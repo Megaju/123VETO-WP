@@ -345,11 +345,11 @@ h2.names {
 
 .normal-button {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     background-color: blue;
     border: 0;
-    width: 70%;
-    height: 35px;
+    width: 100%;
+    height: 60px;
     background-color: #263461;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
@@ -457,7 +457,6 @@ em {
 
 .formeindex,
 h2 {
-    margin-top: 20px;
     margin-bottom: 0px;
     color: #263461;
     text-align: center;
@@ -895,6 +894,7 @@ h2.bandeau.bandeau-carousel {
     text-align: center;
 }*/
 
+
 #Capa_1 {
     padding-bottom: 10px;
     width: 60px;
@@ -947,7 +947,7 @@ h2.bandeau.bandeau-carousel {
     text-align: center;
     /*display: block;
     margin: 0 auto;*/
-    margin-top: 50px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -1368,7 +1368,6 @@ iframe {
 }
 
 .close {
-    background: #F58900;
     border: none;
     top: 85vh;
     margin-left: 1vh;
@@ -1550,22 +1549,24 @@ iframe {
 }
 
 
-
 /* --- page actualité --- */
+
 .body-news {
     padding-top: 25px;
     background-image: url(img/aside-fond.png);
+    display: flex;
+    justify-content: space-between;
 }
 
 .bloc-news {
-    width: 50%;
-    margin: 25px auto;
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 75px;
+    margin-bottom: 100px;
     background-color: #fff;
     box-shadow: 0 0 13px lightgrey;
-}
-
-:first-child.bloc-news {
-    margin-top: 0;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .bloc-news h2 {
@@ -1586,18 +1587,29 @@ iframe {
 }
 
 .bloc-news-content p {
-    margin: 20px;
-    text-align: center;
+    color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
 }
 
 .bloc-news-content .normal-button {
     display: block;
-    margin: 20px auto;
-    width: 75%;
+    margin: 35px auto;
+    width: 50px;
     height: 50px;
-    line-height: 50px;
+    font-size: 2em;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+.bloc-news-content a {
     text-decoration: none;
 }
 
@@ -1629,7 +1641,23 @@ iframe {
     width: 100%;
     height: 100%;
     box-shadow: 0 0 13px lightgrey;
+}
 
+.content-single button {
+    background-color: #263461;
+    color: white;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 0px;
+    height: 40px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.content-single button:hover {
+    background-color: #f58900;
+    color: white;
 }
 
 .content-single {
@@ -1640,40 +1668,6 @@ iframe {
     padding-top: 0px;
     margin-top: 0px;
     box-shadow: 0 0 13px lightgrey;
-}
-
-.commentaire-single {
-    background-color: white;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 0px;
-    margin-top: 30px;
-    box-shadow: 0 0 13px lightgrey;
-}
-
-.commentaire-single h3 {
-    padding-top: 20px;
-    padding-left: 35px;
-    color: #263461;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    text-transform: none;
-}
-
-.commentaire-single p {
-    margin-top: 5px;
-}
-
-.commentaire-single a {
-    padding-left: 35px;
-    text-decoration: none;
-    color: #263461;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    text-transform: none;
 }
 
 .content-single p {
@@ -1991,6 +1985,10 @@ iframe {
         margin: 0px;
     }
     /* ======= Prestations ========== */
+    
+    .smart-indication {
+        display: none;
+    }
     .icone-generique {
         margin-top: 0px;
         width: 100%;
@@ -2057,13 +2055,31 @@ iframe {
         border: 0;
     }
     /*====== SINGLE ARTICLE ======*/
-    
     .single-article {
         width: 75%;
         display: block;
         margin: 0 auto;
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    .body-news {
+        display: block;
+        padding-top: 25px;
+        background-image: url(img/aside-fond.png);
+    }
+    .bloc-news {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin: 0px auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        background-color: #fff;
+        box-shadow: 0 0 13px lightgrey;
+        vertical-align: top;
+    }
+    .imgPage img {
+        margin-top: 30px;
     }
 }
 
@@ -2178,7 +2194,7 @@ iframe {
     .select-RDV {
         width: 100%;
     }
-        /*====== SINGLE ARTICLE ======*/
+    /*====== SINGLE ARTICLE ======*/
     .single-article {
         width: 100%;
         display: block;
@@ -2186,9 +2202,35 @@ iframe {
         padding-top: 0px;
         padding-bottom: 100px;
     }
+    .single-article img {
+        box-shadow: 0 0 0px lightgrey;
+    }
+    .body-news {
+        display: block;
+        padding-top: 25px;
+        background-image: url(img/aside-fond.png);
+    }
+    .bloc-news {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin: 0px auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        background-color: #fff;
+        box-shadow: 0 0 13px lightgrey;
+        vertical-align: top;
+    }
+    .imgPage img {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 375px) {
+    .smart-indication {
+        display: block;
+    }
+    
     h2.bandeau {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -2202,9 +2244,6 @@ iframe {
     }
 
 
-     
-}
-
     /* ======= Contact ========== */
     .contact {
         display: inline;
@@ -2215,5 +2254,35 @@ iframe {
         float: none;
         width: 100%;
     }
-
-
+    /*====== SINGLE ARTICLE ======*/
+    .single-article {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+    .single-article img {
+        box-shadow: 0 0 0px lightgrey;
+    }
+    .body-news {
+        display: block;
+        padding-top: 25px;
+        background-image: url(img/aside-fond.png);
+    }
+    .bloc-news {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin: 0px auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        background-color: #fff;
+        box-shadow: 0 0 13px lightgrey;
+        vertical-align: top;
+    }
+    
+    .imgPage img {
+        margin-top: 30px;
+    }
+} 

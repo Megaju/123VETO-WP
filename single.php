@@ -8,7 +8,9 @@
             <div><?php the_post_thumbnail(array(678,0));?></div>
             <div class="content-single">
                 <p><?php the_content(); ?></p>
-            </div>
+                <a href="http://localhost/123veto/index.php/news/"><button>RETOUR AUX NEWS</button></a>
+                </div>   
+                
     </section>
     
     <!-- s'il n'y a pas d'article -->
