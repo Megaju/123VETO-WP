@@ -6,6 +6,10 @@ Version: 0.1
 Author: Solène, Lise et Julien
 */
 
+/*body:active {
+    transform: rotate(180deg);
+    transition: 2s;
+}*/
 
 /*============================*/
 
@@ -479,8 +483,12 @@ h2 {
 
 /* --------- THE TEAM --------- */
 
-#imgPage {
-    margin-left: 10px;
+.team-separator {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: 0.5px;
+    background-color: #263461;
 }
 
 #bandeau_presentation {
@@ -488,26 +496,34 @@ h2 {
 }
 
 .team-member {
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .docteurs {
-    padding: 20px 0 0 0;
     display: flex;
     justify-content: space-around;
-    margin-right: 10px;
     color: #333;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .docteurs h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    text-align: center;
+    color: #263461;
+    font-weight: 500;
 }
 
-.docteurs p {
-    font-size: .8em;
-    cursor: default;
-    padding-left: 15px;
-    width: 240px;
+.article-presentation p {
+    font-size: 1.1em !important;
+    padding-left: 15px !important;
+    margin-top: 0px;
+}
+
+.team-member img {
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
 }
 
 
@@ -1009,6 +1025,10 @@ h2.bandeau.bandeau-carousel {
 #alimentation,
 #index {
     display: none;
+}
+
+.prestation a , .conseils a {
+    transition: 4s;
 }
 
 
