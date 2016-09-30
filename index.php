@@ -9,8 +9,17 @@
                 <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
                 <h2 id="description"><?php bloginfo('description'); ?></h2>
                 <h2 class="names">Dr Eric Wintz - Dr Aurélie Mayoussier</h2>
-                <p class="horaires">123 Véto vous accueille du <i class="orange">lundi au vendredi</i> de <i class="orange">9h à 12h</i> et de <i class="orange">14h à 19h</i> et le <i class="orange">samedi</i> de <i class="orange">9h à 12h</i>.</p><p class="horaires">Les <i class="orange">urgences</i> sont assurées <i class="orange">24h/24 7 jours sur 7</i> sur appel téléphonique au <i class="orange">02 40 01 61 69</i></p>
-                <p class="horaires"><i class="orange">Adresse : </i>32 rue du Vélodrome 44160 Pontchateau</p>
+                <div class="horaires">
+                	<?php query_posts('category_name=horaire'); ?>
+                	<?php if(have_posts()) : ?>
+                		<?php while(have_posts()) : the_post();?>
+                	  	<div class="horaires" id="post-<?php the_ID(); ?>">
+                	    	<div class="contenu_article horaires">
+                	    		<?php the_content(); ?>
+                	      </div>
+                	    </div>
+                	  <?php endwhile; ?>
+							<?php endif; ?> </div>
             </div>
         </div>
     </div>

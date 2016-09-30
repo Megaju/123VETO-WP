@@ -1,26 +1,15 @@
-//FICHE PRESTATION
 $( document ).ready(function() {
 	
-	$("#i_consul").click(function() {
-		document.cookie = "value=consul";
-	});
-	$("#i_imagerie").click(function() {
-		document.cookie = "value=imagerie";
-	});
-	$("#i_analyses").click(function() {
-		document.cookie = "value=analyses";
-	});
-	$("#i_chirurgie").click(function() {
-		document.cookie = "value=chirurgie";
-	});
-	$("#i_hosp").click(function() {
-		document.cookie = "value=hosp";
-	});
-	$("#i_nac").click(function() {
-		document.cookie = "value=nac";
-	});
+	//FICHE PRESTATION
+	//création du cookie
+	$("#i_consul").click(function() { document.cookie = "value=consul"; });
+	$("#i_imagerie").click(function() {	document.cookie = "value=imagerie";	});
+	$("#i_analyses").click(function() {	document.cookie = "value=analyses";	});
+	$("#i_chirurgie").click(function() { document.cookie = "value=chirurgie";	});
+	$("#i_hosp").click(function() {	document.cookie = "value=hosp";	});
+	$("#i_nac").click(function() { document.cookie = "value=nac";	});
 	
-	//Affiche presta quand on est sur la page
+	//Filtre presta
 	$("#p_consul").click(function() {
 		$("#consultation").show();
 		$("#imagerie").hide();
@@ -70,7 +59,7 @@ $( document ).ready(function() {
 		$("#nac").show();
 	});
 	
-	
+	//function getCookie récupéré de W3School
 	function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -85,7 +74,7 @@ $( document ).ready(function() {
     }
     return "";
 	}
-	
+		//Filtre via cookie
 		switch(getCookie("value")) {
 		case "imagerie":
 			$("#consultation").hide();
@@ -180,31 +169,18 @@ $( document ).ready(function() {
         }
     }); 
 
-	//Fiche Conseils
-	$("#i_dents").click(function() {
-		document.cookie = "value=dents";
-	});
-	$("#i_yeux").click(function() {
-		document.cookie = "value=yeux";
-	});
-	$("#i_pelage").click(function() {
-		document.cookie = "value=pelage";
-	});
-	$("#i_parasites").click(function() {
-		document.cookie = "value=parasites";
-	});
-	$("#i_vaccinChien").click(function() {
-		document.cookie = "value=vaccinChien";
-	});
-	$("#i_vaccinChat").click(function() {
-		document.cookie = "value=vaccinChat";
-	});
-	$("#i_identification").click(function() {
-		document.cookie = "value=identification";
-	});
-	$("#i_education").click(function() {
-		document.cookie = "value=education";
-	});
+	//CONSEILS
+	//création du cookies
+	$("#i_dents").click(function() { document.cookie = "value=dents";	});
+	$("#i_yeux").click(function() {	document.cookie = "value=yeux";	});
+	$("#i_pelage").click(function() {	document.cookie = "value=pelage";	});
+	$("#i_parasites").click(function() { document.cookie = "value=parasites";	});
+	$("#i_vaccinChien").click(function() { document.cookie = "value=vaccinChien";	});
+	$("#i_vaccinChat").click(function() {	document.cookie = "value=vaccinChat";	});
+	$("#i_identification").click(function() {	document.cookie = "value=identification";	});
+	$("#i_education").click(function() { document.cookie = "value=education";	});
+	
+	//filtre via cookie
 	switch(getCookie("value")) {
 		case "yeux":
 			$("#dents").hide();
@@ -297,6 +273,8 @@ $( document ).ready(function() {
 			$("#education").hide();
 			break;
 	}
+	
+	//filtre conseils
 	$("#p_dents").click(function() {
 		$("#dents").show();
 		$("#yeux").hide();
@@ -377,5 +355,4 @@ $( document ).ready(function() {
 		$("#identification").hide();
 		$("#education").show();
 	});
-	
 });
