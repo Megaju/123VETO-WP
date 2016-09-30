@@ -18,54 +18,34 @@ Template Name: conseils
                        
                         <section class="formeindex">
 
-                            <div class="uniform-article">
-                                <?php query_posts('category_name=titre-intro-conseils'); ?>
-                                    <?php if(have_posts()) : ?>
-                                        <?php while(have_posts()) : the_post();?>
-
-                                            <!-- affichage des articles -->
-                                            <!--<h2 title="<?php the_title(); ?>"><?php the_title(); ?></h2>-->
-                                            
-                                            <div class="post" id="post-<?php the_ID(); ?>">
-                                                <div class="post_content alignement_article">
-                                                    <div class="contenu_article">
-                                                        <?php the_content(); ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <?php endwhile; ?>
-                                                <?php endif; ?>
-                                                <div class="index-separator"></div>
-                            </div>
-
                             <!-- ICONES -->
                             <div class="icone-generique">
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_dent.php"); ?>
                                     </div>
-                                    <button class="bouton-generique" onclick="fiche_conseil('dents')">Dents</button>
+                                    <a href="#dents"><button class="bouton-generique" onclick="fiche_conseil('dents')">Dents</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_eyecat.php"); ?>
 																		</div>
-                                    <button class="bouton-generique" onclick="fiche_conseil('yeux')">Yeux / Oreilles</button>
+                                    <a href="#yeux"><button class="bouton-generique" onclick="fiche_conseil('yeux')">Yeux / Oreilles</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_pelage.php"); ?>
 																		</div>
-                                    <button class="bouton-generique" onclick="fiche_conseil('pelage')">Pelage</button>
+                                    <a href="#pelage"><button class="bouton-generique" onclick="fiche_conseil('pelage')">Pelage</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_parasite.php"); ?>
 																		</div>
-                                    <button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button>
+                                    <a href="#parasites"><button class="bouton-generique" onclick="fiche_conseil('parasites')">Parasites</button></a>
                                 </div>
                             </div>
 
@@ -74,28 +54,28 @@ Template Name: conseils
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_vaccin_chien.php"); ?>
 																		</div>
-                                    <button class="bouton-generique" onclick="fiche_conseil('vaccinChien')">Vaccin Chien</button>
+                                    <a href="#vaccinChien"><button class="bouton-generique" onclick="fiche_conseil('vaccinChien')">Vaccin Chien</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_vaccin_chat.php"); ?>
 																		</div>
-                                    <button class="bouton-generique" onclick="fiche_conseil('vaccinChat')">Vaccin Chat</button>
+                                    <a href="#vaccinChat"><button class="bouton-generique" onclick="fiche_conseil('vaccinChat')">Vaccin Chat</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_barcode.php"); ?>
 																		</div>
-                                    <button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button>
+                                    <a href="#identification"><button class="bouton-generique" onclick="fiche_conseil('identification')">Identification</button></a>
                                 </div>
 
                                 <div class="center-generique">
                                     <div class="numero animation anim">
 																		<?php include("img/svg/conseil_svg/conseil_education.php"); ?>
 																		</div>
-                                    <button class="bouton-generique" onclick="fiche_conseil('education')">Education</button>
+                                    <a href="#education"><button class="bouton-generique" onclick="fiche_conseil('education')">Education</button></a>
                                 </div>
                             </div>
                         </section>
@@ -284,6 +264,10 @@ Template Name: conseils
                         </section>
                     </div>
             </div>
+            
+            <script>
+
+</script>
 
 
 
