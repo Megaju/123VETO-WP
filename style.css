@@ -510,6 +510,7 @@ h2 {
 }
 
 .docteurs h3 {
+    border-bottom: 1px solid #263461;
     font-size: 1.4em;
     text-align: center;
     color: #263461;
@@ -1840,30 +1841,7 @@ iframe {
         display: block;
         width: 100%;
     }
-    /* présentation de l'équipe */
-    .team-member {
-        border-bottom: 1px solid #999;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-    }
-    :last-child.team-member {
-        border: 0;
-        margin-bottom: 0;
-    }
-    .docteurs {
-        display: block;
-        width: 100%;
-    }
-    .docteurs h3 {
-        margin: 0 0 0 10px;
-        text-align: left;
-    }
-    .docteurs .contenu_article p {
-        width: 90%;
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
-    }
+   
     /* ======= Small newslettes ======== */
     #newsletter {
         width: 90%;
@@ -1969,7 +1947,9 @@ iframe {
     p.horaires {
         text-align: center;
     }
-     /* NOTRE SAVOIR-FAIRE */
+    
+    
+    /* NOTRE SAVOIR-FAIRE */
     #bloc-medium-savoirfaire {
         display: block;
         margin: 0 auto;
@@ -2150,10 +2130,29 @@ iframe {
         margin: 0 auto;
         font-size: .8em;
     }
-    
-    /* TEAM */
+   /* présentation de l'équipe */
     .team-member {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    :last-child.team-member {
+        border: 0;
+        margin-bottom: 0;
+    }
+    .docteurs {
+        display: block;
+        width: 100%;
+    }
+    .docteurs .contenu_article p {
+        width: 90%;
         padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .team-member img {
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     /* ------ */
     .icone-generique {
@@ -2270,39 +2269,7 @@ iframe {
         height: 40px;
         font-size: 2em;
     }
-    
-     /* NOTRE SAVOIR-FAIRE */
-    #bloc-medium-savoirfaire {
-        display: block;
-        margin: 0 auto;
-        height: 100%;
-        width: 90%;
-        margin-left: 4%;
-        margin-top: 100px;
-    }
-    .bloc-small-savoirfaire {
-        margin-bottom: 50px;
-        vertical-align: top;
-        display: inline-block;
-        width: 94%;
-        height: 100%;
-        margin: 5px;
-        margin-left: 4%;
-        margin-bottom: 100px;
-        text-align: center;
-        background-color: whitesmoke;
-        box-shadow: 0 0 3px grey;
-    }
-    .bloc-small-savoirfaire p {
-        text-align: center;
-        font-size: .9em;
-        overflow-y: auto;
-        color: #222;
-        padding: 15px !important;
-    }
-    
-  
-    
+   
     /* ======= Contact ========== */
     .contact {
         display: inline;
